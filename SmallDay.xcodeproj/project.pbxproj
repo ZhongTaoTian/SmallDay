@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */; };
+		FAA0F9C21B7DC74900B5EA08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9C11B7DC74900B5EA08 /* ViewController.swift */; };
+		FAA0F9C51B7DC74900B5EA08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA0F9C31B7DC74900B5EA08 /* Main.storyboard */; };
+		FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */; };
+		FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA0F9C81B7DC74900B5EA08 /* LaunchScreen.xib */; };
+		FAA0F9D61B7DC74900B5EA08 /* SmallDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9D51B7DC74900B5EA08 /* SmallDayTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAA0F9D01B7DC74900B5EA08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA0F9B21B7DC74900B5EA08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA0F9B91B7DC74900B5EA08;
+			remoteInfo = SmallDay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAA0F9BA1B7DC74900B5EA08 /* SmallDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA0F9BE1B7DC74900B5EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA0F9C11B7DC74900B5EA08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAA0F9C41B7DC74900B5EA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAA0F9C91B7DC74900B5EA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FAA0F9CF1B7DC74900B5EA08 /* SmallDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA0F9D41B7DC74900B5EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA0F9D51B7DC74900B5EA08 /* SmallDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDayTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA0F9B71B7DC74900B5EA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA0F9CC1B7DC74900B5EA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAA0F9B11B7DC74900B5EA08 = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9BC1B7DC74900B5EA08 /* SmallDay */,
+				FAA0F9D21B7DC74900B5EA08 /* SmallDayTests */,
+				FAA0F9BB1B7DC74900B5EA08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA0F9BB1B7DC74900B5EA08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9BA1B7DC74900B5EA08 /* SmallDay.app */,
+				FAA0F9CF1B7DC74900B5EA08 /* SmallDayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA0F9BC1B7DC74900B5EA08 /* SmallDay */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */,
+				FAA0F9C11B7DC74900B5EA08 /* ViewController.swift */,
+				FAA0F9C31B7DC74900B5EA08 /* Main.storyboard */,
+				FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */,
+				FAA0F9C81B7DC74900B5EA08 /* LaunchScreen.xib */,
+				FAA0F9BD1B7DC74900B5EA08 /* Supporting Files */,
+			);
+			path = SmallDay;
+			sourceTree = "<group>";
+		};
+		FAA0F9BD1B7DC74900B5EA08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9BE1B7DC74900B5EA08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAA0F9D21B7DC74900B5EA08 /* SmallDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9D51B7DC74900B5EA08 /* SmallDayTests.swift */,
+				FAA0F9D31B7DC74900B5EA08 /* Supporting Files */,
+			);
+			path = SmallDayTests;
+			sourceTree = "<group>";
+		};
+		FAA0F9D31B7DC74900B5EA08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9D41B7DC74900B5EA08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA0F9B91B7DC74900B5EA08 /* SmallDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA0F9D91B7DC74900B5EA08 /* Build configuration list for PBXNativeTarget "SmallDay" */;
+			buildPhases = (
+				FAA0F9B61B7DC74900B5EA08 /* Sources */,
+				FAA0F9B71B7DC74900B5EA08 /* Frameworks */,
+				FAA0F9B81B7DC74900B5EA08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmallDay;
+			productName = SmallDay;
+			productReference = FAA0F9BA1B7DC74900B5EA08 /* SmallDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAA0F9CE1B7DC74900B5EA08 /* SmallDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA0F9DC1B7DC74900B5EA08 /* Build configuration list for PBXNativeTarget "SmallDayTests" */;
+			buildPhases = (
+				FAA0F9CB1B7DC74900B5EA08 /* Sources */,
+				FAA0F9CC1B7DC74900B5EA08 /* Frameworks */,
+				FAA0F9CD1B7DC74900B5EA08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA0F9D11B7DC74900B5EA08 /* PBXTargetDependency */,
+			);
+			name = SmallDayTests;
+			productName = SmallDayTests;
+			productReference = FAA0F9CF1B7DC74900B5EA08 /* SmallDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA0F9B21B7DC74900B5EA08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "维尼的小熊";
+				TargetAttributes = {
+					FAA0F9B91B7DC74900B5EA08 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FAA0F9CE1B7DC74900B5EA08 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FAA0F9B91B7DC74900B5EA08;
+					};
+				};
+			};
+			buildConfigurationList = FAA0F9B51B7DC74900B5EA08 /* Build configuration list for PBXProject "SmallDay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA0F9B11B7DC74900B5EA08;
+			productRefGroup = FAA0F9BB1B7DC74900B5EA08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA0F9B91B7DC74900B5EA08 /* SmallDay */,
+				FAA0F9CE1B7DC74900B5EA08 /* SmallDayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA0F9B81B7DC74900B5EA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA0F9C51B7DC74900B5EA08 /* Main.storyboard in Resources */,
+				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
+				FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA0F9CD1B7DC74900B5EA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA0F9B61B7DC74900B5EA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA0F9C21B7DC74900B5EA08 /* ViewController.swift in Sources */,
+				FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA0F9CB1B7DC74900B5EA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA0F9D61B7DC74900B5EA08 /* SmallDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAA0F9D11B7DC74900B5EA08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA0F9B91B7DC74900B5EA08 /* SmallDay */;
+			targetProxy = FAA0F9D01B7DC74900B5EA08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA0F9C31B7DC74900B5EA08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA0F9C41B7DC74900B5EA08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA0F9C81B7DC74900B5EA08 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA0F9C91B7DC74900B5EA08 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA0F9D71B7DC74900B5EA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAA0F9D81B7DC74900B5EA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA0F9DA1B7DC74900B5EA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmallDay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAA0F9DB1B7DC74900B5EA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmallDay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAA0F9DD1B7DC74900B5EA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmallDayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmallDay.app/SmallDay";
+			};
+			name = Debug;
+		};
+		FAA0F9DE1B7DC74900B5EA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmallDayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmallDay.app/SmallDay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA0F9B51B7DC74900B5EA08 /* Build configuration list for PBXProject "SmallDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA0F9D71B7DC74900B5EA08 /* Debug */,
+				FAA0F9D81B7DC74900B5EA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA0F9D91B7DC74900B5EA08 /* Build configuration list for PBXNativeTarget "SmallDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA0F9DA1B7DC74900B5EA08 /* Debug */,
+				FAA0F9DB1B7DC74900B5EA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAA0F9DC1B7DC74900B5EA08 /* Build configuration list for PBXNativeTarget "SmallDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA0F9DD1B7DC74900B5EA08 /* Debug */,
+				FAA0F9DE1B7DC74900B5EA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA0F9B21B7DC74900B5EA08 /* Project object */;
+}
