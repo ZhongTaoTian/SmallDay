@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA57DE9D1B822A990099CD37 /* CityCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57DE9C1B822A990099CD37 /* CityCollectionReusableView.swift */; };
+		FA709A211B808B0500B24238 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A201B808B0500B24238 /* MainViewController.swift */; };
+		FA709A271B80A3A800B24238 /* DoubleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A261B80A3A800B24238 /* DoubleTextView.swift */; };
+		FA709A291B80CA8800B24238 /* NearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A281B80CA8800B24238 /* NearViewController.swift */; };
+		FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A2E1B80CFCA00B24238 /* CityViewController.swift */; };
+		FA709A311B81762500B24238 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A301B81762500B24238 /* CityCollectionViewCell.swift */; };
 		FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */; };
-		FAA0F9C21B7DC74900B5EA08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9C11B7DC74900B5EA08 /* ViewController.swift */; };
-		FAA0F9C51B7DC74900B5EA08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA0F9C31B7DC74900B5EA08 /* Main.storyboard */; };
 		FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */; };
 		FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA0F9C81B7DC74900B5EA08 /* LaunchScreen.xib */; };
 		FAA0F9D61B7DC74900B5EA08 /* SmallDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9D51B7DC74900B5EA08 /* SmallDayTests.swift */; };
+		FAA0F9EB1B7DD83E00B5EA08 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9EA1B7DD83E00B5EA08 /* MainTabBarController.swift */; };
+		FAA0F9ED1B7DD9CB00B5EA08 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9EC1B7DD9CB00B5EA08 /* MainNavigationController.swift */; };
+		FAA0F9EF1B7DDA4300B5EA08 /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9EE1B7DDA4300B5EA08 /* ClassifyViewController.swift */; };
+		FAA0F9F11B7DDA5D00B5EA08 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F01B7DDA5D00B5EA08 /* ExperienceViewController.swift */; };
+		FAA0F9F31B7DDA7700B5EA08 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F21B7DDA7700B5EA08 /* ExploreViewController.swift */; };
+		FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */; };
+		FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F61B7DF02E00B5EA08 /* theme.swift */; };
+		FAA0F9FB1B7DF17D00B5EA08 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9FA1B7DF17D00B5EA08 /* extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +38,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA57DE9C1B822A990099CD37 /* CityCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCollectionReusableView.swift; sourceTree = "<group>"; };
+		FA709A201B808B0500B24238 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FA709A261B80A3A800B24238 /* DoubleTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTextView.swift; sourceTree = "<group>"; };
+		FA709A281B80CA8800B24238 /* NearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearViewController.swift; sourceTree = "<group>"; };
+		FA709A2E1B80CFCA00B24238 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		FA709A301B81762500B24238 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAA0F9BA1B7DC74900B5EA08 /* SmallDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA0F9BE1B7DC74900B5EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAA0F9C11B7DC74900B5EA08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAA0F9C41B7DC74900B5EA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../AppDelegate.swift; sourceTree = "<group>"; };
 		FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAA0F9C91B7DC74900B5EA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FAA0F9CF1B7DC74900B5EA08 /* SmallDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA0F9D41B7DC74900B5EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA0F9D51B7DC74900B5EA08 /* SmallDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDayTests.swift; sourceTree = "<group>"; };
+		FAA0F9EA1B7DD83E00B5EA08 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FAA0F9EC1B7DD9CB00B5EA08 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		FAA0F9EE1B7DDA4300B5EA08 /* ClassifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyViewController.swift; sourceTree = "<group>"; };
+		FAA0F9F01B7DDA5D00B5EA08 /* ExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		FAA0F9F21B7DDA7700B5EA08 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		FAA0F9F61B7DF02E00B5EA08 /* theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
+		FAA0F9FA1B7DF17D00B5EA08 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +101,7 @@
 		FAA0F9BC1B7DC74900B5EA08 /* SmallDay */ = {
 			isa = PBXGroup;
 			children = (
-				FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */,
-				FAA0F9C11B7DC74900B5EA08 /* ViewController.swift */,
-				FAA0F9C31B7DC74900B5EA08 /* Main.storyboard */,
-				FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */,
-				FAA0F9C81B7DC74900B5EA08 /* LaunchScreen.xib */,
+				FAA0F9DF1B7DD6A500B5EA08 /* Classes */,
 				FAA0F9BD1B7DC74900B5EA08 /* Supporting Files */,
 			);
 			path = SmallDay;
@@ -90,6 +110,8 @@
 		FAA0F9BD1B7DC74900B5EA08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */,
+				FAA0F9C81B7DC74900B5EA08 /* LaunchScreen.xib */,
 				FAA0F9BE1B7DC74900B5EA08 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +132,118 @@
 				FAA0F9D41B7DC74900B5EA08 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAA0F9DF1B7DD6A500B5EA08 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9E01B7DD6A500B5EA08 /* BusinessModel(业务模型) */,
+				FAA0F9E11B7DD6A500B5EA08 /* Tools(工具) */,
+				FAA0F9E21B7DD6A500B5EA08 /* UI(界面) */,
+				FAA0F9E81B7DD6A500B5EA08 /* Venders(三方库) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FAA0F9E01B7DD6A500B5EA08 /* BusinessModel(业务模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "BusinessModel(业务模型)";
+			path = BusinessModel;
+			sourceTree = "<group>";
+		};
+		FAA0F9E11B7DD6A500B5EA08 /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Tools(工具)";
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FAA0F9E21B7DD6A500B5EA08 /* UI(界面) */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9E31B7DD6A500B5EA08 /* Classify(分类) */,
+				FAA0F9E41B7DD6A500B5EA08 /* Experience(体验) */,
+				FAA0F9E51B7DD6A500B5EA08 /* Explore(探店) */,
+				FAA0F9E61B7DD6A500B5EA08 /* Main(公共) */,
+				FAA0F9E71B7DD6A500B5EA08 /* Me(我的) */,
+				FAA0F9E91B7DD72A00B5EA08 /* Other(其他) */,
+			);
+			name = "UI(界面)";
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FAA0F9E31B7DD6A500B5EA08 /* Classify(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9EE1B7DDA4300B5EA08 /* ClassifyViewController.swift */,
+			);
+			name = "Classify(分类)";
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		FAA0F9E41B7DD6A500B5EA08 /* Experience(体验) */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9F01B7DDA5D00B5EA08 /* ExperienceViewController.swift */,
+			);
+			name = "Experience(体验)";
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		FAA0F9E51B7DD6A500B5EA08 /* Explore(探店) */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9F21B7DDA7700B5EA08 /* ExploreViewController.swift */,
+				FA709A261B80A3A800B24238 /* DoubleTextView.swift */,
+				FA709A281B80CA8800B24238 /* NearViewController.swift */,
+			);
+			name = "Explore(探店)";
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		FAA0F9E61B7DD6A500B5EA08 /* Main(公共) */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9EA1B7DD83E00B5EA08 /* MainTabBarController.swift */,
+				FAA0F9EC1B7DD9CB00B5EA08 /* MainNavigationController.swift */,
+				FA709A201B808B0500B24238 /* MainViewController.swift */,
+				FA709A2E1B80CFCA00B24238 /* CityViewController.swift */,
+				FA709A301B81762500B24238 /* CityCollectionViewCell.swift */,
+				FA57DE9C1B822A990099CD37 /* CityCollectionReusableView.swift */,
+			);
+			name = "Main(公共)";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FAA0F9E71B7DD6A500B5EA08 /* Me(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */,
+			);
+			name = "Me(我的)";
+			path = Me;
+			sourceTree = "<group>";
+		};
+		FAA0F9E81B7DD6A500B5EA08 /* Venders(三方库) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Venders(三方库)";
+			path = Venders;
+			sourceTree = "<group>";
+		};
+		FAA0F9E91B7DD72A00B5EA08 /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */,
+				FAA0F9F61B7DF02E00B5EA08 /* theme.swift */,
+				FAA0F9FA1B7DF17D00B5EA08 /* extension.swift */,
+			);
+			name = "Other(其他)";
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +326,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA0F9C51B7DC74900B5EA08 /* Main.storyboard in Resources */,
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
 				FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +345,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA0F9C21B7DC74900B5EA08 /* ViewController.swift in Sources */,
+				FA57DE9D1B822A990099CD37 /* CityCollectionReusableView.swift in Sources */,
+				FAA0F9EF1B7DDA4300B5EA08 /* ClassifyViewController.swift in Sources */,
+				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
+				FA709A271B80A3A800B24238 /* DoubleTextView.swift in Sources */,
+				FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */,
+				FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */,
+				FAA0F9FB1B7DF17D00B5EA08 /* extension.swift in Sources */,
+				FAA0F9EB1B7DD83E00B5EA08 /* MainTabBarController.swift in Sources */,
+				FA709A311B81762500B24238 /* CityCollectionViewCell.swift in Sources */,
+				FAA0F9F31B7DDA7700B5EA08 /* ExploreViewController.swift in Sources */,
+				FAA0F9F11B7DDA5D00B5EA08 /* ExperienceViewController.swift in Sources */,
+				FA709A291B80CA8800B24238 /* NearViewController.swift in Sources */,
+				FAA0F9ED1B7DD9CB00B5EA08 /* MainNavigationController.swift in Sources */,
 				FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */,
+				FA709A211B808B0500B24238 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +382,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAA0F9C31B7DC74900B5EA08 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAA0F9C41B7DC74900B5EA08 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAA0F9C81B7DC74900B5EA08 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -341,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmallDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmallDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +549,7 @@
 				FAA0F9DB1B7DC74900B5EA08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAA0F9DC1B7DC74900B5EA08 /* Build configuration list for PBXNativeTarget "SmallDayTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +558,7 @@
 				FAA0F9DE1B7DC74900B5EA08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
