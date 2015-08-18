@@ -21,7 +21,7 @@ class MainTabBarController: UITabBarController {
     /// 初始化所有子控制器
     func setUpAllChildViewController() {
         // 探店
-        tabBaraAddChildViewController(vc: ExploreViewController(), title: "探点", imageName: "recommendation_1", selectedImageName: "recommendation_2")
+        tabBaraAddChildViewController(vc: ExploreViewController(), title: "探店", imageName: "recommendation_1", selectedImageName: "recommendation_2")
         // 体验
         tabBaraAddChildViewController(vc: ExperienceViewController(), title: "体验", imageName: "broadwood_1", selectedImageName: "broadwood_2")
         // 分类

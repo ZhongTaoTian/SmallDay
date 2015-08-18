@@ -77,6 +77,7 @@ extension UIBarButtonItem {
     }
 }
 
+// UIColor的扩展
 extension UIColor {
     class func colorWith(red: Int, green: Int, blue: Int, alpha: CGFloat) -> UIColor {
         let color = UIColor(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alpha)
@@ -84,3 +85,44 @@ extension UIColor {
     }
     
 }
+
+// UIImage的扩展
+extension UIImage {
+    /// 将传入的图片裁剪成带边缘的原型图片
+    class func imageWithClipImage(image: UIImage, borderWidth: CGFloat, borderColor: UIColor) -> UIImage {
+        let imageWH = image.size.width
+        let border = borderWidth
+        let ovalWH = imageWH + 2 * borderWidth
+        
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(ovalWH, ovalWH), false, 0)
+        let path = UIBezierPath(ovalInRect: CGRectMake(0, 0, ovalWH, ovalWH))
+        borderColor.set()
+        path.fill()
+        
+        let clipPath = UIBezierPath(ovalInRect: CGRectMake(borderWidth, borderWidth, imageWH, imageWH))
+        clipPath.addClip()
+        image.drawAtPoint(CGPointMake(borderWidth, borderWidth))
+        
+        let clipImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return clipImage
+    }
+    
+    /// 将传入的图片裁剪成圆形图片
+    func imageClipOvalImage() -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
+        let ctx = UIGraphicsGetCurrentContext()
+        let rect = CGRectMake(0, 0, self.size.width, self.size.height)
+        CGContextAddEllipseInRect(ctx, rect)
+        
+        CGContextClip(ctx)
+        self.drawInRect(rect)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+        
+}
+

@@ -9,7 +9,7 @@
 import UIKit
 
 class CityViewController: UIViewController {
-    var lastIndexPath: NSIndexPath?
+
     var collView: UICollectionView!
     var layout = UICollectionViewFlowLayout()
     
@@ -114,6 +114,9 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        // 拿出当前选择的cell
+        var cell = collectionView.cellForItemAtIndexPath(indexPath) as! CityCollectionViewCell
+        let currentCity = cell.cityName
         
     }
     

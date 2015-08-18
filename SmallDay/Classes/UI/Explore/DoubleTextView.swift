@@ -16,6 +16,8 @@ class DoubleTextView: UIView {
     let textFont: UIFont = UIFont.systemFontOfSize(21)
     let bottomLineView: UIView = UIView()
     var selectedBtn: UIButton?
+    var delegate: DoubleTextViewDelegate?
+
     /// 便利构造方法
     convenience init(leftText: String, rigthText: String) {
         self.init()
@@ -58,6 +60,12 @@ class DoubleTextView: UIView {
         sender.selected = true
         selectedBtn = sender
         bottomViewScrollTo(sender.tag - 100)
+        
+        if delegate != nil {
+            if delegate!.respondsToSelector("doubleTextView:didClickBtn:forIndex:") {
+                delegate!.doubleTextView!(self, didClickBtn: sender, forIndex: sender.tag - 100)
+            }
+        }
     }
     
     func bottomViewScrollTo(index: Int) {
@@ -65,6 +73,18 @@ class DoubleTextView: UIView {
             self.bottomLineView.frame.origin.x = CGFloat(index) * self.bottomLineView.width
         })
     }
+    
+    func clickBtnToIndex(index: Int) {
+        let btn: NoHighlightButton = self.viewWithTag(index + 100) as! NoHighlightButton
+        self.titleButtonClick(btn)
+    }
+}
+
+
+@objc protocol DoubleTextViewDelegate: NSObjectProtocol{
+
+    optional func doubleTextView(doubleTextView: DoubleTextView, didClickBtn btn: UIButton, forIndex index: Int)
+    
 }
 
 /// 没有高亮状态的按钮

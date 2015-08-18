@@ -28,7 +28,7 @@ class CityHeadCollectionReusableView: UICollectionReusableView {
     
     func setUp() {
         headTitleLabel.textAlignment = .Center
-        headTitleLabel.font = UIFont.systemFontOfSize(24)
+        headTitleLabel.font = UIFont.systemFontOfSize(22)
         headTitleLabel.textColor = UIColor.blackColor()
         addSubview(headTitleLabel)
     }
