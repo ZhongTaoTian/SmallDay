@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA40ED961B84C5530049DE19 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40ED951B84C5530049DE19 /* SettingViewController.swift */; };
+		FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40ED971B84D1090049DE19 /* SettingCell.swift */; };
+		FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA40ED981B84D1090049DE19 /* SettingCell.xib */; };
+		FA40ED9C1B84E64E0049DE19 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40ED9B1B84E64E0049DE19 /* FeedbackViewController.swift */; };
 		FA57DE9D1B822A990099CD37 /* CityCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57DE9C1B822A990099CD37 /* CityCollectionReusableView.swift */; };
 		FA57DF091B8327F20099CD37 /* ClassifyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57DF071B8327F20099CD37 /* ClassifyCell.swift */; };
 		FA57DF0A1B8327F20099CD37 /* ClassifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA57DF081B8327F20099CD37 /* ClassifyCell.xib */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA40ED951B84C5530049DE19 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		FA40ED971B84D1090049DE19 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		FA40ED981B84D1090049DE19 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		FA40ED9B1B84E64E0049DE19 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		FA57DE9C1B822A990099CD37 /* CityCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCollectionReusableView.swift; sourceTree = "<group>"; };
 		FA57DF071B8327F20099CD37 /* ClassifyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyCell.swift; sourceTree = "<group>"; };
 		FA57DF081B8327F20099CD37 /* ClassifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyCell.xib; sourceTree = "<group>"; };
@@ -176,11 +184,11 @@
 		FAA0F9E21B7DD6A500B5EA08 /* UI(界面) */ = {
 			isa = PBXGroup;
 			children = (
-				FAA0F9E31B7DD6A500B5EA08 /* Classify(分类) */,
-				FAA0F9E41B7DD6A500B5EA08 /* Experience(体验) */,
 				FAA0F9E51B7DD6A500B5EA08 /* Explore(探店) */,
-				FAA0F9E61B7DD6A500B5EA08 /* Main(公共) */,
+				FAA0F9E41B7DD6A500B5EA08 /* Experience(体验) */,
+				FAA0F9E31B7DD6A500B5EA08 /* Classify(分类) */,
 				FAA0F9E71B7DD6A500B5EA08 /* Me(我的) */,
+				FAA0F9E61B7DD6A500B5EA08 /* Main(公共) */,
 				FAA0F9E91B7DD72A00B5EA08 /* Other(其他) */,
 			);
 			name = "UI(界面)";
@@ -240,6 +248,10 @@
 			children = (
 				FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */,
 				FA57DF111B8393240099CD37 /* IconView.swift */,
+				FA40ED951B84C5530049DE19 /* SettingViewController.swift */,
+				FA40ED971B84D1090049DE19 /* SettingCell.swift */,
+				FA40ED981B84D1090049DE19 /* SettingCell.xib */,
+				FA40ED9B1B84E64E0049DE19 /* FeedbackViewController.swift */,
 			);
 			name = "Me(我的)";
 			path = Me;
@@ -346,6 +358,7 @@
 			files = (
 				FA57DF0A1B8327F20099CD37 /* ClassifyCell.xib in Resources */,
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
+				FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */,
 				FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,9 +381,12 @@
 				FA57DF101B835B090099CD37 /* SearchView.swift in Sources */,
 				FAA0F9EF1B7DDA4300B5EA08 /* ClassifyViewController.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
+				FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */,
 				FA57DF0C1B8331FE0099CD37 /* SearchViewController.swift in Sources */,
+				FA40ED961B84C5530049DE19 /* SettingViewController.swift in Sources */,
 				FA57DF121B8393240099CD37 /* IconView.swift in Sources */,
 				FA709A271B80A3A800B24238 /* DoubleTextView.swift in Sources */,
+				FA40ED9C1B84E64E0049DE19 /* FeedbackViewController.swift in Sources */,
 				FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */,
 				FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */,
 				FAA0F9FB1B7DF17D00B5EA08 /* extension.swift in Sources */,

@@ -13,14 +13,14 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
     
     var tableView: UITableView!
     lazy var mineIcons: NSMutableArray! = {
-        var arr = NSMutableArray(array: ["usercenter", "orders", "setting_like", "feedback"])
+        var arr = NSMutableArray(array: ["usercenter", "orders", "setting_like", "feedback", "recomment"])
         return arr
         }()
     lazy var mineTitles: NSMutableArray! = {
-        var arr = NSMutableArray(array: ["个人中心", "我的订单", "我的收藏", "留言反馈"])
+        var arr = NSMutableArray(array: ["个人中心", "我的订单", "我的收藏", "留言反馈", "应用推荐"])
         return arr
         }()
-    
+    var iconView: IconView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         view.addSubview(tableView)
         
         // 设置tableView的headerView
-        let iconImageViewHeight: CGFloat = 170
+        let iconImageViewHeight: CGFloat = 180
         var iconImageView = UIImageView(frame: CGRectMake(0, 0, theme.appWidth, iconImageViewHeight))
         iconImageView.image = UIImage(named: "quesheng")
         iconImageView.userInteractionEnabled = true
@@ -64,20 +64,22 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         iconImageView.addSubview(loginLabel)
         
         // 添加iconImageView
-        let iconView = UIImageView(frame: CGRectMake(0, 0, 100, 100))
-        iconView.image = UIImage(named: "quesheng")!.imageClipOvalImage()
-        iconImageView.addSubview(iconView)
+        iconView = IconView(frame: CGRectMake(0, 0, 120, 120))
+        iconView!.center = CGPointMake(iconImageView.width * 0.5, (iconImageViewHeight - loginLabelHeight) * 0.5 + 8)
+        iconImageView.addSubview(iconView!)
+
         tableView.tableHeaderView = iconImageView
     }
     
     func settingClick() {
-        
+        let settingVC = SettingViewController()
+        navigationController?.pushViewController(settingVC, animated: true)
     }
     
     // MARK:UITableViewDelegate, UITableViewDataSource 代理方法
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 4
+            return mineIcons.count
         } else {
             return 1
         }
@@ -103,7 +105,15 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
             cell!.imageView!.image = UIImage(named: "yaoyiyao")
             cell!.textLabel!.text = "摇一摇 每天都有小惊喜"
         }
-        
+
         return cell!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 0 && indexPath.row == 3 {
+            // 留言反馈
+            let feedbackVC = FeedbackViewController()
+            navigationController?.pushViewController(feedbackVC, animated: true)
+        }
     }
 }

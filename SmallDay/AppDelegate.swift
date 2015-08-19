@@ -60,6 +60,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navAppearance.translucent = false
         navAppearance.titleTextAttributes = [NSFontAttributeName : UIFont.systemFontOfSize(20), NSForegroundColorAttributeName : UIColor.blackColor()]
         
+        let item = UIBarButtonItem.appearance()
+        item.setTitleTextAttributes([NSFontAttributeName : UIFont.systemFontOfSize(18), NSForegroundColorAttributeName : UIColor.blackColor()], forState: .Normal)
+        
     }
 }
 
