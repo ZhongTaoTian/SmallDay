@@ -10,12 +10,10 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+//
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         window?.rootViewController = MainTabBarController()
@@ -62,7 +60,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let item = UIBarButtonItem.appearance()
         item.setTitleTextAttributes([NSFontAttributeName : UIFont.systemFontOfSize(18), NSForegroundColorAttributeName : UIColor.blackColor()], forState: .Normal)
-        
     }
 }
 

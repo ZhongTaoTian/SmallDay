@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MeViewController: MainViewController, UITableViewDelegate, UITableViewDataSource {
+class MeViewController: MainViewController, UITableViewDelegate, UITableViewDataSource, IconViewDelegate {
     var loginLabel: UILabel!
     
     var tableView: UITableView!
@@ -65,6 +65,7 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         
         // 添加iconImageView
         iconView = IconView(frame: CGRectMake(0, 0, 120, 120))
+        iconView!.delegate = self
         iconView!.center = CGPointMake(iconImageView.width * 0.5, (iconImageViewHeight - loginLabelHeight) * 0.5 + 8)
         iconImageView.addSubview(iconView!)
 
@@ -115,5 +116,11 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
             let feedbackVC = FeedbackViewController()
             navigationController?.pushViewController(feedbackVC, animated: true)
         }
+    }
+    
+    func iconView(iconView: IconView, didClick iconButton: UIButton) {
+        // TODO 判断用户是否登录了
+        let login = LoginViewController()
+        navigationController?.pushViewController(login, animated: true)
     }
 }

@@ -11,6 +11,7 @@ import UIKit
 class IconView: UIView {
 
     var iconButton: UIButton!
+    var delegate: IconViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,6 +43,16 @@ class IconView: UIView {
     }
     
     func iconBtnClick() {
-        print("头像按钮被点击了")
+        if delegate != nil {
+            if delegate!.respondsToSelector("iconView:didClick:") {
+                delegate!.iconView!(self, didClick: self.iconButton)
+            }
+        }
     }
 }
+
+@objc protocol IconViewDelegate: NSObjectProtocol {
+
+    optional func iconView(iconView: IconView, didClick iconButton: UIButton)
+}
+

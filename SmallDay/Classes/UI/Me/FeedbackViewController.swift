@@ -16,17 +16,17 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // 设置导航条上的内容
         setNav()
-       
+        
         view.backgroundColor = theme.SDBackgroundColor
         // 设置留言框和联系框
         setFeedbackTextViewAndContactTextField()
     }
-
+    
     func setNav() {
-         self.navigationItem.title = "留言反馈"
+        self.navigationItem.title = "留言反馈"
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "发送", style: UIBarButtonItemStyle.Done, target: self, action: "sendClick")
     }
@@ -56,7 +56,25 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
     }
     
     func sendClick() {
-        print("aaaa")
+        let contactStr = contactTextField.text
+        var alartView: UIAlertView?
+        
+        if feedbackTextView.text.isEmpty {
+            alartView = UIAlertView(title: "提示", message: "请填写您的留言反馈", delegate: nil, cancelButtonTitle: "确定")
+            alartView?.show()
+            return
+        }
+        
+        if contactStr.validateEmail() || contactStr.validateMobile() {
+            // TODO 将用户反馈和联系方式发送给服务器
+            alartView = UIAlertView(title: "提示", message: "感谢您的反馈", delegate: nil, cancelButtonTitle: "确定")
+            alartView?.show()
+            self.navigationController?.popViewControllerAnimated(true)
+            return
+        } else {
+            alartView = UIAlertView(title: "提示", message: "请填写正确的联系方式,以便我们给您回复", delegate: nil, cancelButtonTitle: "确定")
+            alartView?.show()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -65,7 +83,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        println(contactTextField.text.validateMobile())
+        sendClick()
         return true
     }
 }
