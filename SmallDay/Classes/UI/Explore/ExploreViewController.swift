@@ -21,6 +21,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         
         // 设置scrollView
         setScrollView()
+
     }
 
     func setScrollView() {

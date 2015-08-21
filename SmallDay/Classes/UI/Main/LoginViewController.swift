@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     var bottomView: UIView!
     var backScrollView: UIScrollView!
@@ -41,10 +41,16 @@ class LoginViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillChangeFrameNotification:", name: UIKeyboardWillChangeFrameNotification, object: nil)
     }
     
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     func addScrollView() {
         backScrollView = UIScrollView(frame: view.bounds)
         backScrollView.backgroundColor = theme.SDBackgroundColor
         backScrollView.alwaysBounceVertical = true
+        let tap = UITapGestureRecognizer(target: self, action: "backScrollViewTap")
+        backScrollView.addGestureRecognizer(tap)
         view.addSubview(backScrollView)
     }
     
@@ -153,24 +159,34 @@ class LoginViewController: UIViewController {
     /// 底部忘记密码和注册按钮点击
     func bottomViewColcikWith(tap: UIGestureRecognizer) {
         if tap.view!.tag == 10 { // 忘记密码
-        
+            print("忘记密码")
         } else {                 // 注册
-        
+            print("注册")
         }
     }
     
     /// 登录按钮被点击
     func loginClick() {
-        print("a")
+        print("登陆")
     }
     
     /// 快捷登录点击
     func quickLoginClick() {
-        print("b")
+        print("快捷登陆")
     }
     
-    func keyboardWillChangeFrameNotification(noti: NSNotification) {
+    func keyboardWillChangeFrameNotification(note: NSNotification) {
         // TODO 添加键盘弹出的事件
+        let userinfo = note.userInfo!
+        let rect = userinfo[UIKeyboardFrameEndUserInfoKey]!.CGRectValue()
+        var boardH = theme.appHeight - rect.origin.y
+        if boardH > 0 {
+            boardH = boardH + 64
+        }
+        backScrollView.contentSize = CGSizeMake(0, view.height + boardH)
     }
     
+    func backScrollViewTap() {
+        view.endEditing(true)
+    }
 }

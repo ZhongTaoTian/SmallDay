@@ -24,6 +24,9 @@
 		FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A2E1B80CFCA00B24238 /* CityViewController.swift */; };
 		FA709A311B81762500B24238 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A301B81762500B24238 /* CityCollectionViewCell.swift */; };
 		FA82B1191B864426003A2264 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B1181B864426003A2264 /* LoginViewController.swift */; };
+		FA82B11C1B870A48003A2264 /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B11A1B870A48003A2264 /* ShakeViewController.swift */; };
+		FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82B11B1B870A48003A2264 /* ShakeViewController.xib */; };
+		FA82B1201B874EE4003A2264 /* EveryDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B11F1B874EE4003A2264 /* EveryDayModel.swift */; };
 		FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */; };
 		FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */; };
 		FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA0F9C81B7DC74900B5EA08 /* LaunchScreen.xib */; };
@@ -66,6 +69,9 @@
 		FA709A2E1B80CFCA00B24238 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		FA709A301B81762500B24238 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA82B1181B864426003A2264 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA82B11A1B870A48003A2264 /* ShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
+		FA82B11B1B870A48003A2264 /* ShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeViewController.xib; sourceTree = "<group>"; };
+		FA82B11F1B874EE4003A2264 /* EveryDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryDayModel.swift; sourceTree = "<group>"; };
 		FAA0F9BA1B7DC74900B5EA08 /* SmallDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA0F9BE1B7DC74900B5EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA82B11E1B871779003A2264 /* imageFile(大图片) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "imageFile(大图片)";
+			path = imageFile;
+			sourceTree = "<group>";
+		};
 		FAA0F9B11B7DC74900B5EA08 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +177,7 @@
 				FAA0F9E11B7DD6A500B5EA08 /* Tools(工具) */,
 				FAA0F9E21B7DD6A500B5EA08 /* UI(界面) */,
 				FAA0F9E81B7DD6A500B5EA08 /* Venders(三方库) */,
+				FA82B11E1B871779003A2264 /* imageFile(大图片) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -170,6 +185,7 @@
 		FAA0F9E01B7DD6A500B5EA08 /* BusinessModel(业务模型) */ = {
 			isa = PBXGroup;
 			children = (
+				FA82B11F1B874EE4003A2264 /* EveryDayModel.swift */,
 			);
 			name = "BusinessModel(业务模型)";
 			path = BusinessModel;
@@ -255,6 +271,8 @@
 				FA40ED971B84D1090049DE19 /* SettingCell.swift */,
 				FA40ED981B84D1090049DE19 /* SettingCell.xib */,
 				FA40ED9B1B84E64E0049DE19 /* FeedbackViewController.swift */,
+				FA82B11A1B870A48003A2264 /* ShakeViewController.swift */,
+				FA82B11B1B870A48003A2264 /* ShakeViewController.xib */,
 			);
 			name = "Me(我的)";
 			path = Me;
@@ -361,6 +379,7 @@
 			files = (
 				FA57DF0A1B8327F20099CD37 /* ClassifyCell.xib in Resources */,
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
+				FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */,
 				FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */,
 				FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */,
 			);
@@ -384,6 +403,7 @@
 				FA57DF101B835B090099CD37 /* SearchView.swift in Sources */,
 				FAA0F9EF1B7DDA4300B5EA08 /* ClassifyViewController.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
+				FA82B1201B874EE4003A2264 /* EveryDayModel.swift in Sources */,
 				FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */,
 				FA57DF0C1B8331FE0099CD37 /* SearchViewController.swift in Sources */,
 				FA40ED961B84C5530049DE19 /* SettingViewController.swift in Sources */,
@@ -404,6 +424,7 @@
 				FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */,
 				FA709A211B808B0500B24238 /* MainViewController.swift in Sources */,
 				FA57DF0E1B8335920099CD37 /* SearchTextField.swift in Sources */,
+				FA82B11C1B870A48003A2264 /* ShakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

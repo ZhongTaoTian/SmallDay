@@ -115,6 +115,9 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
             // 留言反馈
             let feedbackVC = FeedbackViewController()
             navigationController?.pushViewController(feedbackVC, animated: true)
+        } else if indexPath.section == 1 {
+            let shakeVC = ShakeViewController()
+            navigationController?.pushViewController(shakeVC, animated: true)
         }
     }
     
