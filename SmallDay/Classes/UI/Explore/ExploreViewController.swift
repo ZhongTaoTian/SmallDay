@@ -12,6 +12,9 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     
     var backgroundScrollView: UIScrollView!
     var doubleTextView: DoubleTextView!
+    var everyDays: EveryDays?
+    var albumTableView: UITableView!
+    var themes: ThemeModels?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +24,33 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         
         // 设置scrollView
         setScrollView()
+        
+        // 初始化美辑tableView
+        setalbumTableView()
+        
+        // 加载数据
+        loadData()
 
     }
+    
+    func setalbumTableView() {
+        albumTableView = UITableView(frame: CGRectMake(theme.appWidth, 0, theme.appWidth, backgroundScrollView.height), style: .Plain)
+        albumTableView.separatorStyle = .None
+        albumTableView.delegate = self
+        albumTableView.dataSource = self
+        albumTableView.backgroundColor = UIColor.whiteColor()
+        albumTableView.rowHeight = 230
+        backgroundScrollView.addSubview(albumTableView)
+    }
 
+    func loadData() {
+        ThemeModels.loadThemesData { (data, error) -> () in
+            self.themes = data!
+            print(self.themes!.list!.count)
+            self.albumTableView.reloadData()
+        }
+    }
+    
     func setScrollView() {
         backgroundScrollView = UIScrollView(frame: CGRectMake(0, 0, theme.appWidth, theme.appHeight - 64 - 49))
         self.automaticallyAdjustsScrollViewInsets = false
@@ -70,3 +97,29 @@ extension ExploreViewController: UIScrollViewDelegate {
         }
     }
 }
+
+extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return themes?.list?.count ?? 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell: UITableViewCell?
+        
+        if tableView === albumTableView {
+            let theme = self.themes!.list![indexPath.row]
+            cell = ThemeCell.themeCellWithTableView(tableView)
+            (cell as! ThemeCell).model = theme
+        }   else {
+            
+        }
+        
+        return cell!
+    }
+    
+//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        return 0
+//    }
+
+}
+

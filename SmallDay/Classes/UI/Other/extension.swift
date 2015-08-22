@@ -141,5 +141,7 @@ extension String {
         let phoneTest = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
         return phoneTest.evaluateWithObject(self)
     }
+    
 }
+
 

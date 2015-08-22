@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="240" id="KGk-i7-Jjw" customClass="ThemeCell" customModule="SmallDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="-1" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="oK1-5e-9Hc">
+                        <rect key="frame" x="0.0" y="5" width="320" height="234.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不出城的暑假去这里 (杭州篇)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-t9-No2">
+                        <rect key="frame" x="20" y="80" width="280" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡 醇香 温馨" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-71-vW7">
+                        <rect key="frame" x="30" y="110" width="260" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="oK1-5e-9Hc" secondAttribute="trailing" id="5G6-pQ-Vgx"/>
+                    <constraint firstItem="fnQ-71-vW7" firstAttribute="top" secondItem="E2q-t9-No2" secondAttribute="bottom" constant="5" id="7rH-Bd-nwx"/>
+                    <constraint firstAttribute="bottom" secondItem="oK1-5e-9Hc" secondAttribute="bottom" id="BRg-lc-mvb"/>
+                    <constraint firstAttribute="trailing" secondItem="fnQ-71-vW7" secondAttribute="trailing" constant="30" id="Mhb-hk-Pz1"/>
+                    <constraint firstItem="oK1-5e-9Hc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vtw-JY-g3U"/>
+                    <constraint firstAttribute="trailing" secondItem="E2q-t9-No2" secondAttribute="trailing" constant="20" id="WX1-Yl-0r2"/>
+                    <constraint firstItem="E2q-t9-No2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WbP-4A-BYQ"/>
+                    <constraint firstItem="fnQ-71-vW7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="jcM-ME-suy"/>
+                    <constraint firstItem="E2q-t9-No2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="80" id="t9W-Tb-JyW"/>
+                    <constraint firstItem="oK1-5e-9Hc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uRR-Ce-qEc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImageView" destination="oK1-5e-9Hc" id="qtx-ea-z9B"/>
+                <outlet property="subTitleLable" destination="fnQ-71-vW7" id="QpU-2n-IP9"/>
+                <outlet property="titleLable" destination="E2q-t9-No2" id="XPc-Uz-amM"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="280"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shadow" width="304" height="95"/>
+    </resources>
+</document>

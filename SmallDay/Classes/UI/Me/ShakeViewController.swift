@@ -28,6 +28,10 @@ class ShakeViewController: UIViewController {
     
         navigationItem.title = "摇一摇"
     }
+    
+    deinit {
+        print("摇一摇控制器被销毁了")
+    }
 
     // 摇一摇功能
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
