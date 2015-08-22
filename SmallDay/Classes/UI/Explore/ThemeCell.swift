@@ -9,12 +9,20 @@
 import UIKit
 
 class ThemeCell: UITableViewCell {
-
+    
     var model: ThemeModel? {
         didSet {
             self.titleLable.text = model!.title
             self.subTitleLable.text = model!.keywords
-//            self.backImageView.image = 
+            
+            self.backImageView.kf_setImageWithURL(NSURL(string: model!.img!)!, placeholderImage: UIImage(named: "quesheng"), optionsInfo: [.Options: KingfisherOptions.BackgroundCallback]) { (image, error, cacheType, imageURL) -> () in
+//                self.backImageView.image = image
+//                UIView.animateWithDuration(0.6, animations: { () -> Void in
+//                    self.backImageView.alpha = 1
+//                })
+                
+                
+            }
         }
     }
     
@@ -25,6 +33,10 @@ class ThemeCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .None
+        self.titleLable.shadowOffset = CGSizeMake(-1, 1)
+        self.titleLable.shadowColor = UIColor.colorWith(20, green: 20, blue: 20, alpha: 0.1)
+        self.subTitleLable.shadowOffset = CGSizeMake(-1, 1)
+        self.subTitleLable.shadowColor = UIColor.colorWith(20, green: 20, blue: 20, alpha: 0.1)
     }
     
     class func themeCellWithTableView(tableView: UITableView) -> ThemeCell {
@@ -32,8 +44,9 @@ class ThemeCell: UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(identifier) as? ThemeCell
         if cell == nil {
             cell = NSBundle.mainBundle().loadNibNamed("ThemeCell", owner: nil, options: nil).last as? ThemeCell
+            
         }
-
+        
         return cell!
     }
 }

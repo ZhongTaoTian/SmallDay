@@ -27,7 +27,7 @@ class EveryDays: NSObject {
 
 }
 
-/// 美天model
+/// 美辑model
 class ThemeModel: NSObject {
     /// 美辑的url网址
     var themeurl: String?
@@ -45,7 +45,7 @@ class ThemeModel: NSObject {
 
 }
 
-/// 美天里的美辑model
+/// 美天model
 class EventModel: NSObject {
     var feel: String?
     /// 分享url地址
@@ -74,6 +74,9 @@ class EventModel: NSObject {
     var mobileURL: String?
     /// 位置
     var position: String?
+    static func customClassMapping() -> [String : String]? {
+        return ["more" : "\(GuessLikeModel.self)"]
+    }
 }
 
 /// 猜你喜欢

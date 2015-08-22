@@ -14,6 +14,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     var doubleTextView: DoubleTextView!
     var everyDays: EveryDays?
     var albumTableView: UITableView!
+    var dayTableView: UITableView?
     var themes: ThemeModels?
 
     override func viewDidLoad() {
@@ -25,12 +26,19 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         // 设置scrollView
         setScrollView()
         
+        // 初始化美天tablieView
+        setdayTableView()
+        
         // 初始化美辑tableView
         setalbumTableView()
         
         // 加载数据
         loadData()
 
+    }
+    
+    func setdayTableView() {
+        dayTableView = UITableView(frame: view.bounds, style: .Plain)
     }
     
     func setalbumTableView() {
@@ -82,7 +90,13 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     func doubleTextView(doubleTextView: DoubleTextView, didClickBtn btn: UIButton, forIndex index: Int) {
         backgroundScrollView.setContentOffset(CGPointMake(theme.appWidth * CGFloat(index), 0), animated: true)
     }
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        KingfisherManager.sharedManager.cache.clearMemoryCache()
+        KingfisherManager.sharedManager.cache.clearDiskCache()
+        KingfisherManager.sharedManager.cache.cleanExpiredDiskCache()
+    }
     
 }
 
@@ -117,9 +131,14 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
-//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        return 0
-//    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if tableView === albumTableView {
+            let theme = self.themes!.list![indexPath.row]
+            let themeVC = ThemeViewController()
+            themeVC.themeModel = theme
+            navigationController?.pushViewController(themeVC, animated: true)
+        }
+    }
 
 }
 

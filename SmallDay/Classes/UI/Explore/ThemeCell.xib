@@ -13,18 +13,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="oK1-5e-9Hc">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quesheng" translatesAutoresizingMaskIntoConstraints="NO" id="rBg-6N-DLW">
+                        <rect key="frame" x="0.0" y="5" width="320" height="229.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oK1-5e-9Hc">
                         <rect key="frame" x="0.0" y="5" width="320" height="234.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不出城的暑假去这里 (杭州篇)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-t9-No2">
-                        <rect key="frame" x="20" y="80" width="280" height="25.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <rect key="frame" x="20" y="100" width="280" height="25.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡 醇香 温馨" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-71-vW7">
-                        <rect key="frame" x="30" y="110" width="260" height="21.5"/>
+                        <rect key="frame" x="30" y="130" width="260" height="21.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -36,12 +39,16 @@
                     <constraint firstItem="fnQ-71-vW7" firstAttribute="top" secondItem="E2q-t9-No2" secondAttribute="bottom" constant="5" id="7rH-Bd-nwx"/>
                     <constraint firstAttribute="bottom" secondItem="oK1-5e-9Hc" secondAttribute="bottom" id="BRg-lc-mvb"/>
                     <constraint firstAttribute="trailing" secondItem="fnQ-71-vW7" secondAttribute="trailing" constant="30" id="Mhb-hk-Pz1"/>
+                    <constraint firstItem="rBg-6N-DLW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="NP5-oY-oC1"/>
                     <constraint firstItem="oK1-5e-9Hc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vtw-JY-g3U"/>
                     <constraint firstAttribute="trailing" secondItem="E2q-t9-No2" secondAttribute="trailing" constant="20" id="WX1-Yl-0r2"/>
                     <constraint firstItem="E2q-t9-No2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WbP-4A-BYQ"/>
+                    <constraint firstAttribute="trailing" secondItem="rBg-6N-DLW" secondAttribute="trailing" id="Yil-w5-gHp"/>
+                    <constraint firstItem="rBg-6N-DLW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gyM-sa-svP"/>
                     <constraint firstItem="fnQ-71-vW7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="jcM-ME-suy"/>
-                    <constraint firstItem="E2q-t9-No2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="80" id="t9W-Tb-JyW"/>
+                    <constraint firstItem="E2q-t9-No2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="100" id="t9W-Tb-JyW"/>
                     <constraint firstItem="oK1-5e-9Hc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uRR-Ce-qEc"/>
+                    <constraint firstAttribute="bottom" secondItem="rBg-6N-DLW" secondAttribute="bottom" constant="5" id="xli-oo-l9u"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -49,10 +56,10 @@
                 <outlet property="subTitleLable" destination="fnQ-71-vW7" id="QpU-2n-IP9"/>
                 <outlet property="titleLable" destination="E2q-t9-No2" id="XPc-Uz-amM"/>
             </connections>
-            <point key="canvasLocation" x="410" y="280"/>
+            <point key="canvasLocation" x="207" y="267"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="shadow" width="304" height="95"/>
+        <image name="quesheng" width="320" height="200"/>
     </resources>
 </document>
