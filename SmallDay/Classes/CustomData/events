@@ -1,0 +1,1337 @@
+{
+    "msg": "Request is successful",
+    "code": 1,
+    "list": [
+        {
+            "date": "2015-08-23",
+            "themes": [
+                {
+                    "themeurl": "http://api.xiaorizi.me/api/themedetail/?themeid=149",
+                    "img": "http://pic.huodongjia.com/event/2015-06-24/event129049.jpg",
+                    "title": "岁月里的酸甜苦辣",
+                    "text": "<body><p>博物馆一直是我的最爱，每每隔着千百年时光凝望那些陈 旧的古物，总是莫名感动。当鲜活的面孔与肉体都已化为尘埃，当一段激荡的故事变为泛黄纸页上几行冰冷的文字，当这世间再没有人记得你的名字，知道你的存在，而曾经于手中的一块铜镜，一把铁剑，或是一片残瓦，或许曾见证一段传奇，承载一世的苍凉。 </p><p> </p></body>",
+                    "hasweb": 1,
+                    "height": 375,
+                    "width": 500,
+                    "begin_time": "2015-08-18",
+                    "keywords": "历史 人文 记录",
+                    "id": 149
+                }
+            ],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-130125.html",
+                    "telephone": "",
+                    "tag": "乐活,有趣,纯质,探店,逛街",
+                    "sponsor": {},
+                    "id": 130125,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Schoene Schreibwaren 文化用具专卖【用纸张留住岁月】",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "虽然数码产品日新月异，打字和收发邮件的便利让整个世界几乎能够零距离的交流，不过很多人依然迷恋于纸张的手感，就算互联网提供了更快速的选择，还是很执著于翻阅书本及杂志的真实感，偶尔也想提笔写张手写卡片，把满满暖意寄给朋友。",
+                    "note": "",
+                    "feeltitle": "不折腾，才逍遥",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "Kadó Liquorice 甘草糖爱好者的天堂",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Graefestrasse 20  10967 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-22/event125632.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130538
+                        },
+                        {
+                            "title": "SANTOKKI 小小文具杂货店【生活需要点小情调】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Pappelallee 82 10437 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-06/event121443.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130130
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "SCHOENE SCHREIBWAREN",
+                            "address": "Niederbarnimstr. 6 10247 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Niederbarnimstr. 6 10247 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-05-06/event121380.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "SCHOENE SCHREIBWAREN",
+                    "enddate": 3007680686,
+                    "mobileURL": "<body><html><head></head><body><p>虽然数码产品日新月异，打字和收发邮件的便利让整个世界几乎能够零距离的交流，不过很多人依然迷恋于纸张的手感，就算互联网提供了更快速的选择，还是很执著于翻阅书本及杂志的真实感，偶尔也想提笔写张手写卡片，把满满暖意寄给朋友。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121381.jpg\" height=\"430\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121381.jpg\" width=\"700\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121375.jpg\" height=\"434\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121375.jpg\" width=\"650\"></img></p><p>Schoene Schreibwaren利用黑白为主的空间，把纸张变得很时尚。产品包括各式各样的像本，笔记簿，行事历等。也像精品店一样提供客制化的商品。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121376.jpg\" height=\"634\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121376.jpg\" width=\"950\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121377.jpg\" height=\"634\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121377.jpg\" width=\"950\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121378.jpg\" height=\"180\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121378.jpg\" width=\"300\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121382.jpg\" height=\"368\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121382.jpg\" width=\"736\"></img>​</p><p></p><p><strong>地址</strong></p><p>Niederbarnimstr. 6</p><p>10247 Berlin</p><p><strong>网站</strong></p><p>http://www.schoeneschreibwaren.com/</p><p><strong>营业时间</strong></p><p>周一至周五: 10am – 7pm</p><p>周六: 10am - 6pm</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 130125,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-07-22",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-130024.html",
+                    "telephone": "+49(030)40301654",
+                    "tag": "乐活,温润,纯质,探店,逛街,甜品铺,面包房",
+                    "sponsor": {},
+                    "id": 130024,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Cereals No. 29 健康早餐店【美好生活从早晨开始】",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "看到名字你应该就能猜到，Cereals No. 29是一家健康早餐烘焙店。所有的早餐面包都是严选天然材料制成的，又健康又美味。店内还出售自家制作的各式果酱和特色早餐饮品，让每个人的美好一天都从美妙的早餐体验开始。",
+                    "note": "",
+                    "feeltitle": "一事精致，便能动人",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "Kontinentalwaren 杂货店【聆听每一个物件的故事】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Stargarder Str. 19 10437 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-22/event125690.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130544
+                        },
+                        {
+                            "title": "Schoene Schreibwaren 文化用具专卖【用纸张留住岁月】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Niederbarnimstr. 6 10247 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-06/event121380.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130125
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Cereals No. 29 餐厅",
+                            "address": "Senefelderstr. 29, Täglich Brot und feine Kost - Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Senefelderstr. 29, Täglich Brot und feine Kost - Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-30/event120696.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Cereals No. 29 餐厅",
+                    "enddate": 3007178496,
+                    "mobileURL": "<body><html><head></head><body><p>看到名字你应该就能猜到，Cereals No. 29是一家健康早餐烘焙店。所有的早餐面包都是严选天然材料制成的，又健康又美味。店内还出售自家制作的各式果酱和特色早餐饮品，让每个人的美好一天都从美妙的早餐体验开始。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-30/event120695.jpg\" height=\"500\" src=\"http://pic.huodongjia.com/event/2015-04-30/event120695.jpg\" width=\"940\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-30/event120686.jpg\" height=\"413\" src=\"http://pic.huodongjia.com/event/2015-04-30/event120686.jpg\" width=\"275\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-30/event120688.jpg\" height=\"354\" src=\"http://pic.huodongjia.com/event/2015-04-30/event120688.jpg\" width=\"236\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-30/event120689.jpg\" height=\"638\" src=\"http://pic.huodongjia.com/event/2015-04-30/event120689.jpg\" width=\"960\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-30/event120693.jpg\" height=\"480\" src=\"http://pic.huodongjia.com/event/2015-04-30/event120693.jpg\" width=\"360\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-30/event120690.jpg\" height=\"480\" src=\"http://pic.huodongjia.com/event/2015-04-30/event120690.jpg\" width=\"640\"></img>​</p><p><strong>地址</strong></p><p>Senefelderstr. 29, Täglich Brot und feine Kost - Berlin</p><p><strong>网站</strong></p><p>http://cereals-berlin.de/</p><p><strong>电话</strong></p><p>+49 (0 30) 40 30 16 54</p><p><strong>营业时间</strong></p><p>周一不营业</p><p>周二到周五 8:00 - 18:00</p><p>周六  9:00 - 16:00</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 130024,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-07-21",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-130129.html",
+                    "telephone": "+4903028094644",
+                    "tag": "乐活,有趣,纯质,探店,逛街,艺术空间",
+                    "sponsor": {},
+                    "id": 130129,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "R.S.V.P. 酷炫文具店【把全世界买回家】",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "R.S.V.P. 成立于2001年，专门出售高级文化纸质用品。这里收集了来自世界各地的高级纸制品，品牌包括Caran d’Ache (瑞士), Otho (日本), Koh–I–Noor (捷克) and Kaweco (德国)等等. 同时店里也有世界各地艺术家和设计师的创意新作，喜爱新奇小玩意的人们记得来扫扫货。",
+                    "note": "",
+                    "feeltitle": "想象你是一颗飞翔的种子",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "SANTOKKI 小小文具杂货店【生活需要点小情调】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Pappelallee 82 10437 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-06/event121443.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130130
+                        },
+                        {
+                            "title": "THE BARN ROASTERY 据说是柏林最好的咖啡",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Schönhauser Allee 8, 10119 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-04-29/event120223.jpg"
+                            ],
+                            "position": ",",
+                            "id": 129983
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "R.S.V.P.",
+                            "address": "Mulackstr. 14 10119 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Mulackstr. 14 10119 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-05-06/event121441.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "R.S.V.P.",
+                    "enddate": 3007693505,
+                    "mobileURL": "<body><html><head></head><body><p>R.S.V.P. 成立于2001年，专门出售高级文化纸质用品。这里收集了来自世界各地的高级纸制品，品牌包括Caran d’Ache (瑞士), Otho (日本), Koh–I–Noor (捷克) and Kaweco (德国)等等. 同时店里也有世界各地艺术家和设计师的创意新作，喜爱新奇小玩意的人们记得来扫扫货。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121427.jpg\" height=\"634\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121427.jpg\" width=\"950\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121433.jpg\" height=\"1104\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121433.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121429.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121429.jpg\" width=\"600\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121435.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121435.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121437.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121437.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121432.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121432.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121439.jpg\" height=\"469\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121439.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121434.jpg\" height=\"399\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121434.jpg\" width=\"600\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121438.jpg\" height=\"736\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121438.jpg\" width=\"736\"></img>​</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121440.jpg\" height=\"1104\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121440.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-06/event121430.jpg\" height=\"283\" src=\"http://pic.huodongjia.com/event/2015-05-06/event121430.jpg\" width=\"472\"></img></p><p><strong>地址</strong></p><p>Mulackstr. 14</p><p>10119 Berlin</p><p><strong>网站</strong></p><p>https://rsvp-berlin.de/en</p><p><strong>电话</strong></p><p>+49 030 280 946 44</p><p><strong>营业时间</strong></p><p>周一至周四: 11am – 7pm</p><p>周五至周六: 11am - 8pm</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 130129,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-06-20",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-130003.html",
+                    "telephone": "+49(0)303915931",
+                    "tag": "温润,有趣,纯质,探店,逛街,咖啡馆,艺术空间,面包房",
+                    "sponsor": {},
+                    "id": 130003,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Konditorei und Cafe Buchwald历史悠久的年轮蛋糕店",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "Konditorei und Cafe Buchwald是一间历史悠久的Baumkuchen专卖店。Baumkuchen，这个看似很难念的德语单词，意思是指有着层层花纹的年轮蛋糕，在欧洲被视为“蛋糕之王”。当对其作横断切开时呈现了特征性的金色环圈，而使之得“年轮”之名——Baumkuchen直译即为“树木蛋糕”（Tree Cake）。第一个年轮蛋糕是由Johann Christian D. Andreas Schernikow (1784 - 1852)在1807年德国的Salzwedel所烘培出。",
+                    "note": "",
+                    "feeltitle": "安安静静的时候会若有所悟",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "SANTOKKI 小小文具杂货店【生活需要点小情调】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Pappelallee 82 10437 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-06/event121443.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130130
+                        },
+                        {
+                            "title": "Father Carpenter Coffee Brewers 柏林咖啡店新成员",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Muenzstrasse 21 - 1.Hof",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-11/event122642.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130232
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Konditorei und Cafe Buchwald",
+                            "address": "Bartningallee 29 in 10557 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Bartningallee 29 in 10557 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-29/event120420.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Konditorei und Cafe Buchwald",
+                    "enddate": 3008471404,
+                    "mobileURL": "<body><html><head></head><body><p>Konditorei und Cafe Buchwald是一间历史悠久的Baumkuchen专卖店。Baumkuchen，这个看似很难念的德语单词，意思是指有着层层花纹的年轮蛋糕，在欧洲被视为“蛋糕之王”。当对其作横断切开时呈现了特征性的金色环圈，而使之得“年轮”之名——Baumkuchen直译即为“树木蛋糕”（Tree Cake）。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120421.jpg\" height=\"660\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120421.jpg\" width=\"990\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120417.jpg\" height=\"1092\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120417.jpg\" width=\"736\"></img></p><p>第一个年轮蛋糕是由Johann Christian D. Andreas Schernikow (1784 - 1852)在1807年德国的Salzwedel所烘培出。而作为专门经营Baumkuchen面包店160多年的Buchwald家族，可以说是将年轮蛋糕艺术掌握得炉火纯青，将蛋糕放在火上慢烤，涂上巧克力和杏仁碎，入口既是满满的幸福感。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120422.jpg\" height=\"276\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120422.jpg\" width=\"460\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120424.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120424.jpg\" width=\"490\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120414.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120414.jpg\" width=\"490\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120416.jpg\" height=\"320\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120416.jpg\" width=\"440\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120415.jpg\" height=\"640\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120415.jpg\" width=\"463\"></img></p><p><strong>地址</strong></p><p>Bartningallee 29 in 10557 Berlin</p><p><strong>网站</strong></p><p>http://www.konditorei-buchwald.de/</p><p><strong>电话</strong></p><p>+49 (0)30 391 59 31 </p><p><strong>营业时间</strong></p><p>周一到周六 8am-6pm</p><p>周日       9am-6pm</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 130003,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-05-19",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-129998.html",
+                    "telephone": "+49302977859-0",
+                    "tag": "有趣,惬意,酷炫,探店,逛街,艺术空间,家饰馆,手工作坊",
+                    "sponsor": {},
+                    "id": 129998,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "The Michelberger Hotel 设计酒店灵感迸发",
+                    "eventtype": 1,
+                    "feelnum": 2,
+                    "questionURL": "",
+                    "detail": "Michelberger酒店由著名的柏林本土设计大师Werner Aisslinger设计完成。旨在为来到柏林的人们提供一个有设计感，酷炫，性价比高的酒店。酒店位于一幢旧工厂大楼内，内部设计用到很多手工制作的家居用品和从跳蚤市场淘来的宝贝，每个房间都用到不同的设计和装饰。你的每一次入住，都可以找到不同的家居新奇灵感，把这些点子带回家里，就仿佛猎奇一般。\r\n",
+                    "note": "",
+                    "feeltitle": "此身此生此世，且度且思且行",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "The SÜPER STORE 两个女生的生活理想",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Dieffenbachstr. 12, 10967 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-04-25/event119282.jpg"
+                            ],
+                            "position": ",",
+                            "id": 129892
+                        },
+                        {
+                            "title": "Isobel Gowdie 高级复古成衣店【代价不大 品味很高】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Alte Schönhauser Straße 39 10119 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-09/event122284.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130203
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "The Michelberger Hotel",
+                            "address": "Warschauer Straße 39/40 10243 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Warschauer Straße 39/40 10243 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-29/event120375.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "The Michelberger Hotel",
+                    "enddate": 3011935522,
+                    "mobileURL": "<body><html><head></head><body><p>Michelberger酒店由著名的柏林本土设计大师Werner Aisslinger设计完成。旨在为来到柏林的人们提供一个有设计感，酷炫，性价比高的酒店。酒店位于一幢旧工厂大楼内，内部设计用到很多手工制作的家居用品和从跳蚤市场淘来的宝贝，每个房间都用到不同的设计和装饰。你的每一次入住，都可以找到不同的家居新奇灵感，把这些点子带回家里，就仿佛猎奇一般。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120374.jpg\" height=\"1104\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120374.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120378.jpg\" height=\"745\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120378.jpg\" width=\"500\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120385.jpg\" height=\"319\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120385.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120370.jpg\" height=\"750\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120370.jpg\" width=\"500\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120387.jpg\" height=\"791\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120387.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120363.jpg\" height=\"750\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120363.jpg\" width=\"502\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120388.jpg\" height=\"696\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120388.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120360.jpg\" height=\"509\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120360.jpg\" width=\"561\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120366.jpg\" height=\"1108\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120366.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120367.jpg\" height=\"332\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120367.jpg\" width=\"500\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120362.jpg\" height=\"891\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120362.jpg\" width=\"630\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120371.jpg\" height=\"832\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120371.jpg\" width=\"588\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120358.jpg\" height=\"640\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120358.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120373.jpg\" height=\"373\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120373.jpg\" width=\"561\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120365.jpg\" height=\"755\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120365.jpg\" width=\"500\"></img></p><p><strong>地址</strong></p><p>Warschauer Straße 39/40</p><p>10243 Berlin</p><p><strong>网站</strong></p><p>http://www.michelbergerhotel.com/</p><p><strong>电话</strong></p><p>+49 302977859-0</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 129998,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-04-18",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-129995.html",
+                    "telephone": "+4903062722152",
+                    "tag": "私厨,赏味,有趣,惬意,酷炫,餐吧",
+                    "sponsor": {},
+                    "id": 129995,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Lavanderia Vecchia 在洗衣工坊里吃大餐",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "初次走进Lavanderia Vecchia你会被挂了满屋的各种衣物布料给吓了一跳，心想：\"我这是到了一个什么地方啊？\" 其实这是一间正统的意大利餐厅。因为餐厅所在的地方曾经是一个废弃的洗衣工房，所以餐厅索性就以这个洗衣房作为装饰的灵感，造就了这一间气质独特的loft混搭风格的格调餐厅。有机会定要前来这里感受一下这个有趣的混搭就餐体验。\r\n",
+                    "note": "",
+                    "feeltitle": "心之所向，便是梦之所倚",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "MANKii 复古商店来淘宝",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Gormannstrasse 16  10119 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-09/event122249.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130200
+                        },
+                        {
+                            "title": "Meierei 清新自然的小食店【来一份健康早餐吧】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Kollwitzstrasse 42  10405 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-22/event125601.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130534
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Lavanderia Vecchia",
+                            "address": "Flughafenstraße 46 12053 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Flughafenstraße 46 12053 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-29/event120346.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Lavanderia Vecchia",
+                    "enddate": 3007093870,
+                    "mobileURL": "<body><html><head></head><body><p>初次走进Lavanderia Vecchia你会被挂了满屋的各种衣物布料给吓了一跳，心想：\"我这是到了一个什么地方啊？\" 其实这是一间正统的意大利餐厅。因为餐厅所在的地方曾经是一个废弃的洗衣工房，所以餐厅索性就以这个洗衣房作为装饰的灵感，造就了这一间气质独特的loft混搭风格的格调餐厅。有机会定要前来这里感受一下这个有趣的混搭就餐体验。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120338.jpg\" height=\"558\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120338.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120347.jpg\" height=\"1103\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120347.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120341.jpg\" height=\"900\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120341.jpg\" width=\"600\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120348.jpg\" height=\"480\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120348.jpg\" width=\"720\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120340.jpg\" height=\"356\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120340.jpg\" width=\"632\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120344.jpg\" height=\"572\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120344.jpg\" width=\"444\"></img>​</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120337.jpg\" height=\"480\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120337.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120339.jpg\" height=\"489\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120339.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120349.jpg\" height=\"612\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120349.jpg\" width=\"612\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120343.jpg\" height=\"648\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120343.jpg\" width=\"388\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120334.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120334.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120345.jpg\" height=\"552\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120345.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120335.jpg\" height=\"707\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120335.jpg\" width=\"550\"></img></p><p><strong>地址</strong></p><p></p><p></p><p></p><p></p><p></p><p>Flughafenstraße 46 12053 Berlin </p><p><strong>网站</strong></p><p>http://www.lavanderiavecchia.de/</p><p><strong>电话</strong></p><p>+49 030 62722152</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 129995,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-03-17",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-129990.html",
+                    "telephone": "",
+                    "tag": "乐活,纯质,惬意,探店,逛街,咖啡馆",
+                    "sponsor": {},
+                    "id": 129990,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Café Anna Blume 花团锦簇艳阳下",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "Café Anna Blume所处的地方是一个林荫道，道路两旁绿树成荫。于是乎这里的室外就餐区成了最受欢迎的区域。坐在这里，披散着星星点点的阳光，还被身边可爱的花花草草们簇拥，回归户外大自然的怀抱真是一件再美不过的事啦！",
+                    "note": "",
+                    "feeltitle": "品味是心灵上的自信与从容",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "MODULOR 文具店【纸质时代的美好回忆】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Prinzenstr. 85 10969 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-06/event121411.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130127
+                        },
+                        {
+                            "title": "Suicide Sue Bread & Coffee这里的早餐超好吃",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Dunckerstraße 2 10437 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-04-27/event119788.jpg"
+                            ],
+                            "position": ",",
+                            "id": 129938
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Café Anna Blume",
+                            "address": "Kollwitzstrasse 83, Prenzlauer berg",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Kollwitzstrasse 83, Prenzlauer berg",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-29/event120297.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Café Anna Blume",
+                    "enddate": 3007091352,
+                    "mobileURL": "<body><html><head></head><body><p>Café Anna Blume所处的地方是一个林荫道，道路两旁绿树成荫。于是乎这里的室外就餐区成了最受欢迎的区域。坐在这里，披散着星星点点的阳光，还被身边可爱的花花草草们簇拥，回归户外大自然的怀抱真是一件再美不过的事啦！</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120285.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120285.jpg\" width=\"720\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120283.jpg\" height=\"319\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120283.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120311.jpg\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120311.jpg\" width=\"640\"></img>​<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120289.jpg\" height=\"300\" line-height=\"1.6em\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120289.jpg\" width=\"650\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120288.jpg\" height=\"300\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120288.jpg\" width=\"650\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120300.jpg\" height=\"300\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120300.jpg\" width=\"650\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120293.jpg\" height=\"530\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120293.jpg\" width=\"530\"></img></p><p>Café Anna Blume的早餐很受欢迎，不仅仅是因为味道好吃，更因为它有趣的呈现方式：早餐的内容被装进一个多层的餐架内，看起来很像英式下午茶一般精致可人。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120284.jpg\" height=\"635\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120284.jpg\" width=\"481\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120299.jpg\" height=\"413\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120299.jpg\" width=\"620\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120296.jpg\" height=\"427\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120296.jpg\" width=\"640\"></img></p><p><strong>地址</strong></p><p>Kollwitzstrasse 83, Prenzlauer berg </p><p><strong>网站</strong></p><p>http://www.cafe-anna-blume.de/</p><p><strong>地铁</strong></p><p>U线 Senefelder Platz站</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 129990,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-02-16",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-129986.html",
+                    "telephone": "+4930983208430",
+                    "tag": "私厨,幸福,赏味,纯质,惬意,餐吧",
+                    "sponsor": {},
+                    "id": 129986,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Katz Orange餐厅【美味之旅要舒适的品味】",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "Katz Orange餐厅的装饰采用的是典型的波西米亚风格，意在打造一个舒适放松的就餐环境。但并不代表在这里你只能是随便吃吃就算了。餐厅的餐点都是非常有诚意的格调之作，只严格选用本地最新鲜的食材，让你在宾至如归的同时还能吃到最本土的料理。\r\n",
+                    "note": "",
+                    "feeltitle": "世界最美的诗都是千姿百态的沉默写成",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "Pasternak 在柏林体验俄罗斯风情",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Knaackstraße 22/24  10405 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-25/event126006.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130579
+                        },
+                        {
+                            "title": "G wie Goulasch 匈牙利风味餐厅",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Chamissoplatz 1 10965 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-25/event126153.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130594
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Katz Orange",
+                            "address": "Bergstraße 22 ，Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Bergstraße 22 ，Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-29/event120261.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Katz Orange",
+                    "enddate": 3010530378,
+                    "mobileURL": "<body><html><head></head><body><p>Katz Orange餐厅的装饰采用的是典型的波西米亚风格，意在打造一个舒适放松的就餐环境。但并不代表在这里你只能是随便吃吃就算了。餐厅的餐点都是非常有诚意的格调之作，只严格选用本地最新鲜的食材，让你在宾至如归的同时还能吃到最本土的料理。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120247.jpg\" height=\"920\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120247.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120263.jpg\" height=\"1119\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120263.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120259.jpg\" height=\"612\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120259.jpg\" width=\"612\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120252.jpg\" height=\"439\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120252.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120246.jpg\" height=\"480\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120246.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120257.jpg\" height=\"1035\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120257.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120255.jpg\" height=\"510\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120255.jpg\" width=\"728\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120260.jpg\" height=\"920\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120260.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120251.jpg\" height=\"558\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120251.jpg\" width=\"400\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120248.jpg\" height=\"600\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120248.jpg\" width=\"400\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120250.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120250.jpg\" width=\"736\"></img></p><p><strong>地址</strong></p><p>Bergstraße 22 ，Berlin</p><p><strong>网站</strong></p><p>http://www.katzorange.com/</p><p><strong>电话</strong></p><p>+49 30 983 208 430</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 129986,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-02-15",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-129983.html",
+                    "telephone": "",
+                    "tag": "乐活,温润,纯质,探店,逛街,咖啡馆",
+                    "sponsor": {},
+                    "id": 129983,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "THE BARN ROASTERY 据说是柏林最好的咖啡",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "THE BARN ROASTERY成立于2012年9月。与其说这里是咖啡店，不如说这里更像是咖啡实验室。店内的咖啡菜单选择并不多，确是用心之选。用店家的话来说是希望人们可以慢下来安安静静的欣赏一杯纯粹的咖啡。店内的装饰非常简洁，环境非常安静。之所以能做到这点，是因为店里有几个有点“严苛”的规矩，不能带宠物，不能带手推车（带小孩的父母们只能温柔的请你们绕道而行），笔记本电脑只能在互联区才能使用等。店主的用心良苦只为给更多的人提供一个宁静的咖啡时间，真是深得我心啊！\r\n",
+                    "note": "",
+                    "feeltitle": "繁华静处遇知音",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "ANNA DURKES 柏林人气冰淇淋",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Graefestraße 80, 10967 Berlin Kreuzberg",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-23/event125894.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130566
+                        },
+                        {
+                            "title": "SANTOKKI 小小文具杂货店【生活需要点小情调】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Pappelallee 82 10437 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-06/event121443.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130130
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "THE BARN ROASTERY",
+                            "address": "Schönhauser Allee 8, 10119 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Schönhauser Allee 8, 10119 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-29/event120223.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "THE BARN ROASTERY",
+                    "enddate": 3007078236,
+                    "mobileURL": "<body><html><head></head><body><p>THE BARN ROASTERY成立于2012年9月。与其说这里是咖啡店，不如说这里更像是咖啡实验室。店内的咖啡菜单选择并不多，确是用心之选。用店家的话来说是希望人们可以慢下来安安静静的欣赏一杯纯粹的咖啡。店内的装饰非常简洁，环境非常安静。之所以能做到这点，是因为店里有几个有点“严苛”的规矩，不能带宠物，不能带手推车（带小孩的父母们只能温柔的请你们绕道而行），笔记本电脑只能在互联区才能使用等。店主的用心良苦只为给更多的人提供一个宁静的咖啡时间，真是深得我心啊！</p><p></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120216.jpg\" height=\"750\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120216.jpg\" width=\"500\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120215.jpg\" height=\"750\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120215.jpg\" width=\"500\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120211.jpg\" height=\"552\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120211.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120225.jpg\" height=\"346\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120225.jpg\" width=\"689\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120224.jpg\" height=\"346\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120224.jpg\" width=\"689\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120221.jpg\" height=\"484\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120221.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120220.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120220.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120209.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120209.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120206.jpg\" height=\"333\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120206.jpg\" width=\"500\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-29/event120210.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-04-29/event120210.jpg\" width=\"736\"></img></p><p><strong>地址</strong></p><p>Schönhauser Allee 8, 10119 Berlin</p><p><strong>网站</strong></p><p>http://barn.bigcartel.com/</p><p><strong>营业时间</strong></p><p>周一至周五 08:30-18:00</p><p>周六至周日 10:00–18:00</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 129983,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-01-14",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-129971.html",
+                    "telephone": "+4903048495760",
+                    "tag": "乐活,有趣,惬意,探店,逛街,咖啡馆,艺术空间,手工作坊",
+                    "sponsor": {},
+                    "id": 129971,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Pomeranza 手工设计【生活可以多一点小惊喜】",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "这是一间本地的手工设计店，所出售的商品都是来自当地年轻设计师们的作品。店主将这些有趣的设计引进到自己店内出售，不仅给顾客带来更多的生活选择，也给这些设计师们更多的发挥平台，可谓是双赢。店内的产品涉及到生活的方方面面，来这里逛会有一种眼花缭乱但又心花怒放的感觉。而且你还可以点一杯美味的咖啡，边喝边逛，慢下来，静静的挑选你所中意的商品。生活原本就应该慢一点。\r\n",
+                    "note": "",
+                    "feeltitle": "没有逻辑的正能量就是负能量",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "Soeur 精品二手商店里的法式风情",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Marienburger Str. 24 10405 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-22/event125729.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130548
+                        },
+                        {
+                            "title": "Bite Club 小吃集市上的饕餮盛宴",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Eichenstraße 4 12435 Berlin Treptow",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-29/event126487.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130632
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Pomeranza",
+                            "address": "Raumerstrasse 19 10437 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Raumerstrasse 19 10437 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-28/event120099.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Pomeranza",
+                    "enddate": 3007012685,
+                    "mobileURL": "<body><html><head></head><body><p>这是一间本地的手工设计店，所出售的商品都是来自当地年轻设计师们的作品。店主将这些有趣的设计引进到自己店内出售，不仅给顾客带来更多的生活选择，也给这些设计师们更多的发挥平台，可谓是双赢。店内的产品涉及到生活的方方面面，来这里逛会有一种眼花缭乱但又心花怒放的感觉。而且你还可以点一杯美味的咖啡，边喝边逛，慢下来，静静的挑选你所中意的商品。生活原本就应该慢一点。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120115.jpg\" height=\"786\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120115.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120100.jpg\" height=\"362\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120100.jpg\" width=\"362\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120102.jpg\" height=\"353\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120102.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120107.jpg\" height=\"600\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120107.jpg\" width=\"600\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120104.jpg\" height=\"354\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120104.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120103.jpg\" height=\"353\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120103.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120101.jpg\" height=\"353\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120101.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120108.jpg\" height=\"600\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120108.jpg\" width=\"600\"></img>​</p><p><strong>地址</strong></p><p>Raumerstrasse 19</p><p>10437 Berlin</p><p><strong>网站</strong></p><p>www.pomeranza-shop.de</p><p><strong>电话</strong></p><p>+49 030 484 957 60</p><p><strong>营业时间</strong></p><p>周一到周五10:00-19:00</p><p>周六 11:00-18:00</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 129971,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-07-13",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-129973.html",
+                    "telephone": "",
+                    "tag": "幸福,雅韵,惬意,艺术空间",
+                    "sponsor": {},
+                    "id": 129973,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "25hours Hotel Bikini Berlin 与城市森林来一场邂逅",
+                    "eventtype": 1,
+                    "feelnum": 3,
+                    "questionURL": "",
+                    "detail": "“No swimsuit required, just an open mind”就像这句标语所表达的，比基尼酒店并非跟比基尼有关，而是倡导一种想象力的扩展。这间风格独特的设计酒店创建于2014年6月。把户外的生活带到室内是比基尼酒店的宗旨，酒店自然的设计会让你觉得来到一个室内森林。而很有趣的是，酒店所在的位置就在柏林动物园外，内外都是大自然的奇妙感觉一定会给你难忘的记忆。\r\n",
+                    "note": "",
+                    "feeltitle": "岁月有着不动声色的力量",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "Tiny 让人难以抗拒的儿童用品商店",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Schröderstraße 14 10115 Berlin Mitte",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-25/event126181.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130597
+                        },
+                        {
+                            "title": "Literaturhaus 在夏日里感受浓浓的文学气息",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Fasanenstr. 23 10719 Berlin-Charlottenburg",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-23/event125887.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130565
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "25hours Hotel Bikini Berlin",
+                            "address": "Budapester Str. 40, Berlin, BE, 10787",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Budapester Str. 40, Berlin, BE, 10787",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-28/event120133.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "25hours Hotel Bikini Berlin",
+                    "enddate": 3011935546,
+                    "mobileURL": "<body><html><head></head><body><p>“No swimsuit required, just an open mind”就像这句标语所表达的，比基尼酒店并非跟比基尼有关，而是倡导一种想象力的扩展。这间风格独特的设计酒店创建于2014年6月。把户外的生活带到室内是比基尼酒店的宗旨，酒店自然的设计会让你觉得来到一个室内森林。而很有趣的是，酒店所在的位置就在柏林动物园外，内外都是大自然的奇妙感觉一定会给你难忘的记忆。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120127.jpg\" height=\"624\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120127.jpg\" width=\"1024\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120128.jpg\" height=\"798\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120128.jpg\" width=\"1192\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120135.jpg\" height=\"413\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120135.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120136.jpg\" height=\"365\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120136.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120129.jpg\" height=\"1024\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120129.jpg\" width=\"790\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120130.jpg\" height=\"766\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120130.jpg\" width=\"1024\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120126.jpg\" height=\"773\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120126.jpg\" width=\"1024\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-28/event120125.jpg\" height=\"1024\" src=\"http://pic.huodongjia.com/event/2015-04-28/event120125.jpg\" width=\"693\"></img></p><p><strong>地址</strong></p><p>Budapester Str. 40, Berlin, BE, 10787</p><p><strong>网站</strong></p><p>http://www.25hours-hotels.com/</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 129973,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-08-12",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-129906.html",
+                    "telephone": "+49(0)30-757882440",
+                    "tag": "私厨,温润,赏味,纯质,惬意,餐吧,甜品铺",
+                    "sponsor": {},
+                    "id": 129906,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "FASSBENDER & RAUSCH 只为了那一杯热巧克力",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "Fassbender & Rausch 是德国最具盛名的一间巧克力商店，里面售卖种类繁多而且美味无比的巧克力制品。店里还有用巧克力制成的德国著名地标建筑物雕像。商店的二楼有专门的巧克力餐厅，在这里你除了可以吃到可口的各式巧克力甜点，一定不能错过他家镇店之宝--号称是最好喝的热巧克力。浓郁的热巧克力加上新鲜的奶油。虽然价格不便宜，但对于巧克力爱好者来说，这里绝对是值得你选择的。\r\n",
+                    "note": "",
+                    "feeltitle": "幸运从来不是理所当然，它一直跟随着奔跑的脚步",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "The Store Kitchen 午餐好选择【创意沙拉】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Torstraße 1 10119 Berlin Mitte",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-06-04/event127087.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130678
+                        },
+                        {
+                            "title": "Godshot 一杯【完美萃取】咖啡",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Immanuelkirchstraße 32  10405 Berlin Prenzlauer Berg",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-06-02/event126926.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130664
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "FASSBENDER & RAUSCH",
+                            "address": "Charlottenstraße 60 (Ecke Mohrenstraße) - 10117 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Charlottenstraße 60 (Ecke Mohrenstraße) - 10117 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-25/event119472.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "FASSBENDER & RAUSCH",
+                    "enddate": 3006921490,
+                    "mobileURL": "<body><html><head></head><body><p>Fassbender &amp; Rausch 是德国最具盛名的一间巧克力商店，里面售卖种类繁多而且美味无比的巧克力制品。店里还有用巧克力制成的德国著名地标建筑物雕像。商店的二楼有专门的巧克力餐厅，在这里你除了可以吃到可口的各式巧克力甜点，一定不能错过他家镇店之宝--号称是最好喝的热巧克力。浓郁的热巧克力加上新鲜的奶油。虽然价格不便宜，但对于巧克力爱好者来说，这里绝对是值得你选择的。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119475.jpg\" height=\"353\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119475.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119468.jpg\" height=\"541\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119468.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119464.jpg\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119464.jpg\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119460.jpg\" height=\"728\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119460.jpg\" width=\"383\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119470.jpg\" height=\"670\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119470.jpg\" width=\"385\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119473.jpg\" height=\"385\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119473.jpg\" width=\"570\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119458.jpg\" height=\"1024\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119458.jpg\" width=\"685\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119469.jpg\" height=\"278\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119469.jpg\" width=\"636\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119459.jpg\" height=\"278\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119459.jpg\" width=\"636\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-25/event119461.jpg\" height=\"360\" src=\"http://pic.huodongjia.com/event/2015-04-25/event119461.jpg\" width=\"450\"></img><strong>地址</strong></p><p>Charlottenstraße 60 (Ecke Mohrenstraße) - 10117 Berlin</p><p><strong>网站</strong></p><p>http://www.fassbender-rausch.de/</p><p><strong>电话</strong></p><p>+49 (0)30 - 757 88 2440</p><p><strong>营业时间</strong></p><p>每日  10am-8pm</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 129906,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-08-11",
+            "themes": [
+                {
+                    "themeurl": "http://api.xiaorizi.me/api/themedetail/?themeid=148",
+                    "img": "http://pic.huodongjia.com/event/2015-06-24/event129047.jpg",
+                    "title": "乐享生活 购物为先",
+                    "text": "<body><p>其实静下心来看看你的衣橱，其实你并不需要这么多的衣服。要学着为衣橱做减法，太时髦的，小了穿不下的，商店打折冲动购入从未穿过一次的，统统扔掉！你真正需要的是一些百搭、质量过硬、能够反复穿搭的经典款。</p></body>",
+                    "hasweb": 1,
+                    "height": 719,
+                    "width": 736,
+                    "begin_time": "2015-08-11",
+                    "keywords": "趣味 品牌  逛街",
+                    "id": 148
+                }
+            ],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-130259.html",
+                    "telephone": "+4903044674772",
+                    "tag": "有趣,酷炫,探店,逛街,艺术空间,杂货铺",
+                    "sponsor": {},
+                    "id": 130259,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Victoria met Albert 杂货店的设计潮流",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "“for the woman who has everything, for the man who needs nothing”是Victoria met Albert的座右铭。这间杂货铺云集了各式有趣也很实用的装饰用品，生活周边以及时尚设计，吸引了大批柏林本土的潮客前来寻宝。在柏林这个设计前沿城市，这样的小店是你不应该错过的。\r\n",
+                    "note": "",
+                    "feeltitle": "生命就像一盒巧克力，结果往往出人意料",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "The Michelberger Hotel 设计酒店灵感迸发",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Warschauer Straße 39/40 10243 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-04-29/event120375.jpg"
+                            ],
+                            "position": ",",
+                            "id": 129998
+                        },
+                        {
+                            "title": "Nowkoelln Flowmarkt 跳蚤市场寻开心",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Maybachufer 31 12047 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-25/event126224.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130601
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Victoria met Albert",
+                            "address": "Dunckerstraße 81 (Corner Lettestr.)  10437 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Dunckerstraße 81 (Corner Lettestr.)  10437 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-05-13/event123069.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Victoria met Albert",
+                    "enddate": 3011421497,
+                    "mobileURL": "<body><html><head></head><body><p>“for the woman who has everything, for the man who needs nothing”是Victoria met Albert的座右铭。这间杂货铺云集了各式有趣也很实用的装饰用品，生活周边以及时尚设计，吸引了大批柏林本土的潮客前来寻宝。在柏林这个设计前沿城市，这样的小店是你不应该错过的。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-13/event123067.jpg\" height=\"640\" src=\"http://pic.huodongjia.com/event/2015-05-13/event123067.jpg\" width=\"432\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-13/event123091.jpg\" height=\"980\" src=\"http://pic.huodongjia.com/event/2015-05-13/event123091.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-13/event123062.jpg\" height=\"640\" src=\"http://pic.huodongjia.com/event/2015-05-13/event123062.jpg\" width=\"426\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-13/event123060.jpg\" height=\"736\" src=\"http://pic.huodongjia.com/event/2015-05-13/event123060.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-13/event123063.jpg\" height=\"736\" src=\"http://pic.huodongjia.com/event/2015-05-13/event123063.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-13/event123066.jpg\" height=\"640\" src=\"http://pic.huodongjia.com/event/2015-05-13/event123066.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-13/event123080.jpg\" height=\"357\" src=\"http://pic.huodongjia.com/event/2015-05-13/event123080.jpg\" width=\"554\"></img>​</p><p><strong>地址</strong></p><p>Dunckerstraße 81 (Corner Lettestr.)</p><p>10437 Berlin</p><p><strong>网站</strong></p><p>www.victoriametalbert.com</p><p><strong>电话</strong></p><p>+49 030 446 747 72</p><p><strong>营业时间</strong></p><p>周一到周六 11:00-20:00</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 130259,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-08-10",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-130187.html",
+                    "telephone": "+493074078746",
+                    "tag": "乐活,温润,惬意,探店,逛街,咖啡馆,艺术空间",
+                    "sponsor": {},
+                    "id": 130187,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Cafe Silo 来一份健康又美味的早餐",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "在柏林这样艺术感十足的城市，总是会在不经意间找到一些小惊喜，Silo就是这样的一个地方。这家咖啡简餐店规模不大，却非常受本地人的欢迎。店内采用实木设计，让人进店后就有一种温暖的舒适感觉。Silo所出售的咖啡来自世界各地，专业感十足，备受咖啡爱好者的赞誉，而最让人惊艳的是这里出售的早餐，店主严格选用食材，力求健康又美味。\r\n",
+                    "note": "",
+                    "feeltitle": "人生的目的就是过一个有目的的人生",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "Soeur 精品二手商店里的法式风情",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Marienburger Str. 24 10405 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-22/event125729.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130548
+                        },
+                        {
+                            "title": "VOO STORE 让购物概念又上升了一个高度",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Oranienstraße 24 10999 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-04-30/event120756.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130028
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Cafe Silo",
+                            "address": "Gabriel-Max-Strasse 4, 10245 Berlin",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Gabriel-Max-Strasse 4, 10245 Berlin",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-05-08/event122099.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Cafe Silo",
+                    "enddate": 3007880733,
+                    "mobileURL": "<body><html><head></head><body><p>在柏林这样艺术感十足的城市，总是会在不经意间找到一些小惊喜，Silo就是这样的一个地方。这家咖啡简餐店规模不大，却非常受本地人的欢迎。店内采用实木设计，让人进店后就有一种温暖的舒适感觉。Silo所出售的咖啡来自世界各地，专业感十足，备受咖啡爱好者的赞誉，而最让人惊艳的是这里出售的早餐，店主严格选用食材，力求健康又美味。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122116.jpg\" height=\"353\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122116.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122097.jpg\" height=\"552\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122097.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122100.jpg\" height=\"612\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122100.jpg\" width=\"612\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122093.jpg\" height=\"640\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122093.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122098.jpg\" height=\"1104\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122098.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122087.jpg\" height=\"356\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122087.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122090.jpg\" height=\"746\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122090.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122089.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122089.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122096.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122096.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122102.jpg\" height=\"764\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122102.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122103.jpg\" height=\"756\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122103.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122105.jpg\" height=\"769\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122105.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122104.jpg\" height=\"486\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122104.jpg\" width=\"550\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-08/event122101.jpg\" height=\"751\" src=\"http://pic.huodongjia.com/event/2015-05-08/event122101.jpg\" width=\"550\"></img></p><p><strong>地址</strong></p><p>Gabriel-Max-Strasse 4, 10245 Berlin</p><p><strong>电话</strong></p><p>+49 30 74078746</p><p><strong>营业时间</strong></p><p>8:30 am - 7:00 pm</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 130187,
+                    "position": ","
+                }
+            ]
+        },
+        {
+            "date": "2015-08-09",
+            "themes": [],
+            "events": [
+                {
+                    "feel": "香艳指数",
+                    "shareURL": "http://api.xiaorizi.me/app/share-130848.html",
+                    "telephone": "+493028864849",
+                    "tag": "私厨,幸福,赏味,纯质,惬意",
+                    "sponsor": {},
+                    "id": 130848,
+                    "adurl": "",
+                    "startdate": 0,
+                    "title": "Vom Einfachen das Gute 质朴美味【回味无穷】",
+                    "eventtype": 1,
+                    "feelnum": 0,
+                    "questionURL": "",
+                    "detail": "回想过去最美好的就餐体验，印象最深刻的其实并不是那些美轮美奂的山珍海味，反而是十分平凡的质朴味道。顿时才发觉，人生最美好的事物往往是最容易被忽略的简单。对于这种感悟，位于柏林的VomEinfachendasGute也深有同感。\r\n\r\n\r\n这间小小的小食店如同它的名字“选取简单的美好”一般，只精选有限的食材，制作最健康简单的三明治和沙拉，搭配纯粹的葡萄酒选择，为食客提供简单而美好的食物。\r\n\r\n\r\n这里的选择并不多，但每一件都是精心挑选，比如香肠是来自勃兰登堡的有机农场，生火腿精选自意大利和西班牙。虽然简单，但很用心。",
+                    "note": "",
+                    "feeltitle": "每一个生活的细节都是某一种功课",
+                    "events": [],
+                    "more": [
+                        {
+                            "title": "SIMON & ME 德国出品【简约而不简单】",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Fidicinstraße 17 10965 Berlin",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-04-24/event119175.jpg"
+                            ],
+                            "position": ",",
+                            "id": 129881
+                        },
+                        {
+                            "title": "Le Bon 小餐厅也有大能量",
+                            "price": {
+                                "price_currency": "￥",
+                                "list": [],
+                                "currency_token": "RMB",
+                                "type": 2
+                            },
+                            "address": "Boppstr.1, 10967 Berlin-Kreuzberg",
+                            "imgs": [
+                                "http://pic.huodongjia.com/event/2015-05-12/event122774.jpg"
+                            ],
+                            "position": ",",
+                            "id": 130239
+                        }
+                    ],
+                    "city": "柏林",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "allshops": [
+                        {
+                            "position_gcj02": ",",
+                            "position": ",",
+                            "title": "Vom Einfachen das Gute",
+                            "address": "Invalidenstraße 155 10115 Berlin Mitte",
+                            "city": "柏林"
+                        }
+                    ],
+                    "address": "Invalidenstraße 155 10115 Berlin Mitte",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-06-19/event128722.jpg"
+                    ],
+                    "islongtime": 1,
+                    "remark": "Vom Einfachen das Gute",
+                    "enddate": 3011934997,
+                    "mobileURL": "<body><html><head></head><body><p>回想过去最美好的就餐体验，印象最深刻的其实并不是那些美轮美奂的山珍海味，反而是十分平凡的质朴味道。顿时才发觉，人生最美好的事物往往是最容易被忽略的简单。对于这种感悟，位于柏林的Vom Einfachen das Gute也深有同感。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128715.jpg\" height=\"545\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128715.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128706.jpg\" height=\"544\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128706.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128723.jpg\" height=\"545\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128723.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128709.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128709.jpg\" width=\"736\"></img></p><p>这间小小的小食店如同它的名字“选取简单的美好”一般，只精选有限的食材，制作最健康简单的三明治和沙拉，搭配纯粹的葡萄酒选择，为食客提供简单而美好的食物。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128705.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128705.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128703.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128703.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128707.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128707.jpg\" width=\"736\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128710.jpg\" height=\"490\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128710.jpg\" width=\"736\"></img></p><p>这里的选择并不多，但每一件都是精心挑选，比如香肠是来自勃兰登堡的有机农场，生火腿精选自意大利和西班牙。虽然简单，但很用心。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128717.jpg\" height=\"667\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128717.jpg\" width=\"1000\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-19/event128713.jpg\" height=\"398\" src=\"http://pic.huodongjia.com/event/2015-06-19/event128713.jpg\" width=\"736\"></img></p><p><strong>地址</strong></p><p>Invalidenstraße 155</p><p>10115 Berlin Mitte</p><p><strong>网站</strong></p><p>http://vomeinfachendasgute.com/</p><p><strong>电话</strong></p><p>+49 30 28864849</p><p><strong>营业时间</strong></p><p>周一至周六 10:00–20</p></body></html></body>",
+                    "cat": {
+                        "name": "",
+                        "img": "",
+                        "id": ""
+                    },
+                    "eid": 130848,
+                    "position": ","
+                }
+            ]
+        }
+    ]
+}

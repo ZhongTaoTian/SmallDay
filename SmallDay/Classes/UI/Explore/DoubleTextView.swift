@@ -13,7 +13,7 @@ class DoubleTextView: UIView {
     let leftTextButton: NoHighlightButton = NoHighlightButton.buttonWithType(.Custom) as! NoHighlightButton
     let rightTextButton: NoHighlightButton = NoHighlightButton.buttonWithType(.Custom) as! NoHighlightButton
     let textColorFroNormal: UIColor = UIColor(red: 100 / 255.0, green: 100 / 255.0, blue: 100 / 255.0, alpha: 1)
-    let textFont: UIFont = UIFont.systemFontOfSize(21)
+    let textFont: UIFont = theme.SDNavTitleFont
     let bottomLineView: UIView = UIView()
     var selectedBtn: UIButton?
     var delegate: DoubleTextViewDelegate?
@@ -52,7 +52,7 @@ class DoubleTextView: UIView {
         let btnW = width * 0.5
         leftTextButton.frame = CGRectMake(0, 0, btnW, height)
         rightTextButton.frame = CGRectMake(btnW, 0, btnW, height)
-        bottomLineView.frame = CGRectMake(0, height - 1, btnW, 1)
+        bottomLineView.frame = CGRectMake(0, height - 2, btnW, 2)
     }
     
     func titleButtonClick(sender: UIButton) {

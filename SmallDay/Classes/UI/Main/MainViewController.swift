@@ -10,16 +10,19 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    var cityRightBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let right = textImageButton.buttonWithType(.Custom) as! textImageButton
-        right.setTitle("北京", forState: .Normal)
-        right.frame = CGRectMake(100, 100, 100, 35)
-        right.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        right.setImage(UIImage(named: "home_down"), forState: .Normal)
-        right.addTarget(self, action: "pushcityView", forControlEvents: .TouchUpInside)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: right)
+        cityRightBtn = textImageButton.buttonWithType(.Custom) as! textImageButton
+        cityRightBtn.setTitle("墨西哥", forState: .Normal)
+        cityRightBtn.frame = CGRectMake(0, 0, 80, 35)
+        cityRightBtn.titleLabel?.font = theme.SDNavItemFont
+        cityRightBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        cityRightBtn.setImage(UIImage(named: "home_down"), forState: .Normal)
+        cityRightBtn.addTarget(self, action: "pushcityView", forControlEvents: .TouchUpInside)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: cityRightBtn)
         
     }
     
@@ -35,7 +38,7 @@ class textImageButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        titleLabel?.font = theme.SDNavTitleFont
+        titleLabel?.font = theme.SDNavItemFont
         titleLabel?.contentMode = UIViewContentMode.Center
         imageView?.contentMode = UIViewContentMode.Left
 

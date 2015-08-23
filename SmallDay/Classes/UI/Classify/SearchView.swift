@@ -13,6 +13,7 @@ class SearchView: UIView {
     let animationDuration = 0.5
     var searchTextField: SearchTextField!
     var searchLabel: UILabel!
+    var flag = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,17 +46,24 @@ class SearchView: UIView {
     }
     
     func keyBoardWillshow() {
-        UIView.animateWithDuration(animationDuration, animations: { () -> Void in
-            self.searchLabel.alpha = 1
-            self.searchTextField.frame.size.width = self.searchTextField.width - 60
-        })
+        if flag == 0 {
+            self.flag = 1
+            UIView.animateWithDuration(animationDuration, animations: { () -> Void in
+                self.searchLabel.alpha = 1
+                self.searchTextField.frame.size.width = self.searchTextField.width - 60
+                
+            })
+        }
     }
     
     func keyBoardWillhiden() {
-        UIView.animateWithDuration(animationDuration, animations: { () -> Void in
-            self.searchLabel.alpha = 0
-            self.searchTextField.frame.size.width = self.searchTextField.width + 60
-        })
+        if flag == 1 {
+            self.flag = 0
+            UIView.animateWithDuration(animationDuration, animations: { () -> Void in
+                self.searchLabel.alpha = 0
+                self.searchTextField.frame.size.width = self.searchTextField.width + 60
+            })
+        }
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {

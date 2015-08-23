@@ -8,12 +8,85 @@
 
 import UIKit
 
-/// 美天总model
-class EveryDays: NSObject {
+class EveryDays: NSObject, DictModelProtocol {
+    var msg: String?
+    var code: Int = -1
+    var list: [EveryDay]?
     
-    var date: NSString?
+    class func loadEventsData(completion: (data: EveryDays?, error: NSError?)->()) {
+        let path = NSBundle.mainBundle().pathForResource("events", ofType: nil)
+        var data = NSData(contentsOfFile: path!)
+        
+        if data != nil {
+            var dict: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments, error: nil) as! NSDictionary
+            var modelTool = DictModelManager.sharedManager
+            var data = modelTool.objectWithDictionary(dict, cls: EveryDays.self) as? EveryDays
+            completion(data: data, error: nil)
+        }
+    }
+    
+    static func customClassMapping() -> [String : String]? {
+        return ["list" : "\(EveryDay.self)"]
+    }
+}
+
+/// 美天model
+class EveryDay: NSObject, DictModelProtocol {
+
+    var date: NSString? {
+        willSet {
+            if let tmpDate = newValue {
+                if tmpDate.length == 10 {
+                    if let tmpM = tmpDate.substringWithRange(NSRange(location: 5, length: 2)).toInt() {
+                        switch tmpM {
+                        case 1:
+                            self.month = "Jan."
+                        case 2:
+                            self.month = "Feb."
+                        case 3:
+                            self.month = "Mar."
+                        case 4:
+                            self.month = "Apr."
+                        case 5:
+                            self.month = "May."
+                        case 6:
+                            self.month = "Jun."
+                        case 7:
+                            self.month = "Jul."
+                        case 8:
+                            self.month = "Aug."
+                        case 9:
+                            self.month = "Sep."
+                        case 10:
+                            self.month = "Oct."
+                        case 11:
+                            self.month = "Nov."
+                        case 12:
+                            self.month = "Dec."
+                        default:
+                            self.month = "\(tmpM)."
+                        }
+                    } else {
+                        self.month = "Aug."
+                    }
+                    
+                    self.day = tmpDate.substringWithRange(NSRange(location: 8, length: 2))
+                } else {
+                    self.date = newValue
+                    return
+                }
+            }
+            
+            self.date = newValue
+        }
+    }
+    
     var themes: [ThemeModel]?
     var events: [EventModel]?
+    
+    // 辅助模型, 为了优化 每个模型只计算一次
+    var month: String?
+    var day: String?
 
     /// 接口有加密 模拟数据
 //    class func loadEveryDays() -> EveryDays? {
@@ -24,7 +97,11 @@ class EveryDays: NSObject {
 //        }
 //        return nil
 //    }
-
+    
+    static func customClassMapping() -> [String : String]? {
+        return ["themes" : "\(ThemeModel.self)", "events" : "\(EventModel.self)"]
+    }
+    
 }
 
 /// 美辑model
@@ -46,7 +123,7 @@ class ThemeModel: NSObject {
 }
 
 /// 美天model
-class EventModel: NSObject {
+class EventModel: NSObject, DictModelProtocol {
     var feel: String?
     /// 分享url地址
     var shareURL: String?
@@ -60,6 +137,8 @@ class EventModel: NSObject {
     var title:String?
     /// 详情
     var detail: String?
+    /// cellTitle
+    var feeltitle: String?
     /// 城市
     var city: String?
     /// 地址
@@ -74,6 +153,7 @@ class EventModel: NSObject {
     var mobileURL: String?
     /// 位置
     var position: String?
+    
     static func customClassMapping() -> [String : String]? {
         return ["more" : "\(GuessLikeModel.self)"]
     }

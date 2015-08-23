@@ -68,7 +68,7 @@ extension UIBarButtonItem {
         let button = UIButton.buttonWithType(.Custom) as! UIButton
         button.setTitle(title, forState: .Normal)
         button.setTitleColor(titleClocr, forState: .Normal)
-        button.titleLabel?.font = theme.SDNavTitleFont
+        button.titleLabel?.font = theme.SDNavItemFont
         button.setTitleColor(UIColor.grayColor(), forState: .Highlighted)
         button.sizeToFit()
         button.addTarget(targer, action: action, forControlEvents: .TouchUpInside)

@@ -44,12 +44,12 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         tableView.backgroundColor = UIColor.colorWith(245, green: 245, blue: 245, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 50
+        tableView.rowHeight = 45
         tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
         view.addSubview(tableView)
         
         // 设置tableView的headerView
-        let iconImageViewHeight: CGFloat = 180
+        let iconImageViewHeight: CGFloat = 160
         var iconImageView = UIImageView(frame: CGRectMake(0, 0, theme.appWidth, iconImageViewHeight))
         iconImageView.image = UIImage(named: "quesheng")
         iconImageView.userInteractionEnabled = true
@@ -64,7 +64,7 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         iconImageView.addSubview(loginLabel)
         
         // 添加iconImageView
-        iconView = IconView(frame: CGRectMake(0, 0, 120, 120))
+        iconView = IconView(frame: CGRectMake(0, 0, 100, 100))
         iconView!.delegate = self
         iconView!.center = CGPointMake(iconImageView.width * 0.5, (iconImageViewHeight - loginLabelHeight) * 0.5 + 8)
         iconImageView.addSubview(iconView!)
