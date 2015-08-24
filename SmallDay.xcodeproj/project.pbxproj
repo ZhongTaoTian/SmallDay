@@ -25,6 +25,9 @@
 		FA709A291B80CA8800B24238 /* NearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A281B80CA8800B24238 /* NearViewController.swift */; };
 		FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A2E1B80CFCA00B24238 /* CityViewController.swift */; };
 		FA709A311B81762500B24238 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA709A301B81762500B24238 /* CityCollectionViewCell.swift */; };
+		FA7387601B8B63A2009D08C8 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73875F1B8B63A2009D08C8 /* EventViewController.swift */; };
+		FA7387621B8B7D5B009D08C8 /* ClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7387611B8B7D5B009D08C8 /* ClassifyModel.swift */; };
+		FA7387661B8B8164009D08C8 /* Classify in Resources */ = {isa = PBXBuildFile; fileRef = FA7387651B8B8164009D08C8 /* Classify */; };
 		FA82B1191B864426003A2264 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B1181B864426003A2264 /* LoginViewController.swift */; };
 		FA82B11C1B870A48003A2264 /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B11A1B870A48003A2264 /* ShakeViewController.swift */; };
 		FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82B11B1B870A48003A2264 /* ShakeViewController.xib */; };
@@ -96,6 +99,9 @@
 		FA709A281B80CA8800B24238 /* NearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearViewController.swift; sourceTree = "<group>"; };
 		FA709A2E1B80CFCA00B24238 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		FA709A301B81762500B24238 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA73875F1B8B63A2009D08C8 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		FA7387611B8B7D5B009D08C8 /* ClassifyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyModel.swift; sourceTree = "<group>"; };
+		FA7387651B8B8164009D08C8 /* Classify */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Classify; sourceTree = "<group>"; };
 		FA82B1181B864426003A2264 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA82B11A1B870A48003A2264 /* ShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
 		FA82B11B1B870A48003A2264 /* ShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeViewController.xib; sourceTree = "<group>"; };
@@ -191,6 +197,7 @@
 			children = (
 				FA82B1361B87B28A003A2264 /* themes */,
 				FA6681AC1B8A117C00CFF2E3 /* events */,
+				FA7387651B8B8164009D08C8 /* Classify */,
 			);
 			path = CustomData;
 			sourceTree = "<group>";
@@ -297,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				FA82B11F1B874EE4003A2264 /* EveryDayModel.swift */,
+				FA7387611B8B7D5B009D08C8 /* ClassifyModel.swift */,
 			);
 			name = "BusinessModel(业务模型)";
 			path = BusinessModel;
@@ -361,6 +369,7 @@
 				FA932A971B88DAAA00601B54 /* EventCellTableViewCell.xib */,
 				FA82B12D1B87A1F4003A2264 /* ThemeCell.swift */,
 				FA82B12E1B87A1F4003A2264 /* ThemeCell.xib */,
+				FA73875F1B8B63A2009D08C8 /* EventViewController.swift */,
 				FA932A941B88C4C900601B54 /* ThemeViewController.swift */,
 			);
 			name = "Explore(探店)";
@@ -496,6 +505,7 @@
 				FA82B1371B87B28A003A2264 /* themes in Resources */,
 				FA57DF0A1B8327F20099CD37 /* ClassifyCell.xib in Resources */,
 				FA82B1301B87A1F4003A2264 /* ThemeCell.xib in Resources */,
+				FA7387661B8B8164009D08C8 /* Classify in Resources */,
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
 				FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */,
 				FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */,
@@ -560,8 +570,10 @@
 				FA932A951B88C4C900601B54 /* ThemeViewController.swift in Sources */,
 				FA932A901B88B65600601B54 /* UIImageView+Kingfisher.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
+				FA7387601B8B63A2009D08C8 /* EventViewController.swift in Sources */,
 				FA82B1201B874EE4003A2264 /* EveryDayModel.swift in Sources */,
 				FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */,
+				FA7387621B8B7D5B009D08C8 /* ClassifyModel.swift in Sources */,
 				FA57DF0C1B8331FE0099CD37 /* SearchViewController.swift in Sources */,
 				FA40ED961B84C5530049DE19 /* SettingViewController.swift in Sources */,
 				FA57DF121B8393240099CD37 /* IconView.swift in Sources */,

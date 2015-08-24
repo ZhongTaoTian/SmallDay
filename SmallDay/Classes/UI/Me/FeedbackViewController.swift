@@ -33,9 +33,9 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
     
     func setFeedbackTextViewAndContactTextField() {
         let backView = UIView(frame: CGRectMake(0, 5, theme.appWidth, 130))
-        backView.backgroundColor = UIColor.whiteColor()
+        backView.backgroundColor = theme.SDBackgroundColor
         feedbackTextView = UITextView(frame: CGRectMake(5, 0, theme.appWidth - 10, 130))
-        feedbackTextView.backgroundColor = UIColor.whiteColor()
+        feedbackTextView.backgroundColor = theme.SDBackgroundColor
         feedbackTextView.font = UIFont.systemFontOfSize(20)
         feedbackTextView.allowsEditingTextAttributes = true
         feedbackTextView.autocorrectionType = UITextAutocorrectionType.No
@@ -44,7 +44,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
         
         contactTextField = UITextField(frame: CGRectMake(0, CGRectGetMaxY(feedbackTextView.frame) + 10, theme.appWidth, 50))
         contactTextField.clearButtonMode = UITextFieldViewMode.Always
-        contactTextField.backgroundColor = UIColor.whiteColor()
+        contactTextField.backgroundColor = theme.SDBackgroundColor
         contactTextField.font = UIFont.systemFontOfSize(18)
         let leffView = UIView(frame: CGRectMake(0, 0, 10, 20))
         contactTextField.leftView = leffView

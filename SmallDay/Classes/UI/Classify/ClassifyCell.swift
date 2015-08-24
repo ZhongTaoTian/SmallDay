@@ -12,10 +12,11 @@ class ClassifyCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var classifyImageView: UIImageView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var model:EveryClassModel? {
+        didSet {
+            titleLabel.text = model!.name
+            classifyImageView.kf_setImageWithURL(NSURL(string: model!.img!)!, placeholderImage: UIImage(named: "quesheng"))
+        }
     }
 
 }

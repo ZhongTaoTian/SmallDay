@@ -45,6 +45,7 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 45
+        tableView.sectionFooterHeight = 0.1
         tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
         view.addSubview(tableView)
         

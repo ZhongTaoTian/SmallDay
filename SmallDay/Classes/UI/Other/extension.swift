@@ -54,7 +54,7 @@ extension UIBarButtonItem {
         let button: UIButton = UIButton.buttonWithType(.Custom) as! UIButton
         button.setImage(UIImage(named: leftimageName), forState: .Normal)
         button.setImage(UIImage(named: highlImageName), forState: .Highlighted)
-        button.frame = CGRectMake(0, 0, 50, 44)
+        button.frame = CGRectMake(0, 0, 80, 44)
         button.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         button.addTarget(targer, action: action, forControlEvents: .TouchUpInside)
@@ -70,7 +70,10 @@ extension UIBarButtonItem {
         button.setTitleColor(titleClocr, forState: .Normal)
         button.titleLabel?.font = theme.SDNavItemFont
         button.setTitleColor(UIColor.grayColor(), forState: .Highlighted)
-        button.sizeToFit()
+        button.frame = CGRectMake(0, 0, 80, 44)
+        button.titleLabel?.textAlignment = NSTextAlignment.Right
+        button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Right
+        button.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -5)
         button.addTarget(targer, action: action, forControlEvents: .TouchUpInside)
         
         self.init(customView: button)

@@ -34,7 +34,7 @@ class MainTabBarController: UITabBarController {
     func tabBaraAddChildViewController(#vc: UIViewController, title: String, imageName: String, selectedImageName: String) {
         
         vc.tabBarItem = UITabBarItem(title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: selectedImageName))
-        vc.view.backgroundColor = UIColor.whiteColor()
+        vc.view.backgroundColor = theme.SDBackgroundColor
         let nav = MainNavigationController(rootViewController: vc)
         addChildViewController(nav)
     }

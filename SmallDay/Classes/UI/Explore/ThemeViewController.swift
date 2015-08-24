@@ -4,7 +4,7 @@
 //
 //  Created by MacBook on 15/8/22.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  Theme点击出来的ViewController
 
 import UIKit
 
@@ -23,7 +23,7 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     
     lazy var webView: UIWebView? = {
         let web = UIWebView(frame: UIScreen.mainScreen().bounds)
-        web.backgroundColor = UIColor.whiteColor()
+        web.backgroundColor = theme.SDBackgroundColor
         web.delegate = self
         return web
         }()

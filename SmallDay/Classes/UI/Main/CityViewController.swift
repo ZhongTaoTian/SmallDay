@@ -33,7 +33,7 @@ class CityViewController: UIViewController {
     }
     
     func setNav() {
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = theme.SDBackgroundColor
         navigationItem.title = "选择城市"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", titleClocr: UIColor.blackColor(), targer: self, action: "cancle")
         
@@ -47,7 +47,6 @@ class CityViewController: UIViewController {
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
         layout.headerReferenceSize = CGSizeMake(view.width, 60)
-        layout.footerReferenceSize = CGSizeMake(view.width, 100)
         
         // 设置collectionView
         collView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
@@ -98,7 +97,7 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         if kind == UICollectionElementKindSectionFooter && indexPath.section == 1 {
             var footView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionFooter, withReuseIdentifier: "footView", forIndexPath: indexPath) as! CityFootCollectionReusableView
-
+            footView.frame.size.height = 80
             return footView
         }
         
@@ -125,7 +124,7 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if section == 0 {
             return CGSizeZero
         } else {
-            return CGSizeMake(view.width, 140)
+            return CGSizeMake(view.width, 120)
         }
     }
     

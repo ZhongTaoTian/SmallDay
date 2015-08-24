@@ -14,9 +14,9 @@ struct theme {
     ///  APP屏幕的高度
     static let appHeight: CGFloat = UIScreen.mainScreen().bounds.size.height
     ///  APP导航条barButtonItem文字大小
-    static let SDNavItemFont: UIFont = UIFont.systemFontOfSize(17)
+    static let SDNavItemFont: UIFont = UIFont.systemFontOfSize(16)
     ///  APP导航条titleFont文字大小
-    static let SDNavTitleFont: UIFont = UIFont.systemFontOfSize(19)
+    static let SDNavTitleFont: UIFont = UIFont.systemFontOfSize(18)
     /// ViewController的背景颜色
     static let SDBackgroundColor: UIColor = UIColor.colorWith(247, green: 247, blue: 247, alpha: 1)
 }

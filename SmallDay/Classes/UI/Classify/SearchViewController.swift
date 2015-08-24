@@ -15,7 +15,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "搜索"
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = theme.SDBackgroundColor
 
         // 添加顶部的searchView
         setSearchView()

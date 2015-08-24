@@ -44,7 +44,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         dayTableView.delegate = self
         dayTableView.contentInset = UIEdgeInsetsMake(-35, 0, 64 + 35, 0)
         dayTableView.dataSource = self
-        dayTableView.backgroundColor = UIColor.whiteColor()
+        dayTableView.backgroundColor = theme.SDBackgroundColor
         dayTableView.separatorStyle = .None
         backgroundScrollView.addSubview(dayTableView)
     }
@@ -54,14 +54,15 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         albumTableView.separatorStyle = .None
         albumTableView.delegate = self
         albumTableView.dataSource = self
-        albumTableView.backgroundColor = UIColor.whiteColor()
+        albumTableView.backgroundColor = theme.SDBackgroundColor
         backgroundScrollView.addSubview(albumTableView)
     }
     
     func loadData() {
+        weak var tmpSelf = self
         ThemeModels.loadThemesData { (data, error) -> () in
-            self.themes = data!
-            self.albumTableView.reloadData()
+            tmpSelf!.themes = data!
+            tmpSelf!.albumTableView.reloadData()
         }
         
         EveryDays.loadEventsData { (data, error) -> () in
@@ -70,15 +71,15 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
                 return
             }
             
-            self.everyDays = data!
-            self.dayTableView.reloadData()
+            tmpSelf!.everyDays = data!
+            tmpSelf!.dayTableView.reloadData()
         }
     }
     
     func setScrollView() {
         backgroundScrollView = UIScrollView(frame: CGRectMake(0, 0, theme.appWidth, theme.appHeight - 64 - 49))
         self.automaticallyAdjustsScrollViewInsets = false
-        backgroundScrollView.backgroundColor = UIColor.whiteColor()
+        backgroundScrollView.backgroundColor = theme.SDBackgroundColor
         backgroundScrollView.contentSize = CGSizeMake(theme.appWidth * 2.0, 0)
         backgroundScrollView.showsHorizontalScrollIndicator = false
         backgroundScrollView.showsVerticalScrollIndicator = false
@@ -138,16 +139,20 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
             if let tmpEvent = event.themes?.last {
                 return 2
             }
-
+            
             return 1
         }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if tableView === albumTableView {
-            return 230
+            return 220
         } else {
-            return 287
+            if indexPath.row == 1 {
+                return 220
+            } else {
+                return 253
+            }
         }
     }
     
@@ -172,9 +177,15 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
         }   else { // 美天TableView
             
             let event = self.everyDays!.list![indexPath.section]
-            cell = EventCellTableViewCell.eventCell(tableView)
-            (cell as! EventCellTableViewCell).eventModel = event
-            // TODO: 美天Cell的切换
+            
+            if indexPath.row == 1 {
+                cell = ThemeCell.themeCellWithTableView(tableView)
+                (cell as! ThemeCell).model = event.themes?.last
+            } else {
+                cell = EventCellTableViewCell.eventCell(tableView)
+                (cell as! EventCellTableViewCell).eventModel = event
+            }
+            
         }
         
         return cell!
@@ -182,10 +193,22 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if tableView === albumTableView {
+            
             let theme = self.themes!.list![indexPath.row]
             let themeVC = ThemeViewController()
             themeVC.themeModel = theme
             navigationController?.pushViewController(themeVC, animated: true)
+            
+        } else {
+            
+            let event = self.everyDays!.list![indexPath.section]
+            if indexPath.row == 1 {
+                let themeVC = ThemeViewController()
+                themeVC.themeModel = event.themes?.last
+                navigationController!.pushViewController(themeVC, animated: true)
+            } else {
+            
+            }
         }
     }
     

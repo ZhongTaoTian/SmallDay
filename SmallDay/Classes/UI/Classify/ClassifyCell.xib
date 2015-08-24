@@ -7,18 +7,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="classifyCell" id="gTV-IL-0wX" customClass="ClassifyCell" customModule="SmallDay" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="117" height="92"/>
+            <rect key="frame" x="0.0" y="0.0" width="117" height="80"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="117" height="92"/>
+                <rect key="frame" x="0.0" y="0.0" width="117" height="80"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quesheng" translatesAutoresizingMaskIntoConstraints="NO" id="1iY-zI-X9S">
                         <rect key="frame" x="0.0" y="0.0" width="117" height="62"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生活馆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2J-tX-J8v">
-                        <rect key="frame" x="0.0" y="62" width="117" height="30"/>
-                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="0.0" y="62" width="117" height="18"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="7KH-qg-cXA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -26,21 +29,21 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="1iY-zI-X9S" secondAttribute="bottom" constant="30" id="5dC-id-jSm"/>
-                <constraint firstAttribute="trailing" secondItem="1iY-zI-X9S" secondAttribute="trailing" id="Aup-tv-JK3"/>
-                <constraint firstItem="1iY-zI-X9S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QLV-O2-2Oo"/>
-                <constraint firstItem="1iY-zI-X9S" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QmA-8p-1TV"/>
-                <constraint firstAttribute="trailing" secondItem="e2J-tX-J8v" secondAttribute="trailing" id="UoT-YV-1Mc"/>
-                <constraint firstItem="e2J-tX-J8v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="egz-mf-Or9"/>
-                <constraint firstAttribute="bottom" secondItem="e2J-tX-J8v" secondAttribute="bottom" id="vNk-f7-4pB"/>
-                <constraint firstItem="e2J-tX-J8v" firstAttribute="top" secondItem="1iY-zI-X9S" secondAttribute="bottom" id="wIP-Es-EwC"/>
+                <constraint firstItem="1iY-zI-X9S" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1Vo-SQ-SFp"/>
+                <constraint firstAttribute="trailing" secondItem="e2J-tX-J8v" secondAttribute="trailing" id="34Y-9L-FNg"/>
+                <constraint firstItem="1iY-zI-X9S" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IOK-Bs-0Kb"/>
+                <constraint firstItem="e2J-tX-J8v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e4N-34-aAA"/>
+                <constraint firstItem="e2J-tX-J8v" firstAttribute="top" secondItem="1iY-zI-X9S" secondAttribute="bottom" id="mUp-nh-gre"/>
+                <constraint firstAttribute="trailing" secondItem="1iY-zI-X9S" secondAttribute="trailing" id="mjA-El-voS"/>
+                <constraint firstAttribute="bottom" secondItem="e2J-tX-J8v" secondAttribute="bottom" id="pMS-VN-FIb"/>
+                <constraint firstItem="e2J-tX-J8v" firstAttribute="top" secondItem="1iY-zI-X9S" secondAttribute="bottom" id="s3t-Pq-6DS"/>
             </constraints>
             <size key="customSize" width="117" height="92"/>
             <connections>
                 <outlet property="classifyImageView" destination="1iY-zI-X9S" id="NfY-Lo-czN"/>
                 <outlet property="titleLabel" destination="e2J-tX-J8v" id="0tK-nJ-XfQ"/>
             </connections>
-            <point key="canvasLocation" x="46.5" y="204"/>
+            <point key="canvasLocation" x="-180.5" y="199"/>
         </collectionViewCell>
     </objects>
     <resources>

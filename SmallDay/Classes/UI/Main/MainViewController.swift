@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
         
         cityRightBtn = textImageButton.buttonWithType(.Custom) as! textImageButton
         cityRightBtn.setTitle("墨西哥", forState: .Normal)
-        cityRightBtn.frame = CGRectMake(0, 0, 80, 35)
+        cityRightBtn.frame = CGRectMake(0, 20, 80, 44)
         cityRightBtn.titleLabel?.font = theme.SDNavItemFont
         cityRightBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         cityRightBtn.setImage(UIImage(named: "home_down"), forState: .Normal)

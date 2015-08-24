@@ -13,6 +13,7 @@ class CityHeadCollectionReusableView: UICollectionReusableView {
     var headTitle: String? {
         didSet {
             headTitleLabel.text = headTitle
+            headTitleLabel.font = UIFont.systemFontOfSize(18)
         }
     }
     
@@ -50,7 +51,7 @@ class CityFootCollectionReusableView: UICollectionReusableView {
         titleLabel?.text = "更多城市,敬请期待..."
         titleLabel?.textAlignment = .Center
         titleLabel?.textColor = UIColor.darkGrayColor()
-        titleLabel?.font = UIFont.systemFontOfSize(20)
+        titleLabel?.font = UIFont.systemFontOfSize(16)
         addSubview(titleLabel!)
     }
 
