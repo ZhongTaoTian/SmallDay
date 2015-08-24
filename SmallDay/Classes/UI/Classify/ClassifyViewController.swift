@@ -9,14 +9,14 @@
 import UIKit
 
 class ClassifyViewController: MainViewController {
-
+    
     var collView: UICollectionView!
     var headTitles: NSArray = ["闲时光·发现·惊喜", "涨知识·分享·丰盈"]
     var classData: ClassifyModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         // 初始化导航条上的内容
         setNav()
         
@@ -38,7 +38,7 @@ class ClassifyViewController: MainViewController {
             tmpSelf!.collView.reloadData()
         }
     }
-
+    
     func setNav() {
         navigationItem.title = "分类"
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "search_1", highlImageName: "search_2", targer: self, action: "searchClick")
@@ -49,11 +49,12 @@ class ClassifyViewController: MainViewController {
         let searchVC = SearchViewController()
         navigationController?.pushViewController(searchVC, animated: true)
     }
-
+    
     func setCollectionView() {
         let layout = UICollectionViewFlowLayout()
         let margin: CGFloat = 10
         layout.minimumInteritemSpacing = margin
+//        layout.minimumLineSpacing = 5
         layout.sectionInset = UIEdgeInsetsMake(margin, margin, margin, margin)
         let itemH:CGFloat = 80
         let itemW = (theme.appWidth - 4 * margin) / 3
@@ -77,14 +78,14 @@ class ClassifyViewController: MainViewController {
 
 // MARK - UICollectionViewDelegate UICollectionViewDataSource 代理方法
 extension ClassifyViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-            return self.classData?.list?[section].tags?.count ?? 0
+        return self.classData?.list?[section].tags?.count ?? 0
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-
+        
         return self.classData?.list?.count ?? 0
     }
     
@@ -95,14 +96,18 @@ extension ClassifyViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        
         var headView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "headView", forIndexPath: indexPath) as! CityHeadCollectionReusableView
         
         headView.headTitle = self.classData?.list?[indexPath.section].title
-    
         return headView
     }
     
-
-
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let every: EveryClassModel = classData!.list![indexPath.section].tags![indexPath.row]
+        let detailVC = ClassDetailViewController()
+        detailVC.title = every.name
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    
 }

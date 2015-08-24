@@ -35,8 +35,8 @@ class CityViewController: UIViewController {
     func setNav() {
         view.backgroundColor = theme.SDBackgroundColor
         navigationItem.title = "选择城市"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", titleClocr: UIColor.blackColor(), targer: self, action: "cancle")
-        
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", titleClocr: UIColor.blackColor(), targer: self, action: "cancle")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "取消", style: .Done, target: self, action: "cancle")
     }
     
     func setCollectionView() {

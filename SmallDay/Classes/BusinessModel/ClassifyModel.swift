@@ -48,3 +48,34 @@ class EveryClassModel: NSObject {
     var img: String?
     var name: String?
 }
+
+class DetailModel: NSObject, DictModelProtocol {
+    var msg: String?
+    var code: Int = -1
+    var list: [EventModel]?
+    
+    static func customClassMapping() -> [String : String]? {
+        return ["list" : "\(EventModel.self)"]
+    }
+    
+    class func loadDetails(completion: (data: DetailModel?, error: NSError?) -> ()) {
+        let path = NSBundle.mainBundle().pathForResource("Details", ofType: nil)
+        if let data = NSData(contentsOfFile: path!) {
+            let dict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
+            var modelTool = DictModelManager.sharedManager
+            var datas = modelTool.objectWithDictionary(dict, cls: DetailModel.self) as? DetailModel
+            completion(data: datas, error: nil)
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

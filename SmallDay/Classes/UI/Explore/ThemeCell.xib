@@ -18,14 +18,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不出城的暑假去这里 (杭州篇)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-t9-No2">
-                        <rect key="frame" x="20" y="100" width="280" height="25.5"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <rect key="frame" x="20" y="90" width="280" height="52.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡 醇香 温馨" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-71-vW7">
-                        <rect key="frame" x="30" y="130" width="260" height="21.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <rect key="frame" x="30" y="147.5" width="260" height="21.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -40,7 +40,7 @@
                     <constraint firstAttribute="trailing" secondItem="E2q-t9-No2" secondAttribute="trailing" constant="20" id="WX1-Yl-0r2"/>
                     <constraint firstItem="E2q-t9-No2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WbP-4A-BYQ"/>
                     <constraint firstItem="fnQ-71-vW7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="jcM-ME-suy"/>
-                    <constraint firstItem="E2q-t9-No2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="100" id="t9W-Tb-JyW"/>
+                    <constraint firstItem="E2q-t9-No2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="90" id="t9W-Tb-JyW"/>
                     <constraint firstItem="oK1-5e-9Hc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uRR-Ce-qEc"/>
                 </constraints>
             </tableViewCellContentView>

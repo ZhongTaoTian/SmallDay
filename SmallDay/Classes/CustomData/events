@@ -191,7 +191,20 @@
         },
         {
             "date": "2015-07-21",
-            "themes": [],
+"themes": [
+{
+"themeurl": "http://api.xiaorizi.me/api/themedetail/?themeid=187",
+"img": "http://pic.huodongjia.com/event/2015-07-31/event133130.jpg",
+"title": "来场大爱，从早到晚的国际盛宴",
+"text": "<body><p>世界那么大，我想去看看! 世界那么大，你有时间去看看吗？你有勇气去看看吗？你有足够的粪土去看看吗旅行的冲动就如绚烂的烟花稍纵即逝，狂欢过后还是要面对漫漫岁月的平淡。不如来一场不出京城的跨国盛宴，满足你环游世界的心愿。</p></body>",
+"hasweb": 1,
+"height": 400,
+"width": 640,
+"begin_time": "2015-08-01",
+"keywords": "乐活 赏味 有趣",
+"id": 187
+}
+],
             "events": [
                 {
                     "feel": "香艳指数",
@@ -539,7 +552,20 @@
         },
         {
             "date": "2015-03-17",
-            "themes": [],
+"themes": [
+{
+"themeurl": "http://api.xiaorizi.me/api/themedetail/?themeid=196",
+"img": "http://pic.huodongjia.com/event/2015-08-04/event133365.jpg",
+"title": "别瞎逛了 需要探索新高度",
+"text": "<body><p>哭过笑过的地方叫北京，玩过闹过的地方叫北京，爱过恨过的地方叫北京，住过拆了的地方叫北京，吃饱了就睡的地方叫北京，走过路过的都是北京，所以别瞎逛了，卤煮带你们寻找新高度，偏离航线也能飞出新视线，无所不能的北京。</p></body>",
+"hasweb": 1,
+"height": 400,
+"width": 600,
+"begin_time": "2015-08-05",
+"keywords": "高雅 酷炫 新奇",
+"id": 196
+}
+],
             "events": [
                 {
                     "feel": "香艳指数",

@@ -78,7 +78,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         let leftMargin: CGFloat = 10
         let alphaV: CGFloat = 0.2
         topView = UIView(frame: CGRectMake(0, 20, theme.appWidth, textH * 2))
-        topView?.backgroundColor = theme.SDBackgroundColor
+        topView?.backgroundColor = UIColor.whiteColor()
         backScrollView.addSubview(topView!)
         
         let line1 = UIView(frame: CGRectMake(0, 0, theme.appWidth, 1))
@@ -116,9 +116,9 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     func addTextFieldToTopViewWiht(textField: UITextField ,frame: CGRect, placeholder: String) {
         textField.frame = frame
-        textField.autocorrectionType = UITextAutocorrectionType.No
-        textField.clearButtonMode = UITextFieldViewMode.Always
-        textField.backgroundColor = theme.SDBackgroundColor
+        textField.autocorrectionType = .No
+        textField.clearButtonMode = .Always
+        textField.backgroundColor = UIColor.whiteColor()
         textField.placeholder = placeholder
         topView!.addSubview(textField)
     }

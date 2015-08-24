@@ -28,6 +28,10 @@
 		FA7387601B8B63A2009D08C8 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73875F1B8B63A2009D08C8 /* EventViewController.swift */; };
 		FA7387621B8B7D5B009D08C8 /* ClassifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7387611B8B7D5B009D08C8 /* ClassifyModel.swift */; };
 		FA7387661B8B8164009D08C8 /* Classify in Resources */ = {isa = PBXBuildFile; fileRef = FA7387651B8B8164009D08C8 /* Classify */; };
+		FA7387691B8B8F00009D08C8 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7387671B8B8F00009D08C8 /* DetailCell.swift */; };
+		FA73876A1B8B8F00009D08C8 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7387681B8B8F00009D08C8 /* DetailCell.xib */; };
+		FA73876C1B8B940E009D08C8 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73876B1B8B940E009D08C8 /* ClassDetailViewController.swift */; };
+		FA73876E1B8B9901009D08C8 /* Details in Resources */ = {isa = PBXBuildFile; fileRef = FA73876D1B8B9901009D08C8 /* Details */; };
 		FA82B1191B864426003A2264 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B1181B864426003A2264 /* LoginViewController.swift */; };
 		FA82B11C1B870A48003A2264 /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B11A1B870A48003A2264 /* ShakeViewController.swift */; };
 		FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82B11B1B870A48003A2264 /* ShakeViewController.xib */; };
@@ -102,6 +106,10 @@
 		FA73875F1B8B63A2009D08C8 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		FA7387611B8B7D5B009D08C8 /* ClassifyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyModel.swift; sourceTree = "<group>"; };
 		FA7387651B8B8164009D08C8 /* Classify */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Classify; sourceTree = "<group>"; };
+		FA7387671B8B8F00009D08C8 /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		FA7387681B8B8F00009D08C8 /* DetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		FA73876B1B8B940E009D08C8 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
+		FA73876D1B8B9901009D08C8 /* Details */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Details; sourceTree = "<group>"; };
 		FA82B1181B864426003A2264 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA82B11A1B870A48003A2264 /* ShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
 		FA82B11B1B870A48003A2264 /* ShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeViewController.xib; sourceTree = "<group>"; };
@@ -198,6 +206,7 @@
 				FA82B1361B87B28A003A2264 /* themes */,
 				FA6681AC1B8A117C00CFF2E3 /* events */,
 				FA7387651B8B8164009D08C8 /* Classify */,
+				FA73876D1B8B9901009D08C8 /* Details */,
 			);
 			path = CustomData;
 			sourceTree = "<group>";
@@ -340,6 +349,9 @@
 			isa = PBXGroup;
 			children = (
 				FAA0F9EE1B7DDA4300B5EA08 /* ClassifyViewController.swift */,
+				FA73876B1B8B940E009D08C8 /* ClassDetailViewController.swift */,
+				FA7387671B8B8F00009D08C8 /* DetailCell.swift */,
+				FA7387681B8B8F00009D08C8 /* DetailCell.xib */,
 				FA57DF071B8327F20099CD37 /* ClassifyCell.swift */,
 				FA57DF081B8327F20099CD37 /* ClassifyCell.xib */,
 				FA57DF0B1B8331FE0099CD37 /* SearchViewController.swift */,
@@ -501,6 +513,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA73876A1B8B8F00009D08C8 /* DetailCell.xib in Resources */,
 				FA932A991B88DAAA00601B54 /* EventCellTableViewCell.xib in Resources */,
 				FA82B1371B87B28A003A2264 /* themes in Resources */,
 				FA57DF0A1B8327F20099CD37 /* ClassifyCell.xib in Resources */,
@@ -509,6 +522,7 @@
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
 				FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */,
 				FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */,
+				FA73876E1B8B9901009D08C8 /* Details in Resources */,
 				FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */,
 				FA6681AD1B8A117C00CFF2E3 /* events in Resources */,
 			);
@@ -575,6 +589,7 @@
 				FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */,
 				FA7387621B8B7D5B009D08C8 /* ClassifyModel.swift in Sources */,
 				FA57DF0C1B8331FE0099CD37 /* SearchViewController.swift in Sources */,
+				FA7387691B8B8F00009D08C8 /* DetailCell.swift in Sources */,
 				FA40ED961B84C5530049DE19 /* SettingViewController.swift in Sources */,
 				FA57DF121B8393240099CD37 /* IconView.swift in Sources */,
 				FA709A271B80A3A800B24238 /* DoubleTextView.swift in Sources */,
@@ -599,6 +614,7 @@
 				FAA0F9ED1B7DD9CB00B5EA08 /* MainNavigationController.swift in Sources */,
 				FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */,
 				FA932A871B88B65600601B54 /* ImageDownloader.swift in Sources */,
+				FA73876C1B8B940E009D08C8 /* ClassDetailViewController.swift in Sources */,
 				FA709A211B808B0500B24238 /* MainViewController.swift in Sources */,
 				FA82B1261B87693E003A2264 /* SwiftDictModel.swift in Sources */,
 				FA57DF0E1B8335920099CD37 /* SearchTextField.swift in Sources */,
