@@ -57,9 +57,9 @@ class ClassifyViewController: MainViewController {
 //        layout.minimumLineSpacing = 5
         layout.sectionInset = UIEdgeInsetsMake(margin, margin, margin, margin)
         let itemH:CGFloat = 80
-        let itemW = (theme.appWidth - 4 * margin) / 3
+        let itemW = (AppWidth - 4 * margin) / 3
         layout.itemSize = CGSizeMake(itemW, itemH)
-        layout.headerReferenceSize = CGSizeMake(theme.appWidth, 50)
+        layout.headerReferenceSize = CGSizeMake(AppWidth, 50)
         
         collView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
         collView.backgroundColor = theme.SDBackgroundColor
@@ -70,7 +70,7 @@ class ClassifyViewController: MainViewController {
         collView.registerNib(UINib(nibName: "ClassifyCell", bundle: nil), forCellWithReuseIdentifier: "classifyCell")
         collView.showsHorizontalScrollIndicator = false
         collView.showsVerticalScrollIndicator = false
-        collView.contentInset = UIEdgeInsetsMake(0, 0, 64 + 49, 0)
+        collView.contentInset = UIEdgeInsetsMake(0, 0, NavigationH + 49, 0)
         view.addSubview(collView)
     }
 }

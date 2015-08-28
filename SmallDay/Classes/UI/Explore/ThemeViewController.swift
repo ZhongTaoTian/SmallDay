@@ -9,7 +9,7 @@
 import UIKit
 
 class ThemeViewController: UIViewController, UIWebViewDelegate {
-    
+
     var themeModel: ThemeModel? {
         didSet {
             if themeModel?.hasweb == 1 {
@@ -30,9 +30,9 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.whiteColor()
         view.addSubview(webView!)
-        
+ 
         // 添加modalBtn
         addModalBtn()
         
@@ -40,12 +40,12 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     }
     
     func shareClick() {
-        
+
     }
     
     func addModalBtn() {
-        let modalWH: CGFloat = 64
-        modalBtn.frame = CGRectMake(10, theme.appHeight - modalWH - 10 - 64, modalWH, modalWH)
+        let modalWH: CGFloat = NavigationH
+        modalBtn.frame = CGRectMake(10, AppHeight - modalWH - 10 - NavigationH, modalWH, modalWH)
         modalBtn.setImage(UIImage(named: "themelist"), forState: .Normal)
         modalBtn.setImage(UIImage(named: "themeweb"), forState: .Selected)
         modalBtn.addTarget(self, action: "modalClick:", forControlEvents: .TouchUpInside)
@@ -53,7 +53,8 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     }
     
     func modalClick(sender: UIButton) {
-        
+        sender.selected = !sender.selected
+    
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {

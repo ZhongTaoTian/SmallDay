@@ -17,7 +17,7 @@ class ClassDetailViewController: UIViewController {
         tableView.dataSource = self
         tableView.rowHeight = 220
         tableView.separatorStyle = .None
-        tableView.contentInset = UIEdgeInsetsMake(0, 0, 64, 0)
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, NavigationH, 0)
         tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: "DetailCell")
         return tableView
         }()

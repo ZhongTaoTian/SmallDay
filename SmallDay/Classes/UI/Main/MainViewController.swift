@@ -4,7 +4,7 @@
 //
 //  Created by MacBook on 15/8/16.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//  基类控制器
+//  基类控制器, 带有选择城市的ViewController
 
 import UIKit
 
@@ -15,8 +15,16 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "cityChange:", name: SD_CurrentCityChange_Notification, object: nil)
+        
         cityRightBtn = textImageButton.buttonWithType(.Custom) as! textImageButton
-        cityRightBtn.setTitle("墨西哥", forState: .Normal)
+        let user = NSUserDefaults.standardUserDefaults()
+        if let currentCity = user.objectForKey(SD_Current_SelectedCity) as? String {
+            cityRightBtn.setTitle(currentCity, forState: .Normal)
+        } else {
+            cityRightBtn.setTitle("北京", forState: .Normal)
+        }
+        
         cityRightBtn.frame = CGRectMake(0, 20, 80, 44)
         cityRightBtn.titleLabel?.font = theme.SDNavItemFont
         cityRightBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
@@ -28,8 +36,19 @@ class MainViewController: UIViewController {
     
     func pushcityView () {
         let cityVC = CityViewController()
+        cityVC.cityName = self.cityRightBtn.titleForState(.Normal)
         let nav = MainNavigationController(rootViewController: cityVC)
         presentViewController(nav, animated: true, completion: nil)
+    }
+    
+    func cityChange(noti: NSNotification) {
+        if let currentCityName = noti.object as? String {
+            self.cityRightBtn.setTitle(currentCityName, forState: .Normal)
+        }
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 }
 

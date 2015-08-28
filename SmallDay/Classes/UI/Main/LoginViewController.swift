@@ -56,7 +56,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     func addLoginImageView() {
         let loginH: CGFloat = 50
-        loginImageView = UIImageView(frame: CGRectMake((theme.appWidth - loginW) * 0.5, CGRectGetMaxY(topView!.frame) + 10, loginW, loginH))
+        loginImageView = UIImageView(frame: CGRectMake((AppWidth - loginW) * 0.5, CGRectGetMaxY(topView!.frame) + 10, loginW, loginH))
         loginImageView.userInteractionEnabled = true
         loginImageView.image = UIImage(named: "signin_1")
         
@@ -77,26 +77,26 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         let textH: CGFloat = 55
         let leftMargin: CGFloat = 10
         let alphaV: CGFloat = 0.2
-        topView = UIView(frame: CGRectMake(0, 20, theme.appWidth, textH * 2))
+        topView = UIView(frame: CGRectMake(0, 20, AppWidth, textH * 2))
         topView?.backgroundColor = UIColor.whiteColor()
         backScrollView.addSubview(topView!)
         
-        let line1 = UIView(frame: CGRectMake(0, 0, theme.appWidth, 1))
+        let line1 = UIView(frame: CGRectMake(0, 0, AppWidth, 1))
         line1.backgroundColor = UIColor.grayColor()
         line1.alpha = alphaV
         topView!.addSubview(line1)
         
         phoneTextField = UITextField()
         phoneTextField?.keyboardType = UIKeyboardType.NumberPad
-        addTextFieldToTopViewWiht(phoneTextField!, frame: CGRectMake(leftMargin, 1, theme.appWidth - leftMargin, textH - 1), placeholder: "请输入手机号")
+        addTextFieldToTopViewWiht(phoneTextField!, frame: CGRectMake(leftMargin, 1, AppWidth - leftMargin, textH - 1), placeholder: "请输入手机号")
         
-        let line2 = UIView(frame: CGRectMake(0, textH, theme.appWidth, 1))
+        let line2 = UIView(frame: CGRectMake(0, textH, AppWidth, 1))
         line2.backgroundColor = UIColor.grayColor()
         line2.alpha = alphaV
         topView!.addSubview(line2)
         
         psdTextField = UITextField()
-        addTextFieldToTopViewWiht(psdTextField!, frame: CGRectMake(leftMargin, textH + 1, theme.appWidth - leftMargin, textH - 1), placeholder: "密码")
+        addTextFieldToTopViewWiht(psdTextField!, frame: CGRectMake(leftMargin, textH + 1, AppWidth - leftMargin, textH - 1), placeholder: "密码")
     }
     
     func addQuictLoginBtn() {
@@ -105,7 +105,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         quickLoginBtn.titleLabel?.sizeToFit()
         quickLoginBtn.contentMode = .Right
         let quickW: CGFloat = quickLoginBtn.titleLabel!.width
-        quickLoginBtn.frame = CGRectMake(theme.appWidth - quickW - 10, CGRectGetMaxY(loginImageView.frame) + 10, quickW, 30)
+        quickLoginBtn.frame = CGRectMake(AppWidth - quickW - 10, CGRectGetMaxY(loginImageView.frame) + 10, quickW, 30)
         quickLoginBtn.titleLabel?.font = UIFont.systemFontOfSize(14)
         quickLoginBtn.addTarget(self, action: "quickLoginClick", forControlEvents: .TouchUpInside)
         quickLoginBtn.setTitle("无账号快捷登录", forState: .Normal)
@@ -126,7 +126,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     func addBottomView() {
         let forgetPwdImageViewH: CGFloat = 45
         
-        bottomView = UIView(frame: CGRectMake((theme.appWidth - loginW) * 0.5, theme.appHeight - forgetPwdImageViewH - 10 - 64, loginW, forgetPwdImageViewH))
+        bottomView = UIView(frame: CGRectMake((AppWidth - loginW) * 0.5, AppHeight - forgetPwdImageViewH - 10 - 64, loginW, forgetPwdImageViewH))
         bottomView.backgroundColor = UIColor.clearColor()
         backScrollView.addSubview(bottomView)
         
@@ -179,7 +179,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         // TODO 添加键盘弹出的事件
         let userinfo = note.userInfo!
         let rect = userinfo[UIKeyboardFrameEndUserInfoKey]!.CGRectValue()
-        var boardH = theme.appHeight - rect.origin.y
+        var boardH = AppHeight - rect.origin.y
         if boardH > 0 {
             boardH = boardH + 64
         }

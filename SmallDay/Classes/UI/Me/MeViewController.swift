@@ -40,7 +40,7 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
     
     func setTableView() {
         self.automaticallyAdjustsScrollViewInsets = false
-        tableView = UITableView(frame: CGRectMake(0, 0, theme.appWidth, theme.appHeight - 64 - 49), style: UITableViewStyle.Grouped)
+        tableView = UITableView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH - 49), style: UITableViewStyle.Grouped)
         tableView.backgroundColor = UIColor.colorWith(245, green: 245, blue: 245, alpha: 1)
         tableView.delegate = self
         tableView.dataSource = self
@@ -51,13 +51,13 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         
         // 设置tableView的headerView
         let iconImageViewHeight: CGFloat = 160
-        var iconImageView = UIImageView(frame: CGRectMake(0, 0, theme.appWidth, iconImageViewHeight))
+        var iconImageView = UIImageView(frame: CGRectMake(0, 0, AppWidth, iconImageViewHeight))
         iconImageView.image = UIImage(named: "quesheng")
         iconImageView.userInteractionEnabled = true
         
         // 添加未登录的文字
         let loginLabelHeight: CGFloat = 40
-        loginLabel = UILabel(frame: CGRectMake(0, iconImageViewHeight - loginLabelHeight, theme.appWidth, loginLabelHeight))
+        loginLabel = UILabel(frame: CGRectMake(0, iconImageViewHeight - loginLabelHeight, AppWidth, loginLabelHeight))
         loginLabel.textAlignment = .Center
         loginLabel.text = "登陆,开始我的小日子"
         loginLabel.font = UIFont.systemFontOfSize(16)

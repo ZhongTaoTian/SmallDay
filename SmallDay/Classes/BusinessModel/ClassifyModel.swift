@@ -25,7 +25,6 @@ class ClassifyModel: NSObject, DictModelProtocol{
             
             var modelTool = DictModelManager.sharedManager
             var data = modelTool.objectWithDictionary(dict, cls: ClassifyModel.self) as? ClassifyModel
-            print(data)
             completion(data: data, error: nil)
         }
     }

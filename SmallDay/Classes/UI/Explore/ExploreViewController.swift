@@ -42,7 +42,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         dayTableView.sectionHeaderHeight = 0.1
         dayTableView.sectionFooterHeight = 0.1
         dayTableView.delegate = self
-        dayTableView.contentInset = UIEdgeInsetsMake(-35, 0, 64 + 35, 0)
+        dayTableView.contentInset = UIEdgeInsetsMake(-35, 0, NavigationH + 35, 0)
         dayTableView.dataSource = self
         dayTableView.backgroundColor = theme.SDBackgroundColor
         dayTableView.separatorStyle = .None
@@ -50,7 +50,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     }
     
     func setalbumTableView() {
-        albumTableView = UITableView(frame: CGRectMake(theme.appWidth, 0, theme.appWidth, backgroundScrollView.height), style: .Plain)
+        albumTableView = UITableView(frame: CGRectMake(AppWidth, 0, AppWidth, backgroundScrollView.height), style: .Plain)
         albumTableView.separatorStyle = .None
         albumTableView.delegate = self
         albumTableView.dataSource = self
@@ -77,10 +77,10 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     }
     
     func setScrollView() {
-        backgroundScrollView = UIScrollView(frame: CGRectMake(0, 0, theme.appWidth, theme.appHeight - 64 - 49))
+        backgroundScrollView = UIScrollView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH - 49))
         self.automaticallyAdjustsScrollViewInsets = false
         backgroundScrollView.backgroundColor = theme.SDBackgroundColor
-        backgroundScrollView.contentSize = CGSizeMake(theme.appWidth * 2.0, 0)
+        backgroundScrollView.contentSize = CGSizeMake(AppWidth * 2.0, 0)
         backgroundScrollView.showsHorizontalScrollIndicator = false
         backgroundScrollView.showsVerticalScrollIndicator = false
         backgroundScrollView.pagingEnabled = true
@@ -105,7 +105,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     
     // MARK: - DoubleTextViewDelegate
     func doubleTextView(doubleTextView: DoubleTextView, didClickBtn btn: UIButton, forIndex index: Int) {
-        backgroundScrollView.setContentOffset(CGPointMake(theme.appWidth * CGFloat(index), 0), animated: true)
+        backgroundScrollView.setContentOffset(CGPointMake(AppWidth * CGFloat(index), 0), animated: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -123,7 +123,7 @@ extension ExploreViewController: UIScrollViewDelegate {
     // MARK: - UIScrollViewDelegate 监听scrollView的滚动事件
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         if scrollView === backgroundScrollView {
-            let index = Int(scrollView.contentOffset.x / theme.appWidth)
+            let index = Int(scrollView.contentOffset.x / AppWidth)
             doubleTextView.clickBtnToIndex(index)
         }
     }

@@ -96,7 +96,6 @@ public class SimpleNetwork {
         
         // 2.1 缓存检测，如果文件已经下载完成直接返回
         if NSFileManager.defaultManager().fileExistsAtPath(path) {
-            println("\(urlString) 图片已经被缓存")
             completion(result: nil, error: nil)
             return
         }

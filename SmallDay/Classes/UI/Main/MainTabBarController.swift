@@ -43,6 +43,7 @@ class MainTabBarController: UITabBarController {
 class MainTabBar: UITabBar {
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.translucent = false
         self.backgroundImage = UIImage(named: "tabbar")
     }
     

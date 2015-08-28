@@ -20,7 +20,7 @@ class SearchView: UIView {
         
         searchTextField = SearchTextField()
         let margin: CGFloat = 20
-        searchTextField.frame = CGRectMake(margin, 20 * 0.5, theme.appWidth - 2 * margin, 30)
+        searchTextField.frame = CGRectMake(margin, 20 * 0.5, AppWidth - 2 * margin, 30)
         addSubview(searchTextField)
         
         searchLabel = UILabel()
@@ -29,7 +29,7 @@ class SearchView: UIView {
         searchLabel.textColor = UIColor.blackColor()
         searchLabel.alpha = 0
         searchLabel.textAlignment = .Center
-        searchLabel.frame = CGRectMake(theme.appWidth - 100, 0, 100, 50)
+        searchLabel.frame = CGRectMake(AppWidth - 100, 0, 100, 50)
         addSubview(searchLabel)
         
         // 监听键盘弹出

@@ -20,7 +20,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
         // 设置导航条上的内容
         setNav()
         
-        view.backgroundColor = theme.SDBackgroundColor
+        view.backgroundColor = theme.SDWebViewBacagroundColor
         // 设置留言框和联系框
         setFeedbackTextViewAndContactTextField()
     }
@@ -32,9 +32,9 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setFeedbackTextViewAndContactTextField() {
-        let backView = UIView(frame: CGRectMake(0, 5, theme.appWidth, 130))
+        let backView = UIView(frame: CGRectMake(0, 5, AppWidth, 130))
         backView.backgroundColor = theme.SDBackgroundColor
-        feedbackTextView = UITextView(frame: CGRectMake(5, 0, theme.appWidth - 10, 130))
+        feedbackTextView = UITextView(frame: CGRectMake(5, 0, AppWidth - 10, 130))
         feedbackTextView.backgroundColor = theme.SDBackgroundColor
         feedbackTextView.font = UIFont.systemFontOfSize(20)
         feedbackTextView.allowsEditingTextAttributes = true
@@ -42,7 +42,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
         backView.addSubview(feedbackTextView!)
         view.addSubview(backView)
         
-        contactTextField = UITextField(frame: CGRectMake(0, CGRectGetMaxY(feedbackTextView.frame) + 10, theme.appWidth, 50))
+        contactTextField = UITextField(frame: CGRectMake(0, CGRectGetMaxY(feedbackTextView.frame) + 10, AppWidth, 50))
         contactTextField.clearButtonMode = UITextFieldViewMode.Always
         contactTextField.backgroundColor = theme.SDBackgroundColor
         contactTextField.font = UIFont.systemFontOfSize(18)

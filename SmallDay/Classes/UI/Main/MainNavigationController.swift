@@ -28,15 +28,16 @@ class MainNavigationController: UINavigationController {
             } else {
                 backBtn.setTitle("返回", forState: .Normal)
             }
+            backBtn.titleLabel?.font = UIFont.systemFontOfSize(17)
             backBtn.setTitleColor(UIColor.blackColor(), forState: .Normal)
             backBtn.setTitleColor(UIColor.grayColor(), forState: .Highlighted)
             backBtn.setImage(UIImage(named: "back_1"), forState: .Normal)
             backBtn.setImage(UIImage(named: "back_2"), forState: .Highlighted)
             backBtn.addTarget(self, action: "backBtnClick", forControlEvents: .TouchUpInside)
             backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
-            backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0)
+            backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -25, 0, 0)
             backBtn.titleEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)
-            backBtn.frame = CGRectMake(0, 0, 80, 40)
+            backBtn.frame = CGRectMake(0, 0, 44, 40)
 
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
             viewController.hidesBottomBarWhenPushed = true

@@ -8,8 +8,11 @@
 
 import UIKit
 
-class CityViewController: UIViewController {
+public let SD_Current_SelectedCity = "SD_Current_SelectedCity"
+public let SD_CurrentCityChange_Notification = "SD_CurrentCityChange_Notification"
 
+class CityViewController: UIViewController {
+    var cityName: String?
     var collView: UICollectionView!
     var layout = UICollectionViewFlowLayout()
     
@@ -30,6 +33,27 @@ class CityViewController: UIViewController {
         
         // 设置collectionView
         setCollectionView()
+        
+        // 选择当前城市
+        self.collView.selectItemAtIndexPath(selectedCurrentCity(), animated: true, scrollPosition: UICollectionViewScrollPosition.None)
+    }
+    
+    private func selectedCurrentCity() -> NSIndexPath {
+        if let currentCityName = self.cityName {
+            for var i = 0; i < domesticCitys!.count; i++ {
+                if currentCityName == domesticCitys![i] as! String {
+                    return NSIndexPath(forItem: i, inSection: 0)
+                }
+            }
+            
+            for var i = 0; i < overseasCitys!.count; i++ {
+                if currentCityName == overseasCitys![i] as! String {
+                    return NSIndexPath(forItem: i, inSection: 1)
+                }
+            }
+        }
+        
+        return NSIndexPath(forItem: 0, inSection: 0)
     }
     
     func setNav() {
@@ -41,7 +65,7 @@ class CityViewController: UIViewController {
     
     func setCollectionView() {
         // 设置布局
-        let itemW = theme.appWidth / 3.0 - 1.0
+        let itemW = AppWidth / 3.0 - 1.0
         let itemH: CGFloat = 50
         layout.itemSize = CGSizeMake(itemW, itemH)
         layout.minimumLineSpacing = 1
@@ -52,6 +76,7 @@ class CityViewController: UIViewController {
         collView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
         collView.delegate = self
         collView.dataSource = self
+        collView.selectItemAtIndexPath(NSIndexPath(forItem: 1, inSection: 0), animated: true, scrollPosition: UICollectionViewScrollPosition.None)
         collView.backgroundColor = UIColor.colorWith(247, green: 247, blue: 247, alpha: 1)
         collView.registerClass(CityCollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
         collView.registerClass(CityHeadCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headView")
@@ -116,7 +141,12 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
         // 拿出当前选择的cell
         var cell = collectionView.cellForItemAtIndexPath(indexPath) as! CityCollectionViewCell
         let currentCity = cell.cityName
-        
+        let user = NSUserDefaults.standardUserDefaults()
+        user.setObject(currentCity, forKey: SD_Current_SelectedCity)
+        if user.synchronize() {
+            NSNotificationCenter.defaultCenter().postNotificationName(SD_CurrentCityChange_Notification, object: currentCity)
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     
     /// 这方法是UICollectionViewDelegateFlowLayout 协议里面的， 我现在是 默认的flow layout， 没有自定义layout，所以就没有实现UICollectionViewDelegateFlowLayout协议,需要完全手敲出来方法,对应的也有设置header的尺寸方法

@@ -1,0 +1,953 @@
+{
+    "msg": "Request is successful",
+    "head": [
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131286.html",
+            "telephone": "",
+            "tag": "温润,有趣,远足",
+            "sponsor": {},
+            "id": 131286,
+            "adurl": "http://pic.huodongjia.com/event/2015-08-25/event135821.jpg",
+            "startdate": 1439913600,
+            "title": "台湾凭什么，值得我们一次又一次奔赴？",
+            "eventtype": 3,
+            "feelnum": 0,
+            "questionURL": "http://api.xiaorizi.me/app/q-131286.html",
+            "detail": "台湾凭什么，值得我们一次又一次奔赴？\r\n许多人印象中的台湾，或许是日月潭，阿里山的姑娘，来自台湾的流行音乐，以及台湾电影电视剧中无处不在的文艺和手工物件。\r\n冯仑在谈到台湾时写道：我看台湾的感觉，就是一个教养很好的中年妇女，你慢慢品、慢慢看，发现她的优点、责任、家庭，慢慢地看出来的东西越来越多。所以我到台湾觉得没有压力，很亲切。她的端庄，不是张牙舞爪，是什么事情都比较有次序、有规矩，她的娴熟、优雅，不是给别人看的，是内心的一种状态。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [],
+            "city": "上海",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [],
+            "address": "",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-25/event135847.jpg"
+            ],
+            "islongtime": 0,
+            "remark": "",
+            "enddate": 1440864000,
+            "mobileURL": "http://api.xiaorizi.me/app/app-131286.html",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131286,
+            "position": ""
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-130999.html",
+            "telephone": "",
+            "tag": "",
+            "sponsor": {},
+            "id": 130999,
+            "adurl": "http://pic.huodongjia.com/event/2015-07-08/event130389.jpg",
+            "startdate": 0,
+            "title": "开一家温暖的店 “小日子APP” 全国授艺巡演",
+            "eventtype": 3,
+            "feelnum": 0,
+            "questionURL": "http://api.xiaorizi.me/app/q-130999.html",
+            "detail": "小小的，精致的，每个角落都是自己用心布置的\r\n可以认识到很多投缘的朋友，可以倾听到不少心情故事\r\n\r\n看到这，或许你很快就会实现你的梦想了",
+            "note": "",
+            "feeltitle": "不展示",
+            "events": [],
+            "more": [],
+            "city": "杭州",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [],
+            "address": "",
+            "imgs": [],
+            "islongtime": 1,
+            "remark": "",
+            "enddate": 3015386183,
+            "mobileURL": "http://api.xiaorizi.me/app/app-130999.html",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 130999,
+            "position": ""
+        },
+        {
+            "feel": "活动指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-129164.html",
+            "telephone": "",
+            "tag": "",
+            "sponsor": {},
+            "id": 129164,
+            "adurl": "http://pic.huodongjia.com/event/2015-07-15/event131561.jpg",
+            "startdate": 0,
+            "title": "小日子里的探店情怀",
+            "eventtype": 3,
+            "feelnum": 10,
+            "questionURL": "http://api.xiaorizi.me/app/q-129164.html",
+            "detail": "『小日子APP』用自己独特的视角，寻访着大街小巷那些有格调、有品位、有特色的小店。\r\n发现城市中那些隐藏的美好小店铺，小情调。\r\n『小日子APP』带您认识那些情怀小店的店主。&nbsp;并融入到小店里的各种线下活动中，探寻生活方式与美学的背后故事。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [],
+            "city": "厦门",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 3
+            },
+            "allshops": [],
+            "address": "",
+            "imgs": [],
+            "islongtime": 0,
+            "remark": "",
+            "enddate": 1451404800,
+            "mobileURL": "http://api.xiaorizi.me/app/app-129164.html",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 129164,
+            "position": ""
+        }
+    ],
+    "code": 1,
+    "list": [
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-121795.html",
+            "telephone": "",
+            "tag": "花艺,温润",
+            "sponsor": {},
+            "id": 121795,
+            "adurl": "",
+            "startdate": 0,
+            "title": "奔驰御用花艺设计师教您手作花艺",
+            "eventtype": 2,
+            "feelnum": 10,
+            "questionURL": "<body><html><head></head><body><p><strong>活动时间</strong></p><p>每周日 13:30-15:30</p><p><strong>活动场馆</strong></p><p>家淇花艺</p><p><strong>费用说明</strong></p><p>单次课程（1次课）：280元（含花材/工具，课堂作品请带回家）</p><p><img alt=\"北京学花艺\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194558.34.jpg\" font-size=\"13.3333339691162\" height=\"400\" line-height=\"21.3333339691162\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194558.34.jpg\" text-align=\"center\" width=\"640\"></img></p></body></html></body>",
+            "detail": "这里只有遵循花木最原始的优美线条和最自然景致的展现，并没有取巧卖弄之意，而是期求花灵与人心的自在流露。",
+            "note": "【活动时间】每周日13:30-15:30【活动场馆】家淇花艺【费用说明】单次课程（1次课）：280元（含花材/工具，课堂作品请带回家）",
+            "feeltitle": "给自己的生活增加一些仪式感",
+            "events": [],
+            "more": [
+                {
+                    "title": "零基础参与艺术创作",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区东三环中路双井桥北东环18号公寓甲2号楼赛奇咖啡",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-07-29/event132832.jpg",
+                        "http://pic.huodongjia.com/event/2015-07-29/event132830.jpg"
+                    ],
+                    "position": "116.469797,39.90221",
+                    "id": 131129
+                },
+                {
+                    "title": "纯手工甜点 让你在美好中沉浸",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区北苑华贸城",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-03-06/event1425613741.4.jpg"
+                    ],
+                    "position": "116.438332727,40.0541799884",
+                    "id": 127850
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.485121471,39.9976353972",
+                    "title": "家淇花艺",
+                    "address": "朝阳区融科橄榄城",
+                    "city": "北京"
+                }
+            ],
+            "address": "朝阳区融科橄榄城",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-07-06/event130139.jpg",
+                "http://pic.huodongjia.com/event/2015-07-06/event130138.jpg",
+                "http://pic.huodongjia.com/event/2015-07-06/event130137.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "家淇花艺",
+            "enddate": 3016317768,
+            "mobileURL": "<body><html><head></head><body><p>鲜花本无意，而善于发现美好的人们赋予了它们不同的花语和寄托，之后便有了“赠人玫瑰，手有余香”这样的名言，</p><p>因为它带来的温馨会在赠花人和爱花人的心底慢慢升腾、弥漫、覆盖。</p><p style=\"text-align:center\"><img alt=\"北京学花艺\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194477.03.jpg\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194477.03.jpg\" text-align=\"center\" width=\"640\"></img></p><p style=\"text-align:center\"><strong>认真插花的女人，最美</strong></p><p style=\"text-align:center\"><img alt=\"北京学花艺\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194558.34.jpg\" font-size=\"13.3333339691162\" height=\"400\" line-height=\"21.3333339691162\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194558.34.jpg\" text-align=\"center\" width=\"640\"></img></p><p><strong>提供</strong>1、花艺工具（花剪，围裙，手套，刺钳，缎带，包装纸）</p><p>2、咖啡香茶点心（吃的，喝的，啥都有）</p><p>3、微笑，微笑，微笑（这里只有正能量）</p><p>4、花艺技巧（插花造型，花束造型，新娘花艺）</p><p>5、花艺知识（历史文化，养护技巧）</p><p>在这里，不提供花艺的速成，不提供L型，S型，I型的呆板花艺教学。不提供证书的填鸭式，死记硬背式考试培训。</p><p style=\"text-align:center\"><strong>欢迎来玩~</strong></p><p><img alt=\"北京学花艺\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194469.64.jpg\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194469.64.jpg\" text-align=\"center\" width=\"640\"></img></p><p><img alt=\"北京学花艺\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194563.42.jpg\" font-size=\"13.3333339691162\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194563.42.jpg\" text-align=\"center\" width=\"640\"></img></p><p><img alt=\"北京学花艺\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194489.98.jpg\" font-size=\"13.3333339691162\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-02-06/event1423194489.98.jpg\" text-align=\"center\" width=\"640\"></img></p><p><strong>活动时间</strong></p><p>每周日 13:30-15:30 </p><p><strong style=\"line-height: 1.6em;\">活动场馆</strong></p><p>家淇花艺</p><p><strong>费用说明</strong></p><p>单次课程（1次课）：280元（含花材/工具，课堂作品请带回家）​</p><p><strong>温馨提示</strong></p><p>8月22日~30日 外出暂停课程</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 121795,
+            "position": "116.485121471,39.9976353972"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131285.html",
+            "telephone": "18811715156",
+            "tag": "分享会,惬意,观演",
+            "sponsor": {},
+            "id": 131285,
+            "adurl": "",
+            "startdate": 1440518400,
+            "title": "8月26日-8月30日 免费观影 维尼的小熊😄 进击的巨人",
+            "eventtype": 2,
+            "feelnum": 10,
+            "questionURL": "",
+            "detail": "闲暇之余，让我们来看一些不同寻常的电影吧。一些优秀而又小众的老电影，在倾诉着那个年代的缤纷与绚丽。这次，就让我们从电影来过。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "纯手工甜点 让你在美好中沉浸",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区北苑华贸城",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-03-06/event1425613741.4.jpg"
+                    ],
+                    "position": "116.438332727,40.0541799884",
+                    "id": 127850
+                },
+                {
+                    "title": "Traditional Middle Eastern Music Night 传统中东音乐夜",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "北京东城区东四十一条64号",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-27/event136035.png"
+                    ],
+                    "position": "116.428299,39.940144",
+                    "id": 131297
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.421840507,39.9339964796",
+                    "title": "Camera Stylo",
+                    "address": "东城区东四十一条64号",
+                    "city": "北京"
+                }
+            ],
+            "address": "东城区东四十一条64号",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-25/event135801.jpg"
+            ],
+            "islongtime": 0,
+            "remark": "Camera Stylo",
+            "enddate": 1440864000,
+            "mobileURL": "<body><html><head></head><body><p><strong>8月26日 周三 晚8点</strong></p><p>异形奇花  (1986)</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-25/event135802.jpg\" height=\"840\" src=\"http://pic.huodongjia.com/event/2015-08-25/event135802.jpg\" width=\"833\"></img></p><p>主角西摩在一個日全食的下午，向一個中国商人买了一株怪异的植物，西姆尔暗恋同事奥黛丽，所以取名「奥黛丽二世」。 奥黛丽其实也喜欢西摩，但是自认为配不上他，甘心忍受牙医男友的百般虐待。西摩发现了「奥黛丽二世」吸血的秘密，更骇人的是「奥黛丽二世」会讲话，它怂恿西摩去杀牙医來喂他，但是西摩并没动手，牙医就因为吸了太多筒子里的「笑气」而自毙。 发现秘密的穆希尼先生想趁机威胁西摩让出「奥黛丽二世」，自己独享收益，结果反而落入「奥黛丽二世」的口中。 西摩想解决這株怪物，它卻挟持了奥黛丽，最后西摩鼓起勇气单挑「奥黛丽二世」，并且用电击杀死了這株饮血植物。</p><p><strong>8月28日 周五 晚8点</strong></p><p>独领风骚 (1995)</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-25/event135804.jpg\" height=\"543\" src=\"http://pic.huodongjia.com/event/2015-08-25/event135804.jpg\" width=\"960\"></img></p><p>故事发生在位于比弗利山庄的一所贵族学校中，能够进入此学校就读的学生们，非富即贵，所以，校园里奢侈和自由的风气和普通的学校是无法相比的。在这里，成绩和品行都不重要，重要的是五颜六色的名牌时装，是闪闪发光的珠宝配饰，是张扬奔放肆意挥洒的个性。我们的主人公雪儿（艾丽西亚·希尔维斯通 Alicia Silverstone 饰）就在这样的世界里生活成长着。 一位转学生的到来吸引了雪儿的注意，在偌大的校园里，在同学朋友的眼中，这名转学生简直就是“怪胎”，穿着平庸打扮又土气，雪儿决定帮助她改头换面，“重新做人”。在雪儿的指导下，转学生果然有了焕然一新的面貌，甚至更胜雪儿一筹，这让雪儿的内心里十分不平。</p><p></p><p><strong>8月29日 周六 晚上6：30</strong></p><p>理智与情感 (1995)</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-25/event135801.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-08-25/event135801.jpg\" width=\"640\"></img></p><p>老庄园主去世后，可怜的母女四人被长子逐出了庄园。靠着亲戚的帮助，她们在一处小小的农舍安顿下来。势力眼的长嫂未曾想到的是，她的弟弟爱德华（休·格兰特 饰）爱上了三姐妹中的大姐埃莉诺（艾玛·汤普森 饰）。理智的埃莉诺尽管也倾心于爱德华，却顾及两人地位的悬殊而努力克制着自己的感情。 与此同时，妹妹玛丽安娜（凯特·温丝莱特 饰）和英俊的军官威罗比（格雷·怀斯 饰）陷入热恋。情感外露的玛丽安娜热情奔放的释放着自己对威罗比的爱慕，甚至不顾及伤害追求者布兰登（艾伦·瑞克曼 饰）上校的感情。未曾想，威罗比为人不正，根本没有把玛丽安娜的感情真正放在心上。两个姐妹的感情相继陷入了危机。 性格迥异的两姐妹谁能得到真正的爱情，如愿以偿呢？母女四人又该如何走出生活的困境呢？</p><p></p><p><strong>8月30日 周日 晚上8点</strong></p><p>征婚启事 (1998)</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-25/event135803.jpg\" height=\"536\" src=\"http://pic.huodongjia.com/event/2015-08-25/event135803.jpg\" width=\"956\"></img></p><p>男友的多日失踪打破了台北某所大医院的眼科医生杜家珍（刘若英）以往的平静生活，为走出心情的低谷，她心血来潮在报纸的分类广告栏刊登了一则征婚启事，期望通过另一段新的恋情安慰自己。启事一出，招来众多远远超出杜家珍的过往生活经验所能想象的奇形怪状各怀目的的应征者（王朝明、纽承泽等），但在同他们一一面谈之后，杜家珍发现这些人要的只是各种各样的“欲”，而自己面对他们时的喟叹，更多是对过往情伤的不甘心。 当杜家珍决定为曾经的爱情做最后一次挽救的努力时，却得到对她来说十分意外或是最后一丝希望破灭或是解脱的消息。</p><p><strong>地址：</strong>东城区东四十一条64号</p><p><strong>电话: </strong>18811715156</p><p><strong>费用：</strong>公众影厅免费看电影，若需要酒水饮品需自费</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131285,
+            "position": "116.421840507,39.9339964796"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131160.html",
+            "telephone": "18601204990",
+            "tag": "书画,乐活,有趣,雅韵",
+            "sponsor": {},
+            "id": 131160,
+            "adurl": "",
+            "startdate": 0,
+            "title": "CBD核心商业圈里的艺术创作",
+            "eventtype": 2,
+            "feelnum": 9,
+            "questionURL": "",
+            "detail": "无论你是否有绘画基础，在尚美色彩自助画室都可以发掘自己的艺术天分，并在艺术创作的同时舒展情绪，摆脱压力和烦恼，用色彩和线条表现真正的自我。你的创作，无论是临摹还是个性涂鸦，都会是全球限量版的艺术品！                 ",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "零基础参与艺术创作",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区东三环中路双井桥北东环18号公寓甲2号楼赛奇咖啡",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-07-29/event132832.jpg",
+                        "http://pic.huodongjia.com/event/2015-07-29/event132830.jpg"
+                    ],
+                    "position": "116.469797,39.90221",
+                    "id": 131129
+                },
+                {
+                    "title": "零基础变身手工钩编达人",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区安慧里四区14-6-302",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-03-12/event1426175201.37.jpg"
+                    ],
+                    "position": "116.42174234,39.9981834783",
+                    "id": 128267
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.458718668,39.8932483839",
+                    "title": "尚美色彩自助画室",
+                    "address": "朝阳区广渠门外大街8号东B座606",
+                    "city": "北京"
+                }
+            ],
+            "address": "朝阳区广渠门外大街8号东B座606",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-04/event133422.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "尚美色彩自助画室",
+            "enddate": 3015489976,
+            "mobileURL": "<body><html><head></head><body><p>油画对你来说只是个名词？是挂在墙上的装饰？还是一种高高在上的艺术？</p><p>如果你厌倦了唱歌、逛街、看电影，希望尝试新的休闲娱乐方式， 培养一个优雅的爱好，有自我创作的欲望，尚美色彩自助画室是你最佳的选择！</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133426.jpg\" height=\"220\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133426.jpg\" width=\"352\"></img></p><p>尚美色彩自助画室位于北京CBD核心商业圈双井商业区，国贸南十号线双井站，朝阳区双井优士阁大厦B座606，10号线地铁西南口出，交通银行上面入口。</p><p>画室为对绘画感兴趣的人士提供了一个无拘无束自由自在的绘画空间。我们为你准备了绘画所需的一切工具，并有专业老师指导。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133427.jpg\" height=\"512\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133427.jpg\" width=\"605\"></img></p><p>无论你是否有绘画基础，在尚美色彩自助画室都可以发掘自己的艺术天分，并在艺术创作的同时舒展情绪，摆脱压力和烦恼，用色彩和线条表现真正的自我。</p><p>你的创作，无论是临摹还是个性涂鸦，都会是全球限量版的艺术品！  </p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133428.png\" height=\"519\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133428.png\" width=\"453\"></img>               </p><p><strong>油画体验套餐包括：</strong></p><p>实木框艺术家专用油画画布</p><p>全色系无毒无害环保颜料及全套作画工具、材料，无需自己准备任何额外物品</p><p>店内有彩图画册供参考选择，顾客也可自带参考图或自由创作</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133432.jpg\" height=\"460\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133432.jpg\" width=\"690\"></img></p><p>驻店专业指导老师针对零基础的绘画者进行免费指导：画前理论讲解、绘画工具使用及注意事项、绘画过程中难点答疑和绘画技巧讲解演示，协助体验者完成一副漂亮的作品，作品可带走。</p><p>免费饮料（柠檬水、菊花茶、咖啡、小吃零食、应季水果）</p><p>免费提供特制便携包装，方便携带</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133433.jpg\" height=\"699\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133433.jpg\" width=\"1057\"></img></p><p><strong>画框大小</strong>30*30cm   </p><p><strong>体验时长</strong> 3-4小时</p><p><strong>价格 </strong>99元  </p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133430.jpg\" height=\"1334\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133430.jpg\" width=\"1001\"></img></p><p><strong>地址:</strong> 北京市朝阳区广渠门外大街8号东B座606（地下停车场：每小时5元）</p><p><strong>预约电话：</strong>18601204990（手机）请提前3个小时预约</p><p><strong>营业时间:</strong></p><p>周日至周四 10:00 — 22:00</p><p>周五、周六 10:00 — 23:00</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131160,
+            "position": "116.458718668,39.8932483839"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131043.html",
+            "telephone": "18518253385",
+            "tag": "温润,有趣,烘焙",
+            "sponsor": {},
+            "id": 131043,
+            "adurl": "",
+            "startdate": 0,
+            "title": "用创意和热情感知国际甜",
+            "eventtype": 2,
+            "feelnum": 9,
+            "questionURL": "",
+            "detail": "最艺术、最时尚、最前沿的烘焙培训机构正式登陆北京了！从2015年起所有课程正式开始接受报名，国际一线米其林甜品主厨，携带国际最前沿烘焙技术奉送给中国的烘焙爱好者。\r\nTDessert乐得·全球同步体验式艺术烘焙培训作为中国烘焙行业的新成员，将致力于为中国烘焙业创业人、烘焙从业人员、与国际烘焙业最前沿甜品同步的烘焙追逐者、怀揣艺术梦想的专业烘焙人及有独特审美和想要提升艺术修养的烘焙爱好者们，提供一个直接面向他们，不经任何中转，同步传送的一个全新模式的开放式国际甜品的交流平台。国际顶尖烘焙团队将前沿的技术和最具实践意义的经验带到这个平台，并用他们的创意和热情去阐述正宗法式甜品。我们有坚定的信心去传播我们所认同的艺术烘焙理念。&nbsp;\r\n有别于其他中国西点培训课堂：TDessert乐得聘请国际一线甜品主厨最强团队授课；引进国际最新烘培课程模式并与之同步，即：深度体验专业理论+大量实操+实战地深度体验实践，此种模式目前国内首家引入；同时我们把如何将西点装饰得更具艺术性与创意美感作为主要课程，特聘请国内外艺术设计行业的领军人物为本机构授课。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "纯手工甜点 让你在美好中沉浸",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区北苑华贸城",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-03-06/event1425613741.4.jpg"
+                    ],
+                    "position": "116.438332727,40.0541799884",
+                    "id": 127850
+                },
+                {
+                    "title": "想画画 很简单",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区远洋天地56号楼",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-01-10/event1420875486.65.jpg"
+                    ],
+                    "position": "116.499271061,39.9184572076",
+                    "id": 120321
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.495352159,39.9836884515",
+                    "title": "TDessert乐得",
+                    "address": "朝阳区酒仙桥路4号798艺术区内七星街",
+                    "city": "北京"
+                }
+            ],
+            "address": "朝阳区酒仙桥路4号798艺术区内七星街",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-07-13/event131310.JPG"
+            ],
+            "islongtime": 1,
+            "remark": "TDessert乐得",
+            "enddate": 3013928215,
+            "mobileURL": "<body><html><head></head><body><p>最艺术、最时尚、最前沿的烘焙培训机构正式登陆北京了！从2015年起所有课程正式开始接受报名，国际一线米其林甜品主厨，携带国际最前沿烘焙技术奉送给中国的烘焙爱好者。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131315.JPG\" height=\"533\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131315.JPG\" width=\"800\"></img></p><p>T Dessert乐得·全球同步体验式艺术烘焙培训作为中国烘焙行业的新成员，将致力于为中国烘焙业创业人、烘焙从业人员、与国际烘焙业最前沿甜品同步的烘焙追逐者、怀揣艺术梦想的专业烘焙人及有独特审美和想要提升艺术修养的烘焙爱好者们，提供一个直接面向他们，不经任何中转，同步传送的一个全新模式的开放式国际甜品的交流平台。国际顶尖烘焙团队将前沿的技术和最具实践意义的经验带到这个平台，并用他们的创意和热情去阐述正宗法式甜品。我们有坚定的信心去传播我们所认同的艺术烘焙理念。 </p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131305.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131305.jpg\" width=\"960\"></img></p><p>有别于其他中国西点培训课堂：T Dessert乐得聘请国际一线甜品主厨最强团队授课；引进国际最新烘培课程模式并与之同步，即：深度体验专业理论+大量实操+实战地深度体验实践，此种模式目前国内首家引入；同时我们把如何将西点装饰得更具艺术性与创意美感作为主要课程，特聘请国内外艺术设计行业的领军人物为本机构授课。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131308.jpg\" height=\"1071\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131308.jpg\" width=\"1080\"></img></p><p>让甜品不止于美味，更具视觉、精神享受，提升学员专业审美水准，最终学员将从艺术创意设计如何运用在甜品制作中得到意想不到的收获。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131316.jpg\" height=\"784\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131316.jpg\" width=\"1080\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131317.jpg\" height=\"804\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131317.jpg\" width=\"1080\"></img></p><p><strong>地址：</strong>朝阳区酒仙桥路4号798艺术区内七星街</p><p><strong>报名电话：</strong>18518253385</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131043,
+            "position": "116.495352159,39.9836884515"
+        },
+        {
+            "feel": "活动指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-128267.html",
+            "telephone": "",
+            "tag": "手作,乐活,有趣,纯质",
+            "sponsor": {},
+            "id": 128267,
+            "adurl": "",
+            "startdate": 0,
+            "title": "零基础变身手工钩编达人",
+            "eventtype": 2,
+            "feelnum": 9,
+            "questionURL": "<body><html><head></head><body><p><strong>课程内容</strong></p><p>零基础变身手工钩编达人</p><p><strong>时间安排</strong></p><p><strong>棒针周二班</strong>（2015年5月5日开课，连续四周的周二上午11:00—3:00）</p><p><strong>棒针周四班</strong>（2015年5月7日开课，连续四周的周四上午11:00—3:00）</p><p><strong>钩针周三班</strong>（2015年5月6日开课，连续六周的周三上午11:00—3:00）</p><p><strong>钩针周六班</strong>（2015年5月9日开课，连续六周的周日上午11:00—3:00）</p><p>（每次课程时间为4个小时，假期顺延；午餐外卖，AA结算。）</p><p><strong>课程老师</strong></p><p>万紫千红手工坊编织老师王艳，从事手工钩编工作十几年</p><p><strong>上课地点</strong></p><p>北京市朝阳区安慧里四区14-6-302。（地铁五号线惠新西街北口站附近）</p><p><strong>费用介绍</strong></p><p>为保证教学质量，8人满员。也可预约一对一教学。时间为：周一到周五10点到6点。</p><p>钩针基础班学费800/人/期（包括场地茶点费，以及前期小成品所需的材料费用）</p><p>棒针基础班学费500/人/期（包括场地茶点费，提供课堂练习所需的工具和线材）</p></body></html></body>",
+            "detail": "一根针，一团线，从点开始，无限延伸、无限创意、无限惊喜。\r\n如果你热爱手工，热爱钩编，并愿意花时间去了解它，学习它，我们会给你强大的技术支持。当然，你不仅从此开启了一道手工钩编之门，也许你还认识了志同道合的姐妹，你们成了一辈子的朋友。",
+            "note": "【课程内容】零基础变身手工钩编达人【时间安排】棒针周二班（2015年5月5日开课，连续四周的周二上午11:00—3:00）棒针周四班（2015年5月7日开课，连续四周的周四上午11:00—3:00）钩针周三班（2015年5月6日开课，连续六周的周三上午11:00—3:00）钩针周六班（2015年5月9日开课，连续六周的周日上午11:00—3:00）（每次课程时间为4个小时，假期顺延；午餐外卖，AA结算",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "去满足一下你的口舌腹欲",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区建国路98号B座10层03",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-01-24/event1422071176.58.jpg"
+                    ],
+                    "position": "116.47870017,39.9121764298",
+                    "id": 123281
+                },
+                {
+                    "title": "拾一株向日葵，向梵高致敬 ",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "东城区旧鼓楼大街张旺胡同17号（近枣园居宾馆) 大卫之选咖啡厅",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135972.png"
+                    ],
+                    "position": "116.401759,39.951166",
+                    "id": 131296
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.415307301,39.9919332221",
+                    "title": "万紫千红手工坊",
+                    "address": "朝阳区安慧里四区14-6-302",
+                    "city": "北京"
+                }
+            ],
+            "address": "朝阳区安慧里四区14-6-302",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-03-12/event1426175201.37.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "万紫千红手工坊",
+            "enddate": 3013296938,
+            "mobileURL": "<body><html><head></head><body><p>手工使人内心宁静，一点音乐，一根针，一些喜欢的线，一幅图解，整个世界就变得那么单纯而宁静，让人沉浸其中。。。钩编是一门传统手艺，它并不复杂，但是趣味无穷。</p><p>一根针，一团线，从点开始，无限延伸、无限创意、无限惊喜。如果你热爱手工，热爱钩编，并愿意花时间去了解它，学习它，我们会给你强大的技术支持。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-12/event1426175202.06.jpg\" height=\"860\" src=\"http://pic.huodongjia.com/event/2015-03-12/event1426175202.06.jpg\" width=\"640\"></img></p><p><strong>一开始你可能会觉得有些困难</strong></p><p>钩针和线似乎并不那么听话，随着几次课的深入学习，当大大小小的成品像珍品一样呈现在你眼前的时候，你会发现钩编很奇妙，并且乐在其中。当然，你不仅从此开启了一道手工钩编之门，也许你还认识了志同道合的姐妹，你们成了一辈子的朋友。</p><p>带着美好的心情来享受手工陪伴你的一段美妙时光吧。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-12/event1426175201.18.jpg\" height=\"770\" src=\"http://pic.huodongjia.com/event/2015-03-12/event1426175201.18.jpg\" width=\"640\"></img></p><p><strong>钩针基础课程一共分为六次。</strong>第一次：基础识图；小辫、短针、长针的钩法。</p><p>第二次：平面花片</p><p>第三次：祖母方格，配色带线筋编</p><p>第四次：立体花书签</p><p>第五次：围巾</p><p>第六次：帽子</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-12/event1426175200.53.jpg\" height=\"562\" src=\"http://pic.huodongjia.com/event/2015-03-12/event1426175200.53.jpg\" width=\"434\"></img></p><p><strong>棒针基础课程一共分为四次。</strong></p><p>第一次：基础针法识图，上下针练习；加减针方法。</p><p>第二次：花型识图、学习；纠错方法。</p><p>第三次：各种起针方法，密度尺寸算法。</p><p>第四次：袖边领边门襟挑针方法，收边，缝合方法。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-12/event1426175199.72.jpg\" height=\"824\" src=\"http://pic.huodongjia.com/event/2015-03-12/event1426175199.72.jpg\" width=\"588\"></img></p><p><strong>【课程内容】</strong></p><p>零基础变身手工钩编达人</p><p><strong>【时间安排】</strong></p><p><strong>棒针周二班</strong>（连续四周的周二上午11:00—3:00）</p><p><strong>棒针周四班</strong>（连续四周的周四上午11:00—3:00）</p><p><strong>钩针周三班</strong>（连续六周的周三上午11:00—3:00）</p><p><strong>钩针周六班</strong>（连续六周的周日上午11:00—3:00）</p><p>（每次课程时间为4个小时，假期顺延；午餐外卖，AA结算。）</p><p><strong>【课程老师】</strong></p><p>万紫千红手工坊编织老师王艳，从事手工钩编工作十几年</p><p><strong>【上课地点】</strong></p><p>北京市朝阳区安慧里四区14-6-302。（地铁五号线惠新西街北口站附近）</p><p><strong>【费用介绍】</strong></p><p>为保证教学质量，8人满员。也可预约一对一教学。时间为：周一到周五10点到6点。</p><p>钩针基础班学费800/人/期（包括场地茶点费，以及前期小成品所需的材料费用）</p><p>棒针基础班学费500/人/期（包括场地茶点费，提供课堂练习所需的工具和线材）</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 128267,
+            "position": "116.415307301,39.9919332221"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-120321.html",
+            "telephone": "",
+            "tag": "书画,有趣",
+            "sponsor": {},
+            "id": 120321,
+            "adurl": "",
+            "startdate": 0,
+            "title": "想画画 很简单,找维尼的小熊😊",
+            "eventtype": 2,
+            "feelnum": 8,
+            "questionURL": "<body><html><head></head><body><p><strong>体验地点</strong></p><p>北京朝阳远洋天地56号楼漫时客厅</p><p><strong>活动费用</strong></p><p>238元/次/人</p><p><strong>费用包含：</strong></p><p>- 资深学院派老师现场指导</p><p>- 绘画所需材料的免费使用</p><p>（画布画笔调色板颜料等）</p><p>- 自助下午茶：胶囊咖啡+甜品水果+饮品</p><p><strong>温馨提示</strong></p><p>我们小而美的“漫时客厅”体验人员较多，</p><p>保证您的试听机会“请先电话或者留言预约”，以便我们安排课程。</p><p><strong>人数：</strong>限定名额5-10人</p></body></html></body>",
+            "detail": "在这里，你可以独自一人画画喝茶，享受自在的时光。\r\n在这里，你可以透过色彩世界找回那份原属于自我的生活灵感。\r\n在这里，你可以和伙伴们一起听着音乐随手涂鸦，共享美妙的午后。",
+            "note": "【体验地点】北京朝阳远洋天地56号楼漫时客厅【活动费用】238元/次/人费用包含：-资深学院派老师现场指导-绘画所需材料的免费使用（画布画笔调色板颜料等）-自助下午茶：胶囊咖啡+甜品水果+饮品【温馨提示】我们小而美的“漫时客厅”体验人员较多，保证您的试听机会“请先电话或者留言预约”，以便我们安排课程",
+            "feeltitle": "有点奔头儿，要比茫然得不知道去哪里的日子让人甜美",
+            "events": [],
+            "more": [
+                {
+                    "title": "用创意和热情感知国际甜",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区酒仙桥路4号798艺术区内七星街",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-07-13/event131310.JPG"
+                    ],
+                    "position": "116.501837,39.989791",
+                    "id": 131043
+                },
+                {
+                    "title": "零基础参与艺术创作",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区东三环中路双井桥北东环18号公寓甲2号楼赛奇咖啡",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-07-29/event132832.jpg",
+                        "http://pic.huodongjia.com/event/2015-07-29/event132830.jpg"
+                    ],
+                    "position": "116.469797,39.90221",
+                    "id": 131129
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.492799857,39.9124106134",
+                    "title": "漫时客厅",
+                    "address": "朝阳区远洋天地56号楼",
+                    "city": "北京"
+                }
+            ],
+            "address": "朝阳区远洋天地56号楼",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-01-10/event1420875486.65.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "漫时客厅",
+            "enddate": 3013297237,
+            "mobileURL": "<body><html><head></head><body><p style=\"text-align:center\"><strong>选个日子，开启一天属于自己的私生活</strong></p><p style=\"text-align:center\"><img alt=\"北京零基础学画画\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875484.85.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875484.85.jpg\" width=\"600\"></img></p><p><strong>日常课程表</strong></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-18/event1426690251.15.jpg\" height=\"310\" src=\"http://pic.huodongjia.com/event/2015-03-18/event1426690251.15.jpg\" width=\"596\"></img>​</p><p><img alt=\"北京零基础学画画\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875478.94.jpg\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875478.94.jpg\" text-align=\"center\" width=\"600\"></img></p><p><img alt=\"北京零基础学画画\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875476.29.jpg\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875476.29.jpg\" text-align=\"center\" width=\"600\"></img></p><p><img alt=\"北京零基础学画画\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875482.3.jpg\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875482.3.jpg\" text-align=\"center\" width=\"600\"></img></p><p><img alt=\"北京零基础学画画\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875492.21.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-01-10/event1420875492.21.jpg\" width=\"600\"></img>​</p><p><strong>【体验地点】</strong></p><p>北京朝阳远洋天地56号楼漫时客厅</p><p><strong>【活动费用】</strong></p><p>238元/次/人</p><p><strong>费用包含：</strong></p><p>- 资深学院派老师现场指导</p><p>- 绘画所需材料的免费使用</p><p>（画布画笔调色板颜料等）</p><p>- 自助下午茶：胶囊咖啡+甜品水果+饮品</p><p><strong>【温馨提示】</strong></p><p>我们小而美的“漫时客厅”体验人员较多，</p><p>保证您的试听机会“请先电话或者留言预约”，以便我们安排课程。</p><p><strong>人数：</strong>限定名额5-10人</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 120321,
+            "position": "116.492799857,39.9124106134"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131129.html",
+            "telephone": "15652780661",
+            "tag": "书画,温润,有趣",
+            "sponsor": {},
+            "id": 131129,
+            "adurl": "",
+            "startdate": 0,
+            "title": "零基础参与艺术创作,测试一下能不能够两行自动适配",
+            "eventtype": 2,
+            "feelnum": 7,
+            "questionURL": "",
+            "detail": "OURWEEK艺术沙龙由一群来自中央美术学院热爱艺术的青年艺术家创立。意在让更多人能够了解艺术，欣赏艺术，并带给大家一种艺术的生活方式。我们将定期为广大热爱艺术的人群提供最新的艺术资讯，零基础绘画课程，户外写生，博物馆参观等活动。\r\n\r\n每个人都有自己独特看待世界的方式，绘画这种媒介手段让艺术家表达出了他们自己，那么，我们为什么不能用绘画表达我们自己呢？\r\n我们会让您了解绘画的基本技巧和语言，课程中既有对西方经典油画的回望——西方经典油画临摹课程，还能参与艺术创作课程，充分表达不一样的自己。在这里，不需要你有任何绘画功底，只要你拿起画笔，随心而动，就能描绘出你心中的艺术。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "零基础变身手工钩编达人",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区安慧里四区14-6-302",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-03-12/event1426175201.37.jpg"
+                    ],
+                    "position": "116.42174234,39.9981834783",
+                    "id": 128267
+                },
+                {
+                    "title": "CBD核心商业圈里的艺术创作",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区广渠门外大街8号东B座606",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-04/event133422.jpg"
+                    ],
+                    "position": "116.465345,39.898902",
+                    "id": 131160
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.46317536,39.8965529187",
+                    "title": "OURWEEK艺术沙龙",
+                    "address": "朝阳区东三环中路双井桥北东环18号公寓甲2号楼赛奇咖啡",
+                    "city": "北京"
+                },
+                {
+                    "position_gcj02": ",",
+                    "position": "116.476658397,39.9897258907",
+                    "title": "OURWEEK艺术沙龙",
+                    "address": "朝阳区广顺南大街悠乐汇A座 caffebene 咖啡陪你",
+                    "city": "北京"
+                }
+            ],
+            "address": "朝阳区东三环中路双井桥北东环18号公寓甲2号楼赛奇咖啡",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-07-29/event132832.jpg",
+                "http://pic.huodongjia.com/event/2015-07-29/event132830.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "OURWEEK艺术沙龙",
+            "enddate": 3014963992,
+            "mobileURL": "<body><html><head></head><body><p>OURWEEK艺术沙龙由一群来自中央美术学院热爱艺术的青年艺术家创立。意在让更多人能够了解艺术，欣赏艺术，并带给大家一种艺术的生活方式。我们将定期为广大热爱艺术的人群提供最新的艺术资讯，零基础绘画课程，户外写生，博物馆参观等活动。</p><p></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-29/event132828.jpeg\" height=\"810\" src=\"http://pic.huodongjia.com/event/2015-07-29/event132828.jpeg\" width=\"1080\"></img></p><p>每个人都有自己独特看待世界的方式，绘画这种媒介手段让艺术家表达出了他们自己，那么，我们为什么不能用绘画表达我们自己呢？</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-29/event132824.jpeg\" height=\"1080\" src=\"http://pic.huodongjia.com/event/2015-07-29/event132824.jpeg\" width=\"1080\"></img></p><p>我们会让您了解绘画的基本技巧和语言，课程中既有对西方经典油画的回望——西方经典油画临摹课程，还能参与艺术创作课程，充分表达不一样的自己 。在这里，不需要你有任何绘画功底，只要你拿起画笔，随心而动，就能描绘出你心中的艺术。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-29/event132826.jpeg\" height=\"1280\" src=\"http://pic.huodongjia.com/event/2015-07-29/event132826.jpeg\" width=\"960\"></img></p><p><strong>时间</strong>（每周六，日）14:00-17：00</p><p><strong>地点 </strong></p><p>（望京店）北京市朝阳区广顺南大街悠乐汇A座 caffebene 咖啡陪你</p><p>（双井店）北京市朝阳区东三环中路双井桥北东环18号公寓甲2号楼赛奇咖啡</p><p><strong>指导老师 </strong></p><p>老师都是来自中央美术学院的高颜值帅哥哦！</p><p><strong>活动费用</strong> </p><p>200元/人（情侣或两人以上一起参加立即九折优惠哦！费用包括绘画所需画笔、画架、颜料、画框、定制画袋等画具，专业老师辅导费用，及一杯咖啡或饮料）</p><p>四次卡：720元/人  赠送精美高级画框一个</p><p>十次卡：1800元/人 赠送精美高级画框一个及画具一套（包括画架，画板，画笔等）</p><p><strong>报名方式 </strong>15652780661（吴老师）</p><p><strong>微信</strong> ourweek-yishu            </p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131129,
+            "position": "116.46317536,39.8965529187"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-127850.html",
+            "telephone": "",
+            "tag": "乐活,温润,赏味,雅韵,惬意,烘焙",
+            "sponsor": {},
+            "id": 127850,
+            "adurl": "",
+            "startdate": 0,
+            "title": "纯手工甜点 让你在美好中沉浸",
+            "eventtype": 2,
+            "feelnum": 6,
+            "questionURL": "<body><html><head></head><body><p><strong>预约时间</strong></p><p>周二至周日下午 13：00-18:00 请提前1个星期预约哦</p><p><strong>套餐费用</strong></p><p>200元每位。600元起接受预定~也就是3人起接受预定，2人来也是3人的价格哦</p><p>独享体验价：190元每位</p><p><strong>套餐内容</strong></p><p>包括蛋糕两款，曲奇一款，咸点一款，手冲咖啡及波士红茶不限，赠送：水果拼盘。</p><p><strong>交通指南</strong></p><p>地铁3号线北苑站下车500米即到</p><p><strong>特别说明</strong></p><p>1，套餐不能点餐，做什么吃什么,</p><p>2，套餐有可能与别人约同一天，暖暖尽量把大家安排在不同时段</p><p>3，套餐的主甜点是切件蛋糕，不是一整个大蛋糕</p><p><strong>关于违约</strong></p><p>如您预约的下午茶临时不能来，可提前3天退订，由于食材，场地已经为您筹备好，在3天内退订的客人仍旧需要按照原价收取费用，so,请斟酌考虑自己的时间，以免双方遭受损失。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613742.28.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613742.28.jpg\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613741.53.jpg\" font-size=\"13\" height=\"400\" line-height=\"1.6em\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613741.53.jpg\" width=\"640\"></img></p><p></p></body></html></body>",
+            "detail": "温馨舒适、美食茶香，朋友间的促膝小酌，情侣一起的甜蜜时光，暖暖亲手定制下午茶套餐，纯手工甜点、法式传统制作工艺，全部采用进口石材，绝不添加食品添加剂！让你在美好中沉浸，在回忆里留下幸福时光~~~",
+            "note": "【预约时间】周二至周日下午13：00-18:00请提前1个星期预约哦【套餐费用】200元每位",
+            "feeltitle": "一路走来，你若懂我，就很好",
+            "events": [],
+            "more": [
+                {
+                    "title": "零基础变身手工钩编达人",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区安慧里四区14-6-302",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-03-12/event1426175201.37.jpg"
+                    ],
+                    "position": "116.42174234,39.9981834783",
+                    "id": 128267
+                },
+                {
+                    "title": "用创意和热情感知国际甜",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区酒仙桥路4号798艺术区内七星街",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-07-13/event131310.JPG"
+                    ],
+                    "position": "116.501837,39.989791",
+                    "id": 131043
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.431840042,40.0482199315",
+                    "title": "暖暖下午茶烘焙工作室",
+                    "address": "朝阳区北苑华贸城",
+                    "city": "北京"
+                }
+            ],
+            "address": "朝阳区北苑华贸城",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-03-06/event1425613741.4.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "暖暖下午茶烘焙工作室",
+            "enddate": 3014364046,
+            "mobileURL": "<body><html><head></head><body><p><strong>欢迎预约暖暖下午茶套餐</strong></p><p>温馨舒适、美食茶香，朋友间的促膝小酌，情侣一起的甜蜜时光，暖暖亲手定制下午茶套餐，纯手工甜点、法式传统制作工艺，全部采用进口食材，绝不添加食品添加剂！让你在美好中沉浸，在回忆里留下幸福时光~~~</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613140.64.jpg\" font-size=\"13\" height=\"400\" line-height=\"1.6em\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613140.64.jpg\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613137.87.jpg\" font-size=\"13\" height=\"375\" line-height=\"1.6em\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613137.87.jpg\" width=\"600\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613140.54.jpg\" font-size=\"13\" height=\"600\" line-height=\"1.6em\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613140.54.jpg\" width=\"600\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613141.5.jpg\" height=\"902\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613141.5.jpg\" width=\"600\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613141.27.jpg\" height=\"375\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613141.27.jpg\" width=\"600\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613142.59.jpg\" height=\"375\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613142.59.jpg\" width=\"600\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613133.73.jpg\" height=\"375\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613133.73.jpg\" width=\"600\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613134.29.jpg\" height=\"375\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613134.29.jpg\" width=\"600\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613135.46.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613135.46.jpg\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613136.32.jpg\" height=\"962\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613136.32.jpg\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613136.25.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613136.25.jpg\" width=\"640\"></img></p><p><strong>【预约时间】</strong></p><p>周二至周日下午 13：00-18:00 请提前1个星期预约哦</p><p><strong>【套餐费用】</strong></p><p>200元每位。600元起接受预定~也就是3人起接受预定，2人来也是3人的价格哦</p><p>独享体验价：190元每位</p><p><strong>【套餐内容】</strong></p><p>包括蛋糕两款，曲奇一款，咸点一款，手冲咖啡及波士红茶不限，赠送：水果拼盘。</p><p><strong>【交通指南】</strong></p><p>地铁3号线北苑站下车500米即到</p><p><strong>【特别说明】</strong></p><p>1，套餐不能点餐，做什么吃什么</p><p>2，套餐有可能与别人约同一天，暖暖尽量把大家安排在不同时段</p><p>3，套餐的主甜点是切件蛋糕，不是一整个大蛋糕</p><p><strong>【关于违约】</strong></p><p>如您预约的下午茶临时不能来，可提前3天退订，由于食材，场地已经为您筹备好，在3天内退订的客人仍旧需要按照原价收取费用，so,请斟酌考虑自己的时间，以免双方遭受损失。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613742.28.jpg\" height=\"400\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-03-06/event1425613742.28.jpg\" width=\"640\"></img></p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 127850,
+            "position": "116.431840042,40.0482199315"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-123281.html",
+            "telephone": "",
+            "tag": "乐活,赏味,餐吧",
+            "sponsor": {},
+            "id": 123281,
+            "adurl": "",
+            "startdate": 0,
+            "title": "去满足一下你的口舌腹欲",
+            "eventtype": 2,
+            "feelnum": 4,
+            "questionURL": "",
+            "detail": "一位小厨了做了一个决定，开一家“百年大计，质量第一”的小餐厅。这里的小厨黑麦说：手艺只讲2个字：好吃。他还说好的料理和写字一样，形容词副词很少。\r\n当然，这或许是大望路地区最舒服的餐厅了。",
+            "note": "",
+            "feeltitle": "只要是做料理的地方｜就不会让人难过",
+            "events": [],
+            "more": [
+                {
+                    "title": "CBD核心商业圈里的艺术创作",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区广渠门外大街8号东B座606",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-04/event133422.jpg"
+                    ],
+                    "position": "116.465345,39.898902",
+                    "id": 131160
+                },
+                {
+                    "title": "纯手工甜点 让你在美好中沉浸",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区北苑华贸城",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-03-06/event1425613741.4.jpg"
+                    ],
+                    "position": "116.438332727,40.0541799884",
+                    "id": 127850
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.472110071,39.9064590057",
+                    "title": "黑麦的厨房",
+                    "address": "朝阳区建国路98号B座10层03",
+                    "city": "北京"
+                }
+            ],
+            "address": "朝阳区建国路98号B座10层03",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-01-24/event1422071176.58.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "黑麦的厨房",
+            "enddate": 3016754459,
+            "mobileURL": "<body><html><head></head><body><p><strong>这是一位怎样的私厨呢？</strong></p><p>主人黑麦是一位80后媒体工作者，他喜欢音乐，做过电台主持人，似乎还玩过一支不出名的乐队。黑麦以前在澳大利亚读书，16岁时便开始了餐厅的工作，也正是在那里爱上了厨房。</p><p><img alt=\"北京私厨有约\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-01-24/event1422067891.38.jpg\" height=\"568\" src=\"http://pic.huodongjia.com/event/2015-01-24/event1422067891.38.jpg\" width=\"638\"></img></p><p><strong>这又是一家怎样的厨房？</strong></p><p>黑麦的厨房从2014年冬季正式登录大望路，从餐厅位置坐标便可知晓这是一家私人厨房。黑麦的这家餐厅布置相当用心，他把50平米的厅房全部改为餐厅，餐具大多来自丹麦和德国，透过大窗还可以侧目大望路的一角，这或许就是the kitchen in the rye名字的来历——你可以置身喧闹以外。</p><p>餐厅对食材格外挑剔，从菜肉蛋奶到主食调料，都是黑麦本人亲自筛选的，据说黑麦吃饭比较“事儿”，他只在北京固定的几家餐厅吃饭。</p><p>补充一下，黑麦的厨房基本上只有他一个人，从做菜到端盘子也是得心应手，餐厅播放的音乐是他自己列的歌单，氛围挺重要。绝对好吃的味道和亲切的服务，嗯，总之让人感到舒适、轻松。</p><p><img alt=\"北京私厨有约\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-01-24/event1422068234.39.jpg\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-01-24/event1422068234.39.jpg\" width=\"640\"></img></p><p><img alt=\"北京私厨有约\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-01-24/event1422066950.79.jpg\" height=\"516\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-01-24/event1422066950.79.jpg\" width=\"497\"></img></p><p><strong>主人黑麦想对大家说的话：</strong></p><p>大家好，我是黑麦，这是我的厨房和餐厅。我其实也不太会讲话，就是挺喜欢做饭的。2000年初，我还在凤凰卫视看Jamie Oliver呢，就被我妈送上了去澳大利亚的飞机，当时我喜欢摇滚乐多过美食，后来在Pan D’Arte cafe工作的时候，就喜欢上了食物、咖啡、葡萄酒，意大利食物只是个开始，后来我还陆续做过海鲜店、酒馆、广东菜、台湾小吃和奶茶店。不得不说，悉尼这个城市触发了我的味觉，那时我开始在家做菜。</p><p>我从小在东交民巷长大，没少去新桥饭店那一带吃饭，但是我发现最近十年的北京饭食越来越让人失望了，所以，我做了这个决定，开一家“百年大计，质量第一”的小餐厅。</p><p>我用一个月的时间重新布置了房子，购买餐具，挺累的，不回忆了。总之呢，我会按季节的交替，每三个月出一份新的菜单，我自己胡写些小说，所以喜欢给菜乱起名字，于是你就会看到国贸海滩、中山公园沙拉什么的。</p><p>当然了，如果你有特别饮食的要求，就随时和我讲，这个餐厅应该是满足你口舌腹欲的地方，当然，或许是大望路地区最舒服的餐厅吧。</p><p><strong>定制方式：</strong></p><p>每周345开餐，6人以上直接预订。每人菜金260元，菜单由主厨当日决定。会在提前两天的时候与您确认口味偏好，忌口食材，备酒名录，开餐时间。</p><p>6人以下先微信咨询客服是否有小餐厅模式供应。</p><p><strong>赏味地址：</strong></p><p>北京市朝阳区建国路98号B座10层03</p><p><strong>客服号：</strong>kitchenrye</p><p style=\"text-align:center\"></p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 123281,
+            "position": "116.472110071,39.9064590057"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131297.html",
+            "telephone": "18811715156",
+            "tag": "有趣,观演,小酒馆",
+            "sponsor": {},
+            "id": 131297,
+            "adurl": "",
+            "startdate": 1440853200,
+            "title": "Traditional Middle Eastern Music Night 传统中东音乐夜",
+            "eventtype": 2,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "是谁来自，五湖四海，却困于昼夜、厨房与爱。这次，沿着丝绸之路一路唱到北京的“Route to Diomira”乐队，要开始讲述他们的故事了。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "想画画 很简单",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区远洋天地56号楼",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-01-10/event1420875486.65.jpg"
+                    ],
+                    "position": "116.499271061,39.9184572076",
+                    "id": 120321
+                },
+                {
+                    "title": "CBD核心商业圈里的艺术创作",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "朝阳区广渠门外大街8号东B座606",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-04/event133422.jpg"
+                    ],
+                    "position": "116.465345,39.898902",
+                    "id": 131160
+                }
+            ],
+            "city": "北京",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "116.421867352,39.9340049278",
+                    "title": "CameraStylo",
+                    "address": "北京东城区东四十一条64号",
+                    "city": "北京"
+                }
+            ],
+            "address": "北京东城区东四十一条64号",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-27/event136035.png"
+            ],
+            "islongtime": 1,
+            "remark": "CameraStylo",
+            "enddate": 3017443135,
+            "mobileURL": "<body><html><head></head><body><p>乐队介绍：“Route to Diomira”是一个多文化的乐队，乐队名字来自Italo Calvino的小说《Invisible Cities》.四名成员分别来自意大利，土耳其，伊朗。他们以演奏各自国家的传统民谣为主，再加上混合不同民族曲风的原创歌曲让他们独树一帜，对他们而言，音乐意味着在路上，他们将自己定义为旅行者，从自己的音乐根基上集成元素，致力于创造一段理想的旅程，而这段旅程沿着丝绸之路到达了他们渴望谋面的中国。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-27/event136036.png\" height=\"477\" src=\"http://pic.huodongjia.com/event/2015-08-27/event136036.png\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-27/event136038.png\" height=\"749\" src=\"http://pic.huodongjia.com/event/2015-08-27/event136038.png\" width=\"530\"></img></p><p>乐队成员：Massimo(吉他，演唱）（意大利）          Emre(土耳其传统乐器baglama，演唱)(土耳其）          Jenk（吉他，演唱）（土耳其）          Amir(阿塞拜疆传统乐器 Tar)(伊朗）</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-27/event136037.png\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-08-27/event136037.png\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-27/event136040.png\" height=\"787\" src=\"http://pic.huodongjia.com/event/2015-08-27/event136040.png\" width=\"527\"></img></p><p>门票：40元。演出分为上下两部分，上下各40分钟，中场休息15分钟。座位有限，请提前预定。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-27/event136039.png\" height=\"658\" src=\"http://pic.huodongjia.com/event/2015-08-27/event136039.png\" width=\"640\"></img>​</p><p><strong>地址：</strong>北京东城区东四十一条64号CameraStylo</p><p><strong>日期：</strong>8月29日周六晚9点</p><p><strong>联系电话:</strong> 18811715156</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131297,
+            "position": "116.421867352,39.9340049278"
+        }
+    ]
+}

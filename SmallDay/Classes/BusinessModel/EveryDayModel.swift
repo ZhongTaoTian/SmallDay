@@ -4,7 +4,7 @@
 //
 //  Created by MacBook on 15/8/21.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  探店Model, 这个APP的很多model都很相近,其实可以提取出所有不同的模型汇总成一个通用模型,我个人喜欢分开不同的模型
 
 import UIKit
 
