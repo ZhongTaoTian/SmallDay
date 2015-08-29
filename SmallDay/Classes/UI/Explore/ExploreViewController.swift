@@ -65,14 +65,15 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
             tmpSelf!.albumTableView.reloadData()
         }
         
+        weak var tmpSelf1 = self
         EveryDays.loadEventsData { (data, error) -> () in
             if error != nil {
                 SVProgressHUD.showErrorWithStatus("数据加载失败")
                 return
             }
             
-            tmpSelf!.everyDays = data!
-            tmpSelf!.dayTableView.reloadData()
+            tmpSelf1!.everyDays = data!
+            tmpSelf1!.dayTableView.reloadData()
         }
     }
     

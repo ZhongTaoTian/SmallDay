@@ -15,6 +15,7 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MNh-cl-98r" userLabel="imageImageView">
                         <rect key="frame" x="0.0" y="52" width="320" height="200"/>
+                        <color key="backgroundColor" red="0.27888569079999997" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="Cx0-pn-fbH"/>
                         </constraints>
@@ -25,6 +26,9 @@
                             <constraint firstAttribute="width" constant="77" id="4So-cv-PJi"/>
                             <constraint firstAttribute="height" constant="32" id="gJT-ml-P4X"/>
                         </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moreshadow" translatesAutoresizingMaskIntoConstraints="NO" id="GKi-fG-K7p">
+                        <rect key="frame" x="0.0" y="52" width="320" height="200"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aug." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpT-Sp-qXg">
                         <rect key="frame" x="28" y="23" width="30" height="18"/>
@@ -62,6 +66,7 @@
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="UpT-Sp-qXg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="3Nk-wj-f9m"/>
+                    <constraint firstItem="GKi-fG-K7p" firstAttribute="leading" secondItem="MNh-cl-98r" secondAttribute="leading" id="7Mp-mI-84N"/>
                     <constraint firstItem="CBj-cF-TV2" firstAttribute="leading" secondItem="UpT-Sp-qXg" secondAttribute="trailing" id="95c-WU-vX2"/>
                     <constraint firstItem="UpT-Sp-qXg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="DuQ-fj-tP8"/>
                     <constraint firstAttribute="trailing" secondItem="MNh-cl-98r" secondAttribute="trailing" id="IyU-XZ-iyQ"/>
@@ -70,11 +75,14 @@
                     <constraint firstItem="Jxx-o8-9NW" firstAttribute="centerY" secondItem="aFW-Nm-Vqr" secondAttribute="centerY" constant="-2" id="Lue-mA-XNQ"/>
                     <constraint firstItem="Qg7-zs-kRc" firstAttribute="top" secondItem="hie-Ey-bna" secondAttribute="bottom" id="Mna-UF-TsG"/>
                     <constraint firstItem="hie-Ey-bna" firstAttribute="top" secondItem="CBj-cF-TV2" secondAttribute="bottom" constant="12" id="Pz0-MF-oBK"/>
+                    <constraint firstItem="GKi-fG-K7p" firstAttribute="trailing" secondItem="MNh-cl-98r" secondAttribute="trailing" id="Rav-8d-LRa"/>
                     <constraint firstItem="MNh-cl-98r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VrQ-Lm-mxB"/>
+                    <constraint firstItem="GKi-fG-K7p" firstAttribute="top" secondItem="MNh-cl-98r" secondAttribute="top" id="Vzi-p5-muZ"/>
                     <constraint firstItem="Qg7-zs-kRc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ZoS-4j-IkZ"/>
                     <constraint firstItem="Jxx-o8-9NW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fHX-S8-CRK"/>
                     <constraint firstAttribute="trailing" secondItem="Qg7-zs-kRc" secondAttribute="trailing" constant="10" id="gIU-xh-wFd"/>
                     <constraint firstItem="CBj-cF-TV2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="kUs-xH-LCt"/>
+                    <constraint firstItem="GKi-fG-K7p" firstAttribute="bottom" secondItem="MNh-cl-98r" secondAttribute="bottom" id="lgD-uM-q01"/>
                     <constraint firstItem="hie-Ey-bna" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mDv-rM-XRP"/>
                     <constraint firstItem="Jxx-o8-9NW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="owY-sI-G8I"/>
                     <constraint firstAttribute="trailing" secondItem="hie-Ey-bna" secondAttribute="trailing" constant="10" id="sWR-wn-Pve"/>
@@ -94,5 +102,6 @@
     </objects>
     <resources>
         <image name="date" width="77" height="32"/>
+        <image name="moreshadow" width="300" height="63"/>
     </resources>
 </document>

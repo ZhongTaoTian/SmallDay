@@ -6,9 +6,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="SmallDay" customModuleProvider="target">
             <connections>
+                <outlet property="codeTextField" destination="xFJ-Nx-0Pt" id="BZw-aJ-gtI"/>
                 <outlet property="contentView" destination="Awg-J3-fPZ" id="KOM-Ku-rzu"/>
+                <outlet property="loginBtn" destination="gNJ-gx-Zqx" id="df8-vp-PS9"/>
                 <outlet property="nameTextField" destination="5Ce-4Q-wxU" id="wJH-H8-jVB"/>
+                <outlet property="phoneNumTextField" destination="OgR-vO-V5p" id="JbR-R5-o5E"/>
+                <outlet property="remarkTextField" destination="Axh-ye-L6a" id="x83-rg-E9y"/>
                 <outlet property="scrollView" destination="hJK-yx-pbl" id="zc1-q3-3td"/>
+                <outlet property="sendCodeBtn" destination="5h1-Y1-KO5" id="iAU-N4-XLy"/>
+                <outlet property="submitBtn" destination="TqI-uq-cYN" id="hoN-6v-E4M"/>
+                <outlet property="titleLabel" destination="8BI-c0-MVX" id="3fl-3g-Yhi"/>
                 <outlet property="view" destination="iN0-l3-epB" id="FlF-hH-q8k"/>
             </connections>
         </placeholder>
@@ -58,7 +65,7 @@
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="预约时间等其他备注" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Axh-ye-L6a">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="预约时间等其他备注" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Axh-ye-L6a">
                                             <rect key="frame" x="10" y="40" width="355" height="39.5"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -114,7 +121,7 @@
                                                 <constraint firstAttribute="height" constant="1" id="Zz7-wO-AnC"/>
                                             </constraints>
                                         </view>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ce-4Q-wxU">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="姓名" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="5Ce-4Q-wxU">
                                             <rect key="frame" x="35" y="69" width="330" height="40"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -123,7 +130,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入短信中的验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFJ-Nx-0Pt">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入短信中的验证码" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="xFJ-Nx-0Pt">
                                             <rect key="frame" x="35" y="187" width="330" height="40"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -204,6 +211,7 @@
                                                 <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <state key="disabled" backgroundImage="fsyzm"/>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -301,7 +309,7 @@
     </objects>
     <resources>
         <image name="code" width="20" height="24"/>
-        <image name="fsyzm" width="100" height="36"/>
+        <image name="fsyzm" width="36" height="36"/>
         <image name="name1" width="20" height="24"/>
         <image name="phone" width="20" height="24"/>
         <image name="submitorder_2" width="41" height="44"/>

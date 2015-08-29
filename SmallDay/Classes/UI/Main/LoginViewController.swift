@@ -26,7 +26,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         navigationItem.title = "登录"
-        view.backgroundColor = theme.SDBackgroundColor
+        view.backgroundColor = theme.SDWebViewBacagroundColor
         //添加scrollView
         addScrollView()
         // 添加手机文本框和密码文本框
@@ -47,7 +47,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     func addScrollView() {
         backScrollView = UIScrollView(frame: view.bounds)
-        backScrollView.backgroundColor = theme.SDBackgroundColor
+        backScrollView.backgroundColor = theme.SDWebViewBacagroundColor
         backScrollView.alwaysBounceVertical = true
         let tap = UITapGestureRecognizer(target: self, action: "backScrollViewTap")
         backScrollView.addGestureRecognizer(tap)
@@ -181,7 +181,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         let rect = userinfo[UIKeyboardFrameEndUserInfoKey]!.CGRectValue()
         var boardH = AppHeight - rect.origin.y
         if boardH > 0 {
-            boardH = boardH + 64
+            boardH = boardH + NavigationH
         }
         backScrollView.contentSize = CGSizeMake(0, view.height + boardH)
     }

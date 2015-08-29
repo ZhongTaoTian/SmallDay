@@ -8,13 +8,37 @@
 
 import UIKit
 
-class ShakeViewController: UIViewController {
+class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var detailModel: DetailModel?
 
+    lazy var foodView: UIView? = {
+        let foodView = UIView(frame: CGRectMake(0, 0, AppWidth, 80))
+        foodView.backgroundColor = UIColor.clearColor()
+        let button = UIButton(frame: CGRectMake((AppWidth - 120) * 0.5, 20, 120, 40))
+        button.setBackgroundImage(UIImage(named: "fsyzm"), forState: .Normal)
+        button.setTitle("在摇一次", forState: .Normal)
+        button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        button.addTarget(self, action: "aginButtonClick", forControlEvents: .TouchUpInside)
+        foodView.addSubview(button)
+        return foodView
+        }()
     @IBOutlet weak var yaoImageView1: UIImageView!
     @IBOutlet weak var yaoImageView2: UIImageView!
     @IBOutlet weak var bottomLoadView: UIView!
+    lazy var tableView: UITableView? = {
+        let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.hidden = true
+        tableView.rowHeight = DetailCellHeight
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, NavigationH, 0)
+        tableView.separatorStyle = .None
+        tableView.tableFooterView = self.foodView
+        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: "DetailCell")
+        return tableView
+        }()
     
-    /// 重写构造方法,直接在xib里加载    
+    /// 重写构造方法,直接在xib里加载
     init() {
         super.init(nibName: "ShakeViewController", bundle: nil)
     }
@@ -25,17 +49,18 @@ class ShakeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         navigationItem.title = "摇一摇"
+        view.addSubview(tableView!)
     }
     
     deinit {
         print("摇一摇控制器被销毁了")
     }
-
+    
     // 摇一摇功能
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
-        bottomLoadView.hidden = false
+        tableView!.hidden = true
         let animateDuration: NSTimeInterval = 0.3
         let offsetY: CGFloat = 50
         
@@ -43,22 +68,61 @@ class ShakeViewController: UIViewController {
             self.yaoImageView1.transform = CGAffineTransformMakeTranslation(0, -offsetY)
             self.yaoImageView2.transform = CGAffineTransformMakeTranslation(0, offsetY)
             
-        }) { (finish) -> Void in
-            let popTime = dispatch_time(DISPATCH_TIME_NOW,Int64(0.5 * Double(NSEC_PER_SEC)))
-            dispatch_after(popTime, dispatch_get_main_queue(), { () -> Void in
-                
-                UIView.animateWithDuration(animateDuration, animations: { () -> Void in
-                    self.yaoImageView1.transform = CGAffineTransformIdentity
-                    self.yaoImageView2.transform = CGAffineTransformIdentity
-                }, completion: { (finish) -> Void in
-                    // TODO 加载摇一摇数据
-                    self.loadShakeData()
+            }) { (finish) -> Void in
+                let popTime = dispatch_time(DISPATCH_TIME_NOW,Int64(0.5 * Double(NSEC_PER_SEC)))
+                dispatch_after(popTime, dispatch_get_main_queue(), { () -> Void in
+                    
+                    UIView.animateWithDuration(animateDuration, animations: { () -> Void in
+                        self.yaoImageView1.transform = CGAffineTransformIdentity
+                        self.yaoImageView2.transform = CGAffineTransformIdentity
+                        }, completion: { (finish) -> Void in
+                            // TODO 加载摇一摇数据
+                            self.loadShakeData()
+                    })
                 })
-            })
         }
     }
     
     func loadShakeData() {
+        bottomLoadView.hidden = false
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC)))
+        dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
+            DetailModel.loadDetails({ (data, error) -> () in
+                self.bottomLoadView.hidden = true
+                self.tableView!.hidden = false
+                self.detailModel = data
+                self.tableView!.reloadData()
+            })
+        }
+   
+    }
     
+    /// 再摇一次
+    func aginButtonClick() {
+        self.motionBegan(.MotionShake, withEvent: UIEvent())
+    }
+    
+    /// MARK: TableViewDelegate, TableViewDataSours
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        return detailModel?.list?.count ?? 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("DetailCell") as! DetailCell
+        let everyModel = detailModel!.list![indexPath.row]
+        cell.model = everyModel
+        return cell
     }
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ class ExperienceViewController: MainViewController {
         tableV.dataSource = self
         tableV.estimatedRowHeight = 200
         tableV.rowHeight = UITableViewAutomaticDimension
-        tableV.contentInset = UIEdgeInsetsMake(0, 0, NavigationH, 0)
+        tableV.contentInset = UIEdgeInsetsMake(0, 0, NavigationH + 49, 0)
         tableV.registerNib(UINib(nibName: "ExperienceCell", bundle: nil), forCellReuseIdentifier: self.cellIdentifier)
         return tableV
         }()
@@ -86,6 +86,8 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource, 
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let detailVC = DetailViewController()
+        let eventModel = experModel!.list![indexPath.row]
+        detailVC.model = eventModel
         navigationController!.pushViewController(detailVC, animated: true)
     }
     

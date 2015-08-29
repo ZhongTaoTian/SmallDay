@@ -16,6 +16,9 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aiX-3c-99R">
                         <rect key="frame" x="0.0" y="5" width="320" height="214.5"/>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moreshadow" translatesAutoresizingMaskIntoConstraints="NO" id="b3P-MK-cyd">
+                        <rect key="frame" x="0.0" y="5" width="320" height="214.5"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手作直人的皮革店" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8a-Vn-v0M">
                         <rect key="frame" x="10" y="15" width="300" height="24"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -30,7 +33,9 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="aiX-3c-99R" firstAttribute="leading" secondItem="b3P-MK-cyd" secondAttribute="leading" id="6p7-Cn-XfO"/>
                     <constraint firstItem="aiX-3c-99R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JRv-fD-QZT"/>
+                    <constraint firstItem="aiX-3c-99R" firstAttribute="top" secondItem="b3P-MK-cyd" secondAttribute="top" id="LQq-WC-vXH"/>
                     <constraint firstItem="Y8a-Vn-v0M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SgN-IL-HcY"/>
                     <constraint firstItem="Y8a-Vn-v0M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="a49-Ta-Pn2"/>
                     <constraint firstAttribute="trailing" secondItem="bDL-KE-FlL" secondAttribute="trailing" constant="20" id="aFW-RQ-XNk"/>
@@ -40,6 +45,8 @@
                     <constraint firstItem="aiX-3c-99R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="mh6-YM-gGA"/>
                     <constraint firstItem="bDL-KE-FlL" firstAttribute="leading" secondItem="Y8a-Vn-v0M" secondAttribute="leading" id="rP2-uf-G5K"/>
                     <constraint firstAttribute="trailing" secondItem="Y8a-Vn-v0M" secondAttribute="trailing" constant="10" id="sQ0-Bb-t3y"/>
+                    <constraint firstItem="aiX-3c-99R" firstAttribute="bottom" secondItem="b3P-MK-cyd" secondAttribute="bottom" id="uWf-QV-wiK"/>
+                    <constraint firstItem="aiX-3c-99R" firstAttribute="trailing" secondItem="b3P-MK-cyd" secondAttribute="trailing" id="xut-7D-2gX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -50,4 +57,7 @@
             <point key="canvasLocation" x="-53" y="280"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="moreshadow" width="300" height="63"/>
+    </resources>
 </document>

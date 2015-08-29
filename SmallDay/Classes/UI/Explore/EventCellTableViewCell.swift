@@ -20,7 +20,6 @@ class EventCellTableViewCell: UITableViewCell {
             if let imageURL = NSURL(string: eventModel!.events!.last!.imgs!.last!) {
                 imageImageView.kf_setImageWithURL(imageURL, placeholderImage: UIImage(named: "quesheng"))
             }
-            
         }
     }
     
@@ -34,6 +33,7 @@ class EventCellTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .None
+
     }
     
     class func eventCell(tableView: UITableView) -> EventCellTableViewCell {

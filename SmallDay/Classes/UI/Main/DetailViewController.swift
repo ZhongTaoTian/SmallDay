@@ -140,7 +140,9 @@ extension DetailViewController {
     /// 报名
     func signUpBtnClick() {
         let suVC = SignUpViewController()
+//        print()
         navigationController!.pushViewController(suVC, animated: true)
+        suVC.topTitle = model!.title
     }
 }
 

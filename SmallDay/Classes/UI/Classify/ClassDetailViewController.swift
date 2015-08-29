@@ -8,6 +8,8 @@
 
 import UIKit
 
+public let DetailCellHeight: CGFloat = 220
+
 class ClassDetailViewController: UIViewController {
     
     lazy var detailTableView: UITableView? = {
@@ -15,7 +17,7 @@ class ClassDetailViewController: UIViewController {
         tableView.backgroundColor = theme.SDBackgroundColor
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 220
+        tableView.rowHeight = DetailCellHeight
         tableView.separatorStyle = .None
         tableView.contentInset = UIEdgeInsetsMake(0, 0, NavigationH, 0)
         tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: "DetailCell")

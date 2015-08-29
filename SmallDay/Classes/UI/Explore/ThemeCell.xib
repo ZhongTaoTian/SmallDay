@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="5" width="320" height="234.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moreshadow" translatesAutoresizingMaskIntoConstraints="NO" id="SMV-DX-382">
+                        <rect key="frame" x="0.0" y="5" width="320" height="234.5"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不出城的暑假去这里 (杭州篇)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-t9-No2">
                         <rect key="frame" x="20" y="90" width="280" height="52.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -35,11 +38,15 @@
                     <constraint firstAttribute="trailing" secondItem="oK1-5e-9Hc" secondAttribute="trailing" id="5G6-pQ-Vgx"/>
                     <constraint firstItem="fnQ-71-vW7" firstAttribute="top" secondItem="E2q-t9-No2" secondAttribute="bottom" constant="5" id="7rH-Bd-nwx"/>
                     <constraint firstAttribute="bottom" secondItem="oK1-5e-9Hc" secondAttribute="bottom" id="BRg-lc-mvb"/>
+                    <constraint firstItem="SMV-DX-382" firstAttribute="bottom" secondItem="oK1-5e-9Hc" secondAttribute="bottom" id="F0w-46-3vS"/>
+                    <constraint firstItem="SMV-DX-382" firstAttribute="trailing" secondItem="oK1-5e-9Hc" secondAttribute="trailing" id="GGE-YH-f4d"/>
                     <constraint firstAttribute="trailing" secondItem="fnQ-71-vW7" secondAttribute="trailing" constant="30" id="Mhb-hk-Pz1"/>
+                    <constraint firstItem="SMV-DX-382" firstAttribute="top" secondItem="oK1-5e-9Hc" secondAttribute="top" id="Mso-6a-QU9"/>
                     <constraint firstItem="oK1-5e-9Hc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vtw-JY-g3U"/>
                     <constraint firstAttribute="trailing" secondItem="E2q-t9-No2" secondAttribute="trailing" constant="20" id="WX1-Yl-0r2"/>
                     <constraint firstItem="E2q-t9-No2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WbP-4A-BYQ"/>
                     <constraint firstItem="fnQ-71-vW7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="jcM-ME-suy"/>
+                    <constraint firstItem="SMV-DX-382" firstAttribute="leading" secondItem="oK1-5e-9Hc" secondAttribute="leading" id="t3D-b0-8kW"/>
                     <constraint firstItem="E2q-t9-No2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="90" id="t9W-Tb-JyW"/>
                     <constraint firstItem="oK1-5e-9Hc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uRR-Ce-qEc"/>
                 </constraints>
@@ -52,4 +59,7 @@
             <point key="canvasLocation" x="207" y="267"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="moreshadow" width="300" height="63"/>
+    </resources>
 </document>
