@@ -99,6 +99,9 @@
 		FAD582CE1B935D34007EEEE0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD582CD1B935D34007EEEE0 /* libsqlite3.dylib */; };
 		FAD582D01B935D43007EEEE0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD582CF1B935D43007EEEE0 /* CoreTelephony.framework */; };
 		FAD582DD1B9363B0007EEEE0 /* libSocialSina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD582D51B9363B0007EEEE0 /* libSocialSina.a */; };
+		FAD582EB1B937085007EEEE0 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD582EA1B937085007EEEE0 /* ShareView.swift */; };
+		FAD582ED1B937091007EEEE0 /* ShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD582EC1B937090007EEEE0 /* ShareView.xib */; };
+		FAD582EF1B9380C0007EEEE0 /* ShareTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD582EE1B9380C0007EEEE0 /* ShareTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +229,9 @@
 		FAD582CF1B935D43007EEEE0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		FAD582D51B9363B0007EEEE0 /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
 		FAD582D61B9363B0007EEEE0 /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		FAD582EA1B937085007EEEE0 /* ShareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		FAD582EC1B937090007EEEE0 /* ShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareView.xib; sourceTree = "<group>"; };
+		FAD582EE1B9380C0007EEEE0 /* ShareTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +424,7 @@
 				FA82B12B1B876F73003A2264 /* String+Hash.swift */,
 				FA82B1221B87693E003A2264 /* SimpleNetwork.swift */,
 				FA82B1231B87693E003A2264 /* SwiftDictModel.swift */,
+				FAD582EE1B9380C0007EEEE0 /* ShareTool.swift */,
 			);
 			name = "Tools(工具)";
 			path = Tools;
@@ -498,6 +505,8 @@
 				FA57DE9C1B822A990099CD37 /* CityCollectionReusableView.swift */,
 				FA82B1181B864426003A2264 /* LoginViewController.swift */,
 				FA66A43C1B902CF6005DF017 /* ShopDetailView.swift */,
+				FAD582EA1B937085007EEEE0 /* ShareView.swift */,
+				FAD582EC1B937090007EEEE0 /* ShareView.xib */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -704,6 +713,7 @@
 				FA66A4491B90C644005DF017 /* SignUpViewController.xib in Resources */,
 				FA66A4021B8EC842005DF017 /* Experience in Resources */,
 				FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */,
+				FAD582ED1B937091007EEEE0 /* ShareView.xib in Resources */,
 				FA6681AD1B8A117C00CFF2E3 /* events in Resources */,
 				FA66A4391B8F621D005DF017 /* ExperienceCell.xib in Resources */,
 				FA23E3C81B9317D20071C22A /* glass.wav in Resources */,
@@ -793,12 +803,14 @@
 				FA932A911B88B65600601B54 /* WKInterfaceImage+Kingfisher.swift in Sources */,
 				FAA0F9F31B7DDA7700B5EA08 /* ExploreViewController.swift in Sources */,
 				FA82B12C1B876F73003A2264 /* String+Hash.swift in Sources */,
+				FAD582EB1B937085007EEEE0 /* ShareView.swift in Sources */,
 				FA932A8A1B88B65600601B54 /* KingfisherOptionsInfo.swift in Sources */,
 				FAA0F9F11B7DDA5D00B5EA08 /* ExperienceViewController.swift in Sources */,
 				FA66A4351B8F45A4005DF017 /* ExperHeadPushViewController.swift in Sources */,
 				FA57DF091B8327F20099CD37 /* ClassifyCell.swift in Sources */,
 				FA709A291B80CA8800B24238 /* NearViewController.swift in Sources */,
 				FAA0F9ED1B7DD9CB00B5EA08 /* MainNavigationController.swift in Sources */,
+				FAD582EF1B9380C0007EEEE0 /* ShareTool.swift in Sources */,
 				FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */,
 				FA932A871B88B65600601B54 /* ImageDownloader.swift in Sources */,
 				FA73876C1B8B940E009D08C8 /* ClassDetailViewController.swift in Sources */,
