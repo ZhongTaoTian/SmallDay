@@ -3,3 +3,5 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <MJRefresh.h>
 #import <UIImageView+WebCache.h>
+#import "UMSocial.h"
+#import "UMSocialSinaHandler.h"

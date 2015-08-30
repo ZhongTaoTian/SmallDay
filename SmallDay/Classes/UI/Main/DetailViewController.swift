@@ -134,7 +134,13 @@ extension DetailViewController {
     
     /// 分享
     func sharedBtnClick() {
-        
+        /*[UMSocialSnsService presentSnsIconSheetView:self
+        appKey:@"507fcab25270157b37000010"
+        shareText:@"友盟社会化分享让您快速实现分享等社会化功能，http://umeng.com/social"
+        shareImage:[UIImage imageNamed:@"icon"]
+        shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,nil]
+        delegate:self];*/
+        UMSocialSnsService.presentSnsController(self, appKey: theme.UMSharedAPPKey, shareText: "测试SSO分享", shareImage: nil, shareToSnsNames: [UMShareToSina], delegate: nil)
     }
     
     /// 报名

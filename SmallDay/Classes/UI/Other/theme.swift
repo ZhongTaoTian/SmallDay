@@ -25,4 +25,6 @@ struct theme {
     static let SDBackgroundColor: UIColor = UIColor.colorWith(255, green: 255, blue: 255, alpha: 1)
     /// webView的背景颜色
     static let SDWebViewBacagroundColor: UIColor = UIColor.colorWith(245, green: 245, blue: 245, alpha: 1)
+    /// 友盟分享的APP key
+    static let UMSharedAPPKey: String = "55e2f45b67e58ed4460012db"
 }

@@ -4,12 +4,20 @@
 //
 //  Created by MacBook on 15/8/21.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  摇一摇
 
 import UIKit
+import AVFoundation
 
 class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var detailModel: DetailModel?
+    lazy var soundID: SystemSoundID? = {
+        let url = NSBundle.mainBundle().URLForResource("glass.wav", withExtension: nil)
+        let urlRef: CFURLRef = url!
+        var id: SystemSoundID = 100
+        AudioServicesCreateSystemSoundID(urlRef, &id)
+        return id
+        }()
 
     lazy var foodView: UIView? = {
         let foodView = UIView(frame: CGRectMake(0, 0, AppWidth, 80))
@@ -76,8 +84,13 @@ class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDat
                         self.yaoImageView1.transform = CGAffineTransformIdentity
                         self.yaoImageView2.transform = CGAffineTransformIdentity
                         }, completion: { (finish) -> Void in
-                            // TODO 加载摇一摇数据
+                            
                             self.loadShakeData()
+                            // 音效
+                            //        NSURL *url = [[NSBundle mainBundle] URLForResource:@"win.aac" withExtension:nil];
+//                            CFURLRef urlRef = (__bridge CFURLRef)(url);
+
+                            AudioServicesPlayAlertSound(self.soundID!)
                     })
                 })
         }
