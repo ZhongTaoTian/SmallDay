@@ -1,0 +1,666 @@
+{
+	"city": [{
+		"parent_name": "\u4e2d\u897f\u90e8\u5730\u533a",
+		"name": "\u6210\u90fd",
+		"img": "http://pic.huodongjia.com/event/2014-11-28/event1417163458.62.jpg",
+		"des": "\u56fd\u5b9d\u5ddd\u5267\uff0c\u5927\u6c14\u4f11\u95f2\u800c\u9759\u8c27",
+		"parent_id": 102,
+		"id": 54
+	}, {
+		"parent_name": "\u534e\u4e1c\u534e\u5357",
+		"name": "\u4e0a\u6d77",
+		"img": "http://pic.huodongjia.com/event/2014-11-28/event1417163559.49.jpg",
+		"des": "\u98ce\u60c5\u5916\u6ee9\uff0c\u7eb8\u9189\u91d1\u8ff7\u4e0d\u591c\u57ce",
+		"parent_id": 104,
+		"id": 99
+	}, {
+		"parent_name": "\u534e\u5317\u4e1c\u5317",
+		"name": "\u5317\u4eac",
+		"img": "http://pic.huodongjia.com/event/2014-11-28/event1417163625.6.jpg",
+		"des": "\u7687\u57ce\u6839\u4e0b\uff0c\u56fd\u4eba\u7684\u7075\u9b42\u6e90\u5934",
+		"parent_id": 103,
+		"id": 101
+	}],
+	"code": 1,
+	"list": [{
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-129375.html",
+		"telephone": "010-59789918",
+		"tag": "\u6e29\u6da6,\u60ec\u610f,\u4e66\u5427",
+		"sponsor": {},
+		"id": 129375,
+		"adurl": "",
+		"startdate": 0,
+		"title": "\u65c1\u89c2\u4e66\u5c4b \u3010\u5927\u73bb\u7483\u7a97\u3011\u6652\u5f97\u5c4b\u91cc\u5f88\u6696",
+		"eventtype": 1,
+		"feelnum": 5,
+		"questionURL": "",
+		"detail": "\u65c1\u89c2\u4e66\u5c4b\uff0c\u65c1\u89c2\u8005\u6e05\u3002\u4e66\u5e97\u9762\u79ef\u4e0d\u5927\uff0c\u5374\u6709\u4e0d\u5c11\u684c\u6905\u4f9b\u4f11\u606f\uff0c\u5927\u73bb\u7483\u7a97\u6652\u5f97\u5c4b\u91cc\u5f88\u6696\u3002\u4e66\u7c4d\u5806\u653e\u6574\u9f50\uff0c\u6709\u6587\u5b66\u3001\u827a\u672f\u7c7b\u7b49\u975e\u7545\u9500\u4e66\u3002\u5728\u8fd9\u91cc\u6709\u4e00\u79cd\u65e0\u9700\u4f53\u4f1a\u7684\u5b89\u5168\u611f\u3002",
+		"note": "",
+		"feeltitle": "\u751f\u65e0\u4e00\u9525\u571f\uff0c\u5e38\u6709\u56db\u6d77\u5fc3",
+		"events": [],
+		"more": [{
+			"title": "\u6587\u6b66\u53cc\u5168\u7684\u3010\u5468\u672b\u901a\u5bb5\u4e66\u623f\u3011",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u897f\u57ce\u533a\u5fb7\u80dc\u95e8\u5185\u5927\u8857103\u53f7",
+			"imgs": ["http://pic.huodongjia.com/event/2015-06-19/event128523.jpg"],
+			"position": "116.385816,39.951023",
+			"id": 130813
+		}, {
+			"title": "\u770b\u5b8c\u7535\u5f71\u6765\u5750\u5750",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u4e1c\u76f4\u95e8\u9999\u6cb3\u56ed\u8def1\u53f7\u5317\u533a\u5f53\u4ee3MOMA",
+			"imgs": ["http://pic.huodongjia.com/event/2015-04-08/event114401.jpg"],
+			"position": "116.444519773,39.956545289",
+			"id": 129372
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.495299878,39.9836603232",
+			"title": "\u65c1\u89c2\u4e66\u793e",
+			"address": "\u671d\u9633\u533a798\u827a\u672f\u533a798\u4e1c\u8857",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "\u671d\u9633\u533a798\u827a\u672f\u533a798\u4e1c\u8857",
+		"imgs": ["http://pic.huodongjia.com/event/2015-07-02/event129800.jpg"],
+		"islongtime": 1,
+		"remark": "\u65c1\u89c2\u4e66\u793e",
+		"enddate": 3014889900.0,
+		"mobileURL": "<body><html><head></head><body><p>\u65c1\u89c2\u4e66\u5c4b\uff0c\u65c1\u89c2\u8005\u6e05\u3002\u4e66\u5e97\u9762\u79ef\u4e0d\u5927\uff0c\u5374\u6709\u4e0d\u5c11\u684c\u6905\u4f9b\u4f11\u606f\uff0c\u5927\u73bb\u7483\u7a97\u6652\u5f97\u5c4b\u91cc\u5f88\u6696\u3002\u4e66\u7c4d\u5806\u653e\u5f97\u5f88\u6ee1\uff0c\u6709\u4e9b\u6587\u5b66\u3001\u827a\u672f\u7c7b\u7684\u975e\u7545\u9500\u4e66\uff0c\u6ca1\u6709\u8857\u8fb9\u5e97\u90a3\u79cd\u6d6e\u8e81\u611f\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-02/event129797.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-02/event129797.jpg\" width=\"640\"></img></p><p>\u63d0\u4f9b\u4e00\u4e9b\u5c0f\u5de5\u827a\u54c1\uff0c\u4ee5\u4e66\u7b7e\u4e3a\u4e3b\uff0c\u6700\u559c\u6b22\u4e00\u79cd\u91d1\u5c5e\u8d28\u5730\u5f62\u5982\u6b65\u6447\u7684\u6b3e\u5f0f\uff0c\u4e0d\u9508\u94a2\u8272\u5f88\u4f4e\u8c03\uff0c\u7ebf\u6761\u8bbe\u8ba1\u7b80\u6d01\u5374\u5f88\u7cbe\u5de7\uff0c\u5728\u522b\u7684\u5730\u65b9\u6ca1\u89c1\u8fc7\uff0c\u4ef7\u683c\u81ea\u7136\u4e5f\u8d35\u4e9b\u3002\u53e6\u5916\uff0c\u5496\u5561\u662f\u5f88\u4e0d\u9519\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-02/event129795.jpg\" height=\"426\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-07-02/event129795.jpg\" width=\"640\"></img>\u200b</p><p>\u4e00\u5b9a\u8981\u5360\u5230\u4e34\u8857\u9760\u7a97\u7684\u4f4d\u7f6e\uff0c\u9633\u5149\u7167\u81ea\u5df1\u6765\uff0c\u6e29\u6696\u65e0\u6bd4\u3002</p><p>\u65c1\u89c2\u5728\u9009\u4e66\u65b9\u9762\uff0c\u81f3\u5c11\u80fd\u770b\u51fa\u662f\u5f88\u4e0b\u529f\u592b\u7684\uff0c\u4e0d\u987a\u5e94\u6f6e\u6d41\uff0c\u4e14\u4ecd\u80fd\u4fdd\u6301\u9ad8\u8d28\u91cf\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-02/event129796.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-02/event129796.jpg\" width=\"640\"></img></p><p>\u5728\u4e66\u5e97\u91cc\u6709\u4e00\u79cd\u5b89\u5168\u611f\uff0c\u90a3\u91cc\u7684\u4eba\u548c\u4e66\u90fd\u50cf\u662f\u6211\u7684\u670b\u53cb\uff0c\u867d\u7136\u4e0d\u7528\u4ea4\u8c08\uff0c\u4f46\u53ea\u8981\u5077\u5077\u5730\u63a2\u5934\u770b\u4e00\u773c\u522b\u4eba\u5728\u770b\u4ec0\u4e48\u4e66\uff0c\u5fc3\u4e2d\u5c31\u4f1a\u751f\u51fa\u522b\u6837\u7684\u60ca\u559c\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-08/event114444.jpg\" height=\"575\" src=\"http://pic.huodongjia.com/event/2015-04-08/event114444.jpg\" width=\"605\"></img></p><p><strong>\u5730\u5740: </strong>\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def2\u53f7\u5927\u5c71\u5b50798\u827a\u672f\u56ed\u533a\u4e1c\u8857\u62d0\u89d2</p><p><strong>\u7535\u8bdd\uff1a</strong>010-59789918</p><p><strong>\u8425\u4e1a\u65f6\u95f4\uff1a</strong>10:00\uff5e21:30</p><p></p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 129375,
+		"position": "116.495299878,39.9836603232"
+	}, {
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-129425.html",
+		"telephone": "010-57626415",
+		"tag": "\u8d4f\u5473,\u6709\u8da3,\u9177\u70ab,\u9910\u5427",
+		"sponsor": {},
+		"id": 129425,
+		"adurl": "",
+		"startdate": 0,
+		"title": "\u7269\u5c3d\u5176\u7528\u7684\u3010\u5e73\u548c\u5fc3\u6001\u3011",
+		"eventtype": 1,
+		"feelnum": 6,
+		"questionURL": "",
+		"detail": "\u5728\u8fc7\u5ea6\u6d88\u8d39\u7684\u5f53\u4e0b\uff0c\u4e0d\u662f\u8d8a\u591a\u8d8a\u597d\uff0c\u800c\u662f\u2018\u591f\u4e86\u2019\u5c31\u597d\u3002\u53cd\u89c2\u4e1c\u65b9\u6587\u8109\uff0c\u7269\u5c3d\u5176\u7528\u7684\u5e73\u548c\u5fc3\u6001\uff0c\u6536\u653e\u81ea\u5982\u7684\u5e73\u8861\u6280\u5de7\uff0c\u4e8e\u751f\u6d3b\uff0c\u4e8e\u8bbe\u8ba1\uff0c\u90fd\u826f\u4e45\u9002\u5b9c\uff0c \u8fd9\u5c31\u662f\u6253\u9020\u2018\u826f\u9002\u2019\u7a7a\u95f4\u7684\u521d\u8877\u3002",
+		"note": "",
+		"feeltitle": "\u503e\u542c\u81ea\u5df1\u662f\u6548\u7387\u4e4b\u9b42",
+		"events": [],
+		"more": [{
+			"title": "\u5145\u6ee1\u79d1\u6280\u611f\u7684\u3010\u667a\u80fd\u5496\u5561\u9986\u3011",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u4e2d\u5173\u6751\u521b\u4e1a\u5927\u8857\u6700\u5317\u8fb9",
+			"imgs": ["http://pic.huodongjia.com/event/2015-05-09/event122296.jpg"],
+			"position": "116.337795241,39.9775234303",
+			"id": 130204
+		}, {
+			"title": "Cuju\u8e74\u97a0  \u5317\u4eac\u3010\u6b63\u5b97\u6469\u6d1b\u54e5\u83dc\u3011",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u7ec6\u7ba1\u80e1\u540c28\u53f7",
+			"imgs": ["http://pic.huodongjia.com/event/2015-07-31/event133155.jpg", "http://pic.huodongjia.com/event/2015-05-19/event124800.jpg"],
+			"position": "116.421021899,39.9431206914",
+			"id": 130351
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.494889897,39.9841602796",
+			"title": "\u826f\u9002",
+			"address": "798\u827a\u672f\u533a\u5c24\u4f26\u65af\u5f53\u4ee3\u827a\u672f\u4e2d\u5fc3\u4e00\u5c42",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "798\u827a\u672f\u533a\u5c24\u4f26\u65af\u5f53\u4ee3\u827a\u672f\u4e2d\u5fc3\u4e00\u5c42",
+		"imgs": ["http://pic.huodongjia.com/event/2015-05-03/event120932.jpg", "http://pic.huodongjia.com/event/2015-04-11/event114940.jpg"],
+		"islongtime": 1,
+		"remark": "\u826f\u9002",
+		"enddate": 3013741498.0,
+		"mobileURL": "<body><html><head></head><body><p>\u201c\u826f \u9002\u201d\u4e8c\u5b57\u542c\u8d77\u6765\u67d4\u8f6f\u53c8\u6709\u68f1\u89d2\uff0c\u8fd9\u4e2a\u540d\u5b57\u53d6\u81ea\u201c\u826f\u4ed3\u00b7\u9002\u7269\u201d\uff0c\u53ef\u4ee5\u7406\u89e3\u4e3a\u62e5\u6709\u5e73\u8861\u4e4b\u7f8e\u7684\u7a7a\u95f4\u4e0e\u5668\u7269\uff0c\u8fd9\u4e5f\u662f\u8fd9\u4e9b\u5e74\u6765\u8bbe\u8ba1\u5e08\u5218\u5cf0\u8ba4\u4e3a\u6700\u80fd\u4ee3\u8868\u4e1c\u65b9\u7684\u751f\u6d3b\u65b9\u5f0f\u548c\u6c14\u8d28\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event114941.jpg\" height=\"429\" src=\"http://pic.huodongjia.com/event/2015-04-11/event114941.jpg\" width=\"431\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event114942.jpg\" height=\"609\" line-height=\"20.8000011444092\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-04-11/event114942.jpg\" width=\"426\"></img></p><p>\u201c\u5728\u8fc7\u5ea6\u6d88\u8d39\u7684\u5f53\u4e0b\uff0c\u4e0d\u662f\u8d8a\u591a\u8d8a\u597d\uff0c\u800c\u662f\u2018\u591f\u4e86\u2019\u5c31\u597d\u3002\u53cd\u89c2\u4e1c\u65b9\u6587\u8109\uff0c\u7269\u5c3d\u5176\u7528\u7684\u5e73\u548c\u5fc3\u6001\uff0c\u6536\u653e\u81ea\u5982\u7684\u5e73\u8861\u6280\u5de7\uff0c\u4e8e\u751f\u6d3b\uff0c\u4e8e\u8bbe\u8ba1\uff0c\u90fd\u826f\u4e45\u9002\u5b9c\uff0c \u8fd9\u5c31\u662f\u6253\u9020\u2018\u826f\u9002\u2019\u7a7a\u95f4\u7684\u521d\u8877\u3002\u201d</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event115015.jpg\" height=\"595\" src=\"http://pic.huodongjia.com/event/2015-04-11/event115015.jpg\" width=\"541\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event114938.jpg\" height=\"303\" line-height=\"20.8000011444092\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-04-11/event114938.jpg\" width=\"633\"></img>\u200b</p><p><strong>\u5c0f\u996e</strong>\u662f\u826f\u9002\u751f\u6d3b\u7f8e\u5b66\u4e00\u7cfb\u5217\u5efa\u7b51\u7a7a\u95f4\u9879\u76ee\u4e2d\u7684\u7b2c\u4e00\u4e2a\uff0c\u533a\u522b\u4e8e\u201c\u5144\u5f1f\u201d\u5c0f\u98df\u90a3\u8d85\u5927\u843d\u5730\u7a97\u7684\u9192\u76ee\uff0c\u5c0f\u996e\u5c31\u50cf\u5b83\u7684\u540d\u5b57\u4e00\u6837\uff0c\u85cf\u533f\u5728751\u52a8\u529b\u5e7f\u573a\u5c0f\u67ef\u5267\u573a\u7684\u9694\u58c1\uff0c \u6574\u95f4\u9910\u5385\u6728\u8d28\u6bd4\u4f8b\u6bd4\u8f83\u5927\uff0c\u4e5f\u6709\u77f3\u6750\u3001\u94dc\u677f\u7684\u6750\u8d28\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event114937.jpg\" height=\"400\" line-height=\"20.8000011444092\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-04-11/event114937.jpg\" width=\"640\"></img></p><p>\u201c\u6574\u95f4\u9910\u5385\u8fde\u5916\u7acb\u9762\u90fd\u662f\u5f88\u9690\u853d\u7684\uff0c\u4e3blogo\u90fd\u5f88\u4e0d\u660e\u663e\uff0c\u4e0d\u662f\u5f88\u5f3a\u52bf\u7684\u6001\u5ea6\uff0c\u8272\u8c03\u538b\u5f97\u5f88\u6697\uff0c\u706f\u5149\u4e5f\u6bd4\u8f83 \u6697\u3002\u201d\u8bbe\u8ba1\u5e08\u5218\u5cf0\u7ed9\u5c0f\u996e\u5b9a\u7684\u57fa\u8c03\u5c31\u662f\u201c\u9690\u201d\uff0c\u201c\u6211\u5e0c\u671b\u80fd\u6709\u4eba\u6765\u5230\u8fd9\u91cc\uff0c\u7136\u540e\u611f\u53d7\u5230\u8fd9\u513f\u5c31\u50cf\u662f\u751f\u6d3b\u4e00\u6837\uff0c\u91cc\u9762\u603b\u8fd8\u6709\u7f8e\u597d\u7684\u4e1c\u897f\u6ca1\u88ab\u53d1\u73b0\u3002\u201d</p><p><strong>\u5730\u5740\uff1a</strong>\u5317\u4eac798\u827a\u672f\u533a\u5c24\u4f26\u65af\u5f53\u4ee3\u827a\u672f\u4e2d\u5fc3\u4e00\u5c42</p><p><strong>\u7535\u8bdd\uff1a</strong>010-57626415</p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 129425,
+		"position": "116.494889897,39.9841602796"
+	}, {
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-131042.html",
+		"telephone": "010-59784824",
+		"tag": "\u4e50\u6d3b,\u6709\u8da3,\u6742\u8d27\u94fa",
+		"sponsor": {},
+		"id": 131042,
+		"adurl": "",
+		"startdate": 0,
+		"title": "\u8fd9\u91cc\u6709\u505a\u5230\u6781\u81f4\u7684\u5783\u573e\u6876",
+		"eventtype": 1,
+		"feelnum": 4,
+		"questionURL": "",
+		"detail": "\u5728DULTON\uff0c\u4f60\u4f1a\u53d1\u73b0\u65e5\u5e38\u7684\u7ec6\u7410\u7269\u4ef6\u201c\u5783\u573e\u6876\u3001\u50a8\u7269\u67dc\u3001\u82b1\u74f6\u7b49\u201d\u518d\u4e5f\u4e0d\u662f\u623f\u95f4\u91cc\u7684\u201c\u5c0f\u914d\u89d2\u201d\uff0c\u800c\u662f\u4f60\u751f\u6d3b\u54c1\u5473\u7684\u7ec6\u8282\u4e4b\u5904\u7684\u4f53\u73b0\uff0c\u5728\u8fd9\u91cc\u8ba9\u751f\u6d3b\u7a7a\u95f4\u66f4\u52a0\u6709\u8df3\u8dc3\u611f\u548c\u60ca\u559c\u611f\u3002",
+		"note": "",
+		"feeltitle": "\u4e0d\u8981\u53bb\u594b\u6597\uff0c\u800c\u662f\u8981\u53bb\u70ed\u7231",
+		"events": [],
+		"more": [{
+			"title": "\u9633\u5149\u73bb\u7483\u623f\u91cc\u7684\u3010\u5496\u5561\u9986\u3011",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u671d\u9633\u533a\u4e09\u91cc\u5c6f\u897f\u4e94\u88575\u53f7\u9662F\u5ea7\u897f\u4e94\u827a\u672f\u4e2d\u5fc3\u5185",
+			"imgs": ["http://pic.huodongjia.com/event/2015-03-26/event1427353280.68.jpg"],
+			"position": "116.460327526,39.9483682894",
+			"id": 129128
+		}, {
+			"title": "\u79c0\u51a0\u5496\u5561 \u611f\u53d7\u6d53\u6d53\u7684\u3010\u53e4\u5178\u6c1b\u56f4\u3011",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u4e1c\u57ce\u533a\u56fd\u5b50\u76d1\u885725\u53f7",
+			"imgs": ["http://pic.huodongjia.com/event/2015-04-05/event114082.jpg"],
+			"position": "116.41788829,39.9518834436",
+			"id": 129343
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.493832288,39.9863670573",
+			"title": "Dulton",
+			"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8857\u9053\u5927\u5c71\u5b50798\u827a\u672f\u533aB\u533aB01\uff08797\u8def\u4e0e707\u8857\u4ea4\u6c47\u5904\uff09",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8857\u9053\u5927\u5c71\u5b50798\u827a\u672f\u533aB\u533aB01\uff08797\u8def\u4e0e707\u8857\u4ea4\u6c47\u5904\uff09",
+		"imgs": ["http://pic.huodongjia.com/event/2015-07-13/event131303.jpg"],
+		"islongtime": 1,
+		"remark": "Dulton",
+		"enddate": 3014889705.0,
+		"mobileURL": "<body><html><head></head><body><p>DULTON\u662f\u6210\u7acb\u65bc1988\u5e74\u7684\u5de5\u4e1a\u5bb6\u5177\u516c\u53f8\uff0c\u4ee5\u591a\u5f69\u7684\u984f\u8272\u548c\u8010\u7528\u7684\u6750\u6599\uff0c\u505a\u4e3a\u4e00\u4e2a\u8bbe\u8ba1\u7684\u51fa\u53d1\u70b9\u3002\u751f\u7522\u51fa\u975e\u5e38\u591a\u6837\u7684\u65e5\u5f0f\u6742\u8d27\uff0c\u53d7\u5230\u56fd\u5185\u5916\u5bb6\u5177\u5546\u7684\u80af\u5b9a\u3002\u591a\u6837\u5316\u7684\u7522\u54c1\u3001\u9ad8\u5f69\u5ea6\u7684\u5404\u79cd\u984f\u8272\uff0c\u9664\u4e86\u5b9e\u7528\u4ee5\u5916\uff0c\u66f4\u4e3a\u5c45\u5bb6\u7684\u984f\u8272\u642d\u914d\u6dfb\u4e0a\u66f4\u591a\u7ae5\u8da3\uff0c\u5f77\u5f7f\u5c31\u662f\u5927\u4eba\u7684\u73a9\u5177\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131290.JPG\" height=\"810\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131290.JPG\" width=\"1080\"></img></p><p>\u521b\u59cb\u4ebaYasuaki Sasamoto1975\u5e74\u5728\u65e5\u672c\u6bd5\u4e1a\u4e8e\u5efa\u7b51\u4e13\u4e1a\uff0c\u5e76\u4e8e70\u5e74\u4ee3\u672b\u671f\u5f00\u59cb\u4e86\u521b\u610f\u5bb6\u5c45\u4ea7\u54c1\u7684\u8bbe\u8ba1\u3002\u5728\u7f8e\u56fd\u77ed\u6682\u5c45\u4f4f\u4e4b\u540e\uff0c1989\u5e74\u4ed6\u56de\u5230\u65e5\u672c\u521b\u7acb\u4e86Dulton\u516c\u53f8\u3002\u7531\u4e8eYasuaki\u51fa\u4f17\u7684\u8bbe\u8ba1\u683c\u8c03\u800c\u5728\u5168\u7403\u62e5\u6709\u4f17\u591a\u72c2\u70ed\u7684\u7231\u597d\u8005\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131280.JPG\" height=\"810\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131280.JPG\" width=\"1080\"></img></p><p>DULTON\u4e3b\u8425\u539f\u521b\u91d1\u5c5e\u5bb6\u5177\u548c\u5404\u7c7b\u521b\u610f\u8bbe\u8ba1\u5bb6\u5c45\u7528\u54c1\uff0c\u73bb\u7483\u9676\u74f7\u7c7b\u4ea7\u54c1\uff0c\u76ee\u524d\u5728\u5317\u4eac\u4e09\u5bb6\u5206\u5e97\uff0c\u672a\u6765\u5e7f\u573a\u3001798\u827a\u672f\u533a\u3001\u897f\u7ea2\u95e8\u5e97\u3002798\u5e97\u662f\u4e2d\u56fd\u7684\u7b2c\u4e00\u5bb6\u76f4\u8425\u5e97\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131297.JPG\" height=\"810\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131297.JPG\" width=\"1080\"></img></p><p>\u6765\u5230DULTON\u4f60\u5c31\u4f1a\u53d1\u73b0\u5e73\u65e5\u91cc\u7684\u5783\u573e\u6876\u3001\u50a8\u7269\u67dc\u3001\u82b1\u74f6\u518d\u4e5f\u4e0d\u662f\u623f\u95f4\u91cc\u7684\u201c\u5c0f\u914d\u89d2\u201d\uff0c\u800c\u662f\u80fd\u4f53\u73b0\u4f60\u751f\u6d3b\u54c1\u5473\u7684\u7ec6\u8282\u4e4b\u5904\uff0c\u4f60\u4e5f\u4f1a\u77ac\u95f4\u89c9\u5f97\u5b83\u4eec\u4f1a\u8ba9\u4f60\u7684\u751f\u6d3b\u7a7a\u95f4\u66f4\u52a0\u6709\u8df3\u8dc3\u611f\u548c\u60ca\u559c\u611f\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131295.JPG\" height=\"810\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131295.JPG\" width=\"1080\"></img></p><p>\u719f\u6089Dulton\u7684\u4eba\u4e00\u5b9a\u4e0d\u4f1a\u9519\u8fc7\u5b83\u8272\u5f69\u6591\u6593\u7684\u5f00\u76d6\u5f0f\u5783\u573e\u6876\uff0898\u5143-198\u5143\uff09\uff0c\u8fd9\u4e00\u6b3e\u4e5f\u662f\u53d7\u5230\u5168\u7403\u7c89\u4e1d\u8ffd\u6367\u7684\u5355\u54c1\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131300.jpg\" height=\"576\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131300.jpg\" width=\"626\"></img></p><p><strong>\u5730\u5740\uff1a</strong>\u5317\u4eac\u5e02\u671d\u9633\u533a\u9152\u4ed9\u6865\u8857\u9053\u5927\u5c71\u5b50798\u827a\u672f\u533aB\u533aB01\uff08797\u8def\u4e0e707\u8857\u4ea4\u6c47\u5904\uff09</p><p><strong>\u8425\u4e1a\u65f6\u95f4\uff1a</strong>9\uff1a30-9\uff1a30</p><p><strong>\u7535\u8bdd\uff1a</strong>010-59784824</p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 131042,
+		"position": "116.493832288,39.9863670573"
+	}, {
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-131048.html",
+		"telephone": "010-57623071",
+		"tag": "\u6e29\u6da6,\u7eaf\u8d28,\u6742\u8d27\u94fa",
+		"sponsor": {},
+		"id": 131048,
+		"adurl": "",
+		"startdate": 0,
+		"title": "\u8fd8\u539f\u4eba\u7c7b\u6700\u8d28\u6734\u7684\u60c5\u611f",
+		"eventtype": 1,
+		"feelnum": 2,
+		"questionURL": "",
+		"detail": "\u539f\u8272\u751f\u6d3bL\u7a7a\u95f4\u4e8e2001\u5e74\u7531\u674e\u9e25\u5973\u58eb\u521b\u529e\u3002\u6b63\u5982\u753b\u5eca\u7684\u540d\u5b57\u6240\u793a\uff0c\u521b\u529e\u4eba\u5e0c\u671b\u80fd\u591f\u5728\u8574\u542b\u7740\u53e4\u8001\u60a0\u4e45\u827a\u672f\u7684\u4e2d\u56fd\uff0c\u63a8\u52a8\u5f53\u4ee3\u827a\u672f\u7684\u4e0d\u65ad\u53d1\u5c55\u3002\u753b\u5eca\u52aa\u529b\u5bfb\u6c42\u6210\u4e3a\u8fde\u63a5\u827a\u672f\u548c\u751f\u6d3b\u7684\u6865\u6881\uff0c\u5e76\u81f4\u529b\u4e8e\u56fd\u5185\u8457\u540d\u9676\u827a\u5bb6\u53ca\u5176\u4f5c\u54c1\u7684\u5ba3\u4f20\u548c\u63a8\u5e7f\uff0c\u5e76\u79ef\u6781\u53d1\u73b0\u548c\u6276\u690d\u6c11\u95f4\u53ca\u9752\u5e74\u9676\u827a\u5bb6\uff0c\u4e3a\u5176\u642d\u5efa\u5c55\u793a\u5e73\u53f0\u3002",
+		"note": "",
+		"feeltitle": "\u751f\u6d3b\u9700\u8981\u7559\u767d",
+		"events": [],
+		"more": [{
+			"title": "\u5982\u6d17\u7684\u6d3b\u6001\u5ea6 \u81ea\u7136\u6734\u7d20\u54c1\u5473",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u4e1c\u57ce\u533a\u56fd\u5b50\u76d1\u885755\u53f7",
+			"imgs": ["http://pic.huodongjia.com/event/2015-05-14/event123575.jpg"],
+			"position": "116.415640996,39.9518645974",
+			"id": 129889
+		}, {
+			"title": "\u6563\u5e03\u4eba\u6587\u4e4b\u5149",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u6d77\u6dc0\u533a\u6210\u5e9c\u8def262\u53f7",
+			"imgs": ["http://pic.huodongjia.com/event/2015-04-07/event114239.jpg"],
+			"position": "116.329544048,39.9979776274",
+			"id": 129358
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.49106261,39.9844551341",
+			"title": "\u539f\u8272\u751f\u6d3b.L\u7a7a\u95f4",
+			"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u4e03\u661f\u4e1c\u8def",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u4e03\u661f\u4e1c\u8def",
+		"imgs": ["http://pic.huodongjia.com/event/2015-07-14/event131419.jpg", "http://pic.huodongjia.com/event/2015-07-14/event131418.JPG"],
+		"islongtime": 1,
+		"remark": "\u539f\u8272\u751f\u6d3b.L\u7a7a\u95f4",
+		"enddate": 3014889559.0,
+		"mobileURL": "<body><html><head></head><body><p>\u8d70\u8fdb798\u56db\u53f7\u6cbf\u7740798\u8def\uff0c\u6f2b\u6b65\u5728798\u8fd9\u7247\u73b0\u4ee3\u827a\u672f\u7684\u5929\u5730\uff0c\u4f60\u4f1a\u53d1\u73b0\u8fd9\u6837\u4e00\u4e2a\u5730\u65b9\uff0c\u5750\u843d\u5728\u4e03\u661f\u4e1c\u8857\u7684\u539f\u8272\u751f\u6d3bL\u7a7a\u95f4\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131414.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131414.jpg\" width=\"640\"></img></p><p>\u4e03\u661f\u4e1c\u8857\u7684L\u7a7a\u95f4\uff0c\u5206\u4e3a\u9676\u827a\u96d5\u5851\u4f5c\u54c1\u5c55\u533a\u548c\u9676\u827a\u751f\u6d3b\u9986\u4e24\u90e8\u5206\u3002L\u7a7a\u95f4\uff0c\u662f\u539f\u8272\u751f\u6d3b\u6210\u7acb\u6700\u665a\u7684\u4e00\u4e2a\u5c55\u793a\u90e8\u5206\uff0c\u5374\u662f\u539f\u8272\u4e3e\u529e\u5404\u7c7b\u5c55\u89c8\u548c\u53d1\u5e03\u4f1a\u4ee5\u53ca\u65b0\u54c1\u4e0a\u5e02\u5c55\u793a\u7684\u4e3b\u529b\u7a7a\u95f4\uff1b\u4e5f\u662f\u4f4d\u4e8e798\u827a\u672f\u533a\u6700\u7e41\u534e\u7684\u5730\u6bb5\uff1b\u501f\u52a9\u6709\u5229\u5730\u5f62\u548c\u522b\u5177\u98ce\u683c\u7684\u88c5\u6f62\u9648\u5217\u4f20\u64ad\u7740\u539f\u8272\u751f\u6d3b\u7684\u827a\u672f\u7406\u5ff5\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131410.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131410.jpg\" width=\"640\"></img></p><p>\u8bb0\u5f55\u7740\u5c81\u6708\u75d5\u8ff9\u7684\u9752\u7816\u5899\uff0c\u843d\u5730\u7684\u73bb\u7483\u7a97\uff0c\u4e0d\u7531\u5f97\uff0c\u601d\u7eea\u5df2\u5728\u53e4\u6734\u4e0e\u73b0\u4ee3\u4e2d\u6e38\u8d70\uff0c\u5f9c\u5f89\u3002\u8d70\u8fdb\u5b83\uff0c\u96ea\u767d\u8000\u773c\u7684\u5899\uff0c\u4e0d\u7981\u5fc3\u91cc\u4e00\u7247\u660e\u4eae\uff0c\u5e03\u6ee1\u5e74\u8f6e\u7684\u6728\u677f\uff0c\u8ba9\u4eba\u4eec\u627e\u5230\u4e86\u5fc3\u4e2d\u7684\u51c0\u571f\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131409.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131409.jpg\" width=\"640\"></img></p><p>\u5317\u4eac\u539f\u8272\u6cb3\u6587\u5316\u827a\u672f\u53d1\u5c55\u4e2d\u5fc3\u4e8e2001\u5e74\u7531\u674e\u9e25\u5973\u58eb\u521b\u529e\u3002\u6b63\u5982\u753b\u5eca\u7684\u540d\u5b57\u6240\u793a\uff0c\u521b\u529e\u4eba\u5e0c\u671b\u80fd\u591f\u5728\u8574\u542b\u7740\u53e4\u8001\u60a0\u4e45\u827a\u672f\u7684\u4e2d\u56fd\u63a8\u52a8\u5f53\u4ee3\u827a\u672f\u7684\u4e0d\u65ad\u53d1\u5c55\u3002\u539f\u8272\u751f\u6d3b\u753b\u5eca\u52aa\u529b\u5bfb\u6c42\u6210\u4e3a\u8fde\u63a5\u827a\u672f\u548c\u751f\u6d3b\u7684\u6865\u6881\uff0c\u5e76\u957f\u671f\u81f4\u529b\u4e8e\u5bf9\u56fd\u5185\u8457\u540d\u9676\u827a\u5bb6\u53ca\u5176\u4f5c\u54c1\u7684\u5ba3\u4f20\u548c\u63a8\u5e7f\uff0c\u5e76\u79ef\u6781\u53d1\u73b0\u548c\u6276\u690d\u6c11\u95f4\u53ca\u9752\u5e74\u9676\u827a\u5bb6\uff0c\u4e3a\u5176\u642d\u5efa\u5c55\u793a\u5e73\u53f0\u3002\u901a\u8fc7\u53e4\u8001\u4f20\u7edf\u6280\u827a\u7684\u9676\u827a\u4f5c\u54c1\u7684\u89e6\u6478\u548c\u4f53\u4f1a\uff0c\u611f\u609f\u751f\u6d3b\u539f\u672c\u7b80\u5355\u7684\u8272\u5f69\uff0c\u629b\u5374\u4e00\u5207\u4e0d\u5207\u5b9e\u9645\u7684\u7406\u60f3\u548c\u62b1\u6028\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131413.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131413.jpg\" width=\"640\"></img></p><p>\u539f\u8272\u5e0c\u671b\u80fd\u591f\u8ba9\u6765\u8bbf\u7684\u670b\u53cb\u4eec\u4f53\u4f1a\u5230\u5fc3\u7075\u7684\u5b89\u987f\u4e4b\u9053\uff0c\u8ba9\u4e16\u4fd7\u4e2d\u6240\u6709\u7684\u601d\u60f3\u548c\u60c5\u611f\u90fd\u6c89\u6dc0\u4e0b\u6765\uff0c\u878d\u5316\u5230\u5fc3\u6027\u4e2d\uff0c\u8fd8\u539f\u4eba\u7c7b\u6700\u8d28\u6734\u7684\u60c5\u611f\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131412.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131412.jpg\" width=\"640\"></img></p><p><strong>\u5730\u5740\uff1a</strong>\u5317\u4eac\u5e02\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u4e03\u661f\u4e1c\u8def</p><p><strong>\u7535\u8bdd\uff1a</strong>010-57623071</p><p><strong>\u7f51\u7ad9\uff1a</strong>www.ys798.com.cn</p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 131048,
+		"position": "116.49106261,39.9844551341"
+	}, {
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-131052.html",
+		"telephone": "010-67706410",
+		"tag": "\u6709\u8da3,\u9177\u70ab,\u6742\u8d27\u94fa",
+		"sponsor": {},
+		"id": 131052,
+		"adurl": "",
+		"startdate": 0,
+		"title": "\u8fd9\u91cc\u7684\u4e00\u5207\u90fd\u662f\u94c1\u6253\u7684",
+		"eventtype": 1,
+		"feelnum": 1,
+		"questionURL": "",
+		"detail": "\u94c1\u5320\u8425\u662f\u4ee5\u4e00\u5bb6\u4ee5\u94c1\u4e3a\u5143\u7d20\u7684\u5e97\u94fa\uff0c\u4e3b\u8425\u94c1\u76ae\u8f66\u6a21\u4ee5\u53ca\u5145\u6ee1\u7279\u8272\u7684\u94c1\u5236\u5de5\u827a\u54c1\u3002\u5c0f\u5e97\u66f4\u662f\u8001\u677f\u7684\u4e00\u4e2a\u6536\u85cf\u9986\uff0c\u6536\u85cf\u7740\u5404\u79cd\u7528\u94c1\u505a\u6210\u7684\u827a\u672f\u54c1\u3002\u8fd8\u6709\u5404\u4e2a\u65f6\u4ee3\u7684\u6c7d\u8f66\u6a21\u578b\uff0c\u6570\u4e0d\u80dc\u6570\uff0c\u903c\u771f\u6709\u8da3\u3002",
+		"note": "",
+		"feeltitle": "\u8bfb\u770b\u4f3c\u201c\u65e0\u7528\u201d\u7684\u4e66",
+		"events": [],
+		"more": [{
+			"title": "\u54c1\u5473\u3010\u590d\u53e4\u5bb6\u5c45\u3011\u827a\u672f",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u671d\u9633\u533a\u4e09\u91cc\u5c6f\u5357\u8def6\u53f7",
+			"imgs": ["http://pic.huodongjia.com/event/2015-03-26/event1427371464.55.jpg"],
+			"position": "116.462227789,39.9368433396",
+			"id": 129162
+		}, {
+			"title": "\u3010\u76d6\u8328\u6bd4\u5f0f\u3011\u590d\u53e4\u9152\u5427",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u671d\u9633\u533a\u5e78\u798f\u4e8c\u675139\uff0d9\u53f7",
+			"imgs": ["http://pic.huodongjia.com/event/2015-04-11/event115042.jpg", "http://pic.huodongjia.com/event/2015-04-11/event115034.jpg"],
+			"position": "116.455589331,39.9439671378",
+			"id": 129436
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.491643266,39.9842986175",
+			"title": "\u94c1\u5320\u8425",
+			"address": "\u671d\u9633\u533a\u5927\u5c71\u5b50798\u827a\u672f\u56ed\u533a\u5185706\u5317\u4e00\u8857",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "\u671d\u9633\u533a\u5927\u5c71\u5b50798\u827a\u672f\u56ed\u533a\u5185706\u5317\u4e00\u8857",
+		"imgs": ["http://pic.huodongjia.com/event/2015-07-14/event131452.jpg"],
+		"islongtime": 1,
+		"remark": "\u94c1\u5320\u8425",
+		"enddate": 3014889277.0,
+		"mobileURL": "<body><html><head></head><body><p>\u94c1\u5320\u8425\u662f\u4ee5\u4e00\u5bb6\u4ee5\u94c1\u4e3a\u5143\u7d20\u7684\u5e97\u94fa\uff0c\u4e3b\u8425\u94c1\u76ae\u8f66\u6a21\u4ee5\u53ca\u5145\u6ee1\u7279\u8272\u7684\u94c1\u5236\u5de5\u827a\u54c1\u3002\u95e8\u53e3\u90a3\u7855\u5927\u7684\u7ea2\u8272\u7535\u8bdd\u4ead\u6293\u4f4f\u4e86\u6bcf\u4e00\u4f4d\u6765\u6765\u8bbf\u7684\u4eba\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131476.jpg\" height=\"400\" line-height=\"20.8000011444092\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131476.jpg\" width=\"640\"></img></p><p>\u6574\u4e2a\u5c0f\u5e97\u66f4\u662f\u8001\u677f\u7684\u4e00\u4e2a\u6536\u85cf\u9986\uff0c\u6446\u7740\u5404\u79cd\u6536\u85cf\u7684\u7528\u94c1\u505a\u6210\u7684\u827a\u672f\u54c1\u3002\u8fd9\u4e9b\u827a\u672f\u54c1\u4e2d\u6700\u5e38\u89c1\u7684\u5c31\u662f\u5404\u4e2a\u65f6\u4ee3\u7684\u6c7d\u8f66\u6a21\u578b\uff0c\u7b80\u76f4\u662f\u6570\u4e0d\u80dc\u6570\uff0c\u4e14\u5341\u5206\u903c\u771f\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131447.jpg\" height=\"400\" line-height=\"20.8000011444092\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131447.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131448.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131448.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131445.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131445.jpg\" width=\"640\"></img></p><p>\u8fd9\u91cc\u4e4b\u6240\u4ee5\u53eb\u94c1\u5320\u8425\uff0c\u662f\u56e0\u4e3a\u4ed6\u4eec\u7684\u4e1c\u4e1c\u90fd\u662f\u7528\u94c1\u6765\u5236\u9020\u7684\uff0c\u5404\u79cd\u5947\u601d\u5999\u60f3\u90fd\u7528\u94c1\u6765\u5b9e\u73b0\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131444.jpg\" height=\"400\" line-height=\"20.8000011444092\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131444.jpg\" width=\"640\"></img></p><p>\u9664\u4e86\u5403\u7684\uff0c\u8fd9\u91cc\u73a9\u7684\u3001\u6446\u7684\u3001\u6234\u7684\uff0c\u90a3\u662f\u5e94\u6709\u5c3d\u6709\uff0c\u5982\u679c\u6bcf\u4e2a\u90fd\u770b\u4e00\u904d\u4f30\u8ba1\u4e5f\u8981\u4e2a\u628a\u5c0f\u65f6\uff0c\u800c\u4e14\u4fdd\u8bc1\u6bcf\u4e2a\u90fd\u8ba9\u4f60\u7231\u4e0d\u91ca\u624b\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131477.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131477.jpg\" width=\"640\"></img></p><p><strong>\u5730\u5740\uff1a</strong>\u5317\u4eac\u5e02\u671d\u9633\u533a\u5927\u5c71\u5b50798\u827a\u672f\u56ed\u533a\u5185706\u5317\u4e00\u8857</p><p><strong>\u7535\u8bdd:</strong> 010-67706410</p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 131052,
+		"position": "116.491643266,39.9842986175"
+	}, {
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-131043.html",
+		"telephone": "18518253385",
+		"tag": "\u6e29\u6da6,\u6709\u8da3,\u70d8\u7119",
+		"sponsor": {},
+		"id": 131043,
+		"adurl": "",
+		"startdate": 0,
+		"title": "\u7528\u521b\u610f\u548c\u70ed\u60c5\u611f\u77e5\u56fd\u9645\u751c",
+		"eventtype": 2,
+		"feelnum": 9,
+		"questionURL": "",
+		"detail": "\u6700\u827a\u672f\u3001\u6700\u65f6\u5c1a\u3001\u6700\u524d\u6cbf\u7684\u70d8\u7119\u57f9\u8bad\u673a\u6784\u6b63\u5f0f\u767b\u9646\u5317\u4eac\u4e86\uff01\u4ece2015\u5e74\u8d77\u6240\u6709\u8bfe\u7a0b\u6b63\u5f0f\u5f00\u59cb\u63a5\u53d7\u62a5\u540d\uff0c\u56fd\u9645\u4e00\u7ebf\u7c73\u5176\u6797\u751c\u54c1\u4e3b\u53a8\uff0c\u643a\u5e26\u56fd\u9645\u6700\u524d\u6cbf\u70d8\u7119\u6280\u672f\u5949\u9001\u7ed9\u4e2d\u56fd\u7684\u70d8\u7119\u7231\u597d\u8005\u3002\r\nTDessert\u4e50\u5f97\u00b7\u5168\u7403\u540c\u6b65\u4f53\u9a8c\u5f0f\u827a\u672f\u70d8\u7119\u57f9\u8bad\u4f5c\u4e3a\u4e2d\u56fd\u70d8\u7119\u884c\u4e1a\u7684\u65b0\u6210\u5458\uff0c\u5c06\u81f4\u529b\u4e8e\u4e3a\u4e2d\u56fd\u70d8\u7119\u4e1a\u521b\u4e1a\u4eba\u3001\u70d8\u7119\u4ece\u4e1a\u4eba\u5458\u3001\u4e0e\u56fd\u9645\u70d8\u7119\u4e1a\u6700\u524d\u6cbf\u751c\u54c1\u540c\u6b65\u7684\u70d8\u7119\u8ffd\u9010\u8005\u3001\u6000\u63e3\u827a\u672f\u68a6\u60f3\u7684\u4e13\u4e1a\u70d8\u7119\u4eba\u53ca\u6709\u72ec\u7279\u5ba1\u7f8e\u548c\u60f3\u8981\u63d0\u5347\u827a\u672f\u4fee\u517b\u7684\u70d8\u7119\u7231\u597d\u8005\u4eec\uff0c\u63d0\u4f9b\u4e00\u4e2a\u76f4\u63a5\u9762\u5411\u4ed6\u4eec\uff0c\u4e0d\u7ecf\u4efb\u4f55\u4e2d\u8f6c\uff0c\u540c\u6b65\u4f20\u9001\u7684\u4e00\u4e2a\u5168\u65b0\u6a21\u5f0f\u7684\u5f00\u653e\u5f0f\u56fd\u9645\u751c\u54c1\u7684\u4ea4\u6d41\u5e73\u53f0\u3002\u56fd\u9645\u9876\u5c16\u70d8\u7119\u56e2\u961f\u5c06\u524d\u6cbf\u7684\u6280\u672f\u548c\u6700\u5177\u5b9e\u8df5\u610f\u4e49\u7684\u7ecf\u9a8c\u5e26\u5230\u8fd9\u4e2a\u5e73\u53f0\uff0c\u5e76\u7528\u4ed6\u4eec\u7684\u521b\u610f\u548c\u70ed\u60c5\u53bb\u9610\u8ff0\u6b63\u5b97\u6cd5\u5f0f\u751c\u54c1\u3002\u6211\u4eec\u6709\u575a\u5b9a\u7684\u4fe1\u5fc3\u53bb\u4f20\u64ad\u6211\u4eec\u6240\u8ba4\u540c\u7684\u827a\u672f\u70d8\u7119\u7406\u5ff5\u3002&nbsp;\r\n\u6709\u522b\u4e8e\u5176\u4ed6\u4e2d\u56fd\u897f\u70b9\u57f9\u8bad\u8bfe\u5802\uff1aTDessert\u4e50\u5f97\u8058\u8bf7\u56fd\u9645\u4e00\u7ebf\u751c\u54c1\u4e3b\u53a8\u6700\u5f3a\u56e2\u961f\u6388\u8bfe\uff1b\u5f15\u8fdb\u56fd\u9645\u6700\u65b0\u70d8\u57f9\u8bfe\u7a0b\u6a21\u5f0f\u5e76\u4e0e\u4e4b\u540c\u6b65\uff0c\u5373\uff1a\u6df1\u5ea6\u4f53\u9a8c\u4e13\u4e1a\u7406\u8bba+\u5927\u91cf\u5b9e\u64cd+\u5b9e\u6218\u5730\u6df1\u5ea6\u4f53\u9a8c\u5b9e\u8df5\uff0c\u6b64\u79cd\u6a21\u5f0f\u76ee\u524d\u56fd\u5185\u9996\u5bb6\u5f15\u5165\uff1b\u540c\u65f6\u6211\u4eec\u628a\u5982\u4f55\u5c06\u897f\u70b9\u88c5\u9970\u5f97\u66f4\u5177\u827a\u672f\u6027\u4e0e\u521b\u610f\u7f8e\u611f\u4f5c\u4e3a\u4e3b\u8981\u8bfe\u7a0b\uff0c\u7279\u8058\u8bf7\u56fd\u5185\u5916\u827a\u672f\u8bbe\u8ba1\u884c\u4e1a\u7684\u9886\u519b\u4eba\u7269\u4e3a\u672c\u673a\u6784\u6388\u8bfe\u3002",
+		"note": "",
+		"feeltitle": "",
+		"events": [],
+		"more": [{
+			"title": "\u5954\u9a70\u5fa1\u7528\u82b1\u827a\u8bbe\u8ba1\u5e08\u6559\u60a8\u624b\u4f5c\u82b1\u827a",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u671d\u9633\u533a\u878d\u79d1\u6a44\u6984\u57ce",
+			"imgs": ["http://pic.huodongjia.com/event/2015-07-06/event130139.jpg", "http://pic.huodongjia.com/event/2015-07-06/event130138.jpg", "http://pic.huodongjia.com/event/2015-07-06/event130137.jpg"],
+			"position": "116.491668956,40.0035539348",
+			"id": 121795
+		}, {
+			"title": "\u96f6\u57fa\u7840\u53d8\u8eab\u624b\u5de5\u94a9\u7f16\u8fbe\u4eba",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u671d\u9633\u533a\u5b89\u6167\u91cc\u56db\u533a14-6-302",
+			"imgs": ["http://pic.huodongjia.com/event/2015-03-12/event1426175201.37.jpg"],
+			"position": "116.42174234,39.9981834783",
+			"id": 128267
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.495352159,39.9836884515",
+			"title": "TDessert\u4e50\u5f97",
+			"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u5185\u4e03\u661f\u8857",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u5185\u4e03\u661f\u8857",
+		"imgs": ["http://pic.huodongjia.com/event/2015-07-13/event131310.JPG"],
+		"islongtime": 1,
+		"remark": "TDessert\u4e50\u5f97",
+		"enddate": 3013928215.0,
+		"mobileURL": "<body><html><head></head><body><p>\u6700\u827a\u672f\u3001\u6700\u65f6\u5c1a\u3001\u6700\u524d\u6cbf\u7684\u70d8\u7119\u57f9\u8bad\u673a\u6784\u6b63\u5f0f\u767b\u9646\u5317\u4eac\u4e86\uff01\u4ece2015\u5e74\u8d77\u6240\u6709\u8bfe\u7a0b\u6b63\u5f0f\u5f00\u59cb\u63a5\u53d7\u62a5\u540d\uff0c\u56fd\u9645\u4e00\u7ebf\u7c73\u5176\u6797\u751c\u54c1\u4e3b\u53a8\uff0c\u643a\u5e26\u56fd\u9645\u6700\u524d\u6cbf\u70d8\u7119\u6280\u672f\u5949\u9001\u7ed9\u4e2d\u56fd\u7684\u70d8\u7119\u7231\u597d\u8005\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131315.JPG\" height=\"533\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131315.JPG\" width=\"800\"></img></p><p>T Dessert\u4e50\u5f97\u00b7\u5168\u7403\u540c\u6b65\u4f53\u9a8c\u5f0f\u827a\u672f\u70d8\u7119\u57f9\u8bad\u4f5c\u4e3a\u4e2d\u56fd\u70d8\u7119\u884c\u4e1a\u7684\u65b0\u6210\u5458\uff0c\u5c06\u81f4\u529b\u4e8e\u4e3a\u4e2d\u56fd\u70d8\u7119\u4e1a\u521b\u4e1a\u4eba\u3001\u70d8\u7119\u4ece\u4e1a\u4eba\u5458\u3001\u4e0e\u56fd\u9645\u70d8\u7119\u4e1a\u6700\u524d\u6cbf\u751c\u54c1\u540c\u6b65\u7684\u70d8\u7119\u8ffd\u9010\u8005\u3001\u6000\u63e3\u827a\u672f\u68a6\u60f3\u7684\u4e13\u4e1a\u70d8\u7119\u4eba\u53ca\u6709\u72ec\u7279\u5ba1\u7f8e\u548c\u60f3\u8981\u63d0\u5347\u827a\u672f\u4fee\u517b\u7684\u70d8\u7119\u7231\u597d\u8005\u4eec\uff0c\u63d0\u4f9b\u4e00\u4e2a\u76f4\u63a5\u9762\u5411\u4ed6\u4eec\uff0c\u4e0d\u7ecf\u4efb\u4f55\u4e2d\u8f6c\uff0c\u540c\u6b65\u4f20\u9001\u7684\u4e00\u4e2a\u5168\u65b0\u6a21\u5f0f\u7684\u5f00\u653e\u5f0f\u56fd\u9645\u751c\u54c1\u7684\u4ea4\u6d41\u5e73\u53f0\u3002\u56fd\u9645\u9876\u5c16\u70d8\u7119\u56e2\u961f\u5c06\u524d\u6cbf\u7684\u6280\u672f\u548c\u6700\u5177\u5b9e\u8df5\u610f\u4e49\u7684\u7ecf\u9a8c\u5e26\u5230\u8fd9\u4e2a\u5e73\u53f0\uff0c\u5e76\u7528\u4ed6\u4eec\u7684\u521b\u610f\u548c\u70ed\u60c5\u53bb\u9610\u8ff0\u6b63\u5b97\u6cd5\u5f0f\u751c\u54c1\u3002\u6211\u4eec\u6709\u575a\u5b9a\u7684\u4fe1\u5fc3\u53bb\u4f20\u64ad\u6211\u4eec\u6240\u8ba4\u540c\u7684\u827a\u672f\u70d8\u7119\u7406\u5ff5\u3002\u00a0</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131305.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131305.jpg\" width=\"960\"></img></p><p>\u6709\u522b\u4e8e\u5176\u4ed6\u4e2d\u56fd\u897f\u70b9\u57f9\u8bad\u8bfe\u5802\uff1aT Dessert\u4e50\u5f97\u8058\u8bf7\u56fd\u9645\u4e00\u7ebf\u751c\u54c1\u4e3b\u53a8\u6700\u5f3a\u56e2\u961f\u6388\u8bfe\uff1b\u5f15\u8fdb\u56fd\u9645\u6700\u65b0\u70d8\u57f9\u8bfe\u7a0b\u6a21\u5f0f\u5e76\u4e0e\u4e4b\u540c\u6b65\uff0c\u5373\uff1a\u6df1\u5ea6\u4f53\u9a8c\u4e13\u4e1a\u7406\u8bba+\u5927\u91cf\u5b9e\u64cd+\u5b9e\u6218\u5730\u6df1\u5ea6\u4f53\u9a8c\u5b9e\u8df5\uff0c\u6b64\u79cd\u6a21\u5f0f\u76ee\u524d\u56fd\u5185\u9996\u5bb6\u5f15\u5165\uff1b\u540c\u65f6\u6211\u4eec\u628a\u5982\u4f55\u5c06\u897f\u70b9\u88c5\u9970\u5f97\u66f4\u5177\u827a\u672f\u6027\u4e0e\u521b\u610f\u7f8e\u611f\u4f5c\u4e3a\u4e3b\u8981\u8bfe\u7a0b\uff0c\u7279\u8058\u8bf7\u56fd\u5185\u5916\u827a\u672f\u8bbe\u8ba1\u884c\u4e1a\u7684\u9886\u519b\u4eba\u7269\u4e3a\u672c\u673a\u6784\u6388\u8bfe\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131308.jpg\" height=\"1071\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131308.jpg\" width=\"1080\"></img></p><p>\u8ba9\u751c\u54c1\u4e0d\u6b62\u4e8e\u7f8e\u5473\uff0c\u66f4\u5177\u89c6\u89c9\u3001\u7cbe\u795e\u4eab\u53d7\uff0c\u63d0\u5347\u5b66\u5458\u4e13\u4e1a\u5ba1\u7f8e\u6c34\u51c6\uff0c\u6700\u7ec8\u5b66\u5458\u5c06\u4ece\u827a\u672f\u521b\u610f\u8bbe\u8ba1\u5982\u4f55\u8fd0\u7528\u5728\u751c\u54c1\u5236\u4f5c\u4e2d\u5f97\u5230\u610f\u60f3\u4e0d\u5230\u7684\u6536\u83b7\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131316.jpg\" height=\"784\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131316.jpg\" width=\"1080\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-13/event131317.jpg\" height=\"804\" src=\"http://pic.huodongjia.com/event/2015-07-13/event131317.jpg\" width=\"1080\"></img></p><p><strong>\u5730\u5740\uff1a</strong>\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u5185\u4e03\u661f\u8857</p><p><strong>\u62a5\u540d\u7535\u8bdd\uff1a</strong>18518253385</p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 131043,
+		"position": "116.495352159,39.9836884515"
+	}, {
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-131055.html",
+		"telephone": "010-87626357",
+		"tag": "\u6709\u8da3,\u9177\u70ab,\u5bb6\u9970\u9986",
+		"sponsor": {},
+		"id": 131055,
+		"adurl": "",
+		"startdate": 0,
+		"title": "\u8bf4\u4e0d\u6e05\u9053\u4e0d\u660e\u7684\u751f\u6d3b\u683c\u8c03",
+		"eventtype": 1,
+		"feelnum": 0,
+		"questionURL": "",
+		"detail": "\u5230\u5e95\u662f\u5496\u5561\u9986\u8fd8\u662f\u5c0f\u578b\u5bb6\u5177\u535a\u7269\u9986\u5462\uff1f\u8fd8\u662f\u4e2a\u4eba\u8272\u5f69\u9c9c\u660e\u7684\u5de5\u4f5c\u5ba4\uff1f\u5947\u602a\u7684\u7ec4\u5408\u5374\u534f\u8c03\u5730\u5e26\u6765\u4e00\u79cd\u8bf4\u4e0d\u6e05\u9053\u4e0d\u660e\u7684\u522b\u81f4\u751f\u6d3b\u683c\u8c03\u3002",
+		"note": "",
+		"feeltitle": "\u53ea\u8981\u9759\u4e0b\u6765\uff0c\u5904\u5904\u90fd\u80fd\u6709\u6536\u83b7",
+		"events": [],
+		"more": [{
+			"title": "ACE \u7efd\u653e\u7684\u91d1\u5c5e\u7cbe\u795e",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u671d\u9633\u533a \u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u5185",
+			"imgs": ["http://pic.huodongjia.com/event/2015-04-11/event115017.jpg"],
+			"position": "116.501785023,39.9897619539",
+			"id": 129435
+		}, {
+			"title": "\u3010\u5929\u7136\u611f\u7684\u8bbe\u8ba1\u3011\u4f53\u9a8c",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u671d\u9633\u533a\u5de5\u4f53\u5317\u8def4\u53f7\u966222\u53f7\u697c\u5317\u4fa7\u9996\u5c42",
+			"imgs": ["http://pic.huodongjia.com/event/2015-06-27/event129353.jpg", "http://pic.huodongjia.com/event/2015-06-27/event129352.jpg", "http://pic.huodongjia.com/event/2015-06-25/event129273.jpg"],
+			"position": "116.464044,39.937207",
+			"id": 130886
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.494665279,39.9868262506",
+			"title": "\u4e1c\u820d\u9177\u5bb6",
+			"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def2\u53f7\u5317\u4eac798\u827a\u672f\u533aB\u533a\u5185",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def2\u53f7\u5317\u4eac798\u827a\u672f\u533aB\u533a\u5185",
+		"imgs": ["http://pic.huodongjia.com/event/2015-07-14/event131495.jpg"],
+		"islongtime": 1,
+		"remark": "\u4e1c\u820d\u9177\u5bb6",
+		"enddate": 3017532535.0,
+		"mobileURL": "<body><html><head></head><body><p>\u201c\u4e1c\u7bf1\u8349\u820d\u201d\u53e4\u5178\u5bb6\u5177\u574a\u5728\u53e4\u5178\u5bb6\u5177\u5708\u91cc\u5c0f\u6709\u540d\u6c14\uff0c\u642c\u5230\u9ad8\u7891\u5e97\u540e\uff0c\u4ece\u79c1\u4eba\u7ecf\u8425\u6539\u5236\u6210\u516c\u53f8\u5236\uff0c\u540e\u6539\u540d\u4e3a\u201c\u4e1c\u820d\u9177\u5bb6\u201d\u3002\u4e2d\u5f0f\u5bb6\u5177\u3001\u6469\u767b\u7684\u4e0a\u6d77\u98ce\u60c5\u3001\u4e1c\u5357\u4e9a\u7684\u5f02\u57df\u90fd\u662f\u5e97\u4e3b\u4ece\u4e16\u754c\u5404\u5730\u201c\u6dd8\u201d\u6765\u7684\u3002\u4e1c\u820d798\u5e97\u662f\u4e1c\u820d\u9177\u5bb6\u7684\u65d7\u8230\u5e97\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131491.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131491.jpg\" width=\"640\"></img></p><p>\u5916\u8868\u770b\u662f\u4e00\u5bb6\u666e\u901a\u7684\u5496\u5561\u5e97\uff0c\u4f46\u662f\u6240\u6709\u7684\u684c\u6905\u677f\u51f3\u6446\u8bbe\u90fd\u6302\u7740\u6807\u7b7e\uff0c\u5305\u62ec\u56fd\u5916\u6dd8\u7684\u548c\u81ea\u5df1\u8bbe\u8ba1\u751f\u4ea7\u7684\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131494.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131494.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131492.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131492.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131490.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131490.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131493.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131493.jpg\" width=\"640\"></img></p><p>\u4e4b\u6240\u4ee5\u628a\u5bb6\u5177\u5c55\u5385\u548c\u5496\u5561\u5385\u5408\u4e8c\u4e3a\u4e00\uff0c\u662f\u56e0\u4e3a\u5f90\u8001\u677f\u5b9e\u5728\u4e0d\u77e5\u9053\u5982\u4f55\u5c06\u5de5\u4f5c\u548c\u751f\u6d3b\u5206\u5f00\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131508.jpg\" height=\"838\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131508.jpg\" width=\"629\"></img>\u200b</p><p>\u4e8c\u697c\u7684\u5bbd\u655e\u7a7a\u95f4\u88ab\u5979\u8bbe\u8ba1\u4e3a\u5bb6\u5177\u5c55\u5385\uff0c\u65e5\u5f0f\u69bb\u69bb\u7c73\u4e0a\u7684\u5bbd\u5927\u8336\u684c\u3001\u968f\u610f\u6563\u843d\u7684\u957f\u6905\uff0c\u53ea\u8981\u4f60\u559c\u6b22\uff0c\u53ef\u4ee5\u968f\u4fbf\u5750\u5728\u54ea\u91cc\u3002\u6e05\u672b\u7684\u706f\u7b3c\u3001\u5370\u5c3c\u67da\u6728\u96d5\u82b1\u7bb1\u3001\u6765\u81ea\u5c71\u897f\u7684\u559c\u5b57\u5ac1\u5986\u7bb1\u3001\u6cd5\u5f0f\u6b63\u53cd\u4e24\u7528\u62bd\u5c49\u67dc\u2026\u2026\u6765\u81ea\u4e16\u754c\u5404\u5730\u3001\u5404\u5e74\u4ee3\u7684\u5bb6\u5177\u5728\u8fd9\u91cc\u6c47\u805a\u4e00\u5802\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-07-14/event131506.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-07-14/event131506.jpg\" width=\"640\"></img></p><p><strong>\u5730\u5740\uff1a</strong>\u5317\u4eac\u5e02\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def2\u53f7\u5317\u4eac798\u827a\u672f\u533aB\u533a\u5185</p><p><strong>\u7535\u8bdd\uff1a</strong>010-87626357</p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 131055,
+		"position": "116.494665279,39.9868262506"
+	}, {
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-129435.html",
+		"telephone": "",
+		"tag": "\u6709\u8da3,\u9177\u70ab,\u5496\u5561\u9986",
+		"sponsor": {},
+		"id": 129435,
+		"adurl": "",
+		"startdate": 0,
+		"title": "ACE \u7efd\u653e\u7684\u91d1\u5c5e\u7cbe\u795e",
+		"eventtype": 1,
+		"feelnum": 5,
+		"questionURL": "",
+		"detail": "\u9152\u5427\u3001\u5496\u5561\u5385\u8fd9\u7c7b\u7684\u8bbe\u8ba1\u4e0d\u641e\u70b9\u70ed\u70b9\u5671\u5934\u597d\u50cf\u5f88\u96be\u5438\u5f15\u987e\u5ba2\u7684\u6ce8\u610f\u3002\u8fd9\u6b21\u8fd9\u5bb6\u4f4d\u4e8e\u5317\u4eac798\u827a\u672f\u533a\u6765\u81ea\u4f26\u6566\u7684\u9152\u5427ACE Cafe 751\u5f7b\u5e95\u5c06\u90a3\u4e9b\u4f20\u7edf\u610f\u4e49\u4e0a\u7684\u521b\u65b0\u201c\u6253\u8d25\u201d\u4e86\uff0c\u5b83\u4e0d\u4ec5\u7ed9\u4eba\u4eec\u63d0\u4f9b\u4e86\u4e00\u4e2a\u559d\u5496\u5561\u3001\u5403\u897f\u9910\u7684\u65b0\u9c9c\u5730\u513f\uff0c\u8fd8\u5c06\u6cbf\u88ad\u4f26\u6566\u5e97\u201c\u6c7d\u8f66\u673a\u8f66\u4e3b\u9898\u9910\u5385\u201d\u7684\u7279\u8272\u3002",
+		"note": "",
+		"feeltitle": "\u5fc3\u4e4b\u6240\u5411\uff0c\u4fbf\u662f\u68a6\u4e4b\u6240\u501a",
+		"events": [],
+		"more": [{
+			"title": "\u521b\u610f\u3010\u5564\u9152\u7cfb\u5217\u3011",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u5317\u4eac\u671d\u9633\u533a\u5de5\u4f53\u5317\u8def4\u53f7\u9662",
+			"imgs": ["http://pic.huodongjia.com/event/2015-05-04/event120947.jpg"],
+			"position": "116.464160955,39.9367490852",
+			"id": 130090
+		}, {
+			"title": "\u5145\u6ee1\u79d1\u6280\u611f\u7684\u3010\u667a\u80fd\u5496\u5561\u9986\u3011",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u4e2d\u5173\u6751\u521b\u4e1a\u5927\u8857\u6700\u5317\u8fb9",
+			"imgs": ["http://pic.huodongjia.com/event/2015-05-09/event122296.jpg"],
+			"position": "116.337795241,39.9775234303",
+			"id": 130204
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.495299878,39.9836603232",
+			"title": "ACE Cafe",
+			"address": "\u671d\u9633\u533a \u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u5185",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "\u671d\u9633\u533a \u9152\u4ed9\u6865\u8def4\u53f7798\u827a\u672f\u533a\u5185",
+		"imgs": ["http://pic.huodongjia.com/event/2015-04-11/event115017.jpg"],
+		"islongtime": 1,
+		"remark": "ACE Cafe",
+		"enddate": 3015048425.0,
+		"mobileURL": "<body><html><head></head><body><p>ACE Cafe \u662f\u4f26\u6566\u7684\u4e00\u5bb6\u8001\u724c\u673a\u8f66\u6447\u6eda\u4e3b\u9898\u9910\u5427\uff0c751\u5e97\u4f5c\u4e3a\u4e2d\u56fd\u7684\u7b2c\u4e00\u5bb6\u5e97\u4f4d\u4e8e798\u827a\u672f\u533a\uff0c\u7531\u77e5\u540d\u5efa\u7b51\u5e08\u674e\u9053\u5fb7\u5148\u751f\u53ca\u5176dEEP\u8bbe\u8ba1\u56e2\u961f\u7cbe\u5fc3\u6253\u9020\uff0c\u5728\u539f751\u7ad9\u7684\u57fa\u7840\u4e0a\u6539\u9020\u800c\u6210\u3002\u674e\u9053\u5fb7\u5148\u751f\u65e9\u5e74\u6bd5\u4e1a\u4e8e\u4e2d\u592e\u7f8e\u672f\u5b66\u9662\u5efa\u7b51\u5b66\u9662\u4ee5\u53ca\u82f1\u56fd\u5efa\u7b51\u8054\u76df\u5efa\u7b51\u5b66\u9662(AA)\u3002\u5728\u56de\u56fd\u521b\u5efadEEP\u4e4b\u524d\uff0c\u4ed6\u5de5\u4f5c\u4e8e\u4f26\u6566\u7684Foster+Partners\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event115027.jpg\" height=\"508\" src=\"http://pic.huodongjia.com/event/2015-04-11/event115027.jpg\" width=\"691\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event115028.jpg\" height=\"508\" src=\"http://pic.huodongjia.com/event/2015-04-11/event115028.jpg\" width=\"691\"></img>\u200b</p><p>ACE Cafe 751\u7684\u8bbe\u8ba1\u5e0c\u671b\u5728\u5f3a\u8c03\u673a\u8f66\u4e0e\u6447\u6eda\u7b49\u91cd\u91d1\u5c5e\u4e3b\u9898\u4ee5\u5916\uff0c\u901a\u8fc7\u6570\u5b57\u6280\u672f\u548c\u673a\u68b0\u52a8\u529b\u5b66\u7684\u7ed3\u5408\uff0c\u8bd5\u56fe\u8d4b\u4e88\u51b7\u9177\u7684\u7a7a\u95f4\u4ee5\u7075\u52a8\u7684\u751f\u547d\u3002\u5e0c\u671b\u4eba\u4eec\u53ef\u4ee5\u611f\u53d7\u5230\u7a7a\u95f4\u7684\u547c\u5438\u4e0e\u673a\u68b0\u7684\u9b45\u529b\u3002\u5efa\u7b51\u5e08\u4eec\u6240\u4e00\u76f4\u8bd5\u56fe\u5b9e\u73b0\u7684\u53ef\u53d8\u5f62\u7684\u5efa\u7b51\uff0c\u5728\u8fd9\u91cc\u4e5f\u662f\u4e00\u4e2a\u5c0f\u5c0f\u7684\u5b9e\u8df5\u4e0e\u5c1d\u8bd5\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event115025.jpg\" height=\"424\" src=\"http://pic.huodongjia.com/event/2015-04-11/event115025.jpg\" width=\"640\"></img></p><p>\u4e00\u4e2a\u53ef\u4ee5\u6253\u5f00\u7684\u91d1\u5c5e\u5899\u9762\u3002\u7531\u5427\u53f0\u5904\u9065\u63a7\uff0c\u53ef\u6839\u636e\u529f\u80fd\u9700\u8981\u6253\u5f00\u6216\u95ed\u5408\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event115022.jpg\" height=\"356\" src=\"http://pic.huodongjia.com/event/2015-04-11/event115022.jpg\" width=\"640\"></img></p><p>\u5f53\u91d1\u5c5e\u5899\u9762\u5b8c\u5168\u6253\u5f00\u540e\uff0c\u4f60\u53ef\u4ee5\u770b\u5230\u5e73\u6574\u7684\u5899\u9762\u53d8\u6210\u4e86\u4e00\u4e2a\u6781\u4e3a\u590d\u6742\u7684\u91d1\u5c5e\u7ed3\u6784\uff0c\u5982\u540c\u4e00\u6735\u70b8\u5f00\u4e86\u7684\u91d1\u5c5e\u73ab\u7470\uff0c\u8c61\u5f81\u7740\u673a\u8f66\u6587\u5316\u548c\u6447\u6eda\u7684\u7cbe\u795e\u3002</p><p>\u540c\u6837\u7684\u60f3\u6cd5\u6211\u4eec\u4e5f\u5e94\u7528\u5728\u4e86\u5ba4\u5185\u5427\u53f0\u540e\u7684\u5899\u9762\uff0c\u4e0d\u9508\u94a2\u7684\u91d1\u5c5e\u5899\u9762\u4ece\u5e73\u9762\u9010\u6e10\u6253\u5f00\u3001\u7efd\u653e\u3001\u518d\u56de\u5f52\u5e73\u9762\uff0c\u5982\u4e00\u4e2a\u751f\u547d\u4f53\u5728\u547c\u5438\u3002\u800c\u8fd9\u4e9b\u53d8\u5f62\u662f\u7531\u5176\u9876\u90e8\u7684\u9f7f\u8f6e\u5e26\u52a8\u8f6e\u5e26\u800c\u8fbe\u5230\u7684\u3002\u8fd9\u6b63\u662f\u57fa\u5730\u65c1\u90a3\u8f86\u8001\u65e7\u7684\u84b8\u6c7d\u673a\u8f66\u6240\u7ed9\u6211\u4eec\u7684\u7075\u611f\uff0c\u540c\u65f6\u8fd9\u4e5f\u8868\u8fbe\u4e86\u6211\u4eec\u5bf9\u673a\u8f66\u6587\u5316\u7684\u7406\u89e3\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event115023.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-04-11/event115023.jpg\" width=\"640\"></img></p><p>\u57fa\u4e8e\u5bf9\u73b0\u72b6\u7684\u4fdd\u62a4\uff0c\u65e0\u6cd5\u8fdb\u884c\u6c38\u4e45\u5efa\u7b51\u7684\u52a0\u5efa\uff0c\u4e3a\u4e86\u6ee1\u8db3\u7532\u65b9\u4f7f\u7528\u7684\u9700\u6c42\uff0c\u6211\u4eec\u5728\u539f\u8f66\u7ad9\u897f\u4fa7\u7528\u96c6\u88c5\u7bb1\u8fdb\u884c\u7ec4\u5408\uff0c\u5f62\u6210\u4e86\u4e00\u4e2a\u6709\u4e00\u5c64\u7684ACE\u5e97\u94fa\u4e0e\u673a\u8f66\u4fee\u7406\u533a\u3001\u4e8c\u5c42\u5e73\u53f0\u3001\u4e8c\u697c\u7684\u529e\u516c\u533a\u7684\u529f\u80fd\u4f53\u3002\u6574\u4f53\u98ce\u683c\u4e0e\u539f\u8f66\u7ad9\u7684\u5de5\u4e1a\u98ce\u683c\u76f8\u547c\u5e94\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event115024.jpg\" height=\"424\" src=\"http://pic.huodongjia.com/event/2015-04-11/event115024.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-11/event115030.jpg\" height=\"508\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-04-11/event115030.jpg\" width=\"691\"></img></p><p><strong>\u5730\u5740\uff1a</strong>\u671d\u9633\u533a798\u827a\u672f\u533a751\u706b\u8f66\u5934\u5e7f\u573a</p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 129435,
+		"position": "116.495299878,39.9836603232"
+	}, {
+		"feel": "\u9999\u8273\u6307\u6570",
+		"shareURL": "http://api.xiaorizi.me/app/share-129515.html",
+		"telephone": "010-59789580",
+		"tag": "\u96c5\u97f5,\u8863\u9970\u9986",
+		"sponsor": {},
+		"id": 129515,
+		"adurl": "",
+		"startdate": 0,
+		"title": "\u5145\u6ee1\u3010\u60c5\u8da3\u4e0e\u683c\u8c03\u3011",
+		"eventtype": 1,
+		"feelnum": 0,
+		"questionURL": "",
+		"detail": "\u6210\u7acb\u4e8e2008\u5e74\u7684\u975e\u7a7a\u95f4\u54c1\u724c\u6982\u5ff5\u5e97(FEI SPACE) \u4f4d\u4e8e\u5317\u4eac798\u827a\u672f\u56ed\u533a\u5185\uff0c\u9762\u79ef\u8d85\u8fc7300\u5e73\u65b9\u7c73\u3002\u66fe\u4f5c\u4e3a\u4f53\u73b0\u4e2d\u56fd\u521b\u610f\u8bbe\u8ba1\u7684\u91cd\u8981\u673a\u6784\u805a\u96c6\u4e86\u76f8\u5f53\u7684\u54c1\u724c\u6548\u5e94\u3002",
+		"note": "",
+		"feeltitle": "\u4eba\u751f\u4e2d\u67d0\u4e9b\u8d1f\u9762\u7684\u4e1c\u897f\uff0c\u6700\u7ec8\u4e5f\u662f\u4e00\u79cd\u517b\u5206",
+		"events": [],
+		"more": [{
+			"title": "Vintage\u7f8e\u7269\u6fc0\u53d1\u7ed9\u4f60\u7684\u65e0\u9650\u7075\u611f",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u4e1c\u57ce\u533a\u9f13\u697c\u4e1c\u5927\u8857241\u53f7",
+			"imgs": ["http://pic.huodongjia.com/event/2015-07-29/event132847.jpg", "http://pic.huodongjia.com/event/2015-05-11/event122738.jpg"],
+			"position": "116.405593322,39.9472704436",
+			"id": 130041
+		}, {
+			"title": "\u8584\u8377\u7cef\u7c73\u8471 \u4e2d\u56fd\u3010\u4e70\u624b\u5e97\u3011\u7684\u6807\u6746",
+			"price": {
+				"price_currency": "\uffe5",
+				"list": [],
+				"currency_token": "RMB",
+				"type": 2
+			},
+			"address": "\u671d\u9633\u533a\u4e09\u91cc\u5c6fVillage\u5317\u533a\u5730\u4e0b\u4e00\u5c42LG09",
+			"imgs": ["http://pic.huodongjia.com/event/2015-04-03/event113985.jpg"],
+			"position": "116.407611186,39.8649586579",
+			"id": 129333
+		}],
+		"city": "\u5317\u4eac",
+		"price": {
+			"price_currency": "\uffe5",
+			"list": [],
+			"currency_token": "RMB",
+			"type": 2
+		},
+		"allshops": [{
+			"position_gcj02": ",",
+			"position": "116.495314782,39.9841960496",
+			"title": "\u975e\u7a7a\u95f4\u54c1\u724c\u6982\u5ff5\u5e97(FEI SPACE)",
+			"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def2\u53f7\u9662798\u56ed\u533aB01\u697c2\u697c(\u8fd1\u9152\u4ed9\u6865\u5317\u8def)",
+			"city": "\u5317\u4eac"
+		}],
+		"address": "\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def2\u53f7\u9662798\u56ed\u533aB01\u697c2\u697c(\u8fd1\u9152\u4ed9\u6865\u5317\u8def)",
+		"imgs": ["http://pic.huodongjia.com/event/2015-06-15/event127948.jpg"],
+		"islongtime": 1,
+		"remark": "\u975e\u7a7a\u95f4\u54c1\u724c\u6982\u5ff5\u5e97(FEI SPACE)",
+		"enddate": 3017550183.0,
+		"mobileURL": "<body><html><head></head><body><p>\u6210\u7acb\u4e8e2008\u5e74\u7684\u975e\u7a7a\u95f4\u54c1\u724c\u6982\u5ff5\u5e97(FEI SPACE) \u4f4d\u4e8e\u5317\u4eac798\u827a\u672f\u56ed\u533a\u5185\uff0c\u9762\u79ef\u8d85\u8fc7300\u5e73\u65b9\u7c73\u3002\u66fe\u4f5c\u4e3a\u4f53\u73b0\u4e2d\u56fd\u521b\u610f\u8bbe\u8ba1\u7684\u91cd\u8981\u673a\u6784\u805a\u96c6\u4e86\u76f8\u5f53\u7684\u54c1\u724c\u6548\u5e94\u3002\u56fd\u5185\u5916\u4e3b\u6d41\u5a92\u4f53\uff0c\u5305\u62ecNew York Times, Wall Paper, VOGUE\uff0cCASA\uff0cMarie Claire\uff0cELLE\u7b49\u5bf9\u975e\u7a7a\u95f4\u5747\u6709\u62a5\u9053\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-15/event127947.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-06-15/event127947.jpg\" width=\"640\"></img></p><p>2010\u5e74\uff0c\u975e\u7a7a\u95f4\u88ab\u5217\u5165\u7ebd\u7ea6Black Book\u6742\u5fd7\u8d2d\u7269\u6307\u5357\u548ciphone\u65c5\u884c\u8d2d\u7269\u5e94\u7528\u8f6f\u4ef6\u4e2d\u5317\u4eac\u6700\u4f73\u8bbe\u8ba1\u5e97\u4e4b\u4e00\u3002\u540c\u5e749\u6708\uff0c\u975e\u7a7a\u95f4\u5165\u9009Time Out \u6742\u5fd7\u8bc4\u9009\u7684\u5317\u4eac75\u4e2a\u6700\u4f73\u6d41\u884c\u5546\u5e97\u4e4b\u4e00\u3002</p><p>2011\u5e7411\u6708\uff0c\u975e\u7a7a\u95f4\u88abWallPaper\u6742\u5fd7\u5217\u4e3a\u201c\u53bb\u4e2d\u56fd\u7684\u4e8c\u5341\u4e2a\u7406\u7531\u4e4b\u4e00\u201d\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-15/event127946.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-06-15/event127946.jpg\" width=\"640\"></img></p><p>2011\u5e749\u6708\uff0c\u975e\u7a7a\u95f4\u66f4\u5c06\u82f1\u56fd\u65f6\u5c1a\u5de5\u4e1a\u7684\u4f20\u5947\u54c1\u724cTOPSHOP \u548c TOPMAN\u5f15\u5165\u4e2d\u56fd\uff0c\u6210\u4e3a\u4e2d\u56fd\u5927\u9646\u552f\u4e00\u4e00\u5bb6\u54c1\u724c\u5b98\u65b9\u6388\u6743\u7684TOPSHOP\u96f6\u552e\u5546\u3002\u5f15\u53d1\u4e86\u65f6\u5c1a\u754c\u7684\u70ed\u8bae\uff0c\u5e76\u8fc5\u901f\u5438\u5f15\u4e86\u6d88\u8d39\u8005\u53ca\u4f17\u591aTOPSHOP\u7c89\u4e1d\u4eec\u7684\u5173\u6ce8\u3002</p><p>\u8d70\u8fdb\u975e\u7a7a\u95f4\uff0c\u4f60\u4f1a\u7acb\u523b\u88ab\u8fd9\u201c\u975e\u201d\u5e38\u4e0d\u4e00\u822c\u7684\u683c\u8c03\u5438\u5f15\u3002\u4f4e\u8c03\u7684\u9ed1\u767d\u4e3b\u8272\u8c03\u642d\u914d\uff0c\u7a7a\u9614\u7684\u5e97\u9762\u5e03\u5c40\uff0c\u6781\u5927\u5730\u7a81\u663e\u4e86\u670d\u9970\u7684\u8272\u5f69\u548c\u65f6\u5c1a\u3002\u7f24\u7eb7\u7684\u54c1\u724c\u3001\u5404\u4f4d\u9636\u7684\u4ef7\u683c\u7edd\u5bf9\u4f1a\u8ba9\u4f60\u4e0d\u865a\u6b64\u884c\uff0c\u6536\u83b7\u9887\u4e30\u3002</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-15/event127945.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-06-15/event127945.jpg\" width=\"640\"></img></p><p><strong>\u5730\u5740\uff1a</strong>\u671d\u9633\u533a\u9152\u4ed9\u6865\u8def2\u53f7\u9662798\u56ed\u533aB01\u697c2\u697c(\u8fd1\u9152\u4ed9\u6865\u5317\u8def)</p><p><strong>\u8425\u4e1a\u65f6\u95f4\uff1a</strong>\u5468\u4e8c\u81f3\u5468\u65e5\uff0c12am - 7pm</p><p><strong>\u7535\u8bdd\uff1a</strong>010-59789580</p><p></p></body></html></body>",
+		"cat": {
+			"name": "",
+			"img": "",
+			"id": ""
+		},
+		"eid": 129515,
+		"position": "116.495314782,39.9841960496"
+	}],
+	"cat": [{
+		"img": "http://pic.huodongjia.com/event/2014-11-28/event1417170393.11.jpg",
+		"title": "\u300c\u95f2\u65f6\u5149\u300d",
+		"text": "<body><p>\u6709\u4e00\u4e2a\u5e97\u4e3b\u7684\u5f00\u5e97\u521d\u8877\uff0c\u662f\u56e0\u4e3a\u7559\u5b66\u5f52\u6765\u5728\u56fd\u5185\u518d\u4e5f\u6ca1\u6709\u5403\u5230\u8fc7\u50cf\u5728\u56fd\u5916\u5403\u7684\u90a3\u4e00\u79cd\u7f8e\u5473\u829d\u58eb\uff0c\u4e8e\u662f\u5979\u5f00\u8d77\u4e86\u4e00\u5bb6\u4e13\u4e70\u829d\u58eb\u86cb\u7cd5\u7684\u5c0f\u5e97\u3002\u5176\u5b9e\uff0c\u8bb8\u591a\u5f00\u751c\u54c1\u7684\u5e97\u4e3b\u4eec\u90fd\u662f\u6000\u7740\u6ee1\u6ee1\u7684\u5e78\u798f\u611f\u5728\u5b8c\u6210\u4ed6\u4eec\u7684\u5403\u8d27\u7f8e\u68a6\uff0c\u5f53\u7136\u4e5f\u662f\u4e3a\u4e86\u5206\u4eab\u7ed9\u66f4\u591a\u7684\u4eba\uff0c\u8ba9\u4ed6\u4eec\u8db3\u4e0d\u51fa\u6237\u4e5f\u80fd\u591f\u53bb\u54c1\u5c1d\u90a3\u4e9b\u4e0d\u4e00\u6837\u7684\u771f\u6b63\u7684\u7f8e\u5473\u3002\u4ed6\u4eec\u6e34\u671b\u5c3d\u5df1\u4e4b\u529b\uff0c\u8ba9\u8fd9\u6837\u7684\u5fae\u751c\u7684\u9999\u6c14\u6563\u53d1\u4e8e\u6574\u4e2a\u53e4\u90fd\u3002</p></body>",
+		"height": 580,
+		"width": 640,
+		"begin_time": 0,
+		"keywords": "\u70d8\u7119 \u6599\u7406,\u4e66\u753b \u4e50\u5668,\u63a2\u5e97 \u901b\u8857,\u89c2\u6f14 \u770b\u5267,\u79c1\u53a8 \u8d4f\u5473,\u624b\u4f5c \u5b9a\u5236,\u8fd0\u52a8 \u5065\u8eab,\u8336\u9053 \u82b1\u827a,\u4eb2\u5b50 \u6559\u80b2",
+		"id": 89
+	}, {
+		"img": "http://pic.huodongjia.com/event/2014-11-28/event1417159361.08.jpg",
+		"title": "\u300c\u6709\u683c\u8c03\u300d",
+		"text": "<body><p>\u5f53\u4f60\u6765\u5230\u4e00\u5ea7\u57ce\u5e02\u65c5\u884c\uff0c\u4f60\u4f1a\u4ec5\u4ec5\u53ea\u662f\u60f3\u8981\u770b\u5230\u8fd9\u5ea7\u57ce\u5e02\u7684\u65c5\u6e38\u98ce\u666f\u800c\u4e0d\u60f3\u82b1\u65f6\u95f4\u53bb\u4e86\u89e3\u8fd9\u5ea7\u57ce\u5e02\u7684\u4eba\u6587\u60c5\u6000\u548c\u53e4\u4eca\u8da3\u4e8b\u5417\uff1f\u60f3\u5fc5\u4e0d\u4f1a\u5427\u3002\u4e0e\u4ee5\u5f80\u4e0d\u540c\u7684\u65c5\u884c\uff0c\u6211\u4eec\u53ef\u4ee5\u653e\u5f03\u9009\u62e9\u5feb\u6377\u9152\u5e97\u7684\u5343\u7bc7\u4e00\u5f8b\uff0c\u6362\u4e2a\u53e3\u5473\uff0c\u611f\u53d7\u57ce\u5e02\u72ec\u7279\u827a\u672f\u9b45\u529b\u7684\u4e3b\u9898\u9152\u5e97\uff0c\u6216\u662f\u9752\u6625\u60c5\u6000\u751a\u6d53\u7684\u9752\u5e74\u65c5\u820d\u3002</p><p>\u5728\u8fd9\u91cc\uff0c\u4f60\u82e5\u7231\u827a\u672f\uff0c\u4f60\u4fbf\u80fd\u611f\u53d7\u878d\u5165\u57ce\u5e02\u9b45\u529b\u7684\u72ec\u4e00\u65e0\u4e8c\uff1b\u4f60\u82e5\u60f3\u542c\u6545\u4e8b\uff0c\u4f60\u4fbf\u80fd\u5728\u8c08\u7b11\u98ce\u751f\u95f4\u7ed3\u8bc6\u4e94\u6e56\u56db\u6d77\u7684\u53cb\u4eba\u4e0e\u8da3\u4e8b\u513f\u3002</p></body>",
+		"height": 580,
+		"width": 640,
+		"begin_time": 0,
+		"keywords": "\u4e50\u6d3b,\u6e29\u6da6,\u5e78\u798f,\u6709\u8da3,\u7eaf\u8d28,\u96c5\u97f5,\u60ec\u610f,\u9177\u70ab,\u52c7\u6562",
+		"id": 90
+	}]
+}

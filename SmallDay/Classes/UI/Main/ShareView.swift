@@ -10,7 +10,7 @@ import UIKit
 
 class ShareView: UIView {
     weak var shareVC: UIViewController?
-    var shareModel: EventModel?
+    var shareModel: ShareModel?
     lazy var coverBtn: UIButton! = {
         let coverBtn = UIButton(frame: UIScreen.mainScreen().bounds)
         coverBtn.backgroundColor = UIColor.blackColor()
@@ -44,10 +44,10 @@ class ShareView: UIView {
         hideShareView()
     }
 
-    func showShareView() {
+    func showShareView(rect: CGRect) {
         self.superview?.insertSubview(coverBtn, belowSubview: self)
         UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.frame = CGRectMake(0, AppHeight - 215, AppWidth, 215)
+            self.frame = rect
         })
     }
     

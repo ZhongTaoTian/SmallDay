@@ -118,7 +118,7 @@ class ThemeModel: NSObject {
     var keywords: String?
     /// 美辑的编号
     var id: Int = -1
-    
+    var text: String?
 
 }
 

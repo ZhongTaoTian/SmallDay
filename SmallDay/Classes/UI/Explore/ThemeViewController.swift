@@ -10,11 +10,15 @@ import UIKit
 
 class ThemeViewController: UIViewController, UIWebViewDelegate {
 
+    lazy var shareView: ShareView? = {
+        let shareView = ShareView.shareViewFromXib()
+        return shareView
+        }()
     var themeModel: ThemeModel? {
         didSet {
             if themeModel?.hasweb == 1 {
                 self.webView?.loadRequest(NSURLRequest(URL: NSURL(string: themeModel!.themeurl!)!))
-                
+                shareView?.shareModel = ShareModel(shareTitle: themeModel?.title, shareURL: themeModel?.themeurl, image: nil, shareDetail: themeModel?.text)
             }
         }
     }
@@ -40,7 +44,9 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     }
     
     func shareClick() {
-
+        view.addSubview(shareView!)
+        shareView!.showShareView(CGRectMake(0, AppHeight - 215 - 64, AppWidth, 215))
+        shareView!.shareVC = self
     }
     
     func addModalBtn() {

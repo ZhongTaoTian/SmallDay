@@ -60,7 +60,7 @@ class DetailModel: NSObject, DictModelProtocol {
     class func loadDetails(completion: (data: DetailModel?, error: NSError?) -> ()) {
         let path = NSBundle.mainBundle().pathForResource("Details", ofType: nil)
         if let data = NSData(contentsOfFile: path!) {
-            let dict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
+            let dict = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: nil) as! NSDictionary
             var modelTool = DictModelManager.sharedManager
             var datas = modelTool.objectWithDictionary(dict, cls: DetailModel.self) as? DetailModel
             completion(data: datas, error: nil)
@@ -68,7 +68,29 @@ class DetailModel: NSObject, DictModelProtocol {
     }
 }
 
-
+class SearchsModel: NSObject, DictModelProtocol {
+    var list: [EventModel]?
+    static func customClassMapping() -> [String : String]? {
+        return ["list" : "\(EventModel.self)"]
+    }
+    
+    class func loadSearchsModel(title: String, completion: (data: SearchsModel?, error: NSError?) -> ()) {
+        var path: String?
+        if title == "南锣鼓巷" || title == "798" || title == "三里屯" {
+            path = NSBundle.mainBundle().pathForResource(title, ofType: nil)
+        } else {
+            path = NSBundle.mainBundle().pathForResource("南锣鼓巷", ofType: nil)
+        }
+        
+        if let data = NSData(contentsOfFile: path!) {
+            let dict = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: nil) as! NSDictionary
+            var modelTool = DictModelManager.sharedManager
+            var datas = modelTool.objectWithDictionary(dict, cls: SearchsModel.self) as? SearchsModel
+            completion(data: datas, error: nil)
+        }
+        
+    }
+}
 
 
 

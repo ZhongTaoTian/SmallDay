@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
     let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
     var model: EventModel? {
         didSet {
-            self.shareView.shareModel = model
+            self.shareView.shareModel = ShareModel(shareTitle: model?.title, shareURL: model?.shareURL, image: nil, shareDetail: model?.detail)
         }
     }
     
@@ -149,7 +149,7 @@ extension DetailViewController {
     func sharedBtnClick() {
         view.addSubview(shareView)
         shareView.shareVC = self
-        shareView.showShareView()
+        shareView.showShareView(CGRectMake(0, AppHeight - 215, AppWidth, 215))
     }
     
     /// 报名

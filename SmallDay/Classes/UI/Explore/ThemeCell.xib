@@ -27,7 +27,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="咖啡 醇香 温馨" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-71-vW7">
-                        <rect key="frame" x="30" y="147.5" width="260" height="21.5"/>
+                        <rect key="frame" x="30" y="147" width="260" height="21.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -56,7 +56,7 @@
                 <outlet property="subTitleLable" destination="fnQ-71-vW7" id="QpU-2n-IP9"/>
                 <outlet property="titleLable" destination="E2q-t9-No2" id="XPc-Uz-amM"/>
             </connections>
-            <point key="canvasLocation" x="207" y="267"/>
+            <point key="canvasLocation" x="-78" y="238"/>
         </tableViewCell>
     </objects>
     <resources>

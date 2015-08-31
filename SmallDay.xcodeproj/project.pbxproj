@@ -107,6 +107,10 @@
 		FAD582FE1B94274C007EEEE0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD582FD1B94274C007EEEE0 /* libz.dylib */; };
 		FAD582FF1B94275E007EEEE0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD582F81B9424A9007EEEE0 /* libc++.dylib */; };
 		FAD583011B943B8E007EEEE0 /* author@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD583001B943B8E007EEEE0 /* author@2x.png */; };
+		FAD583031B949B65007EEEE0 /* ShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD583021B949B65007EEEE0 /* ShareModel.swift */; };
+		FAD583371B94BF76007EEEE0 /* 798 in Resources */ = {isa = PBXBuildFile; fileRef = FAD583341B94BF76007EEEE0 /* 798 */; };
+		FAD583381B94BF76007EEEE0 /* 南锣鼓巷 in Resources */ = {isa = PBXBuildFile; fileRef = FAD583351B94BF76007EEEE0 /* 南锣鼓巷 */; };
+		FAD583391B94BF76007EEEE0 /* 三里屯 in Resources */ = {isa = PBXBuildFile; fileRef = FAD583361B94BF76007EEEE0 /* 三里屯 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +250,10 @@
 		FAD582FA1B942643007EEEE0 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		FAD582FD1B94274C007EEEE0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		FAD583001B943B8E007EEEE0 /* author@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "author@2x.png"; sourceTree = "<group>"; };
+		FAD583021B949B65007EEEE0 /* ShareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareModel.swift; sourceTree = "<group>"; };
+		FAD583341B94BF76007EEEE0 /* 798 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 798; sourceTree = "<group>"; };
+		FAD583351B94BF76007EEEE0 /* 南锣鼓巷 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南锣鼓巷"; sourceTree = "<group>"; };
+		FAD583361B94BF76007EEEE0 /* 三里屯 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "三里屯"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +325,9 @@
 		FA82B1311B87AC5E003A2264 /* CustomData */ = {
 			isa = PBXGroup;
 			children = (
+				FAD583341B94BF76007EEEE0 /* 798 */,
+				FAD583351B94BF76007EEEE0 /* 南锣鼓巷 */,
+				FAD583361B94BF76007EEEE0 /* 三里屯 */,
 				FA82B1361B87B28A003A2264 /* themes */,
 				FA6681AC1B8A117C00CFF2E3 /* events */,
 				FA7387651B8B8164009D08C8 /* Classify */,
@@ -434,6 +445,7 @@
 				FA82B11F1B874EE4003A2264 /* EveryDayModel.swift */,
 				FA7387611B8B7D5B009D08C8 /* ClassifyModel.swift */,
 				FA66A3FF1B8EBD96005DF017 /* ExperienceModel.swift */,
+				FAD583021B949B65007EEEE0 /* ShareModel.swift */,
 			);
 			name = "BusinessModel(业务模型)";
 			path = BusinessModel;
@@ -729,6 +741,7 @@
 				FAD582BC1B935AD0007EEEE0 /* UMSCommentDetailController.xib in Resources */,
 				FAD582C21B935AD0007EEEE0 /* UMSnsAccountViewController.xib in Resources */,
 				FAD582C11B935AD0007EEEE0 /* UMSLoginViewController.xib in Resources */,
+				FAD583371B94BF76007EEEE0 /* 798 in Resources */,
 				FAD583011B943B8E007EEEE0 /* author@2x.png in Resources */,
 				FA73876A1B8B8F00009D08C8 /* DetailCell.xib in Resources */,
 				FAD582BD1B935AD0007EEEE0 /* UMSCommentInputController.xib in Resources */,
@@ -740,6 +753,8 @@
 				FAD582BE1B935AD0007EEEE0 /* UMSCommentInputControlleriPad.xib in Resources */,
 				FAD582C41B935AD0007EEEE0 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
+				FAD583381B94BF76007EEEE0 /* 南锣鼓巷 in Resources */,
+				FAD583391B94BF76007EEEE0 /* 三里屯 in Resources */,
 				FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */,
 				FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */,
 				FAD582BA1B935AD0007EEEE0 /* UMSocialLocalizable.strings in Resources */,
@@ -825,6 +840,7 @@
 				FA709A271B80A3A800B24238 /* DoubleTextView.swift in Sources */,
 				FA66A4381B8F621D005DF017 /* ExperienceCell.swift in Sources */,
 				FA932A8D1B88B65600601B54 /* UIButton+Kingfisher.swift in Sources */,
+				FAD583031B949B65007EEEE0 /* ShareModel.swift in Sources */,
 				FA932A881B88B65600601B54 /* KingfisherManager.swift in Sources */,
 				FA40ED9C1B84E64E0049DE19 /* FeedbackViewController.swift in Sources */,
 				FA66A4001B8EBD96005DF017 /* ExperienceModel.swift in Sources */,
