@@ -5,3 +5,4 @@
 #import <UIImageView+WebCache.h>
 #import "UMSocial.h"
 #import "UMSocialSinaHandler.h"
+#import "UMSocialWechatHandler.h"

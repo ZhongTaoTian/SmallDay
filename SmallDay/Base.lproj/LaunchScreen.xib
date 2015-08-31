@@ -23,10 +23,10 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="486" y="459.5"/>
+            <point key="canvasLocation" x="357" y="468.5"/>
         </view>
     </objects>
     <resources>
-        <image name="launch" width="750" height="1334"/>
+        <image name="launch" width="375" height="667"/>
     </resources>
 </document>

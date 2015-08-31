@@ -58,7 +58,7 @@ class DetailViewController: UIViewController {
     lazy var webView: UIWebView! = {
         let webView = UIWebView(frame: UIScreen.mainScreen().bounds)
         webView.scrollView.contentInset = UIEdgeInsetsMake(DetailViewController_TopImageView_Height - 20, 0, -(DetailViewController_TopImageView_Height - 20), 0)
-
+        
         webView.scrollView.showsHorizontalScrollIndicator = false
         webView.scrollView.contentSize.width = AppWidth
         webView.backgroundColor = theme.SDBackgroundColor
@@ -130,7 +130,7 @@ class DetailViewController: UIViewController {
         btn.addTarget(self, action: action, forControlEvents: .TouchUpInside)
     }
     
-
+    
 }
 
 /// MARK: 所有按钮的事件
@@ -147,21 +147,14 @@ extension DetailViewController {
     
     /// 分享
     func sharedBtnClick() {
-        /*[UMSocialSnsService presentSnsIconSheetView:self
-        appKey:@"507fcab25270157b37000010"
-        shareText:@"友盟社会化分享让您快速实现分享等社会化功能，http://umeng.com/social"
-        shareImage:[UIImage imageNamed:@"icon"]
-        shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,nil]
-        delegate:self];*/
-//        UMSocialSnsService.presentSnsController(self, appKey: theme.UMSharedAPPKey, shareText: "测试SSO分享", shareImage: nil, shareToSnsNames: [UMShareToSina], delegate: nil)
         view.addSubview(shareView)
+        shareView.shareVC = self
         shareView.showShareView()
     }
     
     /// 报名
     func signUpBtnClick() {
         let suVC = SignUpViewController()
-//        print()
         navigationController!.pushViewController(suVC, animated: true)
         suVC.topTitle = model!.title
     }

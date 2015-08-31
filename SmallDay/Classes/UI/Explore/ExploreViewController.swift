@@ -61,6 +61,10 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     func loadData() {
         weak var tmpSelf = self
         ThemeModels.loadThemesData { (data, error) -> () in
+            if error != nil {
+                SVProgressHUD.showErrorWithStatus("网络不给力")
+                return
+            }
             tmpSelf!.themes = data!
             tmpSelf!.albumTableView.reloadData()
         }

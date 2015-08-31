@@ -9,7 +9,7 @@
 import UIKit
 
 class ShareView: UIView {
-
+    weak var shareVC: UIViewController?
     var shareModel: EventModel?
     lazy var coverBtn: UIButton! = {
         let coverBtn = UIButton(frame: UIScreen.mainScreen().bounds)
@@ -37,7 +37,7 @@ class ShareView: UIView {
     
     @IBAction func sina(sender: AnyObject) {
         hideShareView()
-        ShareTool.shareToSina(self.shareModel!)
+        ShareTool.shareToSina(self.shareModel!, viewController: shareVC)
     }
     
     @IBAction func cancle(sender: AnyObject) {
