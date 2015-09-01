@@ -67,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setShared() {
         UMSocialData.setAppKey(theme.UMSharedAPPKey)
         UMSocialSinaHandler.openSSOWithRedirectURL("http://sns.whalecloud.com/sina2/callback")
-        UMSocialWechatHandler.setWXAppId("wx485c6ee1758251bd", appSecret: "468ab73eef432f59a2aa5630e340862f", url: "http://www.jianshu.com/users/5fe7513c7a57/latest_articles")
+        UMSocialWechatHandler.setWXAppId("wx485c6ee1758251bd", appSecret: "468ab73eef432f59a2aa5630e340862f", url: theme.JianShuURL)
         UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession,UMShareToWechatTimeline])
     }
     

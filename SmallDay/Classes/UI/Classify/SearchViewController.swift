@@ -167,8 +167,8 @@ class SearchViewController: UIViewController, SearchViewDelegate {
     }
     
     func hideKeyboard() {
-//        searchView.searchTextField.resignFirstResponder()
-//        searchView.resumeSearchTextField()
+        searchView.searchTextField.resignFirstResponder()
+        searchView.resumeSearchTextField()
     }
 }
 

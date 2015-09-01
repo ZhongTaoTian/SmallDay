@@ -43,6 +43,9 @@
 		FA73876A1B8B8F00009D08C8 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7387681B8B8F00009D08C8 /* DetailCell.xib */; };
 		FA73876C1B8B940E009D08C8 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA73876B1B8B940E009D08C8 /* ClassDetailViewController.swift */; };
 		FA73876E1B8B9901009D08C8 /* Details in Resources */ = {isa = PBXBuildFile; fileRef = FA73876D1B8B9901009D08C8 /* Details */; };
+		FA7F8B191B95C275000704DB /* AboutWeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F8B171B95C275000704DB /* AboutWeViewController.swift */; };
+		FA7F8B1A1B95C275000704DB /* AboutWeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7F8B181B95C275000704DB /* AboutWeViewController.xib */; };
+		FA7F8B1C1B95ECA8000704DB /* FileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F8B1B1B95ECA8000704DB /* FileTool.swift */; };
 		FA82B1191B864426003A2264 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B1181B864426003A2264 /* LoginViewController.swift */; };
 		FA82B11C1B870A48003A2264 /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B11A1B870A48003A2264 /* ShakeViewController.swift */; };
 		FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82B11B1B870A48003A2264 /* ShakeViewController.xib */; };
@@ -163,6 +166,9 @@
 		FA7387681B8B8F00009D08C8 /* DetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		FA73876B1B8B940E009D08C8 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 		FA73876D1B8B9901009D08C8 /* Details */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Details; sourceTree = "<group>"; };
+		FA7F8B171B95C275000704DB /* AboutWeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWeViewController.swift; sourceTree = "<group>"; };
+		FA7F8B181B95C275000704DB /* AboutWeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWeViewController.xib; sourceTree = "<group>"; };
+		FA7F8B1B1B95ECA8000704DB /* FileTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTool.swift; sourceTree = "<group>"; };
 		FA82B1181B864426003A2264 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA82B11A1B870A48003A2264 /* ShakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
 		FA82B11B1B870A48003A2264 /* ShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeViewController.xib; sourceTree = "<group>"; };
@@ -459,6 +465,7 @@
 				FA82B1221B87693E003A2264 /* SimpleNetwork.swift */,
 				FA82B1231B87693E003A2264 /* SwiftDictModel.swift */,
 				FAD582EE1B9380C0007EEEE0 /* ShareTool.swift */,
+				FA7F8B1B1B95ECA8000704DB /* FileTool.swift */,
 			);
 			name = "Tools(工具)";
 			path = Tools;
@@ -557,6 +564,8 @@
 				FA40ED9B1B84E64E0049DE19 /* FeedbackViewController.swift */,
 				FA82B11A1B870A48003A2264 /* ShakeViewController.swift */,
 				FA82B11B1B870A48003A2264 /* ShakeViewController.xib */,
+				FA7F8B171B95C275000704DB /* AboutWeViewController.swift */,
+				FA7F8B181B95C275000704DB /* AboutWeViewController.xib */,
 			);
 			name = "Me(我的)";
 			path = Me;
@@ -737,6 +746,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7F8B1A1B95C275000704DB /* AboutWeViewController.xib in Resources */,
 				FAD582C31B935AD0007EEEE0 /* UMSShareListController.xib in Resources */,
 				FAD582BC1B935AD0007EEEE0 /* UMSCommentDetailController.xib in Resources */,
 				FAD582C21B935AD0007EEEE0 /* UMSnsAccountViewController.xib in Resources */,
@@ -826,6 +836,7 @@
 				FAA0F9EF1B7DDA4300B5EA08 /* ClassifyViewController.swift in Sources */,
 				FA932A951B88C4C900601B54 /* ThemeViewController.swift in Sources */,
 				FA932A901B88B65600601B54 /* UIImageView+Kingfisher.swift in Sources */,
+				FA7F8B1C1B95ECA8000704DB /* FileTool.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
 				FA66A43B1B8F78F8005DF017 /* DetailViewController.swift in Sources */,
 				FA7387601B8B63A2009D08C8 /* EventViewController.swift in Sources */,
@@ -874,6 +885,7 @@
 				FA66A4421B90B6A6005DF017 /* SignUpViewController.swift in Sources */,
 				FA932A8C1B88B65600601B54 /* String+MD5.swift in Sources */,
 				FA932A8B1B88B65600601B54 /* Resource.swift in Sources */,
+				FA7F8B191B95C275000704DB /* AboutWeViewController.swift in Sources */,
 				FA82B11C1B870A48003A2264 /* ShakeViewController.swift in Sources */,
 				FA932A8F1B88B65600601B54 /* UIImage+Normalize.swift in Sources */,
 				FA932A981B88DAAA00601B54 /* EventCellTableViewCell.swift in Sources */,

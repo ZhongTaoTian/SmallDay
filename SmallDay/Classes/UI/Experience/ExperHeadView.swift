@@ -12,7 +12,7 @@ class ExperHeadView: UIView, UIScrollViewDelegate {
     
     var scrollImageView: UIScrollView!
     var page: UIPageControl!
-    var delegate: ExperHeadViewDelegate?
+    weak var delegate: ExperHeadViewDelegate?
     
     var experModel: ExperienceModel? {
         didSet {

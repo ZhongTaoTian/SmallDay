@@ -21,7 +21,7 @@ class ShareView: UIView {
     
     class func shareViewFromXib() -> ShareView {
         let shareV = NSBundle.mainBundle().loadNibNamed("ShareView", owner: nil, options: nil).last as! ShareView
-        shareV.frame = CGRectMake(0, AppHeight, AppWidth, 215)
+        shareV.frame = CGRectMake(0, AppHeight, AppWidth, theme.ShareViewHeight)
         return shareV
     }
  
@@ -54,7 +54,7 @@ class ShareView: UIView {
     func hideShareView() {
         coverBtn.removeFromSuperview()
         UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.frame = CGRectMake(0, AppHeight, AppWidth, 215)
+            self.frame = CGRectMake(0, AppHeight, AppWidth, theme.ShareViewHeight)
         }) { (finsch) -> Void in
             self.removeFromSuperview()
         }

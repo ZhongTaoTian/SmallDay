@@ -14,7 +14,7 @@ class ShopDetailView: UIView {
     var detailLabel: UILabel!
     var middleLineView: UIView!
     var bottomLineView: UIView!
-    var delegate: ShopDetailViewDelegate?
+    weak var delegate: ShopDetailViewDelegate?
     let bottomLineScale: CGFloat = 0.6
     
     required init(coder aDecoder: NSCoder) {

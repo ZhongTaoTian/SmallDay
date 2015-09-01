@@ -11,7 +11,7 @@ import UIKit
 class IconView: UIView {
 
     var iconButton: UIButton!
-    var delegate: IconViewDelegate?
+    weak var delegate: IconViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)

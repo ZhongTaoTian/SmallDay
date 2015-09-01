@@ -8,6 +8,15 @@
 
 import UIKit
 
+enum SettingCellType: Int {
+    case GitHub = 0
+    case Recommend = 1
+    case About = 2
+    case Blog = 3
+    case Sina = 4
+    case Clean = 5
+}
+
 class SettingCell: UITableViewCell {
 
     @IBOutlet weak var bottomView: UIView!

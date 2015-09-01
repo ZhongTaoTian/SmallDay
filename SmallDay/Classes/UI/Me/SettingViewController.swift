@@ -10,11 +10,11 @@ import UIKit
 
 class SettingViewController: UIViewController {
     lazy var images: NSMutableArray! = {
-        var array = NSMutableArray(array: ["score", "recommendfriend", "about", "remove"])
+        var array = NSMutableArray(array: ["score", "recommendfriend", "about",  "feedback","score", "remove"])
         return array
         }()
     lazy var titles: NSMutableArray! = {
-        var array = NSMutableArray(array: ["去APP Store评价", "推荐给朋友", "关于我们", "清理缓存"])
+        var array = NSMutableArray(array: ["去小熊的GitHub点赞", "推荐给朋友", "关于我们", "去小熊的博客评论","关注我的微博,意见和反馈", "清理缓存"])
         return array
         }()
     
@@ -37,6 +37,10 @@ class SettingViewController: UIViewController {
         tableView.registerNib(UINib(nibName: "SettingCell", bundle: nil), forCellReuseIdentifier: "settingCell")
         view.addSubview(tableView)
     }
+    
+    deinit {
+        print("设置控制器被销毁了")
+    }
 }
 
 extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
@@ -48,16 +52,53 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = SettingCell.settingCellWithTableView(tableView)
         cell.imageImageView.image = UIImage(named: images[indexPath.row] as! String)
-        cell.titleLabel.text = titles[indexPath.row] as? String 
+        cell.titleLabel.text = titles[indexPath.row] as? String
         
-        if indexPath.row == 3 {
+        if indexPath.row == SettingCellType.Clean.hashValue {
             cell.bottomView.hidden = true
             cell.sizeLabel.hidden = false
+            cell.sizeLabel.text =  String().stringByAppendingFormat("%.2f M", FileTool.folderSize(theme.cachesPath))
+            
+            
         } else {
             cell.bottomView.hidden = false
             cell.sizeLabel.hidden = true
         }
         
         return cell
+    }
+    
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if indexPath.row == SettingCellType.About.hashValue {
+            let aboutVC = AboutWeViewController()
+            navigationController!.pushViewController(aboutVC, animated: true)
+            
+        } else if indexPath.row == SettingCellType.Recommend.hashValue {
+            let share = ShareView.shareViewFromXib()
+            share.shareVC = self
+            let shareModel = ShareModel(shareTitle: "Swift开源项目:小日子", shareURL: theme.JianShuURL, image: UIImage(named: "author"), shareDetail: "小熊新作,Swift开源项目小日子,OC程序员学习Swift良心作品")
+            share.shareModel = shareModel
+            view.addSubview(share)
+            share.showShareView(CGRectMake(0, AppHeight - theme.ShareViewHeight - NavigationH, AppWidth, theme.ShareViewHeight))
+            
+        } else if indexPath.row == SettingCellType.Clean.hashValue {
+            weak var tmpSelf = self
+            FileTool.cleanFolder(theme.cachesPath, complete: { () -> () in
+                tmpSelf!.tableView.reloadData()
+            })
+            
+        } else if indexPath.row == SettingCellType.GitHub.hashValue {
+            theme.appShare.openURL(NSURL(string: theme.GitHubURL)!)
+            
+        } else if indexPath.row == SettingCellType.Blog.hashValue {
+            theme.appShare.openURL(NSURL(string: theme.JianShuURL)!)
+            
+        } else if indexPath.row == SettingCellType.Sina.hashValue {
+            theme.appShare.openURL(NSURL(string: theme.sinaURL)!)
+            
+        }
     }
 }

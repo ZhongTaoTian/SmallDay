@@ -16,7 +16,7 @@ class DoubleTextView: UIView {
     let textFont: UIFont = theme.SDNavTitleFont
     let bottomLineView: UIView = UIView()
     var selectedBtn: UIButton?
-    var delegate: DoubleTextViewDelegate?
+    weak var delegate: DoubleTextViewDelegate?
 
     /// 便利构造方法
     convenience init(leftText: String, rigthText: String) {
