@@ -1,0 +1,13 @@
+PODS:
+  - MJRefresh (2.4.7)
+  - SVProgressHUD (1.1.3)
+
+DEPENDENCIES:
+  - MJRefresh
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  MJRefresh: 6eb2f61338f89f64fd628fd43debcf479381ff59
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+
+COCOAPODS: 0.37.2
