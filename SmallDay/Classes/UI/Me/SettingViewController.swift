@@ -14,7 +14,7 @@ class SettingViewController: UIViewController {
         return array
         }()
     lazy var titles: NSMutableArray! = {
-        var array = NSMutableArray(array: ["去小熊的GitHub点赞", "推荐给朋友", "关于我们", "去小熊的博客评论","关注我的微博,意见和反馈", "清理缓存"])
+        var array = NSMutableArray(array: ["去小熊的GitHub点赞", "推荐给朋友", "关于我们", "去小熊的博客评论","关注我的微博,和作者交流", "清理缓存"])
         return array
         }()
     

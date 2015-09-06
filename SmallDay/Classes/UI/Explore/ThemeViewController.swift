@@ -10,10 +10,36 @@ import UIKit
 
 class ThemeViewController: UIViewController, UIWebViewDelegate {
 
+    lazy var backView: UIView! = {
+        let backView = UIView(frame: UIScreen.mainScreen().bounds)
+        backView.backgroundColor = theme.SDBackgroundColor
+        return backView
+        }()
+    
+    lazy var moreTableView: UITableView! = {
+        let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
+        tableView.backgroundColor = theme.SDBackgroundColor
+        tableView.separatorStyle = .None
+        tableView.rowHeight = DetailCellHeight
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: NavigationH, right: 0)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: "DetailCell")
+        return tableView
+        }()
+    
     lazy var shareView: ShareView? = {
         let shareView = ShareView.shareViewFromXib()
         return shareView
         }()
+ 
+    lazy var webView: UIWebView? = {
+        let web = UIWebView(frame: UIScreen.mainScreen().bounds)
+        web.backgroundColor = theme.SDBackgroundColor
+        web.delegate = self
+        return web
+        }()
+    
     var themeModel: ThemeModel? {
         didSet {
             if themeModel?.hasweb == 1 {
@@ -24,23 +50,33 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     }
     
     var modalBtn: UIButton! = UIButton()
-    
-    lazy var webView: UIWebView? = {
-        let web = UIWebView(frame: UIScreen.mainScreen().bounds)
-        web.backgroundColor = theme.SDBackgroundColor
-        web.delegate = self
-        return web
-        }()
-    
+    var more: DetailModel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
-        view.addSubview(webView!)
- 
+        view.addSubview(backView)
+        backView.addSubview(moreTableView)
+        backView.addSubview(webView!)
+        // 加载更多数据
+        loadMore()
         // 添加modalBtn
         addModalBtn()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "share_1", highlImageName: "share_2", targer: self, action: "shareClick")
+    }
+    
+    func loadMore() {
+        weak var tmpSelf = self
+        DetailModel.loadMore { (data, error) -> () in
+            if error != nil {
+                SVProgressHUD.showErrorWithStatus("网络不给力")
+                return
+            }
+            
+            tmpSelf!.more = data!
+            tmpSelf!.moreTableView.reloadData()
+        }
     }
     
     func shareClick() {
@@ -60,7 +96,15 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     
     func modalClick(sender: UIButton) {
         sender.selected = !sender.selected
-    
+        if sender.selected {
+            UIView.transitionFromView(webView!, toView: moreTableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: { (finish) -> Void in
+                
+            })
+        } else {
+          UIView.transitionFromView(moreTableView, toView: webView!, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: { (finish) -> Void in
+            
+          })
+        }
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
@@ -77,3 +121,28 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
         modalBtn.hidden = false
     }
 }
+
+// MARK TableView的代理方法
+extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return more?.list?.count ?? 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("DetailCell") as! DetailCell
+        let everyModel = more!.list![indexPath.row]
+        cell.model = everyModel
+        return cell
+    }
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let model = more!.list![indexPath.row]
+        let eventVC = EventViewController()
+        eventVC.model = model
+        navigationController!.pushViewController(eventVC, animated: true)
+    }
+}
+
+
+
+

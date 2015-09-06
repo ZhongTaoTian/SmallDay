@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C77A947D053834766E60FE0D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F5ADE0EEBE83D978559884 /* libPods.a */; };
 		FA23E3C81B9317D20071C22A /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA23E3C71B9317D20071C22A /* glass.wav */; };
+		FA296CD81B9C898800A967D9 /* More in Resources */ = {isa = PBXBuildFile; fileRef = FA296CD71B9C898800A967D9 /* More */; };
 		FA40ED961B84C5530049DE19 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40ED951B84C5530049DE19 /* SettingViewController.swift */; };
 		FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40ED971B84D1090049DE19 /* SettingCell.swift */; };
 		FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA40ED981B84D1090049DE19 /* SettingCell.xib */; };
@@ -132,6 +133,7 @@
 		ECB01C5432962A7FB10FD474 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA23E3C71B9317D20071C22A /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
 		FA23E3C91B9318A90071C22A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA296CD71B9C898800A967D9 /* More */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = More; sourceTree = "<group>"; };
 		FA40ED951B84C5530049DE19 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FA40ED971B84D1090049DE19 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		FA40ED981B84D1090049DE19 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				FA7387651B8B8164009D08C8 /* Classify */,
 				FA73876D1B8B9901009D08C8 /* Details */,
 				FA66A4011B8EC842005DF017 /* Experience */,
+				FA296CD71B9C898800A967D9 /* More */,
 			);
 			path = CustomData;
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 				FA82B1301B87A1F4003A2264 /* ThemeCell.xib in Resources */,
 				FA7387661B8B8164009D08C8 /* Classify in Resources */,
 				FAD582BE1B935AD0007EEEE0 /* UMSCommentInputControlleriPad.xib in Resources */,
+				FA296CD81B9C898800A967D9 /* More in Resources */,
 				FAD582C41B935AD0007EEEE0 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
 				FAD583381B94BF76007EEEE0 /* 南锣鼓巷 in Resources */,

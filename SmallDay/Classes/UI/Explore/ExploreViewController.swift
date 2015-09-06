@@ -212,7 +212,11 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
                 themeVC.themeModel = event.themes?.last
                 navigationController!.pushViewController(themeVC, animated: true)
             } else {
-            
+                let eventVC = EventViewController()
+//                let eventModel = themes!.list![indexPath.section]
+
+//                eventVC.eventModel = eventModel
+                navigationController!.pushViewController(eventVC, animated: true)
             }
         }
     }

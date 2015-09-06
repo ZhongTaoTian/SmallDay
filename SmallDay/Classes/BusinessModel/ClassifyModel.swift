@@ -66,6 +66,16 @@ class DetailModel: NSObject, DictModelProtocol {
             completion(data: datas, error: nil)
         }
     }
+    
+    class func loadMore(completion: (data: DetailModel?, error: NSError?) -> ()) {
+        let path = NSBundle.mainBundle().pathForResource("More", ofType: nil)
+        if let data = NSData(contentsOfFile: path!) {
+            let dict = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: nil) as! NSDictionary
+            var modelTool = DictModelManager.sharedManager
+            var datas = modelTool.objectWithDictionary(dict, cls: DetailModel.self) as? DetailModel
+            completion(data: datas, error: nil)
+        }
+    }
 }
 
 class SearchsModel: NSObject, DictModelProtocol {

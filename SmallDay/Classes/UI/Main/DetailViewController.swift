@@ -5,6 +5,9 @@
 //  Created by MacBook on 15/8/28.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
 //  体验详情ViewController
+//  方法一:在Xcode中解决,在返回的html数据请求前,改变所有图片的尺寸,适配到正常尺寸  缺点:重新过滤字符串的时候挺麻烦的,每次加载都要重新加载图片,流量
+//  方法二:自己写css文件来布局
+//  方法三:拦截所有的图片请求,于js配合,将请求路径给到程序里 用正常模式来加载,可以点击,缓存等等
 
 import UIKit
 /// 详情ViewController顶部图片的高度
@@ -14,11 +17,57 @@ class DetailViewController: UIViewController {
     // 优化性能,防止重复设置
     var showBlackImage: Bool = false
     let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
+    var imageWHArray = [(CGFloat, CGFloat)]()
     var model: EventModel? {
         didSet {
+            self.webView.hidden = true
+            if let imageStr = model?.imgs?.last {
+                self.topImageView.kf_setImageWithURL(NSURL(string: imageStr)!, placeholderImage: UIImage(named: "quesheng"))
+            }
             self.shareView.shareModel = ShareModel(shareTitle: model?.title, shareURL: model?.shareURL, image: nil, shareDetail: model?.detail)
+            var htmlSrt = model?.mobileURL
+            
+            if htmlSrt != nil {
+                var titleStr: String?
+                
+                if model?.title != nil {
+                    titleStr = String(format: "<br><p style='font-size:20px;'> %@</p>", model!.title!)
+                }
+                
+                if model?.tag != nil {
+                    titleStr = titleStr?.stringByAppendingFormat("<p style='font-size:13px; color: gray';>%@</p>", model!.tag!)
+                }
+                
+                if titleStr != nil {
+                    var newStr: NSMutableString = NSMutableString(string: htmlSrt!)
+                    newStr.insertString(titleStr!, atIndex: 31)
+                    htmlSrt = newStr as String
+                }
+                // <body><html><head></head><body>
+            
+                var arr = htmlSrt!.componentsSeparatedByString("<img alt=")
+                for i in 1..<arr.count {
+                    let str = arr[i] as NSString
+                    let rangH = str.rangeOfString("height=\"")
+                    let rangW = str.rangeOfString("width=\"")
+                    let widthStr = str.substringWithRange(NSRange(location: rangW.location + rangW.length, length: 10)) as NSString
+                    let heightStr = str.substringWithRange(NSRange(location: rangH.location + rangH.length, length: 10)) as NSString
+                    var widthW =  CGFloat(self.numStrWith(widthStr).intValue)
+                    var heightH = CGFloat(self.numStrWith(heightStr).intValue)
+                    let newH = self.imageW / widthW * heightH
+                    let WH = (self.imageW, newH)
+                    self.imageWHArray.append(WH)
+                }
+            }
+            
+            //TODO: 将新的宽高重新替换掉原始的宽高
+            
+            self.webView.loadHTMLString(htmlSrt!, baseURL: nil)
+            self.webView.hidden = false
         }
     }
+    
+    let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
     
     var signUpBtn: UIButton!
     
@@ -52,29 +101,28 @@ class DetailViewController: UIViewController {
     lazy var topImageView: UIImageView! = {
         let image = UIImageView(frame: CGRectMake(0, 0, AppWidth, DetailViewController_TopImageView_Height))
         image.image = UIImage(named: "quesheng")
+        image.contentMode = .ScaleAspectFill
         return image
         }()
     
     lazy var webView: UIWebView! = {
         let webView = UIWebView(frame: UIScreen.mainScreen().bounds)
-        webView.scrollView.contentInset = UIEdgeInsetsMake(DetailViewController_TopImageView_Height - 20, 0, -(DetailViewController_TopImageView_Height - 20), 0)
-        
+        webView.scrollView.contentInset = UIEdgeInsets(top: DetailViewController_TopImageView_Height - 20, left: 0, bottom: 49, right: 0)
         webView.scrollView.showsHorizontalScrollIndicator = false
-        webView.scrollView.contentSize.width = AppWidth
-        webView.backgroundColor = theme.SDBackgroundColor
+        //        webView.scrollView.contentSize.width = AppWidth
         webView.scrollView.delegate = self
         webView.delegate = self
-        
-        //        webView.scalesPageToFit = true
-        webView.paginationMode = UIWebPaginationMode.TopToBottom
+//        webView.hidden = true
+        webView.backgroundColor = theme.SDWebViewBacagroundColor
+        //                webView.scalesPageToFit = true
+        //        webView.paginationMode = UIWebPaginationMode.TopToBottom
         webView.paginationBreakingMode = UIWebPaginationBreakingMode.Column
         
-        webView.loadHTMLString("<body><html><head></head><body><p>油画对你来说只是个名词？是挂在墙上的装饰？还是一种高高在上的艺术？</p><p>如果你厌倦了唱歌、逛街、看电影，希望尝试新的休闲娱乐方式， 培养一个优雅的爱好，有自我创作的欲望，尚美色彩自助画室是你最佳的选择！</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133426.jpg\" height=\"220\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133426.jpg\" width=\"352\"></img></p><p>尚美色彩自助画室位于北京CBD核心商业圈双井商业区，国贸南十号线双井站，朝阳区双井优士阁大厦B座606，10号线地铁西南口出，交通银行上面入口。</p><p>画室为对绘画感兴趣的人士提供了一个无拘无束自由自在的绘画空间。我们为你准备了绘画所需的一切工具，并有专业老师指导。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133427.jpg\" height=\"512\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133427.jpg\" width=\"605\"></img></p><p>无论你是否有绘画基础，在尚美色彩自助画室都可以发掘自己的艺术天分，并在艺术创作的同时舒展情绪，摆脱压力和烦恼，用色彩和线条表现真正的自我。</p><p>你的创作，无论是临摹还是个性涂鸦，都会是全球限量版的艺术品！  </p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133428.png\" height=\"519\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133428.png\" width=\"453\"></img>               </p><p><strong>油画体验套餐包括：</strong></p><p>实木框艺术家专用油画画布</p><p>全色系无毒无害环保颜料及全套作画工具、材料，无需自己准备任何额外物品</p><p>店内有彩图画册供参考选择，顾客也可自带参考图或自由创作</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133432.jpg\" height=\"460\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133432.jpg\" width=\"690\"></img></p><p>驻店专业指导老师针对零基础的绘画者进行免费指导：画前理论讲解、绘画工具使用及注意事项、绘画过程中难点答疑和绘画技巧讲解演示，协助体验者完成一副漂亮的作品，作品可带走。</p><p>免费饮料（柠檬水、菊花茶、咖啡、小吃零食、应季水果）</p><p>免费提供特制便携包装，方便携带</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133433.jpg\" height=\"699\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133433.jpg\" width=\"1057\"></img></p><p><strong>画框大小</strong>30*30cm   </p><p><strong>体验时长</strong> 3-4小时</p><p><strong>价格 </strong>99元  </p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-04/event133430.jpg\" height=\"1334\" src=\"http://pic.huodongjia.com/event/2015-08-04/event133430.jpg\" width=\"1001\"></img></p><p><strong>地址:</strong> 北京市朝阳区广渠门外大街8号东B座606（地下停车场：每小时5元）</p><p><strong>预约电话：</strong>18601204990（手机）请提前3个小时预约</p><p><strong>营业时间:</strong></p><p>周日至周四 10:00 — 22:00</p><p>周五、周六 10:00 — 23:00</p></body></html></body>", baseURL: nil)
         return webView
         }()
     
     deinit {
-        print("已经销毁")
+        print("体验详情ViewController已经销毁")
     }
     
     override func viewDidLoad() {
@@ -176,12 +224,12 @@ extension DetailViewController {
 
 /// MARK: 处理内容滚动时的事件
 extension DetailViewController: UIScrollViewDelegate {
-    
+
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         var offsetY: CGFloat = scrollView.contentOffset.y
         
-        //这里我说明下一加标记的作用:
+        // TODO: - 这里说明下一加标记的作用
         if scrollView === self.webView.scrollView {
             // 判断顶部自定义导航条的透明度,以及图片的切换
             customNav.alpha = 1 + (offsetY + NavigationH) / scrollShowNavH
@@ -198,7 +246,14 @@ extension DetailViewController: UIScrollViewDelegate {
             }
             
             // 顶部imageView的跟随动画
-            topImageView.frame.origin.y = -offsetY - DetailViewController_TopImageView_Height
+            if offsetY < -DetailViewController_TopImageView_Height {
+                
+                    self.topImageView.frame.origin.y = 0
+                    self.topImageView.frame.size.height = -offsetY
+
+            } else {
+                topImageView.frame.origin.y = -offsetY - DetailViewController_TopImageView_Height
+            }
         }
     }
     
@@ -211,12 +266,31 @@ extension DetailViewController: UIScrollViewDelegate {
     func positiveNumber(num: CGFloat) -> CGFloat {
         return num >= 0 ? num : -num
     }
+    
+    /// 返回数字字符串
+    func numStrWith(str: NSString) -> NSString {
+        return str.componentsSeparatedByString("\"")[0] as! NSString
+    }
 }
 
 /// MARK: UIWebViewDelegate
 extension DetailViewController: UIWebViewDelegate {
     func webViewDidFinishLoad(webView: UIWebView) {
-        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('body')[0].style.background='#F5F5F5'")
+        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('body')[0].style.background='#F5F5F5';")
+        //        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('img')[0].style.width='120';")
+        //        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('img')[0].style.height='720';")
+        //        webView.stringByEvaluatingJavaScriptFromString("")
+        for i in 0..<imageWHArray.count {
+            //            webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('img')[\(i)].style.width='\(imageWHArray[i].0)';")
+            let imageW = String(format: "document.getElementsByTagName('img')[%d].style.width='%f';", i, imageWHArray[i].0)
+            let imageH = String(format: "document.getElementsByTagName('img')[%d].style.height='%f';", i, imageWHArray[i].1)
+            
+            webView.stringByEvaluatingJavaScriptFromString(imageW)
+            webView.stringByEvaluatingJavaScriptFromString(imageH)
+        }
+        
+        webView.hidden = false
+        
     }
 }
 

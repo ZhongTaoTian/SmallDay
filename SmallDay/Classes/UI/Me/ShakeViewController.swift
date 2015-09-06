@@ -18,7 +18,7 @@ class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         AudioServicesCreateSystemSoundID(urlRef, &id)
         return id
         }()
-
+    
     lazy var foodView: UIView? = {
         let foodView = UIView(frame: CGRectMake(0, 0, AppWidth, 80))
         foodView.backgroundColor = UIColor.clearColor()
@@ -87,9 +87,7 @@ class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDat
                             
                             self.loadShakeData()
                             // 音效
-                            //        NSURL *url = [[NSBundle mainBundle] URLForResource:@"win.aac" withExtension:nil];
-//                            CFURLRef urlRef = (__bridge CFURLRef)(url);
-
+                            
                             AudioServicesPlayAlertSound(self.soundID!)
                     })
                 })
@@ -107,7 +105,7 @@ class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 self.tableView!.reloadData()
             })
         }
-   
+        
     }
     
     /// 再摇一次
@@ -117,7 +115,7 @@ class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     /// MARK: TableViewDelegate, TableViewDataSours
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+        
         return detailModel?.list?.count ?? 0
     }
     
