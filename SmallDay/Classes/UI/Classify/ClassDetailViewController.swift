@@ -12,7 +12,7 @@ public let DetailCellHeight: CGFloat = 220
 
 class ClassDetailViewController: UIViewController {
     
-    lazy var detailTableView: UITableView? = {
+    private lazy var detailTableView: UITableView? = {
         let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
         tableView.backgroundColor = theme.SDBackgroundColor
         tableView.delegate = self
@@ -34,7 +34,7 @@ class ClassDetailViewController: UIViewController {
         loadDatas()
     }
     
-    func loadDatas() {
+    private func loadDatas() {
         weak var tmpSelf = self
         DetailModel.loadDetails { (data, error) -> () in
             if error != nil {

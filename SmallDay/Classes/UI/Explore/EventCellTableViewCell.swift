@@ -4,7 +4,7 @@
 //
 //  Created by MacBook on 15/8/23.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  探店每天的自定义cell
 
 import UIKit
 
@@ -33,7 +33,6 @@ class EventCellTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .None
-
     }
     
     class func eventCell(tableView: UITableView) -> EventCellTableViewCell {

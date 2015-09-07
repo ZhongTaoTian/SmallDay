@@ -4,7 +4,7 @@
 //
 //  Created by MacBook on 15/8/22.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  探店美辑的cell
 
 import UIKit
 
@@ -14,14 +14,8 @@ class ThemeCell: UITableViewCell {
         didSet {
             self.titleLable.text = model!.title
             self.subTitleLable.text = model!.keywords
-            
+            //TODO: 封装一层自己的图片工具  隔离于三方库的依赖
             self.backImageView.kf_setImageWithURL(NSURL(string: model!.img!)!, placeholderImage: UIImage(named: "quesheng"), optionsInfo: [.Options: KingfisherOptions.BackgroundCallback]) { (image, error, cacheType, imageURL) -> () in
-//                self.backImageView.image = image
-//                UIView.animateWithDuration(0.6, animations: { () -> Void in
-//                    self.backImageView.alpha = 1
-//                })
-                
-                
             }
         }
     }

@@ -10,8 +10,8 @@ import UIKit
 
 class ClassifyCell: UICollectionViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var classifyImageView: UIImageView!
+    @IBOutlet weak private var titleLabel: UILabel!
+    @IBOutlet weak private var classifyImageView: UIImageView!
     var model:EveryClassModel? {
         didSet {
             titleLabel.text = model!.name

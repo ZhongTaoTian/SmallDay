@@ -10,8 +10,23 @@ import UIKit
 
 class ExperHeadView: UIView, UIScrollViewDelegate {
     
-    var scrollImageView: UIScrollView!
-    var page: UIPageControl!
+    private lazy var scrollImageView: UIScrollView! = {
+        let scrollImageView = UIScrollView()
+        scrollImageView.delegate = self
+        scrollImageView.showsHorizontalScrollIndicator = false
+        scrollImageView.showsVerticalScrollIndicator = false
+        scrollImageView.pagingEnabled = true
+        return scrollImageView
+        }()
+    
+    private var page: UIPageControl! = {
+        let page = UIPageControl()
+        page.pageIndicatorTintColor = UIColor.grayColor()
+        page.currentPageIndicatorTintColor = UIColor.blackColor()
+        page.hidesForSinglePage = true
+        return page
+        }()
+    
     weak var delegate: ExperHeadViewDelegate?
     
     var experModel: ExperienceModel? {
@@ -34,22 +49,13 @@ class ExperHeadView: UIView, UIScrollViewDelegate {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = theme.SDBackgroundColor
-
-        scrollImageView = UIScrollView()
-        scrollImageView.delegate = self
-        scrollImageView.showsHorizontalScrollIndicator = false
-        scrollImageView.showsVerticalScrollIndicator = false
-        scrollImageView.pagingEnabled = true
+        backgroundColor = theme.SDBackgroundColor
+        
         addSubview(scrollImageView)
         
-        page = UIPageControl()
-        page.pageIndicatorTintColor = UIColor.grayColor()
-        page.currentPageIndicatorTintColor = UIColor.blackColor()
-        page.hidesForSinglePage = true
         addSubview(page)
     }
-
+    
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -67,17 +73,13 @@ class ExperHeadView: UIView, UIScrollViewDelegate {
     }
     
     func imageClick(tap: UITapGestureRecognizer) {
-        if delegate != nil {
-            if delegate!.respondsToSelector("experHeadView:didClickImageViewAtIndex:") {
-                delegate!.experHeadView!(self, didClickImageViewAtIndex: tap.view!.tag - 1000)
-            }
-        }
+        delegate?.experHeadView(self, didClickImageViewAtIndex: tap.view!.tag - 1000)
     }
 }
 
-@objc protocol ExperHeadViewDelegate: NSObjectProtocol {
-
-    optional func experHeadView(headView: ExperHeadView, didClickImageViewAtIndex index: Int)
+protocol ExperHeadViewDelegate: NSObjectProtocol {
+    
+    func experHeadView(headView: ExperHeadView, didClickImageViewAtIndex index: Int)
     
 }
 

@@ -10,9 +10,9 @@ import UIKit
 
 class FeedbackViewController: UIViewController, UITextFieldDelegate {
     /// 反馈留言TextView
-    var feedbackTextView: UITextView!
+    private var feedbackTextView: UITextView!
     /// 联系方式textField
-    var contactTextField: UITextField!
+    private var contactTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +25,13 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
         setFeedbackTextViewAndContactTextField()
     }
     
-    func setNav() {
+    private func setNav() {
         self.navigationItem.title = "留言反馈"
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "发送", style: UIBarButtonItemStyle.Done, target: self, action: "sendClick")
     }
     
-    func setFeedbackTextViewAndContactTextField() {
+    private func setFeedbackTextViewAndContactTextField() {
         let backView = UIView(frame: CGRectMake(0, 5, AppWidth, 130))
         backView.backgroundColor = theme.SDBackgroundColor
         feedbackTextView = UITextView(frame: CGRectMake(5, 0, AppWidth - 10, 130))
@@ -85,6 +85,10 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         sendClick()
         return true
+    }
+    
+    deinit {
+        print("反馈留言ViewController被销毁了")
     }
 }
 

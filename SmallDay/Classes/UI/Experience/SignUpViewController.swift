@@ -10,21 +10,19 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    @IBOutlet weak var submitBtn: UIButton!
-    @IBOutlet weak var codeTextField: UITextField!
-    @IBOutlet weak var sendCodeBtn: UIButton!
-    @IBOutlet weak var phoneNumTextField: UITextField!
-    @IBOutlet weak var loginBtn: UIButton!
-    @IBOutlet weak var remarkTextField: UITextField!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak private var submitBtn: UIButton!
+    @IBOutlet weak private var codeTextField: UITextField!
+    @IBOutlet weak private var sendCodeBtn: UIButton!
+    @IBOutlet weak private var phoneNumTextField: UITextField!
+    @IBOutlet weak private var loginBtn: UIButton!
+    @IBOutlet weak private var remarkTextField: UITextField!
+    @IBOutlet weak private var titleLabel: UILabel!
+    @IBOutlet weak private var nameTextField: UITextField!
+    @IBOutlet weak private var scrollView: UIScrollView!
+    @IBOutlet weak private var contentView: UIView!
     var topTitle: String?
-    
-    var second: Int = 60
-    
-    var timer: NSTimer?
+    private var second: Int = 60
+    private var timer: NSTimer?
     
     init() {
         super.init(nibName: "SignUpViewController", bundle: nil)
@@ -50,7 +48,7 @@ class SignUpViewController: UIViewController {
     }
     
     /// 键盘frame即将改变
-    func keyboardWillChangeFrame(noti: NSNotification) {
+    private func keyboardWillChangeFrame(noti: NSNotification) {
         var fristTF:UITextField?
         if nameTextField.isFirstResponder() {
             fristTF = nameTextField
@@ -83,8 +81,6 @@ class SignUpViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: "scrollViewClick")
         scrollView.addGestureRecognizer(tap)
         scrollView.keyboardDismissMode = .OnDrag
-        //        remarkTextField.autocorrectionType = .No
-        //        nameTextField.autocorrectionType = .No
         titleLabel.text = topTitle
         sendCodeBtn.addTarget(self, action: "sendCodeBtnClick:", forControlEvents: .TouchUpInside)
     }
@@ -93,7 +89,7 @@ class SignUpViewController: UIViewController {
         view.endEditing(true)
     }
     
-    func positiveNumber(num: CGFloat) -> CGFloat {
+    private func positiveNumber(num: CGFloat) -> CGFloat {
         return num >= 0 ? num : -num
     }
     
@@ -110,7 +106,7 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    func changeBtn() {
+    private func changeBtn() {
         sendCodeBtn.setTitle("已发送\(second)秒", forState: .Disabled)
         second--
         if second == 0 {

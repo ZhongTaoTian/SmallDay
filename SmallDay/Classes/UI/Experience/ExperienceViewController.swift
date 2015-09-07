@@ -13,7 +13,7 @@ class ExperienceViewController: MainViewController {
     var experModel: ExperienceModel?
     private let cellIdentifier: String = "experienceCell"
     
-    lazy var tableView: UITableView! = {
+    private lazy var tableView: UITableView! = {
         let tableV = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
         tableV.separatorStyle = .None
         tableV.delegate = self
@@ -25,7 +25,7 @@ class ExperienceViewController: MainViewController {
         tableV.registerNib(UINib(nibName: "ExperienceCell", bundle: nil), forCellReuseIdentifier: self.cellIdentifier)
         return tableV
         }()
-    lazy var headView: ExperHeadView? = {
+    private lazy var headView: ExperHeadView? = {
         let viewH = ExperHeadView(frame: CGRectMake(0, 0, AppWidth, 170))
         viewH.delegate = self
         return viewH

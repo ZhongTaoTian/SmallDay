@@ -10,12 +10,12 @@ import UIKit
 
 class DoubleTextView: UIView {
     
-    let leftTextButton: NoHighlightButton = NoHighlightButton.buttonWithType(.Custom) as! NoHighlightButton
-    let rightTextButton: NoHighlightButton = NoHighlightButton.buttonWithType(.Custom) as! NoHighlightButton
-    let textColorFroNormal: UIColor = UIColor(red: 100 / 255.0, green: 100 / 255.0, blue: 100 / 255.0, alpha: 1)
-    let textFont: UIFont = theme.SDNavTitleFont
-    let bottomLineView: UIView = UIView()
-    var selectedBtn: UIButton?
+    private let leftTextButton: NoHighlightButton = NoHighlightButton.buttonWithType(.Custom) as! NoHighlightButton
+    private let rightTextButton: NoHighlightButton = NoHighlightButton.buttonWithType(.Custom) as! NoHighlightButton
+    private let textColorFroNormal: UIColor = UIColor(red: 100 / 255.0, green: 100 / 255.0, blue: 100 / 255.0, alpha: 1)
+    private let textFont: UIFont = theme.SDNavTitleFont
+    private let bottomLineView: UIView = UIView()
+    private var selectedBtn: UIButton?
     weak var delegate: DoubleTextViewDelegate?
 
     /// 便利构造方法
@@ -60,12 +60,7 @@ class DoubleTextView: UIView {
         sender.selected = true
         selectedBtn = sender
         bottomViewScrollTo(sender.tag - 100)
-        
-        if delegate != nil {
-            if delegate!.respondsToSelector("doubleTextView:didClickBtn:forIndex:") {
-                delegate!.doubleTextView!(self, didClickBtn: sender, forIndex: sender.tag - 100)
-            }
-        }
+        delegate?.doubleTextView(self, didClickBtn: sender, forIndex: sender.tag - 100)
     }
     
     func bottomViewScrollTo(index: Int) {
@@ -81,9 +76,9 @@ class DoubleTextView: UIView {
 }
 
 
-@objc protocol DoubleTextViewDelegate: NSObjectProtocol{
+protocol DoubleTextViewDelegate: NSObjectProtocol{
 
-    optional func doubleTextView(doubleTextView: DoubleTextView, didClickBtn btn: UIButton, forIndex index: Int)
+    func doubleTextView(doubleTextView: DoubleTextView, didClickBtn btn: UIButton, forIndex index: Int)
     
 }
 

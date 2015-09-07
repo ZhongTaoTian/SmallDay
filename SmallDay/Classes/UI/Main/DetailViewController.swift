@@ -15,107 +15,52 @@ public let DetailViewController_TopImageView_Height: CGFloat = 225
 
 class DetailViewController: UIViewController {
     // 优化性能,防止重复设置
-    var showBlackImage: Bool = false
-    let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
-    var imageWHArray = [(CGFloat, CGFloat)]()
-    var model: EventModel? {
-        didSet {
-            self.webView.hidden = true
-            if let imageStr = model?.imgs?.last {
-                self.topImageView.kf_setImageWithURL(NSURL(string: imageStr)!, placeholderImage: UIImage(named: "quesheng"))
-            }
-            self.shareView.shareModel = ShareModel(shareTitle: model?.title, shareURL: model?.shareURL, image: nil, shareDetail: model?.detail)
-            var htmlSrt = model?.mobileURL
-            
-            if htmlSrt != nil {
-                var titleStr: String?
-                
-                if model?.title != nil {
-                    titleStr = String(format: "<br><p style='font-size:20px;'> %@</p>", model!.title!)
-                }
-                
-                if model?.tag != nil {
-                    titleStr = titleStr?.stringByAppendingFormat("<p style='font-size:13px; color: gray';>%@</p>", model!.tag!)
-                }
-                
-                if titleStr != nil {
-                    var newStr: NSMutableString = NSMutableString(string: htmlSrt!)
-                    newStr.insertString(titleStr!, atIndex: 31)
-                    htmlSrt = newStr as String
-                }
-                // <body><html><head></head><body>
-            
-                var arr = htmlSrt!.componentsSeparatedByString("<img alt=")
-                for i in 1..<arr.count {
-                    let str = arr[i] as NSString
-                    let rangH = str.rangeOfString("height=\"")
-                    let rangW = str.rangeOfString("width=\"")
-                    let widthStr = str.substringWithRange(NSRange(location: rangW.location + rangW.length, length: 10)) as NSString
-                    let heightStr = str.substringWithRange(NSRange(location: rangH.location + rangH.length, length: 10)) as NSString
-                    var widthW =  CGFloat(self.numStrWith(widthStr).intValue)
-                    var heightH = CGFloat(self.numStrWith(heightStr).intValue)
-                    let newH = self.imageW / widthW * heightH
-                    let WH = (self.imageW, newH)
-                    self.imageWHArray.append(WH)
-                }
-            }
-            
-            //TODO: 将新的宽高重新替换掉原始的宽高
-            
-            self.webView.loadHTMLString(htmlSrt!, baseURL: nil)
-            self.webView.hidden = false
-        }
-    }
-    
-    let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
-    
-    var signUpBtn: UIButton!
-    
-    lazy var customNav: UIView! = {
+    private var showBlackImage: Bool = false
+    private let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
+    private var imageWHArray = [(CGFloat, CGFloat)]()
+    private let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
+    private var signUpBtn: UIButton!
+    private lazy var customNav: UIView! = {
         let customNav = UIView(frame: CGRectMake(0, 0, AppWidth, NavigationH))
         customNav.backgroundColor = UIColor.whiteColor()
         customNav.alpha = 0.0
         return customNav
         }()
     
-    lazy var shareView: ShareView! = {
+    private lazy var shareView: ShareView! = {
         let shareView = ShareView.shareViewFromXib()
         return shareView
         }()
     
-    lazy var backBtn: UIButton! = {
+    private lazy var backBtn: UIButton! = {
         let btn = UIButton() as UIButton
         return btn
         }()
     
-    lazy var likeBtn: UIButton! = {
+    private lazy var likeBtn: UIButton! = {
         let btn = UIButton() as UIButton
         return btn
         }()
     
-    lazy var sharedBtn: UIButton! = {
+    private lazy var sharedBtn: UIButton! = {
         let btn = UIButton() as UIButton
         return btn
         }()
     
-    lazy var topImageView: UIImageView! = {
+    private lazy var topImageView: UIImageView! = {
         let image = UIImageView(frame: CGRectMake(0, 0, AppWidth, DetailViewController_TopImageView_Height))
         image.image = UIImage(named: "quesheng")
-        image.contentMode = .ScaleAspectFill
+        image.contentMode = UIViewContentMode.ScaleToFill
         return image
         }()
     
-    lazy var webView: UIWebView! = {
+    private lazy var webView: UIWebView! = {
         let webView = UIWebView(frame: UIScreen.mainScreen().bounds)
         webView.scrollView.contentInset = UIEdgeInsets(top: DetailViewController_TopImageView_Height - 20, left: 0, bottom: 49, right: 0)
         webView.scrollView.showsHorizontalScrollIndicator = false
-        //        webView.scrollView.contentSize.width = AppWidth
         webView.scrollView.delegate = self
         webView.delegate = self
-//        webView.hidden = true
         webView.backgroundColor = theme.SDWebViewBacagroundColor
-        //                webView.scalesPageToFit = true
-        //        webView.paginationMode = UIWebPaginationMode.TopToBottom
         webView.paginationBreakingMode = UIWebPaginationBreakingMode.Column
         
         return webView
@@ -136,7 +81,7 @@ class DetailViewController: UIViewController {
         
     }
     
-    func setUpBottomView() {
+    private func setUpBottomView() {
         // 添加底部报名View
         let bottomView = UIView(frame: CGRectMake(0, AppHeight - 49, AppWidth, 49))
         bottomView.backgroundColor = UIColor.whiteColor()
@@ -151,13 +96,13 @@ class DetailViewController: UIViewController {
         bottomView.addSubview(signUpBtn)
     }
     
-    func setUpUI() {
+    private func setUpUI() {
         view.backgroundColor = theme.SDBackgroundColor
         view.addSubview(webView)
         view.addSubview(topImageView)
     }
     
-    func setCustomNavigationItem() {
+    private func setCustomNavigationItem() {
         view.addSubview(customNav)
         //添加返回按钮
         setButton(backBtn, CGRectMake(0, 20, 44, 44), "back_0", "back_2", "backButtonClick")
@@ -178,7 +123,53 @@ class DetailViewController: UIViewController {
         btn.addTarget(self, action: action, forControlEvents: .TouchUpInside)
     }
     
-    
+    /// model重写didSet方法
+    var model: EventModel? {
+        didSet {
+            self.webView.hidden = true
+            if let imageStr = model?.imgs?.last {
+                self.topImageView.kf_setImageWithURL(NSURL(string: imageStr)!, placeholderImage: UIImage(named: "quesheng"))
+            }
+            self.shareView.shareModel = ShareModel(shareTitle: model?.title, shareURL: model?.shareURL, image: nil, shareDetail: model?.detail)
+            var htmlSrt = model?.mobileURL
+            
+            if htmlSrt != nil {
+                var titleStr: String?
+                
+                if model?.title != nil {
+                    titleStr = String(format: "<p style='font-size:20px;'> %@</p>", model!.title!)
+                }
+                
+                if model?.tag != nil {
+                    titleStr = titleStr?.stringByAppendingFormat("<p style='font-size:13px; color: gray';>%@</p>", model!.tag!)
+                }
+                
+                if titleStr != nil {
+                    var newStr: NSMutableString = NSMutableString(string: htmlSrt!)
+                    newStr.insertString(titleStr!, atIndex: 31)
+                    htmlSrt = newStr as String
+                }
+                
+                var arr = htmlSrt!.componentsSeparatedByString("<img alt=")
+                for i in 1..<arr.count {
+                    let str = arr[i] as NSString
+                    let rangH = str.rangeOfString("height=\"")
+                    let rangW = str.rangeOfString("width=\"")
+                    let widthStr = str.substringWithRange(NSRange(location: rangW.location + rangW.length, length: 10)) as NSString
+                    let heightStr = str.substringWithRange(NSRange(location: rangH.location + rangH.length, length: 10)) as NSString
+                    var widthW =  CGFloat(self.numStrWith(widthStr).intValue)
+                    var heightH = CGFloat(self.numStrWith(heightStr).intValue)
+                    let newH = self.imageW / widthW * heightH
+                    let WH = (self.imageW, newH)
+                    self.imageWHArray.append(WH)
+                }
+            }
+            
+            //TODO: 将新的宽高重新替换掉原始的宽高
+            self.webView.loadHTMLString(htmlSrt!, baseURL: nil)
+            self.webView.hidden = false
+        }
+    }
 }
 
 /// MARK: 所有按钮的事件
@@ -224,7 +215,7 @@ extension DetailViewController {
 
 /// MARK: 处理内容滚动时的事件
 extension DetailViewController: UIScrollViewDelegate {
-
+    
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         var offsetY: CGFloat = scrollView.contentOffset.y
@@ -247,10 +238,10 @@ extension DetailViewController: UIScrollViewDelegate {
             
             // 顶部imageView的跟随动画
             if offsetY < -DetailViewController_TopImageView_Height {
-                
-                    self.topImageView.frame.origin.y = 0
-                    self.topImageView.frame.size.height = -offsetY
-
+                topImageView.frame.origin.y = 0
+                topImageView.frame.size.height = -offsetY
+                topImageView.frame.size.width = AppWidth - offsetY - DetailViewController_TopImageView_Height
+                topImageView.frame.origin.x = (0 + DetailViewController_TopImageView_Height + offsetY) * 0.5
             } else {
                 topImageView.frame.origin.y = -offsetY - DetailViewController_TopImageView_Height
             }
@@ -277,14 +268,10 @@ extension DetailViewController: UIScrollViewDelegate {
 extension DetailViewController: UIWebViewDelegate {
     func webViewDidFinishLoad(webView: UIWebView) {
         webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('body')[0].style.background='#F5F5F5';")
-        //        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('img')[0].style.width='120';")
-        //        webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('img')[0].style.height='720';")
-        //        webView.stringByEvaluatingJavaScriptFromString("")
+        
         for i in 0..<imageWHArray.count {
-            //            webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('img')[\(i)].style.width='\(imageWHArray[i].0)';")
             let imageW = String(format: "document.getElementsByTagName('img')[%d].style.width='%f';", i, imageWHArray[i].0)
             let imageH = String(format: "document.getElementsByTagName('img')[%d].style.height='%f';", i, imageWHArray[i].1)
-            
             webView.stringByEvaluatingJavaScriptFromString(imageW)
             webView.stringByEvaluatingJavaScriptFromString(imageH)
         }

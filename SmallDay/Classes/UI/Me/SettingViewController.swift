@@ -9,16 +9,17 @@
 import UIKit
 
 class SettingViewController: UIViewController {
-    lazy var images: NSMutableArray! = {
+    private lazy var images: NSMutableArray! = {
         var array = NSMutableArray(array: ["score", "recommendfriend", "about",  "feedback","score", "remove"])
         return array
         }()
-    lazy var titles: NSMutableArray! = {
+    
+    private lazy var titles: NSMutableArray! = {
         var array = NSMutableArray(array: ["去小熊的GitHub点赞", "推荐给朋友", "关于我们", "去小熊的博客评论","关注我的微博,和作者交流", "清理缓存"])
         return array
         }()
     
-    var tableView: UITableView!
+    private var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class SettingViewController: UIViewController {
         setTableView()
     }
     
-    func setTableView() {
+    private func setTableView() {
         tableView = UITableView(frame: view.bounds, style: .Plain)
         tableView.delegate = self
         tableView.dataSource = self

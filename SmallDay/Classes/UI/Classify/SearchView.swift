@@ -8,13 +8,17 @@
 
 import UIKit
 
+protocol SearchViewDelegate: NSObjectProtocol {
+    func searchView(searchView: SearchView, searchTitle: String)
+}
+
 class SearchView: UIView {
     /// 动画时长
-    let animationDuration = 0.5
+    private let animationDuration = 0.5
     var searchTextField: SearchTextField!
     var searchBtn: UIButton!
     /// 是否已经缩放过
-    var isScale: Bool = false
+    private var isScale: Bool = false
     weak var delegate: SearchViewDelegate?
     
     override init(frame: CGRect) {
@@ -23,6 +27,7 @@ class SearchView: UIView {
         searchTextField = SearchTextField()
         let margin: CGFloat = 20
         searchTextField.frame = CGRectMake(margin, 20 * 0.5, AppWidth - 2 * margin, 30)
+        searchTextField.delegate = self
         addSubview(searchTextField)
         
         searchBtn = UIButton()
@@ -91,6 +96,13 @@ class SearchView: UIView {
     }
 }
 
-protocol SearchViewDelegate: NSObjectProtocol {
-    func searchView(searchView: SearchView, searchTitle: String)
+extension SearchView: UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField.text.isEmpty {
+            return false
+        }
+        
+        searchBtnClick(searchBtn)
+        return true
+    }
 }

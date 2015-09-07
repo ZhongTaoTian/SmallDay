@@ -4,23 +4,23 @@
 //
 //  Created by MacBook on 15/8/14.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//  我的, 这种cell最好用sb来的静态单元格来描述
+//  这种cell最好用stroyboard的静态单元格来描述
 
 import UIKit
 
-class MeViewController: MainViewController, UITableViewDelegate, UITableViewDataSource, IconViewDelegate {
-    var loginLabel: UILabel!
+class MeViewController: MainViewController {
+    private var loginLabel: UILabel!
     
-    var tableView: UITableView!
-    lazy var mineIcons: NSMutableArray! = {
+    private var tableView: UITableView!
+    private lazy var mineIcons: NSMutableArray! = {
         var arr = NSMutableArray(array: ["usercenter", "orders", "setting_like", "feedback", "recomment"])
         return arr
         }()
-    lazy var mineTitles: NSMutableArray! = {
+    private lazy var mineTitles: NSMutableArray! = {
         var arr = NSMutableArray(array: ["个人中心", "我的订单", "我的收藏", "留言反馈", "应用推荐"])
         return arr
         }()
-    var iconView: IconView?
+    private var iconView: IconView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +31,13 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         setTableView()
     }
     
-    func setNav() {
+    private func setNav() {
         navigationItem.title = "我的"
         navigationItem.leftBarButtonItem = nil
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "settinghhhh", highlImageName: "settingh", targer: self, action: "settingClick")
     }
     
-    func setTableView() {
+    private func setTableView() {
         self.automaticallyAdjustsScrollViewInsets = false
         tableView = UITableView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH - 49), style: UITableViewStyle.Grouped)
         tableView.backgroundColor = UIColor.colorWith(245, green: 245, blue: 245, alpha: 1)
@@ -69,7 +68,7 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         iconView!.delegate = self
         iconView!.center = CGPointMake(iconImageView.width * 0.5, (iconImageViewHeight - loginLabelHeight) * 0.5 + 8)
         iconImageView.addSubview(iconView!)
-
+        
         tableView.tableHeaderView = iconImageView
     }
     
@@ -77,8 +76,19 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         let settingVC = SettingViewController()
         navigationController?.pushViewController(settingVC, animated: true)
     }
-    
-    // MARK:UITableViewDelegate, UITableViewDataSource 代理方法
+}
+
+/// MARK: iconViewDelegate
+extension MainViewController: IconViewDelegate {
+    func iconView(iconView: IconView, didClick iconButton: UIButton) {
+        // TODO 判断用户是否登录了
+        let login = LoginViewController()
+        navigationController?.pushViewController(login, animated: true)
+    }
+}
+
+/// MARK:UITableViewDelegate, UITableViewDataSource 代理方法
+extension MeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return mineIcons.count
@@ -107,7 +117,7 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
             cell!.imageView!.image = UIImage(named: "yaoyiyao")
             cell!.textLabel!.text = "摇一摇 每天都有小惊喜"
         }
-
+        
         return cell!
     }
     
@@ -122,9 +132,4 @@ class MeViewController: MainViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    func iconView(iconView: IconView, didClick iconButton: UIButton) {
-        // TODO 判断用户是否登录了
-        let login = LoginViewController()
-        navigationController?.pushViewController(login, animated: true)
-    }
 }

@@ -4,19 +4,19 @@
 //
 //  Created by MacBook on 15/8/22.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//  Theme点击出来的ViewController
+//  ThemeCell点击出来的ViewController
 
 import UIKit
 
 class ThemeViewController: UIViewController, UIWebViewDelegate {
-
-    lazy var backView: UIView! = {
+    
+    private lazy var backView: UIView! = {
         let backView = UIView(frame: UIScreen.mainScreen().bounds)
         backView.backgroundColor = theme.SDBackgroundColor
         return backView
         }()
     
-    lazy var moreTableView: UITableView! = {
+    private lazy var moreTableView: UITableView! = {
         let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
         tableView.backgroundColor = theme.SDBackgroundColor
         tableView.separatorStyle = .None
@@ -28,12 +28,12 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
         return tableView
         }()
     
-    lazy var shareView: ShareView? = {
+    private lazy var shareView: ShareView? = {
         let shareView = ShareView.shareViewFromXib()
         return shareView
         }()
- 
-    lazy var webView: UIWebView? = {
+    
+    private lazy var webView: UIWebView? = {
         let web = UIWebView(frame: UIScreen.mainScreen().bounds)
         web.backgroundColor = theme.SDBackgroundColor
         web.delegate = self
@@ -49,24 +49,28 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
         }
     }
     
-    var modalBtn: UIButton! = UIButton()
+    private var modalBtn: UIButton! = UIButton()
     var more: DetailModel?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.whiteColor()
-        view.addSubview(backView)
-        backView.addSubview(moreTableView)
-        backView.addSubview(webView!)
+        // 初始化UI
+        setUpUI()
         // 加载更多数据
         loadMore()
         // 添加modalBtn
         addModalBtn()
-        
+    }
+    
+    private func setUpUI() {
+        view.backgroundColor = UIColor.whiteColor()
+        view.addSubview(backView)
+        backView.addSubview(moreTableView)
+        backView.addSubview(webView!)
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "share_1", highlImageName: "share_2", targer: self, action: "shareClick")
     }
     
-    func loadMore() {
+    private func loadMore() {
         weak var tmpSelf = self
         DetailModel.loadMore { (data, error) -> () in
             if error != nil {
@@ -79,19 +83,20 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
         }
     }
     
-    func shareClick() {
-        view.addSubview(shareView!)
-        shareView!.showShareView(CGRectMake(0, AppHeight - 215 - 64, AppWidth, 215))
-        shareView!.shareVC = self
-    }
-    
-    func addModalBtn() {
+    private func addModalBtn() {
         let modalWH: CGFloat = NavigationH
         modalBtn.frame = CGRectMake(10, AppHeight - modalWH - 10 - NavigationH, modalWH, modalWH)
         modalBtn.setImage(UIImage(named: "themelist"), forState: .Normal)
         modalBtn.setImage(UIImage(named: "themeweb"), forState: .Selected)
         modalBtn.addTarget(self, action: "modalClick:", forControlEvents: .TouchUpInside)
         view.addSubview(modalBtn)
+    }
+    
+    ///MARK: - ButtonAction
+    func shareClick() {
+        view.addSubview(shareView!)
+        shareView!.showShareView(CGRectMake(0, AppHeight - 215 - 64, AppWidth, 215))
+        shareView!.shareVC = self
     }
     
     func modalClick(sender: UIButton) {
@@ -101,12 +106,13 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
                 
             })
         } else {
-          UIView.transitionFromView(moreTableView, toView: webView!, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: { (finish) -> Void in
-            
-          })
+            UIView.transitionFromView(moreTableView, toView: webView!, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: { (finish) -> Void in
+                
+            })
         }
     }
     
+    /// WebViewDelegate
     func webViewDidFinishLoad(webView: UIWebView) {
         self.webView!.scrollView.contentSize.height += 64
     }
@@ -134,7 +140,7 @@ extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.model = everyModel
         return cell
     }
-
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let model = more!.list![indexPath.row]
         let eventVC = EventViewController()

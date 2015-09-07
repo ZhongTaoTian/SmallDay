@@ -10,13 +10,13 @@ import UIKit
 
 class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     
-    var backgroundScrollView: UIScrollView!
-    var doubleTextView: DoubleTextView!
-    var everyDays: EveryDays?
-    var albumTableView: UITableView!
-    var dayTableView: UITableView!
-    var themes: ThemeModels?
-    var events: EveryDays?
+    private var backgroundScrollView: UIScrollView!
+    private var doubleTextView: DoubleTextView!
+    private var everyDays: EveryDays?
+    private var albumTableView: UITableView!
+    private var dayTableView: UITableView!
+    private var themes: ThemeModels?
+    private var events: EveryDays?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         loadData()
     }
     
-    func setdayTableView() {
+    private func setdayTableView() {
         dayTableView = UITableView(frame: view.bounds, style: .Grouped)
         dayTableView.sectionHeaderHeight = 0.1
         dayTableView.sectionFooterHeight = 0.1
@@ -49,7 +49,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         backgroundScrollView.addSubview(dayTableView)
     }
     
-    func setalbumTableView() {
+    private func setalbumTableView() {
         albumTableView = UITableView(frame: CGRectMake(AppWidth, 0, AppWidth, backgroundScrollView.height), style: .Plain)
         albumTableView.separatorStyle = .None
         albumTableView.delegate = self
@@ -58,7 +58,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         backgroundScrollView.addSubview(albumTableView)
     }
     
-    func loadData() {
+    private func loadData() {
         weak var tmpSelf = self
         ThemeModels.loadThemesData { (data, error) -> () in
             if error != nil {
@@ -81,7 +81,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         }
     }
     
-    func setScrollView() {
+    private func setScrollView() {
         backgroundScrollView = UIScrollView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH - 49))
         self.automaticallyAdjustsScrollViewInsets = false
         backgroundScrollView.backgroundColor = theme.SDBackgroundColor
@@ -93,7 +93,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
         view.addSubview(backgroundScrollView)
     }
     
-    func setNav() {
+    private func setNav() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "附近", titleClocr: UIColor.blackColor(), targer: self, action: "nearClick")
         
         doubleTextView = DoubleTextView(leftText: "美天", rigthText: "美辑");
@@ -197,25 +197,25 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        // 点击的themeCell,美辑cell
         if tableView === albumTableView {
-            
             let theme = self.themes!.list![indexPath.row]
             let themeVC = ThemeViewController()
             themeVC.themeModel = theme
             navigationController?.pushViewController(themeVC, animated: true)
             
-        } else {
+        } else { // 点击的美天TableView里的美辑cell
             
             let event = self.everyDays!.list![indexPath.section]
             if indexPath.row == 1 {
                 let themeVC = ThemeViewController()
                 themeVC.themeModel = event.themes?.last
                 navigationController!.pushViewController(themeVC, animated: true)
-            } else {
+                
+            } else { // 点击的美天的cell
                 let eventVC = EventViewController()
-//                let eventModel = themes!.list![indexPath.section]
-
-//                eventVC.eventModel = eventModel
+                
                 navigationController!.pushViewController(eventVC, animated: true)
             }
         }

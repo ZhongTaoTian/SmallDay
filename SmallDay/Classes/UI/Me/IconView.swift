@@ -4,13 +4,13 @@
 //
 //  Created by MacBook on 15/8/19.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  用户头像的View
 
 import UIKit
 
 class IconView: UIView {
-
-    var iconButton: UIButton!
+    
+    private var iconButton: UIButton!
     weak var delegate: IconViewDelegate?
     
     override init(frame: CGRect) {
@@ -21,11 +21,11 @@ class IconView: UIView {
         iconButton.addTarget(self, action: "iconBtnClick", forControlEvents: .TouchUpInside)
         addSubview(iconButton)
     }
-
+    
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         let mrgin: CGFloat = 8
@@ -43,16 +43,12 @@ class IconView: UIView {
     }
     
     func iconBtnClick() {
-        if delegate != nil {
-            if delegate!.respondsToSelector("iconView:didClick:") {
-                delegate!.iconView!(self, didClick: self.iconButton)
-            }
-        }
+        delegate?.iconView(self, didClick: self.iconButton)
     }
 }
 
-@objc protocol IconViewDelegate: NSObjectProtocol {
 
-    optional func iconView(iconView: IconView, didClick iconButton: UIButton)
+protocol IconViewDelegate: NSObjectProtocol {
+    func iconView(iconView: IconView, didClick iconButton: UIButton)
 }
 

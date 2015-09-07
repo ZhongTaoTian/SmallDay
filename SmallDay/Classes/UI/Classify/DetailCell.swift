@@ -10,9 +10,9 @@ import UIKit
 
 class DetailCell: UITableViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subTitleLabel: UILabel!
-    @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak private var titleLabel: UILabel!
+    @IBOutlet weak private var subTitleLabel: UILabel!
+    @IBOutlet weak private var backImageView: UIImageView!
     
     var model: EventModel? {
         didSet {

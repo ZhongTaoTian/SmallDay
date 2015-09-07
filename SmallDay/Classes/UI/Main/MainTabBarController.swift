@@ -19,7 +19,7 @@ class MainTabBarController: UITabBarController {
     }
 
     /// 初始化所有子控制器
-    func setUpAllChildViewController() {
+    private func setUpAllChildViewController() {
         // 探店
         tabBaraAddChildViewController(vc: ExploreViewController(), title: "探店", imageName: "recommendation_1", selectedImageName: "recommendation_2")
         // 体验
@@ -31,8 +31,7 @@ class MainTabBarController: UITabBarController {
         
     }
     
-    func tabBaraAddChildViewController(#vc: UIViewController, title: String, imageName: String, selectedImageName: String) {
-        
+    private func tabBaraAddChildViewController(#vc: UIViewController, title: String, imageName: String, selectedImageName: String) {
         vc.tabBarItem = UITabBarItem(title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: selectedImageName))
         vc.view.backgroundColor = theme.SDBackgroundColor
         let nav = MainNavigationController(rootViewController: vc)

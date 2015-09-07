@@ -10,9 +10,9 @@ import UIKit
 
 class ClassifyViewController: MainViewController {
     
-    var collView: UICollectionView!
-    var headTitles: NSArray = ["闲时光·发现·惊喜", "涨知识·分享·丰盈"]
-    var classData: ClassifyModel?
+    private var collView: UICollectionView!
+    private var headTitles: NSArray = ["闲时光·发现·惊喜", "涨知识·分享·丰盈"]
+    private var classData: ClassifyModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ClassifyViewController: MainViewController {
         loadClassDatas()
     }
     
-    func loadClassDatas() {
+    private func loadClassDatas() {
         weak var tmpSelf = self
         ClassifyModel.loadClassifyModel { (data, error) -> () in
             if error != nil {
@@ -39,7 +39,7 @@ class ClassifyViewController: MainViewController {
         }
     }
     
-    func setNav() {
+    private func setNav() {
         navigationItem.title = "分类"
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "search_1", highlImageName: "search_2", targer: self, action: "searchClick")
         self.automaticallyAdjustsScrollViewInsets = false
@@ -50,11 +50,10 @@ class ClassifyViewController: MainViewController {
         navigationController?.pushViewController(searchVC, animated: true)
     }
     
-    func setCollectionView() {
+    private func setCollectionView() {
         let layout = UICollectionViewFlowLayout()
         let margin: CGFloat = 10
         layout.minimumInteritemSpacing = margin
-//        layout.minimumLineSpacing = 5
         layout.sectionInset = UIEdgeInsetsMake(margin, margin, margin, margin)
         let itemH:CGFloat = 80
         let itemW = (AppWidth - 4 * margin) / 3

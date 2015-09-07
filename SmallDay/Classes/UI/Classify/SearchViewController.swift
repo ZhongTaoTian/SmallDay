@@ -12,15 +12,15 @@ public let searchViewH: CGFloat = 50
 
 class SearchViewController: UIViewController, SearchViewDelegate {
     
-    var searchView: SearchView!
+    private var searchView: SearchView!
     
     var searchModel: SearchsModel?
     
-    var scrollView: UIScrollView!
+    private var scrollView: UIScrollView!
     
-    var hotSearchs: [String] = ["北京", "东四", "南锣鼓巷", "798", "三里屯", "维尼的小熊"]
+    private var hotSearchs: [String] = ["北京", "东四", "南锣鼓巷", "798", "三里屯", "维尼的小熊"]
     
-    var tableView: UITableView! = {
+    private var tableView: UITableView! = {
         let tableView = UITableView(frame: CGRectMake(0, searchViewH, AppWidth, AppHeight - searchViewH), style: .Plain)
         tableView.separatorStyle = .None
         tableView.rowHeight = 230
@@ -30,12 +30,12 @@ class SearchViewController: UIViewController, SearchViewDelegate {
         return tableView
         }()
     
-    lazy var hotBtns: NSMutableArray! = {
+    private lazy var hotBtns: NSMutableArray! = {
         let arr = NSMutableArray()
         return arr
         }()
     
-    lazy var hotLabel: UILabel! = {
+    private lazy var hotLabel: UILabel! = {
         let label = UILabel(frame: CGRectMake(10, 0, 200, 50))
         label.textAlignment = NSTextAlignment.Left
         label.textColor = UIColor.blackColor()
@@ -57,7 +57,7 @@ class SearchViewController: UIViewController, SearchViewDelegate {
         setTableView()
     }
     
-    func setScrollView() {
+    private func setScrollView() {
         scrollView = UIScrollView(frame: CGRectMake(0, searchViewH, AppWidth, AppHeight - searchViewH))
         scrollView.backgroundColor = theme.SDBackgroundColor
         scrollView.showsHorizontalScrollIndicator = false

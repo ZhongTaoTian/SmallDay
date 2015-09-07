@@ -10,8 +10,8 @@ import UIKit
 
 class SearchTextField: UITextField {
 
-    var leftV: UIView!
-    var leftImageView: UIImageView!
+    private var leftV: UIView!
+    private var leftImageView: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
