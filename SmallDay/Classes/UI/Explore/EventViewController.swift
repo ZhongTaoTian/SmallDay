@@ -44,7 +44,7 @@ class EventViewController: UIViewController {
     private lazy var topImageView: UIImageView! = {
         let image = UIImageView(frame: CGRectMake(0, 0, AppWidth, DetailViewController_TopImageView_Height))
         image.image = UIImage(named: "quesheng")
-        image.contentMode = .ScaleAspectFill
+        image.contentMode = .ScaleToFill
         return image
         }()
     
@@ -58,12 +58,10 @@ class EventViewController: UIViewController {
         webView.delegate = self
         webView.backgroundColor = theme.SDWebViewBacagroundColor
         webView.paginationBreakingMode = UIWebPaginationBreakingMode.Column
-
         return webView
         }()
     
     private lazy var detailSV: UIScrollView! = {
-        
         let detailSV = UIScrollView(frame: UIScreen.mainScreen().bounds)
         return detailSV
         }()
@@ -145,20 +143,24 @@ class EventViewController: UIViewController {
                     let str = arr[i] as NSString
                     let rangH = str.rangeOfString("height=\"")
                     let rangW = str.rangeOfString("width=\"")
-                    let widthStr = str.substringWithRange(NSRange(location: rangW.location + rangW.length, length: 10)) as NSString
-                    let heightStr = str.substringWithRange(NSRange(location: rangH.location + rangH.length, length: 10)) as NSString
-                    var widthW =  CGFloat(self.numStrWith(widthStr).intValue)
-                    var heightH = CGFloat(self.numStrWith(heightStr).intValue)
-                    let newH = self.imageW / widthW * heightH
-                    let WH = (self.imageW, newH)
-                    self.imageWHArray.append(WH)
+                    if rangH.length != 0 && rangW.length != 0 {
+                        let widthStr = str.substringWithRange(NSRange(location: rangW.location + rangW.length, length: 10)) as NSString
+                        let heightStr = str.substringWithRange(NSRange(location: rangH.location + rangH.length, length: 10)) as NSString
+                        var widthW =  CGFloat(self.numStrWith(widthStr).intValue)
+                        var heightH = CGFloat(self.numStrWith(heightStr).intValue)
+                        let newH = self.imageW / widthW * heightH
+                        let WH = (self.imageW, newH)
+                        imageWHArray.append(WH)
+                    } else {
+                        imageWHArray.append((self.imageW, 220))
+                    }
                 }
             }
             
             //TODO: 将新的宽高重新替换掉原始的宽高
             
-            self.webView.loadHTMLString(htmlSrt!, baseURL: nil)
-            self.webView.hidden = false
+            webView.loadHTMLString(htmlSrt!, baseURL: nil)
+            webView.hidden = false
         }
     }
     
@@ -173,7 +175,7 @@ extension EventViewController {
     
     /// 收藏
     func lickBtnClick() {
-
+        
     }
     
     /// 分享
@@ -220,11 +222,11 @@ extension EventViewController: UIScrollViewDelegate {
         }
         
         // 顶部imageView的跟随动画
-        if offsetY < -DetailViewController_TopImageView_Height - shopViewHeight {
-            
-            self.topImageView.frame.origin.y = 0
-            self.topImageView.frame.size.height = -offsetY - shopViewHeight
-            
+        if offsetY <= -DetailViewController_TopImageView_Height - shopViewHeight {
+            topImageView.frame.origin.y = 0
+            topImageView.frame.size.height = -offsetY - shopViewHeight
+            topImageView.frame.size.width = AppWidth - offsetY - DetailViewController_TopImageView_Height
+            topImageView.frame.origin.x = (0 + DetailViewController_TopImageView_Height + offsetY) * 0.5
         } else {
             topImageView.frame.origin.y = -offsetY - DetailViewController_TopImageView_Height - shopViewHeight
         }

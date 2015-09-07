@@ -56,13 +56,13 @@ class DetailViewController: UIViewController {
     
     private lazy var webView: UIWebView! = {
         let webView = UIWebView(frame: UIScreen.mainScreen().bounds)
-        webView.scrollView.contentInset = UIEdgeInsets(top: DetailViewController_TopImageView_Height - 20, left: 0, bottom: 49, right: 0)
+        let contentH: CGFloat = DetailViewController_TopImageView_Height - 20
+        webView.scrollView.contentInset = UIEdgeInsets(top:  contentH, left: 0, bottom: 49, right: 0)
         webView.scrollView.showsHorizontalScrollIndicator = false
         webView.scrollView.delegate = self
         webView.delegate = self
         webView.backgroundColor = theme.SDWebViewBacagroundColor
         webView.paginationBreakingMode = UIWebPaginationBreakingMode.Column
-        
         return webView
         }()
     
@@ -167,6 +167,7 @@ class DetailViewController: UIViewController {
             
             //TODO: 将新的宽高重新替换掉原始的宽高
             self.webView.loadHTMLString(htmlSrt!, baseURL: nil)
+            webView.scrollView.setContentOffset(CGPoint(x: 0, y: -DetailViewController_TopImageView_Height + 20), animated: false)
             self.webView.hidden = false
         }
     }
