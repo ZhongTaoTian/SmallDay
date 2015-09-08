@@ -8,9 +8,21 @@
 
 import UIKit
 
+enum SDMineCellType: Int {
+    /// 个人中心
+    case MyCenter = 0
+    /// 我的订单
+    case MyOrder = 1
+    /// 我的收藏
+    case MyCollect = 2
+    ///  反馈留言
+    case Feedback = 3
+    ///  应用推荐
+    case RecommendApp = 4
+}
+
 class MeViewController: MainViewController {
     private var loginLabel: UILabel!
-    
     private var tableView: UITableView!
     private lazy var mineIcons: NSMutableArray! = {
         var arr = NSMutableArray(array: ["usercenter", "orders", "setting_like", "feedback", "recomment"])
@@ -49,7 +61,7 @@ class MeViewController: MainViewController {
         view.addSubview(tableView)
         
         // 设置tableView的headerView
-        let iconImageViewHeight: CGFloat = 160
+        let iconImageViewHeight: CGFloat = 180
         var iconImageView = UIImageView(frame: CGRectMake(0, 0, AppWidth, iconImageViewHeight))
         iconImageView.image = UIImage(named: "quesheng")
         iconImageView.userInteractionEnabled = true
@@ -82,8 +94,12 @@ class MeViewController: MainViewController {
 extension MainViewController: IconViewDelegate {
     func iconView(iconView: IconView, didClick iconButton: UIButton) {
         // TODO 判断用户是否登录了
-        let login = LoginViewController()
-        navigationController?.pushViewController(login, animated: true)
+        if UserAccountTool.userIsLogin() {
+            
+        } else {
+            let login = LoginViewController()
+            navigationController?.pushViewController(login, animated: true)
+        }
     }
 }
 
@@ -122,11 +138,34 @@ extension MeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 0 && indexPath.row == 3 {
-            // 留言反馈
-            let feedbackVC = FeedbackViewController()
-            navigationController?.pushViewController(feedbackVC, animated: true)
-        } else if indexPath.section == 1 {
+        if indexPath.section == 0 {
+            
+            if indexPath.row == SDMineCellType.Feedback.hashValue {         // 留言反馈
+                let feedbackVC = FeedbackViewController()
+                navigationController?.pushViewController(feedbackVC, animated: true)
+            } else if indexPath.row == SDMineCellType.MyCenter.hashValue {  // 个人中心
+                if UserAccountTool.userIsLogin() {
+                    let myCenterVC = MyCenterViewController()
+                    navigationController!.pushViewController(myCenterVC, animated: true)
+                } else {
+                    let login = LoginViewController()
+                    navigationController?.pushViewController(login, animated: true)
+                }
+                
+            } else if indexPath.row == SDMineCellType.MyCollect.hashValue { // 我的收藏
+            
+            } else if indexPath.row == SDMineCellType.MyOrder.hashValue {   // 我的订单
+                if UserAccountTool.userIsLogin() {
+                    
+                } else {
+                    let login = LoginViewController()
+                    navigationController?.pushViewController(login, animated: true)
+                }
+            } else {                                                        // 应用推荐
+                
+            }
+            
+        } else {
             let shakeVC = ShakeViewController()
             navigationController?.pushViewController(shakeVC, animated: true)
         }

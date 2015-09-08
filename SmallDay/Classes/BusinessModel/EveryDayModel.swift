@@ -9,6 +9,7 @@
 import UIKit
 
 class EveryDays: NSObject, DictModelProtocol {
+
     var msg: String?
     var code: Int = -1
     var list: [EveryDay]?

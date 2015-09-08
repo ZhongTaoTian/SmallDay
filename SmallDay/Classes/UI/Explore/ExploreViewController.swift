@@ -151,7 +151,7 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if tableView === albumTableView {
-            return 220
+            return 240
         } else {
             if indexPath.row == 1 {
                 return 220
@@ -171,7 +171,6 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell?
-        
         
         if tableView === albumTableView { // 美辑TableView
             
@@ -215,7 +214,8 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
                 
             } else { // 点击的美天的cell
                 let eventVC = EventViewController()
-                
+                let event = self.everyDays!.list![indexPath.section]
+                eventVC.model = event.events![indexPath.row]
                 navigationController!.pushViewController(eventVC, animated: true)
             }
         }

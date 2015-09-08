@@ -13,7 +13,18 @@ class EventViewController: UIViewController {
     private let shopViewHeight: CGFloat = 45
     private let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
     private var imageWHArray = [(CGFloat, CGFloat)]()
+    private var isAddContrntHeight = false
     private let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
+    private lazy var guessLikeView: GuessLikeView = {
+        let guessView = GuessLikeView.guessLikeViewFromXib()
+        return guessView
+        }()
+    
+    private lazy var moreArr: [MoreView]! = {
+        let moreArr = [MoreView]()
+        return moreArr
+        }()
+    
     private lazy var customNav: UIView! = {
         let customNav = UIView(frame: CGRectMake(0, 0, AppWidth, NavigationH))
         customNav.backgroundColor = UIColor.whiteColor()
@@ -61,8 +72,20 @@ class EventViewController: UIViewController {
         return webView
         }()
     
+    private lazy var detailContentView: ShopDetailContentView = {
+        let detailContentView = ShopDetailContentView.shopDetailContentViewFromXib()
+        return detailContentView
+        }()
+    
     private lazy var detailSV: UIScrollView! = {
         let detailSV = UIScrollView(frame: UIScreen.mainScreen().bounds)
+        detailSV.contentInset = UIEdgeInsets(top: DetailViewController_TopImageView_Height + self.shopViewHeight, left: 0, bottom: 0, right: 0)
+        detailSV.showsHorizontalScrollIndicator = false
+        detailSV.backgroundColor = theme.SDWebViewBacagroundColor
+        detailSV.alwaysBounceVertical = true
+        detailSV.hidden = true
+        detailSV.delegate = self
+        detailSV.setContentOffset(CGPoint(x: 0, y: -(DetailViewController_TopImageView_Height + self.shopViewHeight)), animated: false)
         return detailSV
         }()
     
@@ -71,10 +94,9 @@ class EventViewController: UIViewController {
         shopView.delegate = self
         return shopView
         }()
+    ///  记录scrollView最后一次偏移的Y值
+    private var lastOffsetY: CGFloat = 0
     
-    deinit {
-        print("More详情ViewController已经销毁")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +109,7 @@ class EventViewController: UIViewController {
     private func setUpUI() {
         view.backgroundColor = theme.SDBackgroundColor
         view.addSubview(webView)
+        view.addSubview(detailSV)
         view.addSubview(topImageView)
         view.addSubview(shopView)
     }
@@ -94,7 +117,7 @@ class EventViewController: UIViewController {
     private func setCustomNavigationItem() {
         view.addSubview(customNav)
         //添加返回按钮
-        setButton(backBtn, CGRectMake(0, 20, 44, 44), "back_0", "back_2", "backButtonClick")
+        setButton(backBtn, CGRectMake(-7, 20, 44, 44), "back_0", "back_2", "backButtonClick")
         view.addSubview(backBtn)
         // 添加收藏按钮
         setButton(likeBtn, CGRectMake(AppWidth - 105, 20, 44, 44), "collect_0", "collect_0", "lickBtnClick")
@@ -115,6 +138,11 @@ class EventViewController: UIViewController {
     var model: EventModel? {
         didSet {
             self.webView.hidden = true
+            // 将模型传入给店铺详情页
+            detailContentView.detailModel = model
+            detailSV.addSubview(detailContentView)
+            detailSV.contentSize = CGSize(width: AppWidth, height: detailContentView.height - shopViewHeight)
+            
             if let imageStr = model?.imgs?.last {
                 self.topImageView.kf_setImageWithURL(NSURL(string: imageStr)!, placeholderImage: UIImage(named: "quesheng"))
             }
@@ -158,12 +186,27 @@ class EventViewController: UIViewController {
             }
             
             //TODO: 将新的宽高重新替换掉原始的宽高
-            
             webView.loadHTMLString(htmlSrt!, baseURL: nil)
             webView.hidden = false
+
+            if model?.more?.count > 0 {
+                guessLikeView.hidden = true
+                webView.scrollView.addSubview(guessLikeView)
+                for i in 0..<model!.more!.count {
+                    let moreModel = model!.more![i]
+                    let moreView = MoreView.moreViewWithGuessLikeModel(moreModel)
+                    moreView.hidden = true
+                    moreView.frame = CGRect(x: 0, y: webView.scrollView.contentSize.height, width: AppWidth, height: 230)
+                    webView.scrollView.addSubview(moreView)
+                    moreArr.append(moreView)
+                }
+            }
         }
     }
     
+    deinit {
+        print("More详情ViewController已经销毁")
+    }
 }
 
 /// MARK: 所有按钮的事件
@@ -206,7 +249,6 @@ extension EventViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         var offsetY: CGFloat = scrollView.contentOffset.y
-        
         // 判断顶部自定义导航条的透明度,以及图片的切换
         customNav.alpha = 1 + (offsetY + NavigationH + shopViewHeight) / scrollShowNavH
         if offsetY + shopViewHeight >= -NavigationH && showBlackImage == false {
@@ -238,6 +280,19 @@ extension EventViewController: UIScrollViewDelegate {
             shopView.frame = CGRect(x: 0, y: CGRectGetMaxY(topImageView.frame), width: AppWidth, height: shopViewHeight)
         }
         
+        lastOffsetY = offsetY
+        
+        if moreArr.count > 0 && isAddContrntHeight == false && scrollView.contentSize.height > AppHeight + DetailViewController_TopImageView_Height + shopViewHeight && scrollView === webView.scrollView {
+            isAddContrntHeight = true
+            guessLikeView.frame = CGRect(x: 0, y: scrollView.contentSize.height, width: AppWidth, height: 50)
+            guessLikeView.hidden = false
+            scrollView.contentSize.height += 50
+            for more in moreArr {
+                more.frame = CGRect(x: 0, y: scrollView.contentSize.height, width: AppWidth, height: 230)
+                more.hidden = false
+                scrollView.contentSize.height += 235
+            }
+        }
     }
     
     /// 返回负数
@@ -258,6 +313,7 @@ extension EventViewController: UIScrollViewDelegate {
 
 /// MARK: UIWebViewDelegate
 extension EventViewController: UIWebViewDelegate {
+    
     func webViewDidFinishLoad(webView: UIWebView) {
         webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('body')[0].style.background='#F5F5F5';")
         for i in 0..<imageWHArray.count {
@@ -266,18 +322,34 @@ extension EventViewController: UIWebViewDelegate {
             webView.stringByEvaluatingJavaScriptFromString(imageW)
             webView.stringByEvaluatingJavaScriptFromString(imageH)
         }
+        println(webView.scrollView.contentSize.height)
     }
 }
 
 /// MARK: ShopDetailViewDelegate
 extension EventViewController: ShopDetailViewDelegate {
+    
     func shopDetailView(shopDetailView: ShopDetailView, didSelectedLable index: Int) {
         if index == 0 {
+            detailSV.hidden = true
+            webView.hidden = false
+            if lastOffsetY > webView.scrollView.contentSize.height + AppHeight {
+                webView.scrollView.setContentOffset(CGPoint(x: 0, y: webView.scrollView.contentSize.height), animated: false)
+            } else {
+                webView.scrollView.setContentOffset(CGPoint(x: 0, y: lastOffsetY), animated: false)
+            }
             
         } else {
-            
+            detailSV.hidden = false
+            webView.hidden = true
+            if lastOffsetY > detailSV.contentSize.height - AppHeight {
+                detailSV.setContentOffset(CGPoint(x: 0, y: detailSV.contentSize.height - AppHeight), animated: false)
+            } else {
+                detailSV.setContentOffset(CGPoint(x: 0, y: lastOffsetY), animated: false)
+            }
         }
     }
 }
+
 
 

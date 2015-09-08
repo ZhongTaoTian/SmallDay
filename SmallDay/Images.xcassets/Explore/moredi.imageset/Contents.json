@@ -13,14 +13,14 @@
           "height" : 1
         },
         "capInsets" : {
-          "bottom" : 45,
-          "top" : 44,
-          "right" : 46,
-          "left" : 44
+          "bottom" : 66,
+          "top" : 65,
+          "right" : 2,
+          "left" : 2
         }
       },
       "idiom" : "universal",
-      "filename" : "signin_1@2x.png",
+      "filename" : "moredi@2x.png",
       "scale" : "2x"
     },
     {
@@ -32,14 +32,14 @@
           "height" : 1
         },
         "capInsets" : {
-          "bottom" : 67,
-          "top" : 66,
-          "right" : 69,
-          "left" : 68
+          "bottom" : 110,
+          "top" : 109,
+          "right" : 500,
+          "left" : 499
         }
       },
       "idiom" : "universal",
-      "filename" : "signin_1@3x.png",
+      "filename" : "moredi@3x.png",
       "scale" : "3x"
     }
   ],

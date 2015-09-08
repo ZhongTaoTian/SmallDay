@@ -105,7 +105,7 @@ class DetailViewController: UIViewController {
     private func setCustomNavigationItem() {
         view.addSubview(customNav)
         //添加返回按钮
-        setButton(backBtn, CGRectMake(0, 20, 44, 44), "back_0", "back_2", "backButtonClick")
+        setButton(backBtn, CGRectMake(-7, 20, 44, 44), "back_0", "back_2", "backButtonClick")
         view.addSubview(backBtn)
         // 添加收藏按钮
         setButton(likeBtn, CGRectMake(AppWidth - 105, 20, 44, 44), "collect_0", "collect_0", "lickBtnClick")
@@ -238,7 +238,7 @@ extension DetailViewController: UIScrollViewDelegate {
             }
             
             // 顶部imageView的跟随动画
-            if offsetY < -DetailViewController_TopImageView_Height {
+            if offsetY <= -DetailViewController_TopImageView_Height {
                 topImageView.frame.origin.y = 0
                 topImageView.frame.size.height = -offsetY
                 topImageView.frame.size.width = AppWidth - offsetY - DetailViewController_TopImageView_Height

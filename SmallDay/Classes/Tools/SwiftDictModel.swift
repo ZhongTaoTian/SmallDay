@@ -7,22 +7,6 @@
 
 import Foundation
 
-/**
-    字典转模型协议
-
-    提示：
-    * 自定义类映射字典中需要包含类的命名空间
-
-        示例代码：
-        return ["info": "\(Info.self)", "other": "\(Info.self)", "demo": "\(Info.self)"];
-
-    * 目前存在的问题：
-
-        - 由于 customClassMapping 是一个静态函数，子类模型中不能重写协议函数
-        - 如果子类中也包含自定义对象，需要在父类的 customClassMapping 一并指定
-
-    * 不希望参与字典转模型的属性可以定义为 private 的
-*/
 @objc public protocol DictModelProtocol {
     ///  自定义类映射字典
     ///

@@ -8,6 +8,10 @@
 
 import UIKit
 
+public let SD_UserLogin_Notification = "SD_UserLogin_Notification"
+public let SD_UserDefaults_Account = "SD_UserDefaults_Account"
+public let SD_UserDefaults_Password = "SD_UserDefaults_Password"
+
 class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     var bottomView: UIView!
@@ -162,12 +166,29 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             print("忘记密码")
         } else {                 // 注册
             print("注册")
+            SVProgressHUD.showErrorWithStatus("直接登录就行...没有注册功能", maskType: .Black)
         }
     }
     
     /// 登录按钮被点击
     func loginClick() {
-        print("登陆")
+        
+        if !phoneTextField.text.validateMobile() {
+            SVProgressHUD.showErrorWithStatus("请输入11位的正确手机号", maskType: SVProgressHUDMaskType.Black)
+            return
+        } else if psdTextField.text.isEmpty {
+            SVProgressHUD.showErrorWithStatus("密码不能为空", maskType: SVProgressHUDMaskType.Black)
+            return
+        }
+        
+        //将用户的账号和密码暂时保存到本地,实际开发中光用MD5加密是不够的,需要多重加密
+        let account = phoneTextField.text
+        let psdMD5 = psdTextField.text.md5
+        NSUserDefaults.standardUserDefaults().setObject(account, forKey: SD_UserDefaults_Account)
+        NSUserDefaults.standardUserDefaults().setObject(psdMD5, forKey: SD_UserDefaults_Password)
+        if NSUserDefaults.standardUserDefaults().synchronize() {
+            
+        }
     }
     
     /// 快捷登录点击

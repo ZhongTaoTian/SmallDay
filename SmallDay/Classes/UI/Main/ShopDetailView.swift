@@ -10,12 +10,14 @@ import UIKit
 
 class ShopDetailView: UIView {
     
-    var findLabel: UILabel!
-    var detailLabel: UILabel!
-    var middleLineView: UIView!
-    var bottomLineView: UIView!
+    private var findLabel: UILabel!
+    private var detailLabel: UILabel!
+    private var middleLineView: UIView!
+    private var bottomLineView: UIView!
     weak var delegate: ShopDetailViewDelegate?
-    let bottomLineScale: CGFloat = 0.6
+    private let bottomLineScale: CGFloat = 0.6
+    private var blackLineView: UIView!
+    private var bottomBlackLineView: UIView!
     
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -25,6 +27,16 @@ class ShopDetailView: UIView {
         super.init(frame: frame)
         self.backgroundColor = UIColor.whiteColor()
         
+        blackLineView = UIView()
+        blackLineView.alpha = 0.05
+        blackLineView.backgroundColor = UIColor.darkGrayColor()
+        addSubview(blackLineView)
+        
+        bottomBlackLineView = UIView()
+        bottomBlackLineView.alpha = 0.03
+        bottomBlackLineView.backgroundColor = UIColor.grayColor()
+        addSubview(bottomBlackLineView)
+        
         findLabel = UILabel()
         setLabel(findLabel, text: "店 · 发现", action: "labelClick:", tag: 0)
         
@@ -33,11 +45,11 @@ class ShopDetailView: UIView {
         
         middleLineView = UIView()
         middleLineView.backgroundColor = UIColor.colorWith(50, green: 50, blue: 50, alpha: 0.1)
-        self.addSubview(middleLineView)
+        addSubview(middleLineView)
         
         bottomLineView = UIView()
         bottomLineView.backgroundColor = UIColor.colorWith(50, green: 50, blue: 50, alpha: 1)
-        self.addSubview(bottomLineView)
+        addSubview(bottomLineView)
     }
     
     private func setLabel(label: UILabel, text: String, action: Selector, tag: Int) {
@@ -83,6 +95,9 @@ class ShopDetailView: UIView {
         middleLineView.frame = CGRectMake(labelW - 0.5, (labelH - lineH) * 0.5, 1,  lineH)
         let bottomLineW = labelW * bottomLineScale
         bottomLineView.frame = CGRectMake((labelW - bottomLineW) * 0.5, labelH - 1.5, bottomLineW, 1.5)
+        
+        blackLineView.frame = CGRectMake(0, 0, self.width, 1)
+        bottomBlackLineView.frame = CGRect(x: 0, y: self.height, width: self.width, height: 1)
     }
     
 }

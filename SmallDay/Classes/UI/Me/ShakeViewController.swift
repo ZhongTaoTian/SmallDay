@@ -127,6 +127,14 @@ extension ShakeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.model = everyModel
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let everyModel = detailModel!.list![indexPath.row]
+        let vc = EventViewController()
+        vc.model = everyModel
+        navigationController!.pushViewController(vc, animated: true)
+    }
+    
 }
 
 

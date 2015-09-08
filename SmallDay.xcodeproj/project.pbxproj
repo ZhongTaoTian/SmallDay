@@ -11,6 +11,21 @@
 		FA23E3C81B9317D20071C22A /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA23E3C71B9317D20071C22A /* glass.wav */; };
 		FA296CD81B9C898800A967D9 /* More in Resources */ = {isa = PBXBuildFile; fileRef = FA296CD71B9C898800A967D9 /* More */; };
 		FA4090021B9D9C3B0007810C /* LoadAnimatImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090011B9D9C3B0007810C /* LoadAnimatImageView.swift */; };
+		FA4090041B9EB7970007810C /* ShopDetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090031B9EB7970007810C /* ShopDetailContentView.swift */; };
+		FA4090061B9EB7CC0007810C /* ShopDetailContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4090051B9EB7CC0007810C /* ShopDetailContentView.xib */; };
+		FA4090141B9EE2740007810C /* UIImageView+wnxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090131B9EE2740007810C /* UIImageView+wnxImage.swift */; };
+		FA4090161B9EE34A0007810C /* String+wnxString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090151B9EE34A0007810C /* String+wnxString.swift */; };
+		FA4090181B9EE36E0007810C /* UIImage+wnxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090171B9EE36E0007810C /* UIImage+wnxImage.swift */; };
+		FA40901A1B9EE3920007810C /* UIBarButtonItem+wxnBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090191B9EE3920007810C /* UIBarButtonItem+wxnBarButtonItem.swift */; };
+		FA40901C1B9EE3B30007810C /* UIView+wnxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40901B1B9EE3B30007810C /* UIView+wnxView.swift */; };
+		FA40901E1B9EE3CC0007810C /* UIColor+wnxColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40901D1B9EE3CC0007810C /* UIColor+wnxColor.swift */; };
+		FA4090201B9EEC340007810C /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40901F1B9EEC340007810C /* MoreView.swift */; };
+		FA4090221B9EEC400007810C /* MoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4090211B9EEC400007810C /* MoreView.xib */; };
+		FA4090241B9F3B310007810C /* GuessLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090231B9F3B310007810C /* GuessLikeView.swift */; };
+		FA4090261B9F3B470007810C /* GuessLikeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4090251B9F3B470007810C /* GuessLikeView.xib */; };
+		FA4090281B9F47C50007810C /* UserAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090271B9F47C50007810C /* UserAccountTool.swift */; };
+		FA40902B1B9F51CA0007810C /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4090291B9F51CA0007810C /* MyCenterViewController.swift */; };
+		FA40902C1B9F51CA0007810C /* MyCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA40902A1B9F51CA0007810C /* MyCenterViewController.xib */; };
 		FA40ED961B84C5530049DE19 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40ED951B84C5530049DE19 /* SettingViewController.swift */; };
 		FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA40ED971B84D1090049DE19 /* SettingCell.swift */; };
 		FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA40ED981B84D1090049DE19 /* SettingCell.xib */; };
@@ -85,7 +100,6 @@
 		FAA0F9F31B7DDA7700B5EA08 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F21B7DDA7700B5EA08 /* ExploreViewController.swift */; };
 		FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */; };
 		FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F61B7DF02E00B5EA08 /* theme.swift */; };
-		FAA0F9FB1B7DF17D00B5EA08 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9FA1B7DF17D00B5EA08 /* extension.swift */; };
 		FAD582BA1B935AD0007EEEE0 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD582A01B935AD0007EEEE0 /* UMSocialLocalizable.strings */; };
 		FAD582BB1B935AD0007EEEE0 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD582AE1B935AD0007EEEE0 /* libUMSocial_Sdk_4.2.3.a */; };
 		FAD582BC1B935AD0007EEEE0 /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD582B01B935AD0007EEEE0 /* UMSCommentDetailController.xib */; };
@@ -136,6 +150,21 @@
 		FA23E3C91B9318A90071C22A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FA296CD71B9C898800A967D9 /* More */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = More; sourceTree = "<group>"; };
 		FA4090011B9D9C3B0007810C /* LoadAnimatImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadAnimatImageView.swift; sourceTree = "<group>"; };
+		FA4090031B9EB7970007810C /* ShopDetailContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopDetailContentView.swift; sourceTree = "<group>"; };
+		FA4090051B9EB7CC0007810C /* ShopDetailContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopDetailContentView.xib; sourceTree = "<group>"; };
+		FA4090131B9EE2740007810C /* UIImageView+wnxImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+wnxImage.swift"; sourceTree = "<group>"; };
+		FA4090151B9EE34A0007810C /* String+wnxString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+wnxString.swift"; sourceTree = "<group>"; };
+		FA4090171B9EE36E0007810C /* UIImage+wnxImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+wnxImage.swift"; sourceTree = "<group>"; };
+		FA4090191B9EE3920007810C /* UIBarButtonItem+wxnBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+wxnBarButtonItem.swift"; sourceTree = "<group>"; };
+		FA40901B1B9EE3B30007810C /* UIView+wnxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+wnxView.swift"; sourceTree = "<group>"; };
+		FA40901D1B9EE3CC0007810C /* UIColor+wnxColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+wnxColor.swift"; sourceTree = "<group>"; };
+		FA40901F1B9EEC340007810C /* MoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		FA4090211B9EEC400007810C /* MoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreView.xib; sourceTree = "<group>"; };
+		FA4090231B9F3B310007810C /* GuessLikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessLikeView.swift; sourceTree = "<group>"; };
+		FA4090251B9F3B470007810C /* GuessLikeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuessLikeView.xib; sourceTree = "<group>"; };
+		FA4090271B9F47C50007810C /* UserAccountTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountTool.swift; sourceTree = "<group>"; };
+		FA4090291B9F51CA0007810C /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
+		FA40902A1B9F51CA0007810C /* MyCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterViewController.xib; sourceTree = "<group>"; };
 		FA40ED951B84C5530049DE19 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FA40ED971B84D1090049DE19 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		FA40ED981B84D1090049DE19 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
@@ -216,7 +245,6 @@
 		FAA0F9F21B7DDA7700B5EA08 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		FAA0F9F61B7DF02E00B5EA08 /* theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
-		FAA0F9FA1B7DF17D00B5EA08 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		FAD582A11B935AD0007EEEE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		FAD582A31B935AD0007EEEE0 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		FAD582A41B935AD0007EEEE0 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -322,6 +350,20 @@
 				ECB01C5432962A7FB10FD474 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA4090101B9EE1BF0007810C /* extension(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				FA4090131B9EE2740007810C /* UIImageView+wnxImage.swift */,
+				FA4090191B9EE3920007810C /* UIBarButtonItem+wxnBarButtonItem.swift */,
+				FA4090151B9EE34A0007810C /* String+wnxString.swift */,
+				FA4090171B9EE36E0007810C /* UIImage+wnxImage.swift */,
+				FA40901B1B9EE3B30007810C /* UIView+wnxView.swift */,
+				FA40901D1B9EE3CC0007810C /* UIColor+wnxColor.swift */,
+			);
+			name = "extension(扩展)";
+			path = extension;
 			sourceTree = "<group>";
 		};
 		FA82B11E1B871779003A2264 /* imageFile(大图片) */ = {
@@ -471,6 +513,7 @@
 				FA82B1231B87693E003A2264 /* SwiftDictModel.swift */,
 				FAD582EE1B9380C0007EEEE0 /* ShareTool.swift */,
 				FA7F8B1B1B95ECA8000704DB /* FileTool.swift */,
+				FA4090271B9F47C50007810C /* UserAccountTool.swift */,
 			);
 			name = "Tools(工具)";
 			path = Tools;
@@ -485,6 +528,7 @@
 				FAA0F9E71B7DD6A500B5EA08 /* Me(我的) */,
 				FAA0F9E61B7DD6A500B5EA08 /* Main(公共) */,
 				FAA0F9E91B7DD72A00B5EA08 /* Other(其他) */,
+				FA4090101B9EE1BF0007810C /* extension(扩展) */,
 			);
 			name = "UI(界面)";
 			path = UI;
@@ -534,7 +578,13 @@
 				FA82B12D1B87A1F4003A2264 /* ThemeCell.swift */,
 				FA82B12E1B87A1F4003A2264 /* ThemeCell.xib */,
 				FA73875F1B8B63A2009D08C8 /* EventViewController.swift */,
+				FA4090031B9EB7970007810C /* ShopDetailContentView.swift */,
+				FA4090051B9EB7CC0007810C /* ShopDetailContentView.xib */,
 				FA932A941B88C4C900601B54 /* ThemeViewController.swift */,
+				FA40901F1B9EEC340007810C /* MoreView.swift */,
+				FA4090211B9EEC400007810C /* MoreView.xib */,
+				FA4090231B9F3B310007810C /* GuessLikeView.swift */,
+				FA4090251B9F3B470007810C /* GuessLikeView.xib */,
 			);
 			name = "Explore(探店)";
 			path = Explore;
@@ -563,6 +613,8 @@
 			isa = PBXGroup;
 			children = (
 				FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */,
+				FA4090291B9F51CA0007810C /* MyCenterViewController.swift */,
+				FA40902A1B9F51CA0007810C /* MyCenterViewController.xib */,
 				FA57DF111B8393240099CD37 /* IconView.swift */,
 				FA40ED951B84C5530049DE19 /* SettingViewController.swift */,
 				FA40ED971B84D1090049DE19 /* SettingCell.swift */,
@@ -582,7 +634,6 @@
 			children = (
 				FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */,
 				FAA0F9F61B7DF02E00B5EA08 /* theme.swift */,
-				FAA0F9FA1B7DF17D00B5EA08 /* extension.swift */,
 				FA82B1291B876F3D003A2264 /* SmallDay-Bridging-Header.h */,
 			);
 			name = "Other(其他)";
@@ -757,6 +808,7 @@
 				FAD582BC1B935AD0007EEEE0 /* UMSCommentDetailController.xib in Resources */,
 				FAD582C21B935AD0007EEEE0 /* UMSnsAccountViewController.xib in Resources */,
 				FAD582C11B935AD0007EEEE0 /* UMSLoginViewController.xib in Resources */,
+				FA4090261B9F3B470007810C /* GuessLikeView.xib in Resources */,
 				FAD583371B94BF76007EEEE0 /* 798 in Resources */,
 				FAD583011B943B8E007EEEE0 /* author@2x.png in Resources */,
 				FA73876A1B8B8F00009D08C8 /* DetailCell.xib in Resources */,
@@ -770,10 +822,12 @@
 				FA296CD81B9C898800A967D9 /* More in Resources */,
 				FAD582C41B935AD0007EEEE0 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
+				FA40902C1B9F51CA0007810C /* MyCenterViewController.xib in Resources */,
 				FAD583381B94BF76007EEEE0 /* 南锣鼓巷 in Resources */,
 				FAD583391B94BF76007EEEE0 /* 三里屯 in Resources */,
 				FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */,
 				FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */,
+				FA4090221B9EEC400007810C /* MoreView.xib in Resources */,
 				FAD582BA1B935AD0007EEEE0 /* UMSocialLocalizable.strings in Resources */,
 				FA73876E1B8B9901009D08C8 /* Details in Resources */,
 				FAD582C01B935AD0007EEEE0 /* UMShareEditViewControlleriPad.xib in Resources */,
@@ -783,6 +837,7 @@
 				FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */,
 				FAD582ED1B937091007EEEE0 /* ShareView.xib in Resources */,
 				FA6681AD1B8A117C00CFF2E3 /* events in Resources */,
+				FA4090061B9EB7CC0007810C /* ShopDetailContentView.xib in Resources */,
 				FA66A4391B8F621D005DF017 /* ExperienceCell.xib in Resources */,
 				FA23E3C81B9317D20071C22A /* glass.wav in Resources */,
 			);
@@ -843,11 +898,14 @@
 				FAA0F9EF1B7DDA4300B5EA08 /* ClassifyViewController.swift in Sources */,
 				FA932A951B88C4C900601B54 /* ThemeViewController.swift in Sources */,
 				FA932A901B88B65600601B54 /* UIImageView+Kingfisher.swift in Sources */,
+				FA4090281B9F47C50007810C /* UserAccountTool.swift in Sources */,
 				FA7F8B1C1B95ECA8000704DB /* FileTool.swift in Sources */,
+				FA4090241B9F3B310007810C /* GuessLikeView.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
 				FA66A43B1B8F78F8005DF017 /* DetailViewController.swift in Sources */,
 				FA7387601B8B63A2009D08C8 /* EventViewController.swift in Sources */,
 				FA66A43D1B902CF6005DF017 /* ShopDetailView.swift in Sources */,
+				FA40901C1B9EE3B30007810C /* UIView+wnxView.swift in Sources */,
 				FA82B1201B874EE4003A2264 /* EveryDayModel.swift in Sources */,
 				FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */,
 				FA7387621B8B7D5B009D08C8 /* ClassifyModel.swift in Sources */,
@@ -857,6 +915,8 @@
 				FA57DF121B8393240099CD37 /* IconView.swift in Sources */,
 				FA709A271B80A3A800B24238 /* DoubleTextView.swift in Sources */,
 				FA66A4381B8F621D005DF017 /* ExperienceCell.swift in Sources */,
+				FA4090181B9EE36E0007810C /* UIImage+wnxImage.swift in Sources */,
+				FA4090141B9EE2740007810C /* UIImageView+wnxImage.swift in Sources */,
 				FA932A8D1B88B65600601B54 /* UIButton+Kingfisher.swift in Sources */,
 				FAD583031B949B65007EEEE0 /* ShareModel.swift in Sources */,
 				FA932A881B88B65600601B54 /* KingfisherManager.swift in Sources */,
@@ -864,9 +924,10 @@
 				FA66A4001B8EBD96005DF017 /* ExperienceModel.swift in Sources */,
 				FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */,
 				FA4090021B9D9C3B0007810C /* LoadAnimatImageView.swift in Sources */,
+				FA40901A1B9EE3920007810C /* UIBarButtonItem+wxnBarButtonItem.swift in Sources */,
 				FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */,
 				FA82B1191B864426003A2264 /* LoginViewController.swift in Sources */,
-				FAA0F9FB1B7DF17D00B5EA08 /* extension.swift in Sources */,
+				FA40902B1B9F51CA0007810C /* MyCenterViewController.swift in Sources */,
 				FAA0F9EB1B7DD83E00B5EA08 /* MainTabBarController.swift in Sources */,
 				FA709A311B81762500B24238 /* CityCollectionViewCell.swift in Sources */,
 				FA82B1251B87693E003A2264 /* SimpleNetwork.swift in Sources */,
@@ -881,6 +942,7 @@
 				FA57DF091B8327F20099CD37 /* ClassifyCell.swift in Sources */,
 				FA709A291B80CA8800B24238 /* NearViewController.swift in Sources */,
 				FAA0F9ED1B7DD9CB00B5EA08 /* MainNavigationController.swift in Sources */,
+				FA4090201B9EEC340007810C /* MoreView.swift in Sources */,
 				FAD582EF1B9380C0007EEEE0 /* ShareTool.swift in Sources */,
 				FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */,
 				FA932A871B88B65600601B54 /* ImageDownloader.swift in Sources */,
@@ -892,10 +954,13 @@
 				FA932A891B88B65600601B54 /* KingfisherOptions.swift in Sources */,
 				FA66A4421B90B6A6005DF017 /* SignUpViewController.swift in Sources */,
 				FA932A8C1B88B65600601B54 /* String+MD5.swift in Sources */,
+				FA40901E1B9EE3CC0007810C /* UIColor+wnxColor.swift in Sources */,
 				FA932A8B1B88B65600601B54 /* Resource.swift in Sources */,
 				FA7F8B191B95C275000704DB /* AboutWeViewController.swift in Sources */,
 				FA82B11C1B870A48003A2264 /* ShakeViewController.swift in Sources */,
 				FA932A8F1B88B65600601B54 /* UIImage+Normalize.swift in Sources */,
+				FA4090161B9EE34A0007810C /* String+wnxString.swift in Sources */,
+				FA4090041B9EB7970007810C /* ShopDetailContentView.swift in Sources */,
 				FA932A981B88DAAA00601B54 /* EventCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

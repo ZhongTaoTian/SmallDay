@@ -10,20 +10,25 @@ import UIKit
 
 class IconView: UIView {
     
-    private var iconButton: UIButton!
+    var iconButton: UIButton!
     weak var delegate: IconViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setUp()
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setUp()
+    }
+    
+    private func setUp() {
         self.backgroundColor = UIColor.clearColor()
         iconButton = UIButton.buttonWithType(.Custom) as? UIButton
         iconButton.setImage(UIImage(named: "my"), forState: .Normal)
         iconButton.addTarget(self, action: "iconBtnClick", forControlEvents: .TouchUpInside)
         addSubview(iconButton)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     override func layoutSubviews() {

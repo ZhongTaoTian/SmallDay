@@ -20,24 +20,6 @@ public class SimpleNetwork {
     public typealias Completion = (result: AnyObject?, error: NSError?) -> ()
     
     func demoGCDGroup() {
-        /**
-        dispatch_group_async(dispatch_group_t group, dispatch_queue_t queue, dispatch_block_t block)
-        {
-            dispatch_retain(group);
-        
-            // 一旦使用了 enter，后续的 block 就会被 group 监听
-            dispatch_group_enter(group);
-        
-            dispatch_async(queue, ^{
-                block();
-        
-                // 异步执行完毕之后，必须要使用 dispatch_group_leave
-                dispatch_group_leave(group);
-        
-                dispatch_release(group);
-                });
-        }
-        */
         
         // 利用调度组统一监听一组异步任务执行完毕
         let group = dispatch_group_create()
@@ -67,9 +49,6 @@ public class SimpleNetwork {
             // 进入调度组
             dispatch_group_enter(group)
             downloadImage(url) { (result, error) -> () in
-                // 一张图片下载完成，会自动保存在缓存目录
-                // 下载多张图片的时候，有可能有些有错误，有些没错误！
-                // 暂时不处理
                 
                 // 离开调度组
                 dispatch_group_leave(group)
@@ -128,9 +107,7 @@ public class SimpleNetwork {
         // 2. 检查缓存路径是否存在 － 注意：必须准确地指出类型 ObjCBool
         var isDirectory: ObjCBool = true
         // 无论存在目录还是文件，都会返回 true，是否是路径由 isDirectory 来决定
-        let exists = NSFileManager.defaultManager().fileExistsAtPath(path, isDirectory: &isDirectory)
-        println("isDirectory： \(isDirectory) exists \(exists) path: \(path)")
-        
+        let exists = NSFileManager.defaultManager().fileExistsAtPath(path, isDirectory: &isDirectory)        
         // 3. 如果有同名的文件－干掉 
         // 一定需要判断是否是文件，否则目录也同样会被删除
         if exists && !isDirectory {
@@ -161,8 +138,6 @@ public class SimpleNetwork {
 
             // 访问网络 － 本身的回调方法是异步的
             session!.dataTaskWithRequest(request, completionHandler: { (data, _, error) -> Void in
-                
-                println(request)
                 
                 // 如果有错误，直接回调，将网络访问的错误传回
                 if error != nil {

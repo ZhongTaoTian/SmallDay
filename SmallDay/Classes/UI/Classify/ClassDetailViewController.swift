@@ -61,4 +61,11 @@ extension ClassDetailViewController: UITableViewDataSource, UITableViewDelegate 
         return cell!
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let eventModel = details!.list![indexPath.row]
+        let vc = EventViewController()
+        vc.model = eventModel
+        navigationController!.pushViewController(vc, animated: true)
+    }
+    
 }
