@@ -128,6 +128,8 @@ class EventModel: NSObject, DictModelProtocol {
     var feel: String?
     /// 分享url地址
     var shareURL: String?
+    var note: String?
+    var questionURL: String?
     /// 电话
     var telephone: String?
     /// 标签

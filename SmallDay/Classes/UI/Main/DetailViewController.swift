@@ -13,13 +13,20 @@ import UIKit
 /// 详情ViewController顶部图片的高度
 public let DetailViewController_TopImageView_Height: CGFloat = 225
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UIActionSheetDelegate {
     // 优化性能,防止重复设置
     private var showBlackImage: Bool = false
     private let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
     private var imageWHArray = [(CGFloat, CGFloat)]()
     private let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
     private var signUpBtn: UIButton!
+    private lazy var bottomViews: [ExploreBottomView] = [ExploreBottomView]()
+    private var isLoadFinish = false
+    private var isAddBottomView = false
+    private lazy var phoneActionSheet: UIActionSheet? = {
+        let action = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: self.model!.telephone!)
+        return action
+        }()
     private lazy var customNav: UIView! = {
         let customNav = UIView(frame: CGRectMake(0, 0, AppWidth, NavigationH))
         customNav.backgroundColor = UIColor.whiteColor()
@@ -62,6 +69,7 @@ class DetailViewController: UIViewController {
         webView.scrollView.delegate = self
         webView.delegate = self
         webView.backgroundColor = theme.SDWebViewBacagroundColor
+        webView.scrollView.contentSize.width = AppWidth
         webView.paginationBreakingMode = UIWebPaginationBreakingMode.Column
         return webView
         }()
@@ -169,11 +177,60 @@ class DetailViewController: UIViewController {
             self.webView.loadHTMLString(htmlSrt!, baseURL: nil)
             webView.scrollView.setContentOffset(CGPoint(x: 0, y: -DetailViewController_TopImageView_Height + 20), animated: false)
             self.webView.hidden = false
+            
+            // 根据模型按条件添加webView底部的view
+            if model!.questionURL != "" && model!.questionURL != nil {
+                bottomViews.append(ExploreBottomView.exploreBottomViewFromXib("价格", subTitle: "购买须知", target: self, action: "priceBottomClick:", showBtn: false, showArrow: true))
+            }
+            
+            bottomViews.append(ExploreBottomView.exploreBottomViewFromXib("提醒", subTitle: "每天", target: self, action: "remindViewClick:", showBtn: true, showArrow: false))
+            
+            if model!.telephone != nil && model!.telephone != "" {
+                bottomViews.append(ExploreBottomView.exploreBottomViewFromXib("电话", subTitle: model!.telephone!, target: self, action: "telephoneBottomClick:", showBtn: false, showArrow: true))
+            }
+            
+            if model!.position != nil && model!.position != "" && model!.address != nil && model!.address != "" {
+                bottomViews.append(ExploreBottomView.exploreBottomViewFromXib("地址", subTitle: model!.address!, target: self, action: "addressBottomClick:", showBtn: false, showArrow: true))
+            }
+        }
+    }
+    
+    /// MARK:- 底部添加的view的四种状态点击action
+    /// 购买详情
+    func priceBottomClick(tap: UITapGestureRecognizer) {
+        let bottomView = tap.view as! ExploreBottomView
+        let buyVC = BuyDetailViewController()
+        buyVC.htmlStr = model!.questionURL
+        navigationController!.pushViewController(buyVC, animated: true)
+    }
+    
+    /// 提醒
+    func remindViewClick(tap: UITapGestureRecognizer) {
+        let bottomView = tap.view as! ExploreBottomView
+        print("提醒")
+    }
+    
+    /// 电话
+    func telephoneBottomClick(tap: UITapGestureRecognizer) {
+        let bottomView = tap.view as! ExploreBottomView
+        phoneActionSheet?.showInView(view)
+    }
+    
+    /// 地址
+    func addressBottomClick(tap: UITapGestureRecognizer) {
+        let bottomView = tap.view as! ExploreBottomView
+        print("地址")
+    }
+    
+    func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
+        if buttonIndex == 0 {
+            let url = NSURL(string: "tel://" + model!.telephone!)
+            UIApplication.sharedApplication().openURL(url!)
         }
     }
 }
 
-/// MARK: 所有按钮的事件
+/// MARK:- 所有按钮的事件
 extension DetailViewController {
     /// 返回
     func backButtonClick() {
@@ -198,9 +255,10 @@ extension DetailViewController {
         navigationController!.pushViewController(suVC, animated: true)
         suVC.topTitle = model!.title
     }
+    
 }
 
-/// MARK: 处理导航条显示消失
+/// MARK:- 处理导航条显示消失
 extension DetailViewController {
     override func viewWillAppear(animated: Bool) {
         
@@ -214,53 +272,62 @@ extension DetailViewController {
     }
 }
 
-/// MARK: 处理内容滚动时的事件
+/// MARK:- 处理内容滚动时的事件
 extension DetailViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         var offsetY: CGFloat = scrollView.contentOffset.y
         
-        // TODO: - 这里说明下一加标记的作用
-        if scrollView === self.webView.scrollView {
-            // 判断顶部自定义导航条的透明度,以及图片的切换
-            customNav.alpha = 1 + (offsetY + NavigationH) / scrollShowNavH
-            if offsetY >= -NavigationH && showBlackImage == false {
-                backBtn.setImage(UIImage(named: "back_1"), forState: .Normal)
-                likeBtn.setImage(UIImage(named: "collect_1"), forState: .Normal)
-                sharedBtn.setImage(UIImage(named: "share_1"), forState: .Normal)
-                showBlackImage = true
-            } else if offsetY < -NavigationH && showBlackImage == true {
-                backBtn.setImage(UIImage(named: "back_0"), forState: .Normal)
-                likeBtn.setImage(UIImage(named: "collect_0"), forState: .Normal)
-                sharedBtn.setImage(UIImage(named: "share_0"), forState: .Normal)
-                showBlackImage = false
+        // 加标记的作用为了优化性能
+        // 判断顶部自定义导航条的透明度,以及图片的切换
+        customNav.alpha = 1 + (offsetY + NavigationH) / scrollShowNavH
+        if offsetY >= -NavigationH && showBlackImage == false {
+            backBtn.setImage(UIImage(named: "back_1"), forState: .Normal)
+            likeBtn.setImage(UIImage(named: "collect_1"), forState: .Normal)
+            sharedBtn.setImage(UIImage(named: "share_1"), forState: .Normal)
+            showBlackImage = true
+        } else if offsetY < -NavigationH && showBlackImage == true {
+            backBtn.setImage(UIImage(named: "back_0"), forState: .Normal)
+            likeBtn.setImage(UIImage(named: "collect_0"), forState: .Normal)
+            sharedBtn.setImage(UIImage(named: "share_0"), forState: .Normal)
+            showBlackImage = false
+        }
+        
+        // 顶部imageView的跟随动画
+        if offsetY <= -DetailViewController_TopImageView_Height {
+            topImageView.frame.origin.y = 0
+            topImageView.frame.size.height = -offsetY
+            topImageView.frame.size.width = AppWidth - offsetY - DetailViewController_TopImageView_Height
+            topImageView.frame.origin.x = (0 + DetailViewController_TopImageView_Height + offsetY) * 0.5
+        } else {
+            topImageView.frame.origin.y = -offsetY - DetailViewController_TopImageView_Height
+        }
+        
+        if isLoadFinish && !isAddBottomView && scrollView.contentSize.height > AppHeight  {
+            isAddBottomView = true
+            for bottomView in bottomViews {
+                let bottomViewH = CGRectGetMaxY(bottomView.bottomLineView.frame)
+                bottomView.frame = CGRectMake(0, webView.scrollView.contentSize.height, AppWidth, bottomViewH)
+                webView.scrollView.addSubview(bottomView)
+                webView.scrollView.contentSize.height += bottomViewH
             }
-            
-            // 顶部imageView的跟随动画
-            if offsetY <= -DetailViewController_TopImageView_Height {
-                topImageView.frame.origin.y = 0
-                topImageView.frame.size.height = -offsetY
-                topImageView.frame.size.width = AppWidth - offsetY - DetailViewController_TopImageView_Height
-                topImageView.frame.origin.x = (0 + DetailViewController_TopImageView_Height + offsetY) * 0.5
-            } else {
-                topImageView.frame.origin.y = -offsetY - DetailViewController_TopImageView_Height
-            }
+            scrollView.contentSize.height += 20
         }
     }
     
     /// 返回负数
-    func negativeNumber(num: CGFloat) -> CGFloat {
+    private func negativeNumber(num: CGFloat) -> CGFloat {
         return num >= 0 ? -num : num
     }
     
     /// 返回正数
-    func positiveNumber(num: CGFloat) -> CGFloat {
+    private func positiveNumber(num: CGFloat) -> CGFloat {
         return num >= 0 ? num : -num
     }
     
     /// 返回数字字符串
-    func numStrWith(str: NSString) -> NSString {
+    private func numStrWith(str: NSString) -> NSString {
         return str.componentsSeparatedByString("\"")[0] as! NSString
     }
 }
@@ -278,7 +345,7 @@ extension DetailViewController: UIWebViewDelegate {
         }
         
         webView.hidden = false
-        
+        isLoadFinish = true
     }
 }
 

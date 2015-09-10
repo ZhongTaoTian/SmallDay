@@ -132,6 +132,14 @@
 		FAD583391B94BF76007EEEE0 /* 三里屯 in Resources */ = {isa = PBXBuildFile; fileRef = FAD583361B94BF76007EEEE0 /* 三里屯 */; };
 		FAE5D54C1BA1A485009BA347 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D54A1BA1A485009BA347 /* OrderViewController.swift */; };
 		FAE5D54D1BA1A485009BA347 /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D54B1BA1A485009BA347 /* OrderViewController.xib */; };
+		FAE5D5561BA1AE1C009BA347 /* fourpage-375w-667h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5521BA1AE1C009BA347 /* fourpage-375w-667h@2x.jpg */; };
+		FAE5D5571BA1AE1C009BA347 /* fourpage-414w-736h@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5531BA1AE1C009BA347 /* fourpage-414w-736h@3x.jpg */; };
+		FAE5D5581BA1AE1C009BA347 /* fourpage-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5541BA1AE1C009BA347 /* fourpage-568h@2x.jpg */; };
+		FAE5D5591BA1AE1C009BA347 /* fourpage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5551BA1AE1C009BA347 /* fourpage@2x.jpg */; };
+		FAE5D55B1BA1AE4E009BA347 /* LeadpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D55A1BA1AE4E009BA347 /* LeadpageViewController.swift */; };
+		FAE5D5611BA1E7A6009BA347 /* ExploreBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5601BA1E7A6009BA347 /* ExploreBottomView.swift */; };
+		FAE5D5631BA1E824009BA347 /* ExploreBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5621BA1E824009BA347 /* ExploreBottomView.xib */; };
+		FAE5D5651BA2000F009BA347 /* BuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5641BA2000F009BA347 /* BuyDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,7 +242,7 @@
 		FA932A971B88DAAA00601B54 /* EventCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCellTableViewCell.xib; sourceTree = "<group>"; };
 		FAA0F9BA1B7DC74900B5EA08 /* SmallDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA0F9BE1B7DC74900B5EA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../AppDelegate.swift; sourceTree = "<group>"; };
+		FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		FAA0F9C61B7DC74900B5EA08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAA0F9C91B7DC74900B5EA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FAA0F9CF1B7DC74900B5EA08 /* SmallDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,6 +304,14 @@
 		FAD583361B94BF76007EEEE0 /* 三里屯 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "三里屯"; sourceTree = "<group>"; };
 		FAE5D54A1BA1A485009BA347 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		FAE5D54B1BA1A485009BA347 /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
+		FAE5D5521BA1AE1C009BA347 /* fourpage-375w-667h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourpage-375w-667h@2x.jpg"; sourceTree = "<group>"; };
+		FAE5D5531BA1AE1C009BA347 /* fourpage-414w-736h@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourpage-414w-736h@3x.jpg"; sourceTree = "<group>"; };
+		FAE5D5541BA1AE1C009BA347 /* fourpage-568h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourpage-568h@2x.jpg"; sourceTree = "<group>"; };
+		FAE5D5551BA1AE1C009BA347 /* fourpage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourpage@2x.jpg"; sourceTree = "<group>"; };
+		FAE5D55A1BA1AE4E009BA347 /* LeadpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadpageViewController.swift; sourceTree = "<group>"; };
+		FAE5D5601BA1E7A6009BA347 /* ExploreBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreBottomView.swift; sourceTree = "<group>"; };
+		FAE5D5621BA1E824009BA347 /* ExploreBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreBottomView.xib; sourceTree = "<group>"; };
+		FAE5D5641BA2000F009BA347 /* BuyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +389,10 @@
 		FA82B11E1B871779003A2264 /* imageFile(大图片) */ = {
 			isa = PBXGroup;
 			children = (
+				FAE5D5521BA1AE1C009BA347 /* fourpage-375w-667h@2x.jpg */,
+				FAE5D5531BA1AE1C009BA347 /* fourpage-414w-736h@3x.jpg */,
+				FAE5D5541BA1AE1C009BA347 /* fourpage-568h@2x.jpg */,
+				FAE5D5551BA1AE1C009BA347 /* fourpage@2x.jpg */,
 			);
 			name = "imageFile(大图片)";
 			path = imageFile;
@@ -486,6 +506,7 @@
 		FAA0F9DF1B7DD6A500B5EA08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */,
 				FAA0F9E01B7DD6A500B5EA08 /* BusinessModel(业务模型) */,
 				FAA0F9E11B7DD6A500B5EA08 /* Tools(工具) */,
 				FAA0F9E21B7DD6A500B5EA08 /* UI(界面) */,
@@ -563,9 +584,12 @@
 				FA66A4031B8ECEF7005DF017 /* ExperHeadView.swift */,
 				FA66A4361B8F621D005DF017 /* ExperienceCell.swift */,
 				FA66A43A1B8F78F8005DF017 /* DetailViewController.swift */,
+				FAE5D5601BA1E7A6009BA347 /* ExploreBottomView.swift */,
+				FAE5D5621BA1E824009BA347 /* ExploreBottomView.xib */,
 				FA66A4371B8F621D005DF017 /* ExperienceCell.xib */,
 				FA66A4401B90B6A6005DF017 /* SignUpViewController.swift */,
 				FA66A4481B90C644005DF017 /* SignUpViewController.xib */,
+				FAE5D5641BA2000F009BA347 /* BuyDetailViewController.swift */,
 			);
 			name = "Experience(体验)";
 			path = Experience;
@@ -608,6 +632,7 @@
 				FAD582EA1B937085007EEEE0 /* ShareView.swift */,
 				FAD582EC1B937090007EEEE0 /* ShareView.xib */,
 				FA4090011B9D9C3B0007810C /* LoadAnimatImageView.swift */,
+				FAE5D55A1BA1AE4E009BA347 /* LeadpageViewController.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -638,7 +663,6 @@
 		FAA0F9E91B7DD72A00B5EA08 /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
-				FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */,
 				FAA0F9F61B7DF02E00B5EA08 /* theme.swift */,
 				FA82B1291B876F3D003A2264 /* SmallDay-Bridging-Header.h */,
 			);
@@ -815,6 +839,7 @@
 				FAD582C21B935AD0007EEEE0 /* UMSnsAccountViewController.xib in Resources */,
 				FAD582C11B935AD0007EEEE0 /* UMSLoginViewController.xib in Resources */,
 				FA4090261B9F3B470007810C /* GuessLikeView.xib in Resources */,
+				FAE5D5631BA1E824009BA347 /* ExploreBottomView.xib in Resources */,
 				FAD583371B94BF76007EEEE0 /* 798 in Resources */,
 				FAD583011B943B8E007EEEE0 /* author@2x.png in Resources */,
 				FA73876A1B8B8F00009D08C8 /* DetailCell.xib in Resources */,
@@ -824,6 +849,7 @@
 				FA57DF0A1B8327F20099CD37 /* ClassifyCell.xib in Resources */,
 				FA82B1301B87A1F4003A2264 /* ThemeCell.xib in Resources */,
 				FA7387661B8B8164009D08C8 /* Classify in Resources */,
+				FAE5D5581BA1AE1C009BA347 /* fourpage-568h@2x.jpg in Resources */,
 				FAD582BE1B935AD0007EEEE0 /* UMSCommentInputControlleriPad.xib in Resources */,
 				FA296CD81B9C898800A967D9 /* More in Resources */,
 				FAD582C41B935AD0007EEEE0 /* UMSocialSDKResourcesNew.bundle in Resources */,
@@ -838,12 +864,15 @@
 				FAD582BA1B935AD0007EEEE0 /* UMSocialLocalizable.strings in Resources */,
 				FA73876E1B8B9901009D08C8 /* Details in Resources */,
 				FAD582C01B935AD0007EEEE0 /* UMShareEditViewControlleriPad.xib in Resources */,
+				FAE5D5561BA1AE1C009BA347 /* fourpage-375w-667h@2x.jpg in Resources */,
 				FAD582BF1B935AD0007EEEE0 /* UMShareEditViewController.xib in Resources */,
+				FAE5D5571BA1AE1C009BA347 /* fourpage-414w-736h@3x.jpg in Resources */,
 				FA66A4491B90C644005DF017 /* SignUpViewController.xib in Resources */,
 				FA66A4021B8EC842005DF017 /* Experience in Resources */,
 				FAA0F9C71B7DC74900B5EA08 /* Images.xcassets in Resources */,
 				FAD582ED1B937091007EEEE0 /* ShareView.xib in Resources */,
 				FA6681AD1B8A117C00CFF2E3 /* events in Resources */,
+				FAE5D5591BA1AE1C009BA347 /* fourpage@2x.jpg in Resources */,
 				FA4090061B9EB7CC0007810C /* ShopDetailContentView.xib in Resources */,
 				FA66A4391B8F621D005DF017 /* ExperienceCell.xib in Resources */,
 				FA23E3C81B9317D20071C22A /* glass.wav in Resources */,
@@ -907,6 +936,7 @@
 				FA932A901B88B65600601B54 /* UIImageView+Kingfisher.swift in Sources */,
 				FA4090281B9F47C50007810C /* UserAccountTool.swift in Sources */,
 				FA7F8B1C1B95ECA8000704DB /* FileTool.swift in Sources */,
+				FAE5D5651BA2000F009BA347 /* BuyDetailViewController.swift in Sources */,
 				FA4090241B9F3B310007810C /* GuessLikeView.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
 				FA66A43B1B8F78F8005DF017 /* DetailViewController.swift in Sources */,
@@ -930,6 +960,8 @@
 				FA40ED9C1B84E64E0049DE19 /* FeedbackViewController.swift in Sources */,
 				FA66A4001B8EBD96005DF017 /* ExperienceModel.swift in Sources */,
 				FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */,
+				FAE5D55B1BA1AE4E009BA347 /* LeadpageViewController.swift in Sources */,
+				FAE5D5611BA1E7A6009BA347 /* ExploreBottomView.swift in Sources */,
 				FA4090021B9D9C3B0007810C /* LoadAnimatImageView.swift in Sources */,
 				FA40901A1B9EE3920007810C /* UIBarButtonItem+wxnBarButtonItem.swift in Sources */,
 				FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */,

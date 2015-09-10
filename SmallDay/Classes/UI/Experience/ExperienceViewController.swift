@@ -41,14 +41,14 @@ class ExperienceViewController: MainViewController {
         setTableView()
     }
     
-    func setTableView() {
+    private func setTableView() {
         
         headView?.experModel = experModel
         tableView.tableHeaderView = headView!
         view.addSubview(tableView)
     }
     
-    func loadDatas() {
+    private func loadDatas() {
         weak var tmpSelf = self
         ExperienceModel.loadExperienceModel { (data, error) -> () in
             if error != nil {

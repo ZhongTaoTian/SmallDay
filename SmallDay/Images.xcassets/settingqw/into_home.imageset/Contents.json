@@ -1,7 +1,22 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "fill",
+          "width" : 1,
+          "height" : 1
+        },
+        "capInsets" : {
+          "bottom" : 30,
+          "top" : 35,
+          "right" : 35,
+          "left" : 35
+        }
+      },
       "idiom" : "universal",
+      "filename" : "into_home.png",
       "scale" : "1x"
     },
     {
@@ -13,33 +28,18 @@
           "height" : 1
         },
         "capInsets" : {
-          "bottom" : 26,
-          "top" : 25,
-          "right" : 24,
-          "left" : 23
+          "bottom" : 32,
+          "top" : 44,
+          "right" : 155,
+          "left" : 158
         }
       },
       "idiom" : "universal",
-      "filename" : "pricedescription@2x.png",
+      "filename" : "into_home@2x.png",
       "scale" : "2x"
     },
     {
-      "resizing" : {
-        "mode" : "9-part",
-        "center" : {
-          "mode" : "stretch",
-          "width" : 1,
-          "height" : 1
-        },
-        "capInsets" : {
-          "bottom" : 39,
-          "top" : 38,
-          "right" : 36,
-          "left" : 35
-        }
-      },
       "idiom" : "universal",
-      "filename" : "pricedescription@3x.png",
       "scale" : "3x"
     }
   ],
