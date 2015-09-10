@@ -14,6 +14,7 @@ class EventViewController: UIViewController {
     private let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
     private var imageWHArray = [(CGFloat, CGFloat)]()
     private var isAddContrntHeight = false
+    private var isLoadFinsih = false
     private let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
     private lazy var guessLikeView: GuessLikeView = {
         let guessView = GuessLikeView.guessLikeViewFromXib()
@@ -196,10 +197,11 @@ class EventViewController: UIViewController {
                     let moreModel = model!.more![i]
                     let moreView = MoreView.moreViewWithGuessLikeModel(moreModel)
                     moreView.hidden = true
-                    moreView.frame = CGRect(x: 0, y: webView.scrollView.contentSize.height, width: AppWidth, height: 230)
+                    moreView.frame = CGRect(x: 0, y: webView.scrollView.contentSize.height, width: AppWidth, height: 0)
                     webView.scrollView.addSubview(moreView)
                     moreArr.append(moreView)
                 }
+                guressMoreLike(webView.scrollView)
             }
         }
     }
@@ -282,16 +284,9 @@ extension EventViewController: UIScrollViewDelegate {
         
         lastOffsetY = offsetY
         
-        if moreArr.count > 0 && isAddContrntHeight == false && scrollView.contentSize.height > AppHeight + DetailViewController_TopImageView_Height + shopViewHeight && scrollView === webView.scrollView {
+        if moreArr.count > 0 && isAddContrntHeight == false && scrollView.contentSize.height > AppHeight + DetailViewController_TopImageView_Height + shopViewHeight && scrollView === webView.scrollView  && isLoadFinsih {
             isAddContrntHeight = true
-            guessLikeView.frame = CGRect(x: 0, y: scrollView.contentSize.height, width: AppWidth, height: 50)
-            guessLikeView.hidden = false
-            scrollView.contentSize.height += 50
-            for more in moreArr {
-                more.frame = CGRect(x: 0, y: scrollView.contentSize.height, width: AppWidth, height: 230)
-                more.hidden = false
-                scrollView.contentSize.height += 235
-            }
+            guressMoreLike(scrollView)
         }
     }
     
@@ -309,6 +304,25 @@ extension EventViewController: UIScrollViewDelegate {
     private func numStrWith(str: NSString) -> NSString {
         return str.componentsSeparatedByString("\"")[0] as! NSString
     }
+    
+    private func guressMoreLike(scrollView: UIScrollView) {
+        if scrollView.contentSize.height == AppHeight {
+            guessLikeView.hidden = true
+            for more in moreArr {
+                more.hidden = true
+            }
+            return
+        }
+        
+        guessLikeView.frame = CGRect(x: 0, y: scrollView.contentSize.height, width: AppWidth, height: 50)
+        guessLikeView.hidden = false
+        scrollView.contentSize.height += 50
+        for more in moreArr {
+            more.frame = CGRect(x: 0, y: scrollView.contentSize.height, width: AppWidth, height: 230)
+            more.hidden = false
+            scrollView.contentSize.height += 235
+        }
+    }
 }
 
 /// MARK: UIWebViewDelegate
@@ -322,8 +336,12 @@ extension EventViewController: UIWebViewDelegate {
             webView.stringByEvaluatingJavaScriptFromString(imageW)
             webView.stringByEvaluatingJavaScriptFromString(imageH)
         }
-        println(webView.scrollView.contentSize.height)
+        
+        isLoadFinsih = true
+        guressMoreLike(webView.scrollView)
     }
+    
+
 }
 
 /// MARK: ShopDetailViewDelegate

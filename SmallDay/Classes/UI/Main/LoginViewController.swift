@@ -187,7 +187,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         NSUserDefaults.standardUserDefaults().setObject(account, forKey: SD_UserDefaults_Account)
         NSUserDefaults.standardUserDefaults().setObject(psdMD5, forKey: SD_UserDefaults_Password)
         if NSUserDefaults.standardUserDefaults().synchronize() {
-            
+            navigationController?.popViewControllerAnimated(true)
         }
     }
     

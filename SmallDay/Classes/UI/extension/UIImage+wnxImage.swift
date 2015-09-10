@@ -10,6 +10,15 @@ import Foundation
 
 // UIImage的扩展
 extension UIImage {
+    /// 按尺寸裁剪图片大小
+    class func imageClipToNewImage(image: UIImage, newSize: CGSize) -> UIImage {
+        UIGraphicsBeginImageContext(newSize)
+        image.drawInRect(CGRect(origin: CGPointZero, size: newSize))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+    }
+
     /// 将传入的图片裁剪成带边缘的原型图片
     class func imageWithClipImage(image: UIImage, borderWidth: CGFloat, borderColor: UIColor) -> UIImage {
         let imageWH = image.size.width

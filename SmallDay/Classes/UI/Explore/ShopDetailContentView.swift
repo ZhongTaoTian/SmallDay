@@ -43,6 +43,9 @@ class ShopDetailContentView: UIView {
     }
 
     @IBAction func callBtnCleck(sender: UIButton) {
+        if detailModel?.telephone == "" {
+            return
+        }
         callActionSheet.showInView(self)
     }
     

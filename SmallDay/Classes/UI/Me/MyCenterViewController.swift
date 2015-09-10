@@ -29,8 +29,12 @@ class MyCenterViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: "alterPwdViewClick")
         alterPwdView.userInteractionEnabled = true
         alterPwdView.addGestureRecognizer(tap)
-        
         accountLabel.text = UserAccountTool.userAccount()!
+        
+        if let data = NSData(contentsOfFile: SD_UserIconData_Path) {
+            let image: UIImage = UIImage(data: data)!
+            iconView.iconButton.setImage(image.imageClipOvalImage(), forState: .Normal)
+        }
     }
     
     func alterPwdViewClick() {
@@ -38,7 +42,17 @@ class MyCenterViewController: UIViewController {
     }
     
     @IBAction func logoutBtnClick(sender: UIButton) {
-        
+        let user = NSUserDefaults.standardUserDefaults()
+        user.setObject(nil, forKey: SD_UserDefaults_Account)
+        user.setObject(nil, forKey: SD_UserDefaults_Password)
+        if user.synchronize() {
+            navigationController!.popViewControllerAnimated(true)
+        }
+        // 将本地的icon图片data删除
+        NSFileManager.defaultManager().removeItemAtPath(SD_UserIconData_Path, error: nil)
     }
 
+    deinit {
+        print("个人中心控制器被销毁")
+    }
 }

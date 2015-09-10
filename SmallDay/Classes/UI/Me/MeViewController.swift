@@ -8,6 +8,8 @@
 
 import UIKit
 
+public let SD_UserIconData_Path = theme.cachesPath + "/iconImage.data"
+
 enum SDMineCellType: Int {
     /// 个人中心
     case MyCenter = 0
@@ -24,9 +26,20 @@ enum SDMineCellType: Int {
 class MeViewController: MainViewController {
     private var loginLabel: UILabel!
     private var tableView: UITableView!
+    private lazy var pickVC: UIImagePickerController! = {
+        let pickVC = UIImagePickerController()
+        pickVC.delegate = self
+        pickVC.allowsEditing = true
+        return pickVC
+        }()
     private lazy var mineIcons: NSMutableArray! = {
         var arr = NSMutableArray(array: ["usercenter", "orders", "setting_like", "feedback", "recomment"])
         return arr
+        }()
+    private lazy var iconActionSheet: UIActionSheet! = {
+        let iconAS = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "拍照", "从手机相册选择")
+        
+        return iconAS
         }()
     private lazy var mineTitles: NSMutableArray! = {
         var arr = NSMutableArray(array: ["个人中心", "我的订单", "我的收藏", "留言反馈", "应用推荐"])
@@ -88,18 +101,109 @@ class MeViewController: MainViewController {
         let settingVC = SettingViewController()
         navigationController?.pushViewController(settingVC, animated: true)
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        loginLabel.hidden = UserAccountTool.userIsLogin()
+        if UserAccountTool.userIsLogin() {
+            if let data = NSData(contentsOfFile: SD_UserIconData_Path) {
+                iconView!.iconButton.setImage(UIImage(data: data)!.imageClipOvalImage(), forState: .Normal)
+            } else {
+                iconView!.iconButton.setImage(UIImage(named: "my"), forState: .Normal)
+            }
+        } else {
+            iconView!.iconButton.setImage(UIImage(named: "my"), forState: .Normal)
+        }
+    }
 }
 
 /// MARK: iconViewDelegate
-extension MainViewController: IconViewDelegate {
+extension MeViewController: IconViewDelegate {
     func iconView(iconView: IconView, didClick iconButton: UIButton) {
         // TODO 判断用户是否登录了
         if UserAccountTool.userIsLogin() {
-            
+            iconActionSheet.showInView(view)
         } else {
             let login = LoginViewController()
             navigationController?.pushViewController(login, animated: true)
         }
+    }
+}
+
+/// MARK: UIActionSheetDelegate
+extension MeViewController: UIActionSheetDelegate {
+    
+    func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
+        print(buttonIndex)
+        switch buttonIndex {
+        case 1:
+            openCamera()
+        case 2:
+            openUserPhotoLibrary()
+        default:
+            print()
+        }
+    }
+    
+}
+
+/// MARK: 摄像机和相册的操作和代理方法
+extension MeViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    /// 打开照相功能
+    private func openCamera() {
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            pickVC.sourceType = .Camera
+            self.presentViewController(pickVC, animated: true, completion: nil)
+        } else {
+            SVProgressHUD.showErrorWithStatus("摄像机不可用", maskType: SVProgressHUDMaskType.Black)
+        }
+    }
+    
+    /// 打开相册
+    private func openUserPhotoLibrary() {
+        pickVC.sourceType = .PhotoLibrary
+        pickVC.allowsEditing = true
+        presentViewController(pickVC, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        // 对用户选着的图片进行质量压缩,上传服务器,本地持久化存储
+        if let typeStr = info[UIImagePickerControllerMediaType] as? String {
+            if typeStr == "public.image" {
+                if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+                    var data: NSData?
+                    let smallImage = UIImage.imageClipToNewImage(image, newSize: iconView!.iconButton.size)
+                    if UIImagePNGRepresentation(smallImage) == nil {
+                        data = UIImageJPEGRepresentation(smallImage, 0.8)
+                    } else {
+                        data = UIImagePNGRepresentation(smallImage)
+                    }
+                    
+                    if data != nil {
+                        // TODO: 将头像的data传入服务器
+                        // 本地也保留一份data数据
+                        NSFileManager.defaultManager().createDirectoryAtPath(theme.cachesPath, withIntermediateDirectories: true, attributes: nil, error: nil)
+                        NSFileManager.defaultManager().createFileAtPath(SD_UserIconData_Path, contents: data, attributes: nil)
+                        
+                        iconView!.iconButton.setImage(UIImage(data: NSData(contentsOfFile: SD_UserIconData_Path)!)!.imageClipOvalImage(), forState: .Normal)
+                        
+                    } else {
+                        SVProgressHUD.showErrorWithStatus("照片保存失败", maskType: SVProgressHUDMaskType.Black)
+                    }
+                }
+            }
+        } else {
+            SVProgressHUD.showErrorWithStatus("图片无法获取", maskType: SVProgressHUDMaskType.Black)
+        }
+        
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        pickVC.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
@@ -153,10 +257,11 @@ extension MeViewController: UITableViewDelegate, UITableViewDataSource {
                 }
                 
             } else if indexPath.row == SDMineCellType.MyCollect.hashValue { // 我的收藏
-            
+                
             } else if indexPath.row == SDMineCellType.MyOrder.hashValue {   // 我的订单
                 if UserAccountTool.userIsLogin() {
-                    
+                    let orderVC = OrderViewController()
+                    navigationController!.pushViewController(orderVC, animated: true)
                 } else {
                     let login = LoginViewController()
                     navigationController?.pushViewController(login, animated: true)
@@ -172,3 +277,5 @@ extension MeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
+

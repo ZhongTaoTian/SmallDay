@@ -13,10 +13,6 @@ public let AppWidth: CGFloat = UIScreen.mainScreen().bounds.size.width
 public let AppHeight: CGFloat = UIScreen.mainScreen().bounds.size.height
 
 struct theme {
-    ///  APP屏幕的宽度
-//    static let appWidth: CGFloat = UIScreen.mainScreen().bounds.size.width
-    ///  APP屏幕的高度
-//    static let appHeight: CGFloat = UIScreen.mainScreen().bounds.size.height
     ///  APP导航条barButtonItem文字大小
     static let SDNavItemFont: UIFont = UIFont.systemFontOfSize(16)
     ///  APP导航条titleFont文字大小

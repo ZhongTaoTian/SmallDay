@@ -28,6 +28,7 @@ class IconView: UIView {
         iconButton = UIButton.buttonWithType(.Custom) as? UIButton
         iconButton.setImage(UIImage(named: "my"), forState: .Normal)
         iconButton.addTarget(self, action: "iconBtnClick", forControlEvents: .TouchUpInside)
+        iconButton.clipsToBounds = true
         addSubview(iconButton)
     }
     

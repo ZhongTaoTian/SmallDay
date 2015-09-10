@@ -130,6 +130,8 @@
 		FAD583371B94BF76007EEEE0 /* 798 in Resources */ = {isa = PBXBuildFile; fileRef = FAD583341B94BF76007EEEE0 /* 798 */; };
 		FAD583381B94BF76007EEEE0 /* 南锣鼓巷 in Resources */ = {isa = PBXBuildFile; fileRef = FAD583351B94BF76007EEEE0 /* 南锣鼓巷 */; };
 		FAD583391B94BF76007EEEE0 /* 三里屯 in Resources */ = {isa = PBXBuildFile; fileRef = FAD583361B94BF76007EEEE0 /* 三里屯 */; };
+		FAE5D54C1BA1A485009BA347 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D54A1BA1A485009BA347 /* OrderViewController.swift */; };
+		FAE5D54D1BA1A485009BA347 /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D54B1BA1A485009BA347 /* OrderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +294,8 @@
 		FAD583341B94BF76007EEEE0 /* 798 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 798; sourceTree = "<group>"; };
 		FAD583351B94BF76007EEEE0 /* 南锣鼓巷 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南锣鼓巷"; sourceTree = "<group>"; };
 		FAD583361B94BF76007EEEE0 /* 三里屯 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "三里屯"; sourceTree = "<group>"; };
+		FAE5D54A1BA1A485009BA347 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		FAE5D54B1BA1A485009BA347 /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -616,6 +620,8 @@
 				FA4090291B9F51CA0007810C /* MyCenterViewController.swift */,
 				FA40902A1B9F51CA0007810C /* MyCenterViewController.xib */,
 				FA57DF111B8393240099CD37 /* IconView.swift */,
+				FAE5D54A1BA1A485009BA347 /* OrderViewController.swift */,
+				FAE5D54B1BA1A485009BA347 /* OrderViewController.xib */,
 				FA40ED951B84C5530049DE19 /* SettingViewController.swift */,
 				FA40ED971B84D1090049DE19 /* SettingCell.swift */,
 				FA40ED981B84D1090049DE19 /* SettingCell.xib */,
@@ -824,6 +830,7 @@
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
 				FA40902C1B9F51CA0007810C /* MyCenterViewController.xib in Resources */,
 				FAD583381B94BF76007EEEE0 /* 南锣鼓巷 in Resources */,
+				FAE5D54D1BA1A485009BA347 /* OrderViewController.xib in Resources */,
 				FAD583391B94BF76007EEEE0 /* 三里屯 in Resources */,
 				FA82B11D1B870A48003A2264 /* ShakeViewController.xib in Resources */,
 				FA40ED9A1B84D1090049DE19 /* SettingCell.xib in Resources */,
@@ -940,6 +947,7 @@
 				FAA0F9F11B7DDA5D00B5EA08 /* ExperienceViewController.swift in Sources */,
 				FA66A4351B8F45A4005DF017 /* ExperHeadPushViewController.swift in Sources */,
 				FA57DF091B8327F20099CD37 /* ClassifyCell.swift in Sources */,
+				FAE5D54C1BA1A485009BA347 /* OrderViewController.swift in Sources */,
 				FA709A291B80CA8800B24238 /* NearViewController.swift in Sources */,
 				FAA0F9ED1B7DD9CB00B5EA08 /* MainNavigationController.swift in Sources */,
 				FA4090201B9EEC340007810C /* MoreView.swift in Sources */,
