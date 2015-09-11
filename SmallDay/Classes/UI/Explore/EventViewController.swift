@@ -13,7 +13,11 @@ class EventViewController: UIViewController {
     private let shopViewHeight: CGFloat = 45
     private let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
     private var isLoadFinsih = false
+    private var isAddBottomView = false
     private let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
+    lazy var loadImage: LoadAnimatImageView = LoadAnimatImageView.sharedManager
+    private var loadFinishScrollHeihgt: CGFloat = 0
+    
     private lazy var guessLikeView: GuessLikeView = {
         let guessView = GuessLikeView.guessLikeViewFromXib()
         return guessView
@@ -96,7 +100,7 @@ class EventViewController: UIViewController {
     ///  记录scrollView最后一次偏移的Y值
     private var lastOffsetY: CGFloat = 0
     
-    
+    /// MARK:- 方法
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -136,14 +140,15 @@ class EventViewController: UIViewController {
     
     var model: EventModel? {
         didSet {
-            self.webView.hidden = true
+            loadImage.startLoadAnimatImageViewInView(view, center: view.center)
+            webView.hidden = true
             // 将模型传入给店铺详情页
             detailContentView.detailModel = model
             detailSV.addSubview(detailContentView)
             detailSV.contentSize = CGSize(width: AppWidth, height: detailContentView.height - shopViewHeight)
             
             if let imageStr = model?.imgs?.last {
-                self.topImageView.kf_setImageWithURL(NSURL(string: imageStr)!, placeholderImage: UIImage(named: "quesheng"))
+                topImageView.kf_setImageWithURL(NSURL(string: imageStr)!, placeholderImage: UIImage(named: "quesheng"))
             }
             self.shareView.shareModel = ShareModel(shareTitle: model?.title, shareURL: model?.shareURL, image: nil, shareDetail: model?.detail)
             var htmlSrt = model?.mobileURL
@@ -164,14 +169,12 @@ class EventViewController: UIViewController {
                     newStr.insertString(titleStr!, atIndex: 31)
                     htmlSrt = newStr as String
                 }
-                
-               
             }
             
             var newStr = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlSrt!))
             webView.loadHTMLString(newStr as String, baseURL: nil)
             webView.hidden = false
-
+            
             if model?.more?.count > 0 {
                 guessLikeView.hidden = true
                 webView.scrollView.addSubview(guessLikeView)
@@ -184,6 +187,8 @@ class EventViewController: UIViewController {
                     moreArr.append(moreView)
                 }
             }
+            
+            loadImage.stopLoadAnimatImageView()
         }
     }
     
@@ -215,8 +220,10 @@ extension EventViewController {
 /// MARK: 处理导航条显示消失
 extension EventViewController {
     override func viewWillAppear(animated: Bool) {
-        
         navigationController!.setNavigationBarHidden(true, animated: true)
+        if isLoadFinsih && isAddBottomView {
+            webView.scrollView.contentSize.height = loadFinishScrollHeihgt
+        }
         super.viewWillAppear(animated)
     }
     
@@ -230,6 +237,11 @@ extension EventViewController {
 extension EventViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        // 解决弹出新的控制器后返回后contentSize自动还原的问题
+        if loadFinishScrollHeihgt > webView.scrollView.contentSize.height && scrollView === webView.scrollView {
+            webView.scrollView.contentSize.height = loadFinishScrollHeihgt
+        }
         
         var offsetY: CGFloat = scrollView.contentOffset.y
         // 判断顶部自定义导航条的透明度,以及图片的切换
@@ -262,9 +274,8 @@ extension EventViewController: UIScrollViewDelegate {
         } else {
             shopView.frame = CGRect(x: 0, y: CGRectGetMaxY(topImageView.frame), width: AppWidth, height: shopViewHeight)
         }
-        
+
         lastOffsetY = offsetY
-        
     }
     
     /// 返回负数
@@ -297,11 +308,10 @@ extension EventViewController: UIWebViewDelegate {
             more.frame = CGRect(x: 0, y: webView.scrollView.contentSize.height, width: AppWidth, height: 230)
             more.hidden = false
             webView.scrollView.contentSize.height += 235
+            isAddBottomView = true
         }
-
+        loadFinishScrollHeihgt = webView.scrollView.contentSize.height
     }
-    
-
 }
 
 /// MARK: ShopDetailViewDelegate

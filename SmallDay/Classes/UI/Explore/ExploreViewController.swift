@@ -38,15 +38,23 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     }
     
     private func setdayTableView() {
+        weak var tmpSelf = self
         dayTableView = UITableView(frame: view.bounds, style: .Grouped)
         dayTableView.sectionHeaderHeight = 0.1
         dayTableView.sectionFooterHeight = 0.1
         dayTableView.delegate = self
+        dayTableView.header = MJRefreshGifHeader(refreshingBlock: { () -> Void in
+            tmpSelf!.pullLoadData()
+        })
         dayTableView.contentInset = UIEdgeInsetsMake(-35, 0, NavigationH + 35, 0)
         dayTableView.dataSource = self
         dayTableView.backgroundColor = theme.SDBackgroundColor
         dayTableView.separatorStyle = .None
         backgroundScrollView.addSubview(dayTableView)
+    }
+    
+    private func pullLoadData() {
+        print("aaaaaaaa")
     }
     
     private func setalbumTableView() {

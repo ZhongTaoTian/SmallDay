@@ -11,6 +11,7 @@ import UIKit
 class ShareView: UIView {
     weak var shareVC: UIViewController?
     var shareModel: ShareModel?
+    
     private lazy var coverBtn: UIButton! = {
         let coverBtn = UIButton(frame: UIScreen.mainScreen().bounds)
         coverBtn.backgroundColor = UIColor.blackColor()

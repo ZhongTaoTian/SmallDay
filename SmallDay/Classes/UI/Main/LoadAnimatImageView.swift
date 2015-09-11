@@ -8,27 +8,42 @@
 
 import UIKit
 
-class LoadAnimatImageView: UIImageView {
-    lazy var loadImageView: UIImageView! = {
+class LoadAnimatImageView: NSObject {
+    
+    private static let sharedInstance = LoadAnimatImageView()
+    class var sharedManager : LoadAnimatImageView {
+        return sharedInstance
+    }
+    
+    private lazy var loadImageView: UIImageView! = {
         let loadImageView = UIImageView()
         loadImageView.animationImages = self.loadAnimImages!
-        loadImageView.animationRepeatCount = 100
+        loadImageView.animationRepeatCount = 10000
         loadImageView.animationDuration = 1.0
+         loadImageView.frame = CGRectMake(0, 0, 44, 51)
         return loadImageView
         }()
     
-    lazy var loadAnimImages: [UIImage]? = {
+    private lazy var loadAnimImages: [UIImage]? = {
         var images = [UIImage]()
-        for i in 0...24 {
-            let image = UIImage(named: String(format: "zanimabg%02d", i))
+        for i in 0...92 {
+            let image = UIImage(named: String(format: "wnx%02d", i))
             images.append(image!)
         }
         
         return images
         }()
     
-//    class func showLoadAnimat(superView: UIView, rect: CGRect) {
-//        let animat = LoadAnimatImageView()
-//    }
+    func startLoadAnimatImageViewInView(view: UIView, center: CGPoint)  {
 
+        loadImageView.center = center
+        view.addSubview(loadImageView)
+        loadImageView.startAnimating()
+    }
+    
+    func stopLoadAnimatImageView() {
+        loadImageView.removeFromSuperview()
+        loadImageView.stopAnimating()
+    }
+    
 }

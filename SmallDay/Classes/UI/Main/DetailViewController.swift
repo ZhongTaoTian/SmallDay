@@ -5,9 +5,9 @@
 //  Created by MacBook on 15/8/28.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
 //  体验详情ViewController
-//  方法一:在Xcode中解决,在返回的html数据请求前,改变所有图片的尺寸,适配到正常尺寸  缺点:重新过滤字符串的时候挺麻烦的,每次加载都要重新加载图片,流量
-//  方法二:自己写css文件来布局
-//  方法三:拦截所有的图片请求,于js配合,将请求路径给到程序里 用正常模式来加载,可以点击,缓存等等
+//  方法一:在Xcode中解决,在返回的html数据请求前,改变所有图片的尺寸,适配到正常尺寸  缺点:重新过滤字符串的时候挺麻烦的,每次加载都要重新加载图片,费流量
+//  方法二:自己写css文件来布局(推荐)
+//  方法三:拦截所有的图片请求,于js配合,将请求路径给到程序里 用正常模式来加载,可以点击,缓存等等(功能更加强大,可随意自定义,设置placeHolder图片等等)
 
 import UIKit
 /// 详情ViewController顶部图片的高度
@@ -85,7 +85,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         
         setCustomNavigationItem()
         
-        setUpBottomView()   
+        setUpBottomView()
     }
     
     private func setUpBottomView() {
@@ -159,7 +159,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
                     htmlSrt = newStr as String
                 }
                 
-               htmlNewString = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlSrt!))
+                htmlNewString = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlSrt!))
             }
             
             webView.loadHTMLString(htmlNewString! as String, baseURL: nil)
@@ -227,7 +227,7 @@ extension DetailViewController {
     
     /// 收藏
     func lickBtnClick() {
-        
+        likeBtn.selected = !likeBtn.selected
     }
     
     /// 分享
@@ -269,6 +269,11 @@ extension DetailViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         var offsetY: CGFloat = scrollView.contentOffset.y
+        
+        // 解决弹出新的控制器后返回后contentSize自动还原的问题
+        if loadFinishScrollHeihgt > webView.scrollView.contentSize.height && scrollView === webView.scrollView {
+            webView.scrollView.contentSize.height = loadFinishScrollHeihgt
+        }
         
         // 加标记的作用为了优化性能
         // 判断顶部自定义导航条的透明度,以及图片的切换
