@@ -12,8 +12,6 @@ class EventViewController: UIViewController {
     private var showBlackImage: Bool = false
     private let shopViewHeight: CGFloat = 45
     private let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
-    private var imageWHArray = [(CGFloat, CGFloat)]()
-    private var isAddContrntHeight = false
     private var isLoadFinsih = false
     private let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
     private lazy var guessLikeView: GuessLikeView = {
@@ -108,7 +106,7 @@ class EventViewController: UIViewController {
     }
     
     private func setUpUI() {
-        view.backgroundColor = theme.SDBackgroundColor
+        view.backgroundColor = theme.SDWebViewBacagroundColor
         view.addSubview(webView)
         view.addSubview(detailSV)
         view.addSubview(topImageView)
@@ -167,27 +165,11 @@ class EventViewController: UIViewController {
                     htmlSrt = newStr as String
                 }
                 
-                var arr = htmlSrt!.componentsSeparatedByString("<img alt=")
-                for i in 1..<arr.count {
-                    let str = arr[i] as NSString
-                    let rangH = str.rangeOfString("height=\"")
-                    let rangW = str.rangeOfString("width=\"")
-                    if rangH.length != 0 && rangW.length != 0 {
-                        let widthStr = str.substringWithRange(NSRange(location: rangW.location + rangW.length, length: 10)) as NSString
-                        let heightStr = str.substringWithRange(NSRange(location: rangH.location + rangH.length, length: 10)) as NSString
-                        var widthW =  CGFloat(self.numStrWith(widthStr).intValue)
-                        var heightH = CGFloat(self.numStrWith(heightStr).intValue)
-                        let newH = self.imageW / widthW * heightH
-                        let WH = (self.imageW, newH)
-                        imageWHArray.append(WH)
-                    } else {
-                        imageWHArray.append((self.imageW, 220))
-                    }
-                }
+               
             }
             
-            //TODO: 将新的宽高重新替换掉原始的宽高
-            webView.loadHTMLString(htmlSrt!, baseURL: nil)
+            var newStr = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlSrt!))
+            webView.loadHTMLString(newStr as String, baseURL: nil)
             webView.hidden = false
 
             if model?.more?.count > 0 {
@@ -201,7 +183,6 @@ class EventViewController: UIViewController {
                     webView.scrollView.addSubview(moreView)
                     moreArr.append(moreView)
                 }
-                guressMoreLike(webView.scrollView)
             }
         }
     }
@@ -284,10 +265,6 @@ extension EventViewController: UIScrollViewDelegate {
         
         lastOffsetY = offsetY
         
-        if moreArr.count > 0 && isAddContrntHeight == false && scrollView.contentSize.height > AppHeight + DetailViewController_TopImageView_Height + shopViewHeight && scrollView === webView.scrollView  && isLoadFinsih {
-            isAddContrntHeight = true
-            guressMoreLike(scrollView)
-        }
     }
     
     /// 返回负数
@@ -305,24 +282,6 @@ extension EventViewController: UIScrollViewDelegate {
         return str.componentsSeparatedByString("\"")[0] as! NSString
     }
     
-    private func guressMoreLike(scrollView: UIScrollView) {
-        if scrollView.contentSize.height == AppHeight {
-            guessLikeView.hidden = true
-            for more in moreArr {
-                more.hidden = true
-            }
-            return
-        }
-        
-        guessLikeView.frame = CGRect(x: 0, y: scrollView.contentSize.height, width: AppWidth, height: 50)
-        guessLikeView.hidden = false
-        scrollView.contentSize.height += 50
-        for more in moreArr {
-            more.frame = CGRect(x: 0, y: scrollView.contentSize.height, width: AppWidth, height: 230)
-            more.hidden = false
-            scrollView.contentSize.height += 235
-        }
-    }
 }
 
 /// MARK: UIWebViewDelegate
@@ -330,15 +289,16 @@ extension EventViewController: UIWebViewDelegate {
     
     func webViewDidFinishLoad(webView: UIWebView) {
         webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('body')[0].style.background='#F5F5F5';")
-        for i in 0..<imageWHArray.count {
-            let imageW = String(format: "document.getElementsByTagName('img')[%d].style.width='%f';", i, imageWHArray[i].0)
-            let imageH = String(format: "document.getElementsByTagName('img')[%d].style.height='%f';", i, imageWHArray[i].1)
-            webView.stringByEvaluatingJavaScriptFromString(imageW)
-            webView.stringByEvaluatingJavaScriptFromString(imageH)
-        }
-        
         isLoadFinsih = true
-        guressMoreLike(webView.scrollView)
+        guessLikeView.frame = CGRect(x: 0, y: webView.scrollView.contentSize.height, width: AppWidth, height: 50)
+        guessLikeView.hidden = false
+        webView.scrollView.contentSize.height += 50
+        for more in moreArr {
+            more.frame = CGRect(x: 0, y: webView.scrollView.contentSize.height, width: AppWidth, height: 230)
+            more.hidden = false
+            webView.scrollView.contentSize.height += 235
+        }
+
     }
     
 

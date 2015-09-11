@@ -12,15 +12,18 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moredi" translatesAutoresizingMaskIntoConstraints="NO" id="1Z6-kx-PSq">
                     <rect key="frame" x="5" y="0.0" width="365" height="225"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="225" id="e2g-EH-hcM"/>
+                    </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YWk-i7-SqL">
                     <rect key="frame" x="5" y="0.0" width="365" height="190"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="190" id="G1A-D7-JCf"/>
+                        <constraint firstAttribute="height" constant="190" id="PbE-Eu-aAq"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="的撒大大是大大是大的萨达萨达十大大神大神大神大大大神大神大神地方" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m87-Ux-pXE">
-                    <rect key="frame" x="10" y="142" width="345" height="36"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="的撒大大是大大是大的萨达萨达" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m87-Ux-pXE">
+                    <rect key="frame" x="10" y="160" width="345" height="18"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -34,19 +37,18 @@
             </subviews>
             <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="YWk-i7-SqL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="16C-M8-Fay"/>
-                <constraint firstItem="1Z6-kx-PSq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="2uD-PC-3At"/>
-                <constraint firstAttribute="trailing" secondItem="1Z6-kx-PSq" secondAttribute="trailing" constant="5" id="E5y-Rf-Y0b"/>
-                <constraint firstItem="1Z6-kx-PSq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G2r-N3-Xky"/>
-                <constraint firstAttribute="trailing" secondItem="m87-Ux-pXE" secondAttribute="trailing" constant="20" id="HJf-xQ-LDq"/>
-                <constraint firstAttribute="bottom" secondItem="1Z6-kx-PSq" secondAttribute="bottom" constant="5" id="HuZ-IJ-8p2"/>
-                <constraint firstItem="m87-Ux-pXE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="IpT-SV-A25"/>
-                <constraint firstItem="nvy-Hw-tga" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="LRh-eH-b7g"/>
-                <constraint firstAttribute="trailing" secondItem="YWk-i7-SqL" secondAttribute="trailing" constant="5" id="Nm7-67-ctd"/>
-                <constraint firstAttribute="bottom" secondItem="m87-Ux-pXE" secondAttribute="bottom" constant="52" id="Rtu-Wt-Lpy"/>
-                <constraint firstItem="YWk-i7-SqL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="csU-ED-h4T"/>
-                <constraint firstAttribute="trailing" secondItem="nvy-Hw-tga" secondAttribute="trailing" constant="10" id="ePL-ep-nJp"/>
-                <constraint firstAttribute="bottom" secondItem="nvy-Hw-tga" secondAttribute="bottom" constant="12" id="k2d-CU-bGB"/>
+                <constraint firstAttribute="trailing" secondItem="YWk-i7-SqL" secondAttribute="trailing" constant="5" id="1c1-6b-H96"/>
+                <constraint firstItem="m87-Ux-pXE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Eyr-ff-VmS"/>
+                <constraint firstItem="1Z6-kx-PSq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GY2-FM-fyY"/>
+                <constraint firstItem="1Z6-kx-PSq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="KqX-YK-bNX"/>
+                <constraint firstAttribute="trailing" secondItem="1Z6-kx-PSq" secondAttribute="trailing" constant="5" id="Pe2-r6-8sc"/>
+                <constraint firstItem="YWk-i7-SqL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T7h-MO-VTD"/>
+                <constraint firstItem="m87-Ux-pXE" firstAttribute="top" secondItem="YWk-i7-SqL" secondAttribute="bottom" constant="-30" id="U9g-j7-GML"/>
+                <constraint firstItem="YWk-i7-SqL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="mse-O7-4rn"/>
+                <constraint firstItem="nvy-Hw-tga" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="nPX-au-3u3"/>
+                <constraint firstAttribute="trailing" secondItem="nvy-Hw-tga" secondAttribute="trailing" constant="10" id="pwf-Dt-ebT"/>
+                <constraint firstAttribute="bottom" secondItem="nvy-Hw-tga" secondAttribute="bottom" constant="12" id="sPM-yD-vrA"/>
+                <constraint firstAttribute="trailing" secondItem="m87-Ux-pXE" secondAttribute="trailing" constant="20" id="t7d-mj-fJc"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

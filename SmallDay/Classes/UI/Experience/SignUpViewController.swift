@@ -48,7 +48,7 @@ class SignUpViewController: UIViewController {
     }
     
     /// 键盘frame即将改变
-    private func keyboardWillChangeFrame(noti: NSNotification) {
+    func keyboardWillChangeFrame(noti: NSNotification) {
         var fristTF:UITextField?
         if nameTextField.isFirstResponder() {
             fristTF = nameTextField
@@ -106,7 +106,7 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    private func changeBtn() {
+    func changeBtn() {
         sendCodeBtn.setTitle("已发送\(second)秒", forState: .Disabled)
         second--
         if second == 0 {

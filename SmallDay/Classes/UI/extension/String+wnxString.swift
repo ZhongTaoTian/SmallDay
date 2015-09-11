@@ -23,3 +23,44 @@ extension String {
         return phoneTest.evaluateWithObject(self)
     }
 }
+
+extension NSMutableString {
+    
+    class func changeHeigthAndWidthWithSrting(searchStr: NSMutableString) -> NSMutableString {
+        var mut = [CGFloat]()
+        var mutH = [CGFloat]()
+        let imageW = AppWidth - 23
+        let rxHeight = NSRegularExpression(pattern: "(?<= height=\")\\d*")
+        let rxWidth = NSRegularExpression(pattern: "(?<=width=\")\\d*")
+        let widthArray = rxWidth.matches(searchStr as String) as! [String]
+        
+        for width  in widthArray {
+            width.toInt()!
+            mut.append(imageW/CGFloat(width.toInt()!))
+        }
+        
+        var widthMatches = rxWidth.matchesInString(searchStr as String, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, searchStr.length))
+        
+        for var i = widthMatches.count - 1; i >= 0; i-- {
+            var widthMatch = widthMatches[i] as? NSTextCheckingResult
+            searchStr.replaceCharactersInRange(widthMatch!.range, withString: "\(imageW)")
+        }
+        
+        var newString = searchStr.mutableCopy() as! NSMutableString
+        
+        let heightArray = rxHeight.matches(newString as String) as! [String]
+        for i in 0..<mut.count {
+            mutH.append(mut[i] * CGFloat(heightArray[i].toInt()!))
+        }
+        
+        var matches = rxHeight.matchesInString(newString as String, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, newString.length))
+        
+        for var i = matches.count - 1; i >= 0; i--
+        {
+            var match = matches[i] as? NSTextCheckingResult
+            newString.replaceCharactersInRange(match!.range, withString: "\(mutH[i])")
+        }
+        
+        return newString
+    }
+}

@@ -17,7 +17,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
     // 优化性能,防止重复设置
     private var showBlackImage: Bool = false
     private let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
-    private var imageWHArray = [(CGFloat, CGFloat)]()
     private let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
     private var signUpBtn: UIButton!
     private lazy var bottomViews: [ExploreBottomView] = [ExploreBottomView]()
@@ -86,8 +85,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         
         setCustomNavigationItem()
         
-        setUpBottomView()
-        
+        setUpBottomView()   
     }
     
     private func setUpBottomView() {
@@ -106,7 +104,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
     }
     
     private func setUpUI() {
-        view.backgroundColor = theme.SDBackgroundColor
+        view.backgroundColor = theme.SDWebViewBacagroundColor
         view.addSubview(webView)
         view.addSubview(topImageView)
     }
@@ -131,6 +129,8 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         btn.setImage(UIImage(named: highlightedImageName), forState: .Highlighted)
         btn.addTarget(self, action: action, forControlEvents: .TouchUpInside)
     }
+    
+    private var htmlNewString: NSMutableString?
     
     /// model重写didSet方法
     var model: EventModel? {
@@ -159,23 +159,10 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
                     htmlSrt = newStr as String
                 }
                 
-                var arr = htmlSrt!.componentsSeparatedByString("<img alt=")
-                for i in 1..<arr.count {
-                    let str = arr[i] as NSString
-                    let rangH = str.rangeOfString("height=\"")
-                    let rangW = str.rangeOfString("width=\"")
-                    let widthStr = str.substringWithRange(NSRange(location: rangW.location + rangW.length, length: 10)) as NSString
-                    let heightStr = str.substringWithRange(NSRange(location: rangH.location + rangH.length, length: 10)) as NSString
-                    var widthW =  CGFloat(self.numStrWith(widthStr).intValue)
-                    var heightH = CGFloat(self.numStrWith(heightStr).intValue)
-                    let newH = self.imageW / widthW * heightH
-                    let WH = (self.imageW, newH)
-                    self.imageWHArray.append(WH)
-                }
+               htmlNewString = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlSrt!))
             }
             
-            //TODO: 将新的宽高重新替换掉原始的宽高
-            self.webView.loadHTMLString(htmlSrt!, baseURL: nil)
+            webView.loadHTMLString(htmlNewString! as String, baseURL: nil)
             webView.scrollView.setContentOffset(CGPoint(x: 0, y: -DetailViewController_TopImageView_Height + 20), animated: false)
             self.webView.hidden = false
             
@@ -320,35 +307,12 @@ extension DetailViewController: UIScrollViewDelegate {
             loadFinishScrollHeihgt = scrollView.contentSize.height
         }
     }
-    
-    /// 返回负数
-    private func negativeNumber(num: CGFloat) -> CGFloat {
-        return num >= 0 ? -num : num
-    }
-    
-    /// 返回正数
-    private func positiveNumber(num: CGFloat) -> CGFloat {
-        return num >= 0 ? num : -num
-    }
-    
-    /// 返回数字字符串
-    private func numStrWith(str: NSString) -> NSString {
-        return str.componentsSeparatedByString("\"")[0] as! NSString
-    }
 }
 
 /// MARK: UIWebViewDelegate
 extension DetailViewController: UIWebViewDelegate {
     func webViewDidFinishLoad(webView: UIWebView) {
         webView.stringByEvaluatingJavaScriptFromString("document.getElementsByTagName('body')[0].style.background='#F5F5F5';")
-        
-        for i in 0..<imageWHArray.count {
-            let imageW = String(format: "document.getElementsByTagName('img')[%d].style.width='%f';", i, imageWHArray[i].0)
-            let imageH = String(format: "document.getElementsByTagName('img')[%d].style.height='%f';", i, imageWHArray[i].1)
-            webView.stringByEvaluatingJavaScriptFromString(imageW)
-            webView.stringByEvaluatingJavaScriptFromString(imageH)
-        }
-        
         webView.hidden = false
         isLoadFinish = true
     }

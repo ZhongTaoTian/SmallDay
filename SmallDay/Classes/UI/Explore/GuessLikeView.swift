@@ -13,7 +13,6 @@ class GuessLikeView: UIView {
 
     class func guessLikeViewFromXib() -> GuessLikeView {
         let guessLike = NSBundle.mainBundle().loadNibNamed("GuessLikeView", owner: nil, options: nil).last as! GuessLikeView
-        guessLike.frame.size.width = AppWidth
         return guessLike
     }
 
