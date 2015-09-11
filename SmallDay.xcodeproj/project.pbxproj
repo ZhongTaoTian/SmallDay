@@ -140,6 +140,7 @@
 		FAE5D5611BA1E7A6009BA347 /* ExploreBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5601BA1E7A6009BA347 /* ExploreBottomView.swift */; };
 		FAE5D5631BA1E824009BA347 /* ExploreBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5621BA1E824009BA347 /* ExploreBottomView.xib */; };
 		FAE5D5651BA2000F009BA347 /* BuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5641BA2000F009BA347 /* BuyDetailViewController.swift */; };
+		FAE5D5681BA2AC90009BA347 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5671BA2AC90009BA347 /* RegExCategories.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,7 +220,7 @@
 		FA82B1211B87693E003A2264 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FA82B1221B87693E003A2264 /* SimpleNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetwork.swift; sourceTree = "<group>"; };
 		FA82B1231B87693E003A2264 /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
-		FA82B1291B876F3D003A2264 /* SmallDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmallDay-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA82B1291B876F3D003A2264 /* SmallDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SmallDay-Bridging-Header.h"; path = "UI/Other/SmallDay-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA82B12B1B876F73003A2264 /* String+Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
 		FA82B12D1B87A1F4003A2264 /* ThemeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCell.swift; sourceTree = "<group>"; };
 		FA82B12E1B87A1F4003A2264 /* ThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeCell.xib; sourceTree = "<group>"; };
@@ -312,6 +313,8 @@
 		FAE5D5601BA1E7A6009BA347 /* ExploreBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreBottomView.swift; sourceTree = "<group>"; };
 		FAE5D5621BA1E824009BA347 /* ExploreBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreBottomView.xib; sourceTree = "<group>"; };
 		FAE5D5641BA2000F009BA347 /* BuyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyDetailViewController.swift; sourceTree = "<group>"; };
+		FAE5D5661BA2AC90009BA347 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		FAE5D5671BA2AC90009BA347 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +384,8 @@
 				FA4090171B9EE36E0007810C /* UIImage+wnxImage.swift */,
 				FA40901B1B9EE3B30007810C /* UIView+wnxView.swift */,
 				FA40901D1B9EE3CC0007810C /* UIColor+wnxColor.swift */,
+				FAE5D5661BA2AC90009BA347 /* RegExCategories.h */,
+				FAE5D5671BA2AC90009BA347 /* RegExCategories.m */,
 			);
 			name = "extension(扩展)";
 			path = extension;
@@ -507,6 +512,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA0F9BF1B7DC74900B5EA08 /* AppDelegate.swift */,
+				FA82B1291B876F3D003A2264 /* SmallDay-Bridging-Header.h */,
 				FAA0F9E01B7DD6A500B5EA08 /* BusinessModel(业务模型) */,
 				FAA0F9E11B7DD6A500B5EA08 /* Tools(工具) */,
 				FAA0F9E21B7DD6A500B5EA08 /* UI(界面) */,
@@ -664,7 +670,6 @@
 			isa = PBXGroup;
 			children = (
 				FAA0F9F61B7DF02E00B5EA08 /* theme.swift */,
-				FA82B1291B876F3D003A2264 /* SmallDay-Bridging-Header.h */,
 			);
 			name = "Other(其他)";
 			path = Other;
@@ -961,6 +966,7 @@
 				FA66A4001B8EBD96005DF017 /* ExperienceModel.swift in Sources */,
 				FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */,
 				FAE5D55B1BA1AE4E009BA347 /* LeadpageViewController.swift in Sources */,
+				FAE5D5681BA2AC90009BA347 /* RegExCategories.m in Sources */,
 				FAE5D5611BA1E7A6009BA347 /* ExploreBottomView.swift in Sources */,
 				FA4090021B9D9C3B0007810C /* LoadAnimatImageView.swift in Sources */,
 				FA40901A1B9EE3920007810C /* UIBarButtonItem+wxnBarButtonItem.swift in Sources */,

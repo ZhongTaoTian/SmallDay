@@ -5,3 +5,4 @@
 #import "UMSocial.h"
 #import "UMSocialSinaHandler.h"
 #import "UMSocialWechatHandler.h"
+#import "RegExCategories.h"

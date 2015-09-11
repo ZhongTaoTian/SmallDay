@@ -23,6 +23,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
     private lazy var bottomViews: [ExploreBottomView] = [ExploreBottomView]()
     private var isLoadFinish = false
     private var isAddBottomView = false
+    private var loadFinishScrollHeihgt: CGFloat = 0
     private lazy var phoneActionSheet: UIActionSheet? = {
         let action = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: self.model!.telephone!)
         return action
@@ -260,9 +261,12 @@ extension DetailViewController {
 
 /// MARK:- 处理导航条显示消失
 extension DetailViewController {
+    
     override func viewWillAppear(animated: Bool) {
-        
         navigationController!.setNavigationBarHidden(true, animated: true)
+        if isLoadFinish && isAddBottomView {
+            webView.scrollView.contentSize.height = loadFinishScrollHeihgt
+        }
         super.viewWillAppear(animated)
     }
     
@@ -313,6 +317,7 @@ extension DetailViewController: UIScrollViewDelegate {
                 webView.scrollView.contentSize.height += bottomViewH
             }
             scrollView.contentSize.height += 20
+            loadFinishScrollHeihgt = scrollView.contentSize.height
         }
     }
     
