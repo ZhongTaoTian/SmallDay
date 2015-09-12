@@ -9,7 +9,7 @@
 #import "MJRefreshGifHeader.h"
 
 @interface MJRefreshGifHeader()
-@property (weak, nonatomic) UIImageView *gifView;
+
 /** 所有状态对应的动画图片 */
 @property (strong, nonatomic) NSMutableDictionary *stateImages;
 /** 所有状态对应的动画时间 */
@@ -60,7 +60,7 @@
 
 - (void)setImages:(NSArray *)images forState:(MJRefreshState)state 
 { 
-    [self setImages:images duration:images.count * 0.1 forState:state]; 
+    [self setImages:images duration:images.count * 0.03 forState:state];
 }
 
 #pragma mark - 实现父类的方法
@@ -77,18 +77,26 @@
     self.gifView.image = images[index];
 }
 
-- (void)placeSubviews
-{
-    [super placeSubviews];
-    
-    self.gifView.frame = self.bounds;
-    if (self.stateLabel.hidden && self.lastUpdatedTimeLabel.hidden) {
-        self.gifView.contentMode = UIViewContentModeCenter;
-    } else {
-        self.gifView.contentMode = UIViewContentModeRight;
-        self.gifView.mj_w = self.mj_w * 0.5 - 90;
-    }
-}
+//- (void)placeSubviews
+//{
+//    [super placeSubviews];
+//    
+//    // MARK: 这里的布局我动了下
+////    self.gifView.frame = CGRectMake((self.frame.size.width - 35) * 0.5, 47, 35, 40);
+//}
+
+//- (void)placeSubviews
+//{
+//    [super placeSubviews];
+//    
+//    self.gifView.frame = self.bounds;
+//    if (self.stateLabel.hidden && self.lastUpdatedTimeLabel.hidden) {
+//        self.gifView.contentMode = UIViewContentModeCenter;
+//    } else {
+//        self.gifView.contentMode = UIViewContentModeRight;
+//        self.gifView.mj_w = self.mj_w * 0.5 - 90;
+//    }
+//}
 
 - (void)setState:(MJRefreshState)state
 {

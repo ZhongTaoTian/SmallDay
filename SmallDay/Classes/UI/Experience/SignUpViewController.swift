@@ -102,7 +102,7 @@ class SignUpViewController: UIViewController {
             timer!.fire()
             codeTextField.becomeFirstResponder()
         } else {
-            SVProgressHUD.showErrorWithStatus("请输入正确的手机号")
+            SVProgressHUD.showErrorWithStatus("输入11位的正确手机号", maskType: SVProgressHUDMaskType.Black)
         }
     }
     

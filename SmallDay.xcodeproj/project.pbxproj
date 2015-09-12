@@ -141,6 +141,8 @@
 		FAE5D5631BA1E824009BA347 /* ExploreBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5621BA1E824009BA347 /* ExploreBottomView.xib */; };
 		FAE5D5651BA2000F009BA347 /* BuyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5641BA2000F009BA347 /* BuyDetailViewController.swift */; };
 		FAE5D5681BA2AC90009BA347 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5671BA2AC90009BA347 /* RegExCategories.m */; };
+		FAE5D56A1BA3FE3C009BA347 /* SDRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */; };
+		FAE5D56C1BA4240F009BA347 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D56B1BA4240F009BA347 /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +317,8 @@
 		FAE5D5641BA2000F009BA347 /* BuyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyDetailViewController.swift; sourceTree = "<group>"; };
 		FAE5D5661BA2AC90009BA347 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
 		FAE5D5671BA2AC90009BA347 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
+		FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRefreshHeader.swift; sourceTree = "<group>"; };
+		FAE5D56B1BA4240F009BA347 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -639,6 +643,7 @@
 				FAD582EC1B937090007EEEE0 /* ShareView.xib */,
 				FA4090011B9D9C3B0007810C /* LoadAnimatImageView.swift */,
 				FAE5D55A1BA1AE4E009BA347 /* LeadpageViewController.swift */,
+				FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -648,6 +653,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */,
+				FAE5D56B1BA4240F009BA347 /* RecommendViewController.swift */,
 				FA4090291B9F51CA0007810C /* MyCenterViewController.swift */,
 				FA40902A1B9F51CA0007810C /* MyCenterViewController.xib */,
 				FA57DF111B8393240099CD37 /* IconView.swift */,
@@ -945,6 +951,7 @@
 				FA4090241B9F3B310007810C /* GuessLikeView.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
 				FA66A43B1B8F78F8005DF017 /* DetailViewController.swift in Sources */,
+				FAE5D56C1BA4240F009BA347 /* RecommendViewController.swift in Sources */,
 				FA7387601B8B63A2009D08C8 /* EventViewController.swift in Sources */,
 				FA66A43D1B902CF6005DF017 /* ShopDetailView.swift in Sources */,
 				FA40901C1B9EE3B30007810C /* UIView+wnxView.swift in Sources */,
@@ -994,6 +1001,7 @@
 				FA932A871B88B65600601B54 /* ImageDownloader.swift in Sources */,
 				FA73876C1B8B940E009D08C8 /* ClassDetailViewController.swift in Sources */,
 				FA66A4041B8ECEF7005DF017 /* ExperHeadView.swift in Sources */,
+				FAE5D56A1BA3FE3C009BA347 /* SDRefreshHeader.swift in Sources */,
 				FA709A211B808B0500B24238 /* MainViewController.swift in Sources */,
 				FA82B1261B87693E003A2264 /* SwiftDictModel.swift in Sources */,
 				FA57DF0E1B8335920099CD37 /* SearchTextField.swift in Sources */,

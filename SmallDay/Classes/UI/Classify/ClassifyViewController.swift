@@ -24,21 +24,9 @@ class ClassifyViewController: MainViewController {
         setCollectionView()
         
         // 加载分类数据
-        loadClassDatas()
+        collView.header.beginRefreshing()
     }
-    
-    private func loadClassDatas() {
-        weak var tmpSelf = self
-        ClassifyModel.loadClassifyModel { (data, error) -> () in
-            if error != nil {
-                SVProgressHUD.showErrorWithStatus("网络不给力")
-                return
-            }
-            tmpSelf!.classData = data!
-            tmpSelf!.collView.reloadData()
-        }
-    }
-    
+
     private func setNav() {
         navigationItem.title = "分类"
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "search_1", highlImageName: "search_2", targer: self, action: "searchClick")
@@ -71,6 +59,30 @@ class ClassifyViewController: MainViewController {
         collView.showsVerticalScrollIndicator = false
         collView.contentInset = UIEdgeInsetsMake(0, 0, NavigationH + 49, 0)
         view.addSubview(collView)
+        
+        let diyHeader = SDRefreshHeader(refreshingTarget: self, refreshingAction: "loadDatas")
+        diyHeader.lastUpdatedTimeLabel.hidden = true
+        diyHeader.stateLabel.hidden = true
+        diyHeader.gifView.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
+        collView.header = diyHeader
+    }
+    
+    func loadDatas() {
+        weak var tmpSelf = self
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.8 * Double(NSEC_PER_SEC)))
+        dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
+           
+            ClassifyModel.loadClassifyModel { (data, error) -> () in
+                if error != nil {
+                    SVProgressHUD.showErrorWithStatus("网络不给力")
+                    tmpSelf!.collView.header.endRefreshing()
+                    return
+                }
+                tmpSelf!.classData = data!
+                tmpSelf!.collView.header.endRefreshing()
+                tmpSelf!.collView.reloadData()
+            }
+        }
     }
 }
 

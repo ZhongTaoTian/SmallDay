@@ -38,7 +38,6 @@ class MeViewController: MainViewController {
         }()
     private lazy var iconActionSheet: UIActionSheet! = {
         let iconAS = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "拍照", "从手机相册选择")
-        
         return iconAS
         }()
     private lazy var mineTitles: NSMutableArray! = {
@@ -267,7 +266,8 @@ extension MeViewController: UITableViewDelegate, UITableViewDataSource {
                     navigationController?.pushViewController(login, animated: true)
                 }
             } else {                                                        // 应用推荐
-                
+                let rmdVC = RecommendViewController()
+                navigationController!.pushViewController(rmdVC, animated: true)
             }
             
         } else {

@@ -10,7 +10,11 @@ import UIKit
 
 class ExperienceViewController: MainViewController {
     
-    var experModel: ExperienceModel?
+    var experModel: ExperienceModel? {
+        didSet {
+            headView?.experModel = experModel
+        }
+    }
     private let cellIdentifier: String = "experienceCell"
     
     private lazy var tableView: UITableView! = {
@@ -23,8 +27,15 @@ class ExperienceViewController: MainViewController {
         tableV.rowHeight = UITableViewAutomaticDimension
         tableV.contentInset = UIEdgeInsetsMake(0, 0, NavigationH + 49, 0)
         tableV.registerNib(UINib(nibName: "ExperienceCell", bundle: nil), forCellReuseIdentifier: self.cellIdentifier)
+        
+        let diyHeader = SDRefreshHeader(refreshingTarget: self, refreshingAction: "loadDatas")
+        diyHeader.lastUpdatedTimeLabel.hidden = true
+        diyHeader.stateLabel.hidden = true
+        diyHeader.gifView.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
+        tableV.header = diyHeader
         return tableV
         }()
+    
     private lazy var headView: ExperHeadView? = {
         let viewH = ExperHeadView(frame: CGRectMake(0, 0, AppWidth, 170))
         viewH.delegate = self
@@ -36,27 +47,30 @@ class ExperienceViewController: MainViewController {
         
         self.navigationItem.title = "体验"
         
-        loadDatas()
+        tableView.header.beginRefreshing()
         
         setTableView()
     }
     
     private func setTableView() {
-        
         headView?.experModel = experModel
         tableView.tableHeaderView = headView!
         view.addSubview(tableView)
     }
     
-    private func loadDatas() {
+    func loadDatas() {
         weak var tmpSelf = self
-        ExperienceModel.loadExperienceModel { (data, error) -> () in
-            if error != nil {
-                return
+        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(1.2 * Double(NSEC_PER_SEC)))
+        dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
+            ExperienceModel.loadExperienceModel { (data, error) -> () in
+                if error != nil {
+                    tmpSelf!.tableView.header.endRefreshing()
+                    return
+                }
+                tmpSelf!.experModel = data
+                tmpSelf!.tableView.header.endRefreshing()
+                tmpSelf!.tableView.reloadData()
             }
-            
-            tmpSelf!.experModel = data
-            tmpSelf!.tableView.reloadData()
         }
     }
     
