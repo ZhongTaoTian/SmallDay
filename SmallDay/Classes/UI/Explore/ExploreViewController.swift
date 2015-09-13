@@ -92,8 +92,6 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     
     private func setTableViewHeader(refreshingTarget: AnyObject, refreshingAction: Selector, imageFrame: CGRect, tableView: UITableView) {
         let header = SDRefreshHeader(refreshingTarget: refreshingTarget, refreshingAction: refreshingAction)
-        header.lastUpdatedTimeLabel.hidden = true
-        header.stateLabel.hidden = true
         header.gifView.frame = imageFrame
         tableView.header = header
     }
@@ -101,7 +99,8 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     ///MARK:- 下拉加载刷新数据
     func pullLoadDayData() {
         weak var tmpSelf = self
-        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(2.0 * Double(NSEC_PER_SEC)))
+        // 模拟延时加载
+        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(1.5 * Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
             EveryDays.loadEventsData { (data, error) -> () in
                 if error != nil {
@@ -118,7 +117,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     
     func pullLoadAlbumData() {
         weak var tmpSelf = self
-        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(2.0 * Double(NSEC_PER_SEC)))
+        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(1.5 * Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
             ThemeModels.loadThemesData { (data, error) -> () in
                 if error != nil {
@@ -145,14 +144,6 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     func doubleTextView(doubleTextView: DoubleTextView, didClickBtn btn: UIButton, forIndex index: Int) {
         backgroundScrollView.setContentOffset(CGPointMake(AppWidth * CGFloat(index), 0), animated: true)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        KingfisherManager.sharedManager.cache.clearMemoryCache()
-        KingfisherManager.sharedManager.cache.clearDiskCache()
-        KingfisherManager.sharedManager.cache.cleanExpiredDiskCache()
-    }
-    
 }
 
 /// 扩展代理方法

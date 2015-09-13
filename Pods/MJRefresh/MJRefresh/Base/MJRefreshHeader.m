@@ -67,11 +67,13 @@
     CGFloat happenOffsetY = - self.scrollViewOriginalInset.top;
     
     // 如果是向上滚动到看不见头部控件，直接返回
-    if (offsetY >= happenOffsetY) return;
+    // >= -> >
+    if (offsetY > happenOffsetY) return;
     
     // 普通 和 即将刷新 的临界点
     CGFloat normal2pullingOffsetY = happenOffsetY - self.mj_h;
     CGFloat pullingPercent = (happenOffsetY - offsetY) / self.mj_h;
+    
     if (self.scrollView.isDragging) { // 如果正在拖拽
         self.pullingPercent = pullingPercent;
         if (self.state == MJRefreshStateIdle && offsetY < normal2pullingOffsetY) {

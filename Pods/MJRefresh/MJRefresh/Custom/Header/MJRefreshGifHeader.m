@@ -77,27 +77,6 @@
     self.gifView.image = images[index];
 }
 
-//- (void)placeSubviews
-//{
-//    [super placeSubviews];
-//    
-//    // MARK: 这里的布局我动了下
-////    self.gifView.frame = CGRectMake((self.frame.size.width - 35) * 0.5, 47, 35, 40);
-//}
-
-//- (void)placeSubviews
-//{
-//    [super placeSubviews];
-//    
-//    self.gifView.frame = self.bounds;
-//    if (self.stateLabel.hidden && self.lastUpdatedTimeLabel.hidden) {
-//        self.gifView.contentMode = UIViewContentModeCenter;
-//    } else {
-//        self.gifView.contentMode = UIViewContentModeRight;
-//        self.gifView.mj_w = self.mj_w * 0.5 - 90;
-//    }
-//}
-
 - (void)setState:(MJRefreshState)state
 {
     MJRefreshCheckState

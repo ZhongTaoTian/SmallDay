@@ -143,6 +143,8 @@
 		FAE5D5681BA2AC90009BA347 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5671BA2AC90009BA347 /* RegExCategories.m */; };
 		FAE5D56A1BA3FE3C009BA347 /* SDRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */; };
 		FAE5D56C1BA4240F009BA347 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D56B1BA4240F009BA347 /* RecommendViewController.swift */; };
+		FAE5D5721BA49F25009BA347 /* WNXMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5711BA49F25009BA347 /* WNXMapView.swift */; };
+		FAE5D5741BA595CB009BA347 /* Nears in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5731BA595CB009BA347 /* Nears */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,6 +321,10 @@
 		FAE5D5671BA2AC90009BA347 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDRefreshHeader.swift; sourceTree = "<group>"; };
 		FAE5D56B1BA4240F009BA347 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		FAE5D56D1BA48458009BA347 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FAE5D56F1BA48678009BA347 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = Pods/AMap2DMap/MAMapKit.framework; sourceTree = "<group>"; };
+		FAE5D5711BA49F25009BA347 /* WNXMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WNXMapView.swift; sourceTree = "<group>"; };
+		FAE5D5731BA595CB009BA347 /* Nears */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nears; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +361,8 @@
 		2972EA47F0ED3F21B1E32388 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAE5D56F1BA48678009BA347 /* MAMapKit.framework */,
+				FAE5D56D1BA48458009BA347 /* MapKit.framework */,
 				FAD582FD1B94274C007EEEE0 /* libz.dylib */,
 				FAD582FA1B942643007EEEE0 /* libstdc++.dylib */,
 				FAD582F81B9424A9007EEEE0 /* libc++.dylib */,
@@ -419,6 +427,7 @@
 				FA73876D1B8B9901009D08C8 /* Details */,
 				FA66A4011B8EC842005DF017 /* Experience */,
 				FA296CD71B9C898800A967D9 /* More */,
+				FAE5D5731BA595CB009BA347 /* Nears */,
 			);
 			path = CustomData;
 			sourceTree = "<group>";
@@ -617,8 +626,8 @@
 				FA82B12E1B87A1F4003A2264 /* ThemeCell.xib */,
 				FA73875F1B8B63A2009D08C8 /* EventViewController.swift */,
 				FA4090031B9EB7970007810C /* ShopDetailContentView.swift */,
-				FA4090051B9EB7CC0007810C /* ShopDetailContentView.xib */,
 				FA932A941B88C4C900601B54 /* ThemeViewController.swift */,
+				FA4090051B9EB7CC0007810C /* ShopDetailContentView.xib */,
 				FA40901F1B9EEC340007810C /* MoreView.swift */,
 				FA4090211B9EEC400007810C /* MoreView.xib */,
 				FA4090231B9F3B310007810C /* GuessLikeView.swift */,
@@ -644,6 +653,7 @@
 				FA4090011B9D9C3B0007810C /* LoadAnimatImageView.swift */,
 				FAE5D55A1BA1AE4E009BA347 /* LeadpageViewController.swift */,
 				FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */,
+				FAE5D5711BA49F25009BA347 /* WNXMapView.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -866,6 +876,7 @@
 				FAD582C41B935AD0007EEEE0 /* UMSocialSDKResourcesNew.bundle in Resources */,
 				FAA0F9CA1B7DC74900B5EA08 /* LaunchScreen.xib in Resources */,
 				FA40902C1B9F51CA0007810C /* MyCenterViewController.xib in Resources */,
+				FAE5D5741BA595CB009BA347 /* Nears in Resources */,
 				FAD583381B94BF76007EEEE0 /* 南锣鼓巷 in Resources */,
 				FAE5D54D1BA1A485009BA347 /* OrderViewController.xib in Resources */,
 				FAD583391B94BF76007EEEE0 /* 三里屯 in Resources */,
@@ -954,6 +965,7 @@
 				FAE5D56C1BA4240F009BA347 /* RecommendViewController.swift in Sources */,
 				FA7387601B8B63A2009D08C8 /* EventViewController.swift in Sources */,
 				FA66A43D1B902CF6005DF017 /* ShopDetailView.swift in Sources */,
+				FAE5D5721BA49F25009BA347 /* WNXMapView.swift in Sources */,
 				FA40901C1B9EE3B30007810C /* UIView+wnxView.swift in Sources */,
 				FA82B1201B874EE4003A2264 /* EveryDayModel.swift in Sources */,
 				FA40ED991B84D1090049DE19 /* SettingCell.swift in Sources */,
@@ -1145,6 +1157,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AMap2DMap",
+				);
 				INFOPLIST_FILE = SmallDay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1166,6 +1182,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AMap2DMap",
+				);
 				INFOPLIST_FILE = SmallDay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

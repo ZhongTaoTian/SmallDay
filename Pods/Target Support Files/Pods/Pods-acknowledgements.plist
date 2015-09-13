@@ -14,6 +14,24 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright &#169; 2014 AutoNavi. All Rights Reserved.
+</string>
+			<key>Title</key>
+			<string>AMap2DMap</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright &#169; 2014 AutoNavi. All Rights Reserved.
+</string>
+			<key>Title</key>
+			<string>AMapSearch</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Copyright (c) 2013-2015 MJRefresh (https://github.com/CoderMJLee/MJRefresh)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

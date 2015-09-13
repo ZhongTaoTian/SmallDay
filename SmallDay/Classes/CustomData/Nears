@@ -1,0 +1,801 @@
+{
+    "msg": "",
+    "code": 1,
+    "list": [
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131290.html",
+            "telephone": "0755-26066797",
+            "tag": "赏味,惬意,咖啡馆",
+            "sponsor": {},
+            "id": 131290,
+            "adurl": "",
+            "startdate": 0,
+            "title": "品一杯清新啡点 享一份恬淡时光",
+            "eventtype": 1,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "迪街咖啡cafe D_street是深圳第一家的韩国咖啡馆，从2011年初开到现在，老板是个韩国设计师，韩式小清新风格承自韩国老板亲自设计，咖啡馆100平方米大小，有露天位置，也有独立空间小木屋，可以边喝咖啡边看书，还有可以席地而坐的私人空间，平日里约上三五知己，来这里是很好的选择。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "三人行 大城小爱",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "深圳市 南山区 华侨城西组团芳华苑春桃阁101号(近佛山街)  ",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135911.jpg"
+                    ],
+                    "position": "113.985842,22.542139",
+                    "id": 131292
+                },
+                {
+                    "title": "用影像收集幸福家庭的快乐瞬间",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "南山区深圳大学西门附近",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-09-08/event137128.jpg"
+                    ],
+                    "position": "113.939373,22.538633",
+                    "id": 131372
+                }
+            ],
+            "city": "深圳",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "113.929326098,22.527926993",
+                    "title": "迪街咖啡",
+                    "address": "深圳南山区 南海大道桂庙新村站(近深圳大学西门)",
+                    "city": "深圳"
+                }
+            ],
+            "address": "深圳南山区 南海大道桂庙新村站(近深圳大学西门)",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-26/event135897.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "迪街咖啡",
+            "enddate": 3017789304,
+            "mobileURL": "<body><html><head></head><body><p>迪街咖啡cafe D_street是深圳第一家的韩国咖啡馆，从2011年初开到现在，老板是个韩国设计师，韩式小清新风格承自韩国老板亲自设计。这里的小格调和温馨氛围会让每一位走进来的客人都觉得很舒服。一直很好奇店名由来，直到看到店面上D字里面藏着delicious，delight，drink，才焕然大悟。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135877.jpg\" height=\"814\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135877.jpg\" width=\"1080\"></img></p><p>咖啡馆100平方米大小，有露天位置，冬天可以坐到外面的座位去，里面有独立空间小木屋，可以边喝咖啡边看书，高度和灯光刚刚好，除了露天座位、独立小木屋外，还有可以席地而坐的私人空间。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135878.jpg\" height=\"810\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135878.jpg\" width=\"1080\"></img>平日里约上三五知己，来这里是很好的选择。老板告诉我，迪街咖啡招牌上的“D”的字型很像咖啡杯，也是名字由来原因之一。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135880.jpg\" height=\"1100\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135880.jpg\" width=\"825\"></img>老板特别推荐抹茶拿铁和芝士厚土司，抹茶拿铁没有咖啡成分，材料都从韩国空运而至，香味浓郁入口不腻，配上芝士厚土司，味蕾上的惊喜让人念念不忘。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135896.jpg\" height=\"640\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135896.jpg\" width=\"640\"></img></p><p>要是碰上老板在，他便会和你唠嗑许久。老板的中文讲得非常好，其实是来中国已八年的缘故，唠嗑多久也察觉不出她是个韩国人。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135881.jpg\" height=\"810\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135881.jpg\" width=\"1080\"></img>迪街咖啡不定期会有教客人做蛋糕的活动，这种蛋糕的材料比我们常见的蛋糕材料要贵好些，也更考验人的耐心和手艺，做出生活味道的烘焙不容易。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135883.JPG\" height=\"1100\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135883.JPG\" width=\"825\"></img>一个地方能反复来，总有它区别于其他咖啡馆的地方，喜欢脱掉鞋子，席地而坐，就像在家里一样放松，音乐刚刚好，总能轻柔地碰撞你的心坎。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135898.jpg\" height=\"525\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135898.jpg\" width=\"700\"></img>​</p><p>深圳这个快节奏的城市，有这么一个韩国设计师老板，他愿意倾其所有去建一所给自己和客人休息的场所，不为追逐利益，更多是分享自己的生活态度，融进自己的心血，用满满的爱好去经营一家咖啡馆，一定会像老板所说，会随着时间的沉淀越发香醇。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135884.jpg\" height=\"1167\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135884.jpg\" width=\"825\"></img></p><p><strong>迪街咖啡</strong></p><p><strong>地址：</strong></p><p>深圳市南山区南海大道桂庙新村站(近深圳大学西门)     </p><p><strong>联系电话：</strong></p><p>0755-26066797</p><p><strong>营业时间：</strong></p><p>09:00-24:30</p><p><strong>微博：</strong></p><p>cafeD_street</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131290,
+            "position": "113.929326098,22.527926993"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131372.html",
+            "telephone": "0755-23803733",
+            "tag": "有趣,惬意,生活馆",
+            "sponsor": {},
+            "id": 131372,
+            "adurl": "",
+            "startdate": 0,
+            "title": "用影像收集幸福家庭的快乐瞬间",
+            "eventtype": 1,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "如果你不喜与陌生人交谈，只想安静坐在咖啡馆里专注一杯咖啡，那你恐怕会错过春天的盒子，你不会知道它真身是家庭影像馆，专门负责收集幸福家庭的快乐瞬间。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "设计师的秘密花园",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "深圳福田区上步南路1035号玉丰楼B座09号商铺",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135915.JPG"
+                    ],
+                    "position": "114.102545,22.543403",
+                    "id": 131293
+                },
+                {
+                    "title": "品一杯清新啡点 享一份恬淡时光",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "深圳南山区 南海大道桂庙新村站(近深圳大学西门)",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135897.jpg"
+                    ],
+                    "position": "113.935864,22.533633",
+                    "id": 131290
+                }
+            ],
+            "city": "深圳",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "113.932829488,22.5329551183",
+                    "title": "春天的盒子",
+                    "address": "南山区深圳大学西门附近",
+                    "city": "深圳"
+                }
+            ],
+            "address": "南山区深圳大学西门附近",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-09-08/event137128.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "春天的盒子",
+            "enddate": 3018500216,
+            "mobileURL": "<body><html><head></head><body><p>如果你不喜与陌生人交谈，只想安静坐在咖啡馆里专注一杯咖啡，那你恐怕会错过春天的盒子，你不会知道它真身是家庭影像馆，专门负责收集幸福家庭的快乐瞬间。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137127.JPG\" height=\"875\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137127.JPG\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137123.jpeg\" height=\"428\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137123.jpeg\" width=\"640\"></img></p><p>春天的盒子位于深圳市南山区的一个半岛边上，一个休闲的创意园区里。小舟，生活馆的老板，一个有着十多年童装、商业摄影经验，走南闯北，怀揣着想给现在的家庭感情维护和延续做些贡献的摄影师。心中的梦想，坚持以真实的情感来拍摄，以咖啡来温暖路人。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137120.jpg\" height=\"523\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137120.jpg\" width=\"640\"></img></p><p>春天的盒子影像生活馆，招牌简单形象，外形就如它名字中的盒子,嫩绿的春天的颜色。老板本来开着一家摄影工作室，后来找到了一个新的地方，比原来工作室大，觉得纯粹拿来当工作室的话有点大，后来想着开家咖啡厅也不错，于是2011年便有了这家摄影和咖啡馆合为一体的生活馆。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137126.JPG\" height=\"402\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137126.JPG\" width=\"640\"></img></p><p>“春天的盒子”是一间以摄影为主的多元化生活馆。它的名字有两重寓意，“春天”代表着希望、温情和爱，而“盒子”一方面代表着记录瞬间的相机和照片，另一方面则代表着个人的思想和记忆。盒子也蕴含着压箱底、有故事。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137121.jpeg\" height=\"410\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137121.jpeg\" width=\"640\"></img></p><p>走进生活馆，大大小小的相框随处可见，这些温情、自然而真实的“盒子”里，装满了照片主角的幸福——一如店里香气四溢的咖啡甜点般让人陶醉。这里除了提供影像服务和咖啡甜点，还会定期举办沙龙论坛、音乐聚会和周末影院等活动。那些忙了一天的人们，不妨在这里慢下自己的脚步：细细地品尝一份简单而美好的点心，静静地阅读几卷泛黄的书页、欣赏一件灿烂的花艺，或是在照片的长廊中，让自己穿越一个又一个的空间。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137125.JPG\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137125.JPG\"></img></p><p>无论从出品的设计、装潢摆设的布置还是从整体风格来说，“春天的盒子”都传达着这样一种生活理念——有希望，有爱，有温情。有人将这里称作“深圳最美咖啡馆”，也许是因为，这里出售的不仅仅是商品，更是一种生活的态度吧。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137122.jpeg\" height=\"896\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137122.jpeg\" width=\"640\"></img></p><p><strong>地址：</strong>南山区深圳大学西门附近</p><p><strong>电话：</strong>0755-23803733</p><p><strong>营业时间：</strong>9:00-23:00</p><p><strong>微信：</strong>春天的盒子</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131372,
+            "position": "113.932829488,22.5329551183"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131292.html",
+            "telephone": "0755-26900101",
+            "tag": "温润,幸福,咖啡馆",
+            "sponsor": {},
+            "id": 131292,
+            "adurl": "",
+            "startdate": 0,
+            "title": "三人行 大城小爱",
+            "eventtype": 1,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "在深圳这个繁华都市有一个角落存着一家温馨的咖啡店，它温暖了太多了的悠悠晃晃漂动的客人。它的名字叫一咖啡。是由三个热爱咖啡的人在2013年一起开办的，这里主打单品咖啡，店主每个月都会寻找多品种的咖啡豆。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "品一杯清新啡点 享一份恬淡时光",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "深圳南山区 南海大道桂庙新村站(近深圳大学西门)",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135897.jpg"
+                    ],
+                    "position": "113.935864,22.533633",
+                    "id": 131290
+                },
+                {
+                    "title": "误入华侨 迷失琳琅",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "深圳市南山区华侨城兴隆西街中旅广场群楼-华生活馆2楼B220(近沃尔玛)",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135960.jpg"
+                    ],
+                    "position": "113.989671,22.54142",
+                    "id": 131294
+                }
+            ],
+            "city": "深圳",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "113.979392382,22.5359820134",
+                    "title": "一咖啡",
+                    "address": "深圳市 南山区 华侨城西组团芳华苑春桃阁101号(近佛山街)  ",
+                    "city": "深圳"
+                }
+            ],
+            "address": "深圳市 南山区 华侨城西组团芳华苑春桃阁101号(近佛山街)  ",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-26/event135911.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "一咖啡",
+            "enddate": 3017376398,
+            "mobileURL": "<body><html><head></head><body><p>在深圳这个繁华都市有一个角落存着一家温馨的咖啡店，它温暖了太多了的悠悠晃晃漂动的客人。它的名字叫一咖啡，是由三个热爱咖啡的人在2013年一起开办的，对咖啡的热爱使他们想法一拍即合。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135913.jpg\" height=\"480\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135913.jpg\" width=\"640\"></img>​</p><p>一咖啡的前身是一家独立书店，在这家书店转租时候，他们对它一见钟情。在此之前，他们花了一年半的时间选择他们心中合适的地址。店主小凯说路过的时候，阳光正好晒在店内，看起来很温暖，这也是她希望带给人们的感觉。有些客人会问店主为什么在深圳这种大城市选居民区作为地址，而店主也则是反问：咖啡店不就应该是这个样子吗？</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135902.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135902.jpg\" width=\"1080\"></img></p><p>进到店里，顿时明白店主小凯所说的意思。暖黄色的灯光，软塌塌的沙发，色彩斑斓的摆设品，墙上挂满了画，看着店主周游列国淘回来的宝贝，书架上摆满了精心挑选的书，整个咖啡店无处不能看出他们三个人的用心。阳光从门缝里溜了进来，斑斑驳驳地晒在地上，让人心生暖意。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135901.JPG\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135901.JPG\" width=\"1080\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135904.JPG\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135904.JPG\"></img></p><p>早在文艺复兴时，咖啡店乃文人聚集之地，文化碰撞的场所。店主希望一咖啡仍具有彼时的功能。由此店里不定期举行各种分享活动，有民谣，手工，电影，希望可以遇见同磁场的人。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135905.JPG\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135905.JPG\" width=\"1080\"></img> </p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135906.JPG\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135906.JPG\" width=\"1080\"></img></p><p>当代人对电子产品的依赖性过大以至于时时刻刻需要盯着手机，而手工活动可以使人静下心，专注于手头上的一针一线。所以你在这里可以看到很多设计师店主猫猫的手工品，也可以看到其他手工者的原创作品。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135907.JPG\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135907.JPG\" width=\"1080\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135908.JPG\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135908.JPG\" width=\"1080\"></img></p><p>这里主打单品咖啡，店主每个月都会寻找多品种的咖啡豆。大概是热爱咖啡的人共性，忠于一两款咖啡豆，却也热衷尝试发掘咖啡豆的多样性。而越南冰咖啡则是店主歪歪在越南旅游时跑遍街头巷尾学艺最终把正宗越南咖啡带到一咖啡，为了保证口感，其咖啡豆也选自越南当地的咖啡豆。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135914.jpg\" height=\"800\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135914.jpg\" width=\"640\"></img>​</p><p>小吃则是健康的轻食及手工曲奇，清新的味道才是搭配咖啡的佳品。“咖啡店应该弥漫着浓厚的咖啡味道。”店主小凯说道。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135910.JPG\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135910.JPG\" width=\"1080\"></img></p><p>店主歪歪曾辞去律师一职，去咖啡店学习了一年多；小凯和歪歪是同事，猫猫是设计师。在一咖啡营业至今两年多来，他们三个人皆辞去正职，用心地一起经营这家店，在深圳这个大大的城市开了一家小小的咖啡店。就是这样的小梦，使他们一个劲地把店开下去。 看似平凡的事情，则最需要用心和坚持。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135909.JPG\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135909.JPG\" width=\"1080\"></img></p><p><strong>一咖啡</strong></p><p><strong>地址：</strong></p><p>深圳市华侨城佛山街西组团芳华苑春桃阁101</p><p><strong>营业时间：</strong></p><p>10:30--22:30</p><p><strong>电话：</strong></p><p>0755-26900101</p><p><strong>微信/微博：</strong></p><p>OCT的一咖啡</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131292,
+            "position": "113.979392382,22.5359820134"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131294.html",
+            "telephone": "0755-26980335",
+            "tag": "温润,幸福,生活馆",
+            "sponsor": {},
+            "id": 131294,
+            "adurl": "",
+            "startdate": 0,
+            "title": "误入华侨 迷失琳琅",
+            "eventtype": 1,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "美家居生活馆售卖各种琳琅满目的商品，说不出的别致，小至小物件摆设，大至怀旧气息的床头柜。店里的大部分商品都是出口商品，许多都来源于外国设计师设计，有些样品只有一件的，也有一小部分是从国外旅行带回来的样品。大概也是为什么有新客和旧客仍心心念念的原因。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "三人行 大城小爱",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "深圳市 南山区 华侨城西组团芳华苑春桃阁101号(近佛山街)  ",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135911.jpg"
+                    ],
+                    "position": "113.985842,22.542139",
+                    "id": 131292
+                },
+                {
+                    "title": "用影像收集幸福家庭的快乐瞬间",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "南山区深圳大学西门附近",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-09-08/event137128.jpg"
+                    ],
+                    "position": "113.939373,22.538633",
+                    "id": 131372
+                }
+            ],
+            "city": "深圳",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "113.98323285,22.5352061573",
+                    "title": "美家居用品馆",
+                    "address": "深圳市南山区华侨城兴隆西街中旅广场群楼-华生活馆2楼B220(近沃尔玛)",
+                    "city": "深圳"
+                }
+            ],
+            "address": "深圳市南山区华侨城兴隆西街中旅广场群楼-华生活馆2楼B220(近沃尔玛)",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-26/event135960.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "美家居用品馆",
+            "enddate": 3017808498,
+            "mobileURL": "<body><html><head></head><body><p>“有时候错误的火车，会带你去正确的地方。”我想这一句话描述我和美·家居用品馆的相遇最恰当不过了。在华侨城迷路的时候，偶然发现这家店。琳琅满目的商品，说不出的别致，似乎在这个百宝箱里你都可以找到你的心头好，小至小物件摆设，大至怀旧气息的床头柜。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135935.jpg\" height=\"720\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135935.jpg\" width=\"1080\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135944.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135944.jpg\" width=\"1080\"></img></p><p>早在01年店主开始在罗湖做了第一家店，04年开了第二家，08年因为其搭档出国而结束经营，没有继续经营下去，甚是可惜。许多客人到今天还记得当初罗湖区的家居店以至于发现新店都会上前询问是否是记忆中熟悉的那家店。店主那时的想法就是搜逻生活中的美，把自己感受的到东西呈现给所有热爱生活的人们。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135936.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135936.jpg\" width=\"1080\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135937.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135937.jpg\" width=\"1080\"></img> </p><p>店里的大部分商品都是出口商品，许多都来源于外国设计师设计，有些样品只有一件的，也有一小部分是从国外旅行带回来的样品。这大概也是为什么很多旧客仍心心念念的原因。至于未来，店主会往线上方向发展，让更多人可以足不出户即享受高品质的生活。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135941.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135941.jpg\" width=\"1080\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135946.jpg\" height=\"720\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135946.jpg\" width=\"1080\"></img></p><p>和店主聊起得知，壁炉和店内所有装修是店主和其搭档一起设计的，收银台是买的原木切割好自己做的，桌子和壁炉门把手等上的木头都是原木分割的。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135942.jpg\" height=\"720\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135942.jpg\" width=\"1080\"></img></p><p>店里的点滴都可以看出店主其用心程度。“受商场的限制，很多想法还没有做出来。”店主有些不满足的说道。但在我看来，也正是由于这点不完美而铸就了未来更多发展的潜能，让人不胜期待。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135943.jpg\" height=\"719\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135943.jpg\" width=\"1080\"></img></p><p><strong>美家居用品馆</strong></p><p><strong>地址：</strong></p><p>深圳市南山区华侨城兴隆西街中旅广场群楼-华生活馆2楼B220(近沃尔玛)</p><p><strong>电话：</strong></p><p>0755-26980335</p><p>备注：下载小日子，出示此文章可享有九折优惠</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131294,
+            "position": "113.98323285,22.5352061573"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131293.html",
+            "telephone": "0755-23937253",
+            "tag": "雅韵,惬意,咖啡馆",
+            "sponsor": {},
+            "id": 131293,
+            "adurl": "",
+            "startdate": 0,
+            "title": "设计师的秘密花园",
+            "eventtype": 1,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "Yofamily是店主星哥从家具到店铺装修都由现今开设计公司的他自己一手包办的。进店犹让人觉得误闯进去了美轮美奂的爱丽丝奇妙世界。店里的每处细节也会让人感觉店主把yofamily不仅仅是当做咖啡店，更是一个family。这就是店主星哥，对各个领域的极致追求使每家店都以其最完美的形象出现在众人面前。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "三人行 大城小爱",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "深圳市 南山区 华侨城西组团芳华苑春桃阁101号(近佛山街)  ",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135911.jpg"
+                    ],
+                    "position": "113.985842,22.542139",
+                    "id": 131292
+                },
+                {
+                    "title": "品一杯清新啡点 享一份恬淡时光",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "深圳南山区 南海大道桂庙新村站(近深圳大学西门)",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-26/event135897.jpg"
+                    ],
+                    "position": "113.935864,22.533633",
+                    "id": 131290
+                }
+            ],
+            "city": "深圳",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "114.09608421,22.5373000486",
+                    "title": "Yo Family",
+                    "address": "深圳福田区上步南路1035号玉丰楼B座09号商铺",
+                    "city": "深圳"
+                }
+            ],
+            "address": "深圳福田区上步南路1035号玉丰楼B座09号商铺",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-26/event135915.JPG"
+            ],
+            "islongtime": 1,
+            "remark": "Yo Family",
+            "enddate": 3017378984,
+            "mobileURL": "<body><html><head></head><body><p>一个人约有五分之一的时间在工作上，在我看来，如果能窝在软塌塌的沙发上，喝上一杯咖啡，慢悠悠地开始一天的工作，应该是最舒服的状态。yofamily一开始的诞生就是基于这样的理念。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135933.jpg\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135933.jpg\" width=\"640\"></img></p><p>yofamily坐落在马路边上，其店面感觉和其他咖啡馆无异，本抱着打发时间的心态，却在我推门而进的时候给了我惊喜，让人觉得误闯进去了爱丽丝的奇妙世界。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135917.JPG\" height=\"1512\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135917.JPG\" width=\"1080\"></img></p><p>和店主星哥聊起才得知，这家店从家具到店铺装修都是由现今开设计公司的他自己一手包办的，内部装饰都是他自己喜欢的元素。“一开始只是想用来做studio的，后来才慢慢对外开放。现在很多咖啡店都是千篇一律，我希望可以借由这个咖啡店来传达我们的设计理念”和老板聊天的时候 ，他坦率地说起一开始的创店理念。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135916.jpg\" height=\"379\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135916.jpg\" width=\"640\"></img></p><p>“城市是空的，故事是人写的”第三十六个故事里曾经出现过这样的一句台词，而店主也在yofamily见证了一个又一个感人的故事，顾客求婚遇到的插曲，生日聚会出现的惊喜等等，店主总能如数家珍地一一列出，让人感受到这个大家庭的温暖。而店里的每处细节也会让人感觉店主把yofamily不仅仅是当做咖啡店，更是一个family。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135918.JPG\" height=\"1440\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135918.JPG\" width=\"1080\"></img></p><p>如果足够幸运的话，可以在店里欣赏店主朋友的现场演出，当然你有兴趣的话，也可以上台给大家伙表演，乐器齐全。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135919.jpg\" height=\"381\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135919.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135920.jpg\" height=\"396\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135920.jpg\" width=\"629\"></img></p><p>这家咖啡店其实也是youfamily设计公司的分身，门后既是工作室。推开门进去又是另一番景象，让人惊喜。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135922.JPG\" height=\"1440\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135922.JPG\" width=\"1080\"></img></p><p>yofamily除了环境独具风味外，出品的食物味道也直指人心。一切追求极致的老板特地请来香港餐饮界的大师定制独特的餐单,如热狗TACO,吞拿鱼三文治等，而饮品方面，咖啡采用了跨越一整世纪的意大利品牌LAVAZZA。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135923.JPG\" height=\"1411\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135923.JPG\" width=\"1000\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135926.JPG\" height=\"1414\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135926.JPG\" width=\"994\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135925.JPG\" height=\"884\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135925.JPG\" width=\"640\"></img></p><p>不喜欢喝咖啡的人也可以试试苏打和冰乐，个人比较喜欢杂莓薄荷苏打，让我在炎炎夏日也有了透心凉齐飞扬的感觉！甜品木糠杯，进口动物奶油，口感细腻顺滑。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135928.JPG\" height=\"1383\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135928.JPG\" width=\"1000\"></img>​</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135927.JPG\" height=\"643\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135927.JPG\" width=\"1080\"></img></p><p>这就是店主星哥，跨了好几个领域的奇才，现开了设计公司，在服装业以及餐饮业都拥有其个人店铺，他对各个领域的极致追求使每家店都以其最完美的形象出现在众人面前分享这种极致的美好。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135930.JPG\" height=\"1440\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135930.JPG\" width=\"1080\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-26/event135929.JPG\" height=\"1440\" src=\"http://pic.huodongjia.com/event/2015-08-26/event135929.JPG\" width=\"1080\"></img></p><p><strong>Yo Family</strong></p><p><strong>地址：</strong></p><p>深圳福田区上步南路1035号玉丰楼B座09号商铺（上步根据地酒吧，瑞鹏宠物医院旁）</p><p><strong>电话：</strong></p><p>0755-23937253</p><p><strong>营业时间：</strong></p><p>11:00 - 23:00 </p><p><strong>公众微信号：</strong></p><p>优菲玛丽咖啡Yofamliy</p><p><strong>备注：小日子用户独家福利：现将此文章转发朋友圈即可获得饮料一杯!</strong></p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131293,
+            "position": "114.09608421,22.5373000486"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-130094.html",
+            "telephone": "13312824772",
+            "tag": "手作,亲子,温润,有趣,纯质,定制",
+            "sponsor": {},
+            "id": 130094,
+            "adurl": "",
+            "startdate": 0,
+            "title": "这是一场手，眼，脑协调性的劳作",
+            "eventtype": 2,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "禺山窑致力于铸造广东陶艺人文气质，以现代陶艺环境装饰品创作为工作方向。用作品诠释陶艺文化于创作中，推动陶文化陶生活更多的为大众所认知，普及陶文化，陶生活！",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "好多木头随意来玩",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "大学城外环西路南亭村南熏里二巷2号",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-27/event119713.jpg"
+                    ],
+                    "position": "113.393551023,23.0413145725",
+                    "id": 129929
+                },
+                {
+                    "title": "非手工，不生活",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "海珠区江南西路81号江南商务8楼803",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-25/event135731.jpg"
+                    ],
+                    "position": "113.278493104,23.1610437327",
+                    "id": 131279
+                }
+            ],
+            "city": "广州",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "113.305069894,22.9330898091",
+                    "title": "禺山窑",
+                    "address": "番禺区沙头街南双玉村金马大街二巷1号",
+                    "city": "广州"
+                }
+            ],
+            "address": "番禺区沙头街南双玉村金马大街二巷1号",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-05-04/event120980.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "禺山窑",
+            "enddate": 3013687368,
+            "mobileURL": "<body><html><head></head><body><p>陶，是传统文化的符号。也是历史文化发展的载体。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-04/event120981.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-05-04/event120981.jpg\" width=\"600\"></img></p><p>从教育学理解，陶艺能提高手，眼，脑协调性的劳作；从精神医学理解，陶艺可以唤醒个人满足感和成就感，对恢复自信返回社会工作具有康复作用。从社会工作而言，陶艺是传统手工业技术，与日常生活息息相关。</p><p>禺山窑致力于铸造广东陶艺人文气质，以现代陶艺环境装饰品创作为工作方向。用作品诠释陶艺文化于创作中，推动陶文化陶生活更多的为大众所认知，普及陶文化，陶生活！</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-04/event120983.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-05-04/event120983.jpg\" width=\"600\"></img>​</p><p>除了日常的陶艺教学活动，亲子体验活动，也接受社会爱陶人士学习陶艺学习。传承传统艺术体验传统手工艺文化是禺山窑艺术传播的理念。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-04/event120982.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-05-04/event120982.jpg\" width=\"600\"></img></p><p>在简单的工具辅助下就能轻松愉快的让学习者找到成就感，在手工艺制作中将自我个性体现出来。找到成就感，体会到传统文化的美！</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-05-04/event120985.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-05-04/event120985.jpg\" width=\"600\"></img></p><p><strong>地址：</strong>广州市番禺区沙头街南双玉村金马大街二巷1号简爱家居·信基饰品博览中心北门二楼 “竹境·禺山窑”（夏滘地铁站出口）</p><p><strong>电话：</strong>13312824772</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 130094,
+            "position": "113.305069894,22.9330898091"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131369.html",
+            "telephone": "13632856532",
+            "tag": "有趣,酷炫,工作室",
+            "sponsor": {},
+            "id": 131369,
+            "adurl": "",
+            "startdate": 0,
+            "title": "用故事来做画",
+            "eventtype": 1,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "刺青店就像城市的缩影,上映着的悲欢离合，发生了一个个的故事，而刺青工作者则是用刺青机代替笔画帮他们记录着。",
+            "note": "",
+            "feeltitle": "",
+            "events": [],
+            "more": [
+                {
+                    "title": "用影像收集幸福家庭的快乐瞬间",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "南山区深圳大学西门附近",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-09-08/event137128.jpg"
+                    ],
+                    "position": "113.939373,22.538633",
+                    "id": 131372
+                }
+            ],
+            "city": "深圳",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "114.122802555,22.5436229865",
+                    "title": "煌刺刺青",
+                    "address": "罗湖区深南东路2105号",
+                    "city": "深圳"
+                }
+            ],
+            "address": "罗湖区深南东路2105号",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-09-08/event137096.JPG"
+            ],
+            "islongtime": 1,
+            "remark": "煌刺刺青",
+            "enddate": 3018510574,
+            "mobileURL": "<body><html><head></head><body><p>煌刺刺青坐落在深圳市的中建大厦里边，能找到此的人大多是因朋友的口耳相传。“煌刺”品牌在香港刺青界也颇有口碑。</p><p>坐着电梯来到17楼，电梯门一打开即看到煌刺的骷髅头logo，几步之遥即来到店内，墙上巨大的涂鸦使整个空间都活跃起来。前台玻璃展示柜陈列着煌刺的店服以及老板所热爱的滑板。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137090.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137090.JPG\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137091.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137091.JPG\" width=\"640\"></img></p><p>墙上挂着刺青师们的得意之作以及各式的古灵精怪的小玩意，桌上随处放着店主淘回来的工艺品，这又像刺青给人的感觉，些许张扬，各门各派，各有特点。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137092.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137092.JPG\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137093.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137093.JPG\" width=\"640\"></img></p><p>店内成员不多，空间不算大，但却可以看见一群对刺青热爱并为之坚持的年轻人。工作房里面墙上贴满了刺青师的手稿，桌上整齐地摆放着工具和颜料。近几年来，不少顾客都倾向于交由刺青师单独设计稿图  从而获得独一无二的作品  所以具备这些创作能力的刺青师就备受亲睐</p><p>“早年的顾客比较无所谓的,选图都基本上是店里的册子上的图,也没有什么具体要求。近年来，顾客的审美有很大的提高，选图作为很重要的一步被加以重视，并且顾客会提出很多的设计要求。这是很好的事，能促使我们做出更好的作品。”老板阿煌回忆起说道。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137094.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137094.JPG\" width=\"640\"></img><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137095.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137095.JPG\" width=\"640\"></img></p><p>这里的纹身颜料选自进口品牌，确保纹身日久弥新</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137099.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137099.JPG\" width=\"640\"></img></p><p>刺青店就像城市的缩影,上映着的悲欢离合，发生了一个个的故事，而刺青工作者则是用刺青机代替笔画帮他们记录着。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137097.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137097.JPG\" width=\"640\"></img></p><p>和店里成员谈话间可看出煌刺气氛融洽，注意团队合作，分工明确。每位师傅都有自己擅长的刺青风格，擅长老式传统的煌哥，精通school风格和花式字体的范范，以及专注欧美写实和新传统的鱼头。“我们一般会建议顾客选择我们的手稿，或者是将顾客带来的手稿加以修改和重新设计，这样出来的作品 才是属于我们，属于这位顾客的专属作品。如果只是随随便便从网上下载图来做的话 那就只能获得和别人一模一样的图 并没有什么意思”刺青师范范谈道</p><p>“刺青是将美术作为基础从而拓展开来的新锐艺术，除了必须具备美术方面的能力之外，刺青师还必须了解针刺皮肤的原理以及各种刺功针法，再加上大量的实践和积累才能成就一名到位的刺青师”刺青师鱼头说道“而刺青的创作从来都是刺青师和顾客双方的事情，需要双方配合来完成，这点看似让外人难以理解，实则非常重要。比如具体到顾客作息的调整安排以及完成作品之后的饮食忌口和运动范围的控制。所有的这些，目的都是为了刺青作品的效果保持到位。”</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137098.JPG\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137098.JPG\" width=\"640\"></img></p><p>每个人心甘情愿地忍耐痛楚，等待血泪结痂必有他的原因。在这里你可以看到一个个故事转为烙印，用一生去演绎。<img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-09-08/event137100.PNG\" height=\"1136\" src=\"http://pic.huodongjia.com/event/2015-09-08/event137100.PNG\" width=\"640\"></img></p><p><strong>地址：</strong>罗湖区深南东路2105号（中建大厦17楼）1708</p><p><strong>预约微信：</strong>13917593044</p><p><strong>预约电话：</strong>13632856532    </p><p><strong>营业时间：</strong>13:30—22:30</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131369,
+            "position": "114.122802555,22.5436229865"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-129929.html",
+            "telephone": "",
+            "tag": "手作,有趣,纯质,定制",
+            "sponsor": {},
+            "id": 129929,
+            "adurl": "",
+            "startdate": 0,
+            "title": "好多木头随意来玩",
+            "eventtype": 2,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "这家店名叫“168木工方”，店主李俊杰在大学期间学习设计，黄仕法学习工艺美术，他们均毕业于广州美术学院，并且是舍友。他们说，这里只是一间工作坊，而非店面，客人可以过来喝茶聊天，也可以进行DIY。",
+            "note": "",
+            "feeltitle": "鸡汤往往发生在分享中",
+            "events": [],
+            "more": [
+                {
+                    "title": "揉泥，拉胚，烧制，再上色",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "海珠区小港路长安西街4号",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-27/event119684.jpg"
+                    ],
+                    "position": "113.276571683,23.1145145357",
+                    "id": 129928
+                },
+                {
+                    "title": "都市白领学厨基地",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "天河区广利路77号",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-04-27/event119729.jpg"
+                    ],
+                    "position": "113.32719815,23.1365606027",
+                    "id": 129932
+                }
+            ],
+            "city": "广州",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "113.387109604,23.0350506137",
+                    "title": "168木工方",
+                    "address": "大学城外环西路南亭村南熏里二巷2号",
+                    "city": "广州"
+                }
+            ],
+            "address": "大学城外环西路南亭村南熏里二巷2号",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-04-27/event119713.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "168木工方",
+            "enddate": 3013310858,
+            "mobileURL": "<body><html><head></head><body><p>这里没有标识，没有招牌，甚至少有来客，只有门前别出心裁的装饰和一块写着“营业中”的木牌显示这是一家特别的小店。走进小屋，暖黄色的灯光映射在墙上琳琅满目的工具和各式各样的木雕工艺品上。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-27/event119716.jpg\" height=\"388\" src=\"http://pic.huodongjia.com/event/2015-04-27/event119716.jpg\" width=\"793\"></img></p><p>地上堆放着木材和各种杂物，一人宽的楼梯通向二楼狭窄的休闲区。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-27/event119701.jpg\" height=\"1278\" src=\"http://pic.huodongjia.com/event/2015-04-27/event119701.jpg\" width=\"891\"></img></p><p>这家店名叫“168木工方”，店主李俊杰在大学期间学习设计，黄仕法学习工艺美术，他们均毕业于广州美术学院，并且是舍友。他们说，这里只是一间工作坊，而非店面，客人可以过来喝茶聊天，也可以进行DIY。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-27/event119715.jpg\" height=\"400\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-04-27/event119715.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-04-27/event119698.jpg\" height=\"602\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-04-27/event119698.jpg\" width=\"628\"></img></p><p><strong>活动内容</strong></p><p>学制木玩具</p><p><strong>活动费用</strong></p><p>200元/人</p><p>小班教学，5人为限</p><p><strong>活动时间</strong></p><p>预约即可</p><p>上课时间为5小时</p><p><strong>活动地点</strong></p><p>广州市番禺区大学城南亭村南熏里二巷</p><p></p><p></p><p></p><p></p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 129929,
+            "position": "113.387109604,23.0350506137"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-130761.html",
+            "telephone": "",
+            "tag": "手作,纯质,雅韵,定制,衣饰馆,手工坊,手工作坊",
+            "sponsor": {},
+            "id": 130761,
+            "adurl": "",
+            "startdate": 0,
+            "title": "如意手工坊 【手工制作】的温暖",
+            "eventtype": 1,
+            "feelnum": 0,
+            "questionURL": "",
+            "detail": "杨家三兄妹的店坐落在中华大街上，取名“如意”有三意：一来为自己能做逞心如意的事业而感到幸运；二来想自己双手创造的作品能如人们的心意；三来希望经营的事业能如心所求，长久经营下去。\r\n如意手工坊，店门选用竹编席做底，配上古朴的斗笠蓑衣和茅草根装饰，旁边木框里的棉麻布上印着五字店名，小店的田园气息更加浓郁，再配上一阵悠扬的笛声乐曲，还有什么理由不进店看看呢？店里的竹制船模、陶瓷摆件摆放得琳琅满目，而陈列最多的则是手工制作的发簪和手链，光彩各异的宝石们被精心挑选出来，镶嵌在首饰里。一旁的原石被分门别类地盛放在方格子里，等待被人发现最美的一颗。\r\n虽然定制饰品是店里的特色产品，但来得不止女性顾客，不时也有型男进店选购。“黑曜石打造的饰品很受男士的喜爱呢。”杨丽芳生得一双巧手，常常有定制的顾客找她。“好的黑曜石是有彩虹眼的，有彩虹眼的黑曜石，在光照下能看到绿色、紫色或者黄色，非常漂亮。”“旅途中，我们常常被那些巧夺天工的手艺打动着。机器轰鸣的现代化时代，越来越多的手工艺品被冰冷的器械所取代，物品们失去了双手创造出的那份‘温度’。”交流中，找到杨家三兄妹开店的缘由，那份对手艺的情感从话语间流露，一触碰，便泛起涟漪无数。",
+            "note": "",
+            "feeltitle": "美是回来做自己",
+            "events": [],
+            "more": [
+                {
+                    "title": "十二年如一日的日式咖啡",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "越秀区法政路59号(近市委)",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-08-13/event134570.jpg"
+                    ],
+                    "position": "113.27946,23.138242",
+                    "id": 131220
+                },
+                {
+                    "title": "开一间工房，与你虚度余生",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "天河南一路六运二街23号102",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-07-29/event132834.jpg"
+                    ],
+                    "position": "113.330127,23.135801",
+                    "id": 131130
+                }
+            ],
+            "city": "广州",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "113.358885953,23.0606116026",
+                    "title": "如意手工坊",
+                    "address": "海珠区小洲村中华大街中华六巷1号",
+                    "city": "广州"
+                }
+            ],
+            "address": "海珠区小洲村中华大街中华六巷1号",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-06-11/event127798.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "如意手工坊",
+            "enddate": 3010823514,
+            "mobileURL": "<body><html><head></head><body><p>杨家三兄妹的店坐落在中华大街上，取名“如意”有三意：一来为自己能做逞心如意的事业而感到幸运；二来想自己双手创造的作品能如人们的心意；三来希望经营的事业能如心所求，长久经营下去。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-11/event127799.jpg\" height=\"400\" src=\"http://pic.huodongjia.com/event/2015-06-11/event127799.jpg\" width=\"640\"></img></p><p>如意手工坊，店门选用竹编席做底，配上古朴的斗笠蓑衣和茅草根装饰，旁边木框里的棉麻布上印着五字店名，小店的田园气息更加浓郁，再配上一阵悠扬的笛声乐曲，还有什么理由不进店看看呢？店里的竹制船模、陶瓷摆件摆放得琳琅满目，而陈列最多的则是手工制作的发簪和手链，光彩各异的宝石们被精心挑选出来，镶嵌在首饰里。一旁的原石被分门别类地盛放在方格子里，等待被人发现最美的一颗。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-11/event127801.jpg\" height=\"365\" src=\"http://pic.huodongjia.com/event/2015-06-11/event127801.jpg\" width=\"638\"></img></p><p>虽然定制饰品是店里的特色产品，但来得不止女性顾客，不时也有型男进店选购。“黑曜石打造的饰品很受男士的喜爱呢。”杨丽芳生得一双巧手，常常有定制的顾客找她。“好的黑曜石是有彩虹眼的，有彩虹眼的黑曜石，在光照下能看到绿色、紫色或者黄色，非常漂亮。”“旅途中，我们常常被那些巧夺天工的手艺打动着。机器轰鸣的现代化时代，越来越多的手工艺品被冰冷的器械所取代，物品们失去了双手创造出的那份‘温度’。”交流中，找到杨家三兄妹开店的缘由，那份对手艺的情感从话语间流露，一触碰，便泛起涟漪无数。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-06-11/event127800.jpg\" height=\"584\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-06-11/event127800.jpg\" width=\"629\"></img></p><p><strong>地址：</strong>小洲村中华大街中华六巷1号</p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 130761,
+            "position": "113.358885953,23.0606116026"
+        },
+        {
+            "feel": "香艳指数",
+            "shareURL": "http://api.xiaorizi.me/app/share-131188.html",
+            "telephone": "020-3444522313824417983",
+            "tag": "乐活,温润,幸福,旅舍,好住",
+            "sponsor": {},
+            "id": 131188,
+            "adurl": "",
+            "startdate": 0,
+            "title": "小洲深处 世外米都",
+            "eventtype": 1,
+            "feelnum": 5,
+            "questionURL": "",
+            "detail": "店主是一位单身的热爱摄影的文艺男青年，当初为了实现做一个“陶渊明”便隐匿在这里，开了一间名叫“世外米都客栈”的旅店。旅店的小院子，绿意盎然生机勃勃。里间便是古朴的民宿风格，砖墙泥瓦。世外米都共有13间客房，老房子7间客房，新房子6间客房，房间各有特色，干净。在这里过几天避世的日子，享受少有的宁静。",
+            "note": "",
+            "feeltitle": "岁月有着不动声色的力量",
+            "events": [],
+            "more": [
+                {
+                    "title": "萌叔的花房梦",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "广州市天河区正佳广场三楼东南庭3A020-8",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-07-21/event132083.jpg"
+                    ],
+                    "position": "113.291444054,23.1413042809",
+                    "id": 129939
+                },
+                {
+                    "title": "藏在东山洋房里的雪糕房",
+                    "price": {
+                        "price_currency": "￥",
+                        "list": [],
+                        "currency_token": "RMB",
+                        "type": 2
+                    },
+                    "address": "广州市越秀区烟墩路3号",
+                    "imgs": [
+                        "http://pic.huodongjia.com/event/2015-06-24/event129074.jpg"
+                    ],
+                    "position": "113.30576,23.126819",
+                    "id": 130869
+                }
+            ],
+            "city": "广州",
+            "price": {
+                "price_currency": "￥",
+                "list": [],
+                "currency_token": "RMB",
+                "type": 2
+            },
+            "allshops": [
+                {
+                    "position_gcj02": ",",
+                    "position": "113.354704927,23.0690593094",
+                    "title": "世外米都咖啡客栈",
+                    "address": "小洲村新路大街16号",
+                    "city": "广州"
+                }
+            ],
+            "address": "小洲村新路大街16号",
+            "imgs": [
+                "http://pic.huodongjia.com/event/2015-08-07/event133998.jpg"
+            ],
+            "islongtime": 1,
+            "remark": "世外米都咖啡客栈",
+            "enddate": 3017203383,
+            "mobileURL": "<body><html><head></head><body><p>据说在小洲村藏匿着这样一个地方，环境清幽雅致，与大理丽江的客栈有的一拼。店主是一位单身的热爱摄影的文艺男青年，当初为了实现做一个“陶渊明”便隐匿在这里，开了一间名叫“世外米都客栈”的旅店。  </p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event134019.jpg\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-08-07/event134019.jpg\" width=\"640\"></img></p><p>很多人为了一睹其真颜，慕名而来，一路上如寻觅世外桃源般的千曲百折。而为了来这过几天避世的日子，独立于世俗之外，享受广州少有的宁静，也是值得找寻探索的。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133961.jpg\" height=\"438\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133961.jpg\" width=\"640\"></img></p><p>走进米都的小院子里，就放佛进入了一个世外桃源，绿色的植物和五颜六色的小花将小院子打扮的生机盎然。院子里的小桌子是热爱植物的你不可以错过的读书圣地，白天晒着早餐温暖的太阳，捧着书本伴着流水叮咚回响静读，如自家的院子一样，恍惚已进入丽江的错觉。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event134020.jpg\" height=\"426\" src=\"http://pic.huodongjia.com/event/2015-08-07/event134020.jpg\" width=\"640\"></img>​</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133967.jpg\" height=\"438\" line-height=\"20.7999992370605\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133967.jpg\" width=\"640\"></img></p><p>进入里间，你会瞬间爱上这里。古朴的民宿风格，砖墙泥瓦，老广州特色的琉璃窗子，江南风情蓝色印花抱枕，一下子思绪已经飘向了古老的远方。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133969.jpg\" height=\"438\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133969.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133970.jpg\" height=\"438\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133970.jpg\" width=\"640\"></img></p><p>世外米都确实是一个很不一样的地方，有中国传统的雅乐聚会，古琴，尺八，埙。在这样的房子里，面对这样的古老器乐，甚是风雅。如有幸，不定期也会有国际上有影响力的艺术家出没。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133963.jpg\" height=\"438\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133963.jpg\" width=\"640\"></img></p><p>简单的布置低调却处处体现出了店家文青的风格。点一杯你爱的咖啡，读一本你爱的书，躲过喧嚣和吵闹，来这里享受一下世外桃源的美好。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133962.jpg\" height=\"438\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133962.jpg\" width=\"640\"></img></p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133960.jpg\" height=\"438\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133960.jpg\" width=\"640\"></img></p><p>世外米都共有13间客房，老房子7间客房，新房子6间客房，房间各有特色，最重要就是干净。在这里，可以约上几个朋友，宿夜不归。逃离城市，安安稳稳睡个好觉。没有奢华，只有朴素，只有亲切。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133965.jpg\" height=\"438\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133965.jpg\" width=\"640\"></img></p><p>漫步在米都的大环境里，像是城市中的一个与世隔绝之地，若是有点绵绵小雨倒是有种江南的味道。老的照片，老的艺术品，年华沉浸在一种非现实的梦境中，品尝着店里的精品咖啡，听着来自远古的琴声，霎时便觉得没有比这个更美好的感觉了。</p><p><img alt=\"\" data-cke-saved-src=\"http://pic.huodongjia.com/event/2015-08-07/event133964.jpg\" height=\"438\" line-height=\"20.7999992370605\" opacity=\"0.9\" src=\"http://pic.huodongjia.com/event/2015-08-07/event133964.jpg\" width=\"640\"></img>。</p><strong></strong><p><strong>世外米都咖啡客栈</strong></p><p><strong>地址：</strong> <a data-cke-saved-href=\"http://www.dianping.com/search/category/4/10/r25\" href=\"http://www.dianping.com/search/category/4/10/r25\">海珠区</a>小洲村新路大街16号(大学城)</p><p><strong>电话：</strong> 020-34445223 13824417983      </p><p><strong>营业时间：</strong>10:00——24:00</p><p></p></body></html></body>",
+            "cat": {
+                "name": "",
+                "img": "",
+                "id": ""
+            },
+            "eid": 131188,
+            "position": "113.354704927,23.0690593094"
+        }
+    ]
+}

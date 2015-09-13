@@ -58,17 +58,19 @@ class DetailModel: NSObject, DictModelProtocol {
     }
     
     class func loadDetails(completion: (data: DetailModel?, error: NSError?) -> ()) {
-        let path = NSBundle.mainBundle().pathForResource("Details", ofType: nil)
-        if let data = NSData(contentsOfFile: path!) {
-            let dict = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: nil) as! NSDictionary
-            var modelTool = DictModelManager.sharedManager
-            var datas = modelTool.objectWithDictionary(dict, cls: DetailModel.self) as? DetailModel
-            completion(data: datas, error: nil)
-        }
+        loadDatas("Details", isShowDis: false, completion: completion)
     }
     
     class func loadMore(completion: (data: DetailModel?, error: NSError?) -> ()) {
-        let path = NSBundle.mainBundle().pathForResource("More", ofType: nil)
+        loadDatas("More", isShowDis: false, completion: completion)
+    }
+    
+    class func loadNearDatas(completion: (data: DetailModel?, error: NSError?) -> ()) {
+        loadDatas("Nears", isShowDis: true, completion: completion)
+    }
+    
+    private class func loadDatas(fileName: String, isShowDis: Bool, completion: (data: DetailModel?, error: NSError?) -> ()) {
+        let path = NSBundle.mainBundle().pathForResource(fileName, ofType: nil)
         if let data = NSData(contentsOfFile: path!) {
             let dict = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: nil) as! NSDictionary
             var modelTool = DictModelManager.sharedManager

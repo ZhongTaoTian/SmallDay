@@ -156,6 +156,8 @@ class EventModel: NSObject, DictModelProtocol {
     var mobileURL: String?
     /// 位置
     var position: String?
+    /// 标记是否需要显示距离
+    var isShowDis = false
     
     static func customClassMapping() -> [String : String]? {
         return ["more" : "\(GuessLikeModel.self)"]

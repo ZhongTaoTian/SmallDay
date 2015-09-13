@@ -12,6 +12,8 @@ class SDRefreshHeader: MJRefreshGifHeader {
     
     override func prepare() {
         super.prepare()
+        stateLabel.hidden = true
+        lastUpdatedTimeLabel.hidden = true
         
         var idleImages = NSMutableArray()
         let idImage = UIImage(named: "wnx00")

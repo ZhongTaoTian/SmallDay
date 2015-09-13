@@ -32,4 +32,6 @@ struct theme {
     /// UIApplication.sharedApplication()
     static let appShare = UIApplication.sharedApplication()
     static let sinaURL = "http://weibo.com/u/5622363113/home?topnav=1&wvr=6"
+    /// 高德地图KEY 
+    static let GaoDeAPPKey = "2e6b9f0a88b4a79366a13ce1ee9688b8"
 }

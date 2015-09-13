@@ -87,5 +87,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = mainTabBarVC.viewControllers![0] as? MainNavigationController
         (nav?.viewControllers![0] as! MainViewController).pushcityView()
     }
+    
+    func applicationDidReceiveMemoryWarning(application: UIApplication) {
+        KingfisherManager.sharedManager.cache.clearMemoryCache()
+        KingfisherManager.sharedManager.cache.clearDiskCache()
+        KingfisherManager.sharedManager.cache.cleanExpiredDiskCache()
+    }
 }
 

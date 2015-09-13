@@ -1,13 +1,19 @@
 PODS:
-  - MJRefresh (2.4.7)
+  - AMap2DMap (2.6.0)
+  - AMapSearch (2.6.0)
+  - MJRefresh (2.4.9)
   - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
+  - AMap2DMap
+  - AMapSearch
   - MJRefresh
   - SVProgressHUD
 
 SPEC CHECKSUMS:
-  MJRefresh: 6eb2f61338f89f64fd628fd43debcf479381ff59
+  AMap2DMap: b5ce82581ca53b71a0136da858f7ef04db1ffc59
+  AMapSearch: 0ea3101eec4b9f500b53e33dcda30d343d41613b
+  MJRefresh: be84acb912d0a66364f76a75426698a39528e2ed
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
 COCOAPODS: 0.37.2
