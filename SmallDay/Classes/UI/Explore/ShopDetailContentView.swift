@@ -10,7 +10,7 @@
 import UIKit
 
 class ShopDetailContentView: UIView {
-
+    
     private lazy var callActionSheet: UIActionSheet = {
         let call = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: self.phoneNumberLabel.text)
         return call
@@ -41,7 +41,7 @@ class ShopDetailContentView: UIView {
         shopView.backgroundColor = theme.SDWebViewBacagroundColor
         return shopView
     }
-
+    
     @IBAction func callBtnCleck(sender: UIButton) {
         if detailModel?.telephone == "" {
             return

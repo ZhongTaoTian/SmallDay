@@ -100,7 +100,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     func pullLoadDayData() {
         weak var tmpSelf = self
         // 模拟延时加载
-        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(1.5 * Double(NSEC_PER_SEC)))
+        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(0.6 * Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
             EveryDays.loadEventsData { (data, error) -> () in
                 if error != nil {
@@ -117,7 +117,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     
     func pullLoadAlbumData() {
         weak var tmpSelf = self
-        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(1.5 * Double(NSEC_PER_SEC)))
+        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(1.0 * Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
             ThemeModels.loadThemesData { (data, error) -> () in
                 if error != nil {

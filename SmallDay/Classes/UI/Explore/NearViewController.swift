@@ -9,12 +9,22 @@
 import UIKit
 
 class NearViewController: UIViewController {
+// MARK:- 懒加载对象
+    private var nears: DetailModel?
+    
+    private lazy var backView:UIView = {
+        let backView = UIView(frame: self.view.bounds)
+        backView.backgroundColor = theme.SDBackgroundColor
+        return backView
+        }()
     
     private lazy var nearTableView: UITableView = {
         let tableV = UITableView(frame: self.view.bounds, style: .Plain)
         tableV.delegate = self
         tableV.dataSource = self
         tableV.separatorStyle = .None
+        tableV.rowHeight = DetailCellHeight
+        tableV.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: DetailCellIdentifier)
         let diyHeader = SDRefreshHeader(refreshingTarget: self, refreshingAction: "pullLoadDatas")
         diyHeader.gifView.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
         tableV.header = diyHeader
@@ -22,45 +32,61 @@ class NearViewController: UIViewController {
         }()
     
     private lazy var mapView: WNXMapView = WNXMapView(frame: self.view.bounds)
-    private lazy var myLocalBtn: UIButton = {
-        let btnWH: CGFloat = 57
-        let btn = UIButton(frame: CGRectMake(20, AppHeight - 180 - btnWH, btnWH, btnWH)) as UIButton
-        btn.setBackgroundImage(UIImage(named: "dingwei_1"), forState: .Normal)
-        btn.setBackgroundImage(UIImage(named: "dingwei_2"), forState: .Highlighted)
-        btn.addTarget(self, action: "backCurrentLocal", forControlEvents: .TouchUpInside)
-        return btn
+
+    private lazy var rightItem: UIBarButtonItem = {
+        let right = UIBarButtonItem(imageName: "map_2-1", highlImageName: "map_2", selectedImage: "list_1", targer: self, action: "leftItemClick:")
+        return right
         }()
     
+// MARK:- 方法
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.addSubview(backView)
         
+        title = "附近"
         view.backgroundColor = theme.SDBackgroundColor
         MAMapServices.sharedServices().apiKey = theme.GaoDeAPPKey
-        view.addSubview(nearTableView)
+        backView.addSubview(nearTableView)
         
         // 加载附近是否有店铺, 这里就定位到了我的附近,在深圳,模拟一直有附近,数据是本地的,所以获取的是固定的
         nearTableView.header.beginRefreshing()
-        
-        // 添加地图
-//        addMapView()
     }
     
     func pullLoadDatas() {
-        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(1.5 * Double(NSEC_PER_SEC)))
+        weak var tmpSelf = self
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.8 * Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
-            
+            DetailModel.loadNearDatas({ (data, error) -> () in
+                if error != nil {
+                    SVProgressHUD.showErrorWithStatus("网速不给力")
+                    tmpSelf!.nearTableView.header.endRefreshing()
+                    return
+                }
+                
+                tmpSelf!.nears = data
+                tmpSelf!.nearTableView.reloadData()
+                tmpSelf!.nearTableView.header.endRefreshing()
+                tmpSelf!.mapView.nearsModel = data
+                tmpSelf!.addMapView()
+            })
         }
     }
     
     private func addMapView() {
-        mapView.delegate = self
-        view.addSubview(mapView)
-        
-        view.addSubview(myLocalBtn)
+        backView.insertSubview(mapView, belowSubview: nearTableView)
     }
     
-    func backCurrentLocal() {
-        mapView.setCenterCoordinate(mapView.userLocation.coordinate, animated: true)
+
+    
+    func leftItemClick(sender: UIButton) {
+        sender.selected = !sender.selected
+        
+        if sender.selected {
+            UIView.transitionFromView(nearTableView, toView: mapView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: nil)
+        } else {
+            UIView.transitionFromView(mapView, toView: nearTableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
+        }
     }
     
     deinit {
@@ -78,12 +104,18 @@ extension NearViewController: MAMapViewDelegate {
 extension NearViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        if nears?.list?.count > 0 {
+            navigationItem.rightBarButtonItem = rightItem
+        } else {
+            navigationItem.rightBarButtonItem = nil
+        }
+
+        return nears?.list?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .Default, reuseIdentifier: "aaa")
-        cell.contentView.backgroundColor = UIColor.greenColor()
-        return cell
+        let cell = tableView.dequeueReusableCellWithIdentifier(DetailCellIdentifier) as? DetailCell
+        cell!.model = nears!.list![indexPath.row] as EventModel
+        return cell!
     }
 }

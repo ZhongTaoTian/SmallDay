@@ -145,6 +145,8 @@
 		FAE5D56C1BA4240F009BA347 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D56B1BA4240F009BA347 /* RecommendViewController.swift */; };
 		FAE5D5721BA49F25009BA347 /* WNXMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5711BA49F25009BA347 /* WNXMapView.swift */; };
 		FAE5D5741BA595CB009BA347 /* Nears in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5731BA595CB009BA347 /* Nears */; };
+		FAE5D5771BA5D7A5009BA347 /* nearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE5D5751BA5D7A5009BA347 /* nearCell.swift */; };
+		FAE5D5781BA5D7A5009BA347 /* nearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE5D5761BA5D7A5009BA347 /* nearCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,8 +325,10 @@
 		FAE5D56B1BA4240F009BA347 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		FAE5D56D1BA48458009BA347 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FAE5D56F1BA48678009BA347 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = Pods/AMap2DMap/MAMapKit.framework; sourceTree = "<group>"; };
-		FAE5D5711BA49F25009BA347 /* WNXMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WNXMapView.swift; sourceTree = "<group>"; };
+		FAE5D5711BA49F25009BA347 /* WNXMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WNXMapView.swift; path = ../Main/WNXMapView.swift; sourceTree = "<group>"; };
 		FAE5D5731BA595CB009BA347 /* Nears */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nears; sourceTree = "<group>"; };
+		FAE5D5751BA5D7A5009BA347 /* nearCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nearCell.swift; sourceTree = "<group>"; };
+		FAE5D5761BA5D7A5009BA347 /* nearCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nearCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -620,6 +624,9 @@
 				FAA0F9F21B7DDA7700B5EA08 /* ExploreViewController.swift */,
 				FA709A261B80A3A800B24238 /* DoubleTextView.swift */,
 				FA709A281B80CA8800B24238 /* NearViewController.swift */,
+				FAE5D5711BA49F25009BA347 /* WNXMapView.swift */,
+				FAE5D5751BA5D7A5009BA347 /* nearCell.swift */,
+				FAE5D5761BA5D7A5009BA347 /* nearCell.xib */,
 				FA932A961B88DAAA00601B54 /* EventCellTableViewCell.swift */,
 				FA932A971B88DAAA00601B54 /* EventCellTableViewCell.xib */,
 				FA82B12D1B87A1F4003A2264 /* ThemeCell.swift */,
@@ -653,7 +660,6 @@
 				FA4090011B9D9C3B0007810C /* LoadAnimatImageView.swift */,
 				FAE5D55A1BA1AE4E009BA347 /* LeadpageViewController.swift */,
 				FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */,
-				FAE5D5711BA49F25009BA347 /* WNXMapView.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -859,6 +865,7 @@
 				FAD582BC1B935AD0007EEEE0 /* UMSCommentDetailController.xib in Resources */,
 				FAD582C21B935AD0007EEEE0 /* UMSnsAccountViewController.xib in Resources */,
 				FAD582C11B935AD0007EEEE0 /* UMSLoginViewController.xib in Resources */,
+				FAE5D5781BA5D7A5009BA347 /* nearCell.xib in Resources */,
 				FA4090261B9F3B470007810C /* GuessLikeView.xib in Resources */,
 				FAE5D5631BA1E824009BA347 /* ExploreBottomView.xib in Resources */,
 				FAD583371B94BF76007EEEE0 /* 798 in Resources */,
@@ -962,6 +969,7 @@
 				FA4090241B9F3B310007810C /* GuessLikeView.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
 				FA66A43B1B8F78F8005DF017 /* DetailViewController.swift in Sources */,
+				FAE5D5771BA5D7A5009BA347 /* nearCell.swift in Sources */,
 				FAE5D56C1BA4240F009BA347 /* RecommendViewController.swift in Sources */,
 				FA7387601B8B63A2009D08C8 /* EventViewController.swift in Sources */,
 				FA66A43D1B902CF6005DF017 /* ShopDetailView.swift in Sources */,

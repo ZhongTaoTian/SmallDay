@@ -102,13 +102,9 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     func modalClick(sender: UIButton) {
         sender.selected = !sender.selected
         if sender.selected {
-            UIView.transitionFromView(webView!, toView: moreTableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion: { (finish) -> Void in
-                
-            })
+            UIView.transitionFromView(webView!, toView: moreTableView, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromLeft, completion:nil)
         } else {
-            UIView.transitionFromView(moreTableView, toView: webView!, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: { (finish) -> Void in
-                
-            })
+            UIView.transitionFromView(moreTableView, toView: webView!, duration: 1.0, options: UIViewAnimationOptions.TransitionFlipFromRight, completion: nil)
         }
     }
     

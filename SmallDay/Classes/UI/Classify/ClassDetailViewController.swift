@@ -9,6 +9,7 @@
 import UIKit
 
 public let DetailCellHeight: CGFloat = 220
+public let DetailCellIdentifier = "DetailCell"
 
 class ClassDetailViewController: UIViewController {
     
@@ -20,7 +21,7 @@ class ClassDetailViewController: UIViewController {
         tableView.rowHeight = DetailCellHeight
         tableView.separatorStyle = .None
         tableView.contentInset = UIEdgeInsetsMake(0, 0, NavigationH, 0)
-        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: "DetailCell")
+        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: DetailCellIdentifier)
         return tableView
         }()
     
@@ -55,7 +56,7 @@ extension ClassDetailViewController: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let event = details!.list![indexPath.row] as EventModel
-        var cell = tableView.dequeueReusableCellWithIdentifier("DetailCell") as? DetailCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(DetailCellIdentifier) as? DetailCell
         cell?.model = event
         
         return cell!

@@ -57,14 +57,17 @@ class DetailModel: NSObject, DictModelProtocol {
         return ["list" : "\(EventModel.self)"]
     }
     
+    /// 加载详情模型
     class func loadDetails(completion: (data: DetailModel?, error: NSError?) -> ()) {
         loadDatas("Details", isShowDis: false, completion: completion)
     }
     
+    /// 加载美辑点击按钮的更多模型
     class func loadMore(completion: (data: DetailModel?, error: NSError?) -> ()) {
         loadDatas("More", isShowDis: false, completion: completion)
     }
     
+    /// 加载附近店铺数据
     class func loadNearDatas(completion: (data: DetailModel?, error: NSError?) -> ()) {
         loadDatas("Nears", isShowDis: true, completion: completion)
     }
@@ -75,6 +78,11 @@ class DetailModel: NSObject, DictModelProtocol {
             let dict = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: nil) as! NSDictionary
             var modelTool = DictModelManager.sharedManager
             var datas = modelTool.objectWithDictionary(dict, cls: DetailModel.self) as? DetailModel
+            if isShowDis {
+                for event in datas!.list! {
+                    event.isShowDis = true
+                }
+            }
             completion(data: datas, error: nil)
         }
     }
