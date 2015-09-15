@@ -24,9 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setShared()
         
+        setUserMapInfo()
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMianViewController", name: SD_ShowMianTabbarController_Notification, object: nil)
         
         return true
+    }
+    
+    func setUserMapInfo() {
+        UserInfoManager.sharedUserInfoManager.startUserlocation()
     }
     
     deinit {

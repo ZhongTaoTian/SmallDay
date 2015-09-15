@@ -110,7 +110,7 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
     
     /// WebViewDelegate
     func webViewDidFinishLoad(webView: UIWebView) {
-        self.webView!.scrollView.contentSize.height += 64
+        self.webView!.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 64, right: 0)
     }
     
     override func viewWillDisappear(animated: Bool) {

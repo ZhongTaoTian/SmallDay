@@ -13,9 +13,11 @@ private let customIdentifier = "pointReuseIndentifier"
 class WNXMapView: MAMapView {
     var flags: [MAPointAnnotation] = [MAPointAnnotation]()
     var lastMAAnnotationView: MAAnnotationView?
+    weak var pushVC: NearViewController?
     
     var nearsModel: DetailModel? {
         didSet {
+            flags.removeAll(keepCapacity: true)
             nearCollectionView.reloadData()
             for i in 0..<nearsModel!.list!.count {
                 let eventModel = nearsModel!.list![i]
@@ -37,8 +39,9 @@ class WNXMapView: MAMapView {
         let nearH: CGFloat = 105
         let layout = UICollectionViewFlowLayout()
         let margin: CGFloat = 20
-        layout.scrollDirection = .Horizontal
         let itemW = AppWidth - 35 - 10
+        
+        layout.scrollDirection = .Horizontal
         layout.itemSize = CGSizeMake(itemW, nearH)
         
         let nearCV = UICollectionView(frame: CGRectMake(15, AppHeight - nearH - 10 - NavigationH, AppWidth - 35, nearH), collectionViewLayout: layout)
@@ -83,6 +86,13 @@ class WNXMapView: MAMapView {
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    deinit {
+        
+        clearDisk()
+        print("地图view被销毁")
+        showsUserLocation = false
+    }
 }
 
 extension WNXMapView: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -103,6 +113,12 @@ extension WNXMapView: UICollectionViewDelegate, UICollectionViewDataSource {
         let currentIndext = Int(nearCollectionView.contentOffset.x / nearCollectionView.width + 0.5)
         let po = flags[currentIndext]
         selectAnnotation(po, animated: true)
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let eventVC = EventViewController()
+        eventVC.model = nearsModel!.list![indexPath.item]
+        pushVC?.navigationController?.pushViewController(eventVC, animated: true)
     }
 }
 
@@ -137,13 +153,14 @@ extension WNXMapView: MAMapViewDelegate {
         
         for i in 0..<flags.count {
             let po = flags[i]
-            if viewForAnnotation(po) == annot {
+            if viewForAnnotation(po) === annot {
                 return i
             }
         }
         
         return 0
     }
+    
 }
 
 

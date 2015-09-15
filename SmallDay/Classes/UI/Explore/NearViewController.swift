@@ -9,7 +9,7 @@
 import UIKit
 
 class NearViewController: UIViewController {
-// MARK:- 懒加载对象
+    // MARK:- 懒加载对象
     private var nears: DetailModel?
     
     private lazy var backView:UIView = {
@@ -32,16 +32,16 @@ class NearViewController: UIViewController {
         }()
     
     private lazy var mapView: WNXMapView = WNXMapView(frame: self.view.bounds)
-
+    
     private lazy var rightItem: UIBarButtonItem = {
         let right = UIBarButtonItem(imageName: "map_2-1", highlImageName: "map_2", selectedImage: "list_1", targer: self, action: "leftItemClick:")
         return right
         }()
     
-// MARK:- 方法
+    // MARK:- 方法
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.addSubview(backView)
         
         title = "附近"
@@ -51,6 +51,7 @@ class NearViewController: UIViewController {
         
         // 加载附近是否有店铺, 这里就定位到了我的附近,在深圳,模拟一直有附近,数据是本地的,所以获取的是固定的
         nearTableView.header.beginRefreshing()
+        nearTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 64, right: 0)
     }
     
     func pullLoadDatas() {
@@ -74,10 +75,11 @@ class NearViewController: UIViewController {
     }
     
     private func addMapView() {
+        mapView.pushVC = self
         backView.insertSubview(mapView, belowSubview: nearTableView)
     }
     
-
+    
     
     func leftItemClick(sender: UIButton) {
         sender.selected = !sender.selected
@@ -91,13 +93,9 @@ class NearViewController: UIViewController {
     
     deinit {
         mapView.clearDisk()
+        mapView.showsUserLocation = false
+        print("地图控制器被销毁")
     }
-}
-
-
-//MARK:- MAMapViewDelegate
-extension NearViewController: MAMapViewDelegate {
-    
 }
 
 //MARK:- TableView代理方法
@@ -109,7 +107,7 @@ extension NearViewController: UITableViewDelegate, UITableViewDataSource {
         } else {
             navigationItem.rightBarButtonItem = nil
         }
-
+        
         return nears?.list?.count ?? 0
     }
     

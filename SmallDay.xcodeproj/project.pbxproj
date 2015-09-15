@@ -100,6 +100,7 @@
 		FAA0F9F31B7DDA7700B5EA08 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F21B7DDA7700B5EA08 /* ExploreViewController.swift */; };
 		FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */; };
 		FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F61B7DF02E00B5EA08 /* theme.swift */; };
+		FAD37B681BA7FF1A00E0C210 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD37B671BA7FF1A00E0C210 /* UserInfoManager.swift */; };
 		FAD582BA1B935AD0007EEEE0 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD582A01B935AD0007EEEE0 /* UMSocialLocalizable.strings */; };
 		FAD582BB1B935AD0007EEEE0 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD582AE1B935AD0007EEEE0 /* libUMSocial_Sdk_4.2.3.a */; };
 		FAD582BC1B935AD0007EEEE0 /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD582B01B935AD0007EEEE0 /* UMSCommentDetailController.xib */; };
@@ -262,6 +263,7 @@
 		FAA0F9F21B7DDA7700B5EA08 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		FAA0F9F61B7DF02E00B5EA08 /* theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
+		FAD37B671BA7FF1A00E0C210 /* UserInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 		FAD582A11B935AD0007EEEE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		FAD582A31B935AD0007EEEE0 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		FAD582A41B935AD0007EEEE0 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -556,6 +558,7 @@
 			isa = PBXGroup;
 			children = (
 				FA82B1211B87693E003A2264 /* NetworkManager.swift */,
+				FAD37B671BA7FF1A00E0C210 /* UserInfoManager.swift */,
 				FA82B12B1B876F73003A2264 /* String+Hash.swift */,
 				FA82B1221B87693E003A2264 /* SimpleNetwork.swift */,
 				FA82B1231B87693E003A2264 /* SwiftDictModel.swift */,
@@ -1019,6 +1022,7 @@
 				FAD582EF1B9380C0007EEEE0 /* ShareTool.swift in Sources */,
 				FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */,
 				FA932A871B88B65600601B54 /* ImageDownloader.swift in Sources */,
+				FAD37B681BA7FF1A00E0C210 /* UserInfoManager.swift in Sources */,
 				FA73876C1B8B940E009D08C8 /* ClassDetailViewController.swift in Sources */,
 				FA66A4041B8ECEF7005DF017 /* ExperHeadView.swift in Sources */,
 				FAE5D56A1BA3FE3C009BA347 /* SDRefreshHeader.swift in Sources */,
@@ -1170,7 +1174,7 @@
 					"$(PROJECT_DIR)/Pods/AMap2DMap",
 				);
 				INFOPLIST_FILE = SmallDay/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1195,7 +1199,7 @@
 					"$(PROJECT_DIR)/Pods/AMap2DMap",
 				);
 				INFOPLIST_FILE = SmallDay/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

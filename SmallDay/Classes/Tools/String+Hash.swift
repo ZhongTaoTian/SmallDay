@@ -1,10 +1,8 @@
 //
-//  StringHash.swift
-//  黑马微博
+//  MD5.Swift
 //
-//  Created by 刘凡 on 15/2/21.
-//  Copyright (c) 2015年 joyios. All rights reserved.
-//
+//  Created by apple on 15/8/17.
+//  Copyright (c) 2015年 维尼的小熊. All rights reserved.
 
 /// 注意：要使用本分类，需要在 bridge.h 中添加以下头文件导入
 /// #import <CommonCrypto/CommonCrypto.h>

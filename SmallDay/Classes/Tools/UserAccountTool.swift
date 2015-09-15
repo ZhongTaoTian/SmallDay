@@ -34,5 +34,4 @@ class UserAccountTool: NSObject {
         var account = user.objectForKey(SD_UserDefaults_Account) as? String
         return account!
     }
-    
 }
