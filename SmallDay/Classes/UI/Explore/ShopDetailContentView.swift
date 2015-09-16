@@ -11,14 +11,6 @@ import UIKit
 
 class ShopDetailContentView: UIView {
     
-    private lazy var callActionSheet: UIActionSheet = {
-        let call = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: self.phoneNumberLabel.text)
-        return call
-        }()
-    private lazy var correctActionSheet: UIActionSheet = {
-        let correct = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "地址错误", "电话错误", "店名/店铺介绍/图片错误", "关门/歇业/即将转让")
-        return correct
-        }()
     
     @IBOutlet weak private var shopName: UILabel!
     @IBOutlet weak private var phoneNumberLabel: UILabel!
@@ -56,6 +48,15 @@ class ShopDetailContentView: UIView {
         correctActionSheet.showInView(self)
     }
     
+    /// MARK:- 懒加载属性
+    private lazy var callActionSheet: UIActionSheet = {
+        let call = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: self.phoneNumberLabel.text)
+        return call
+        }()
+    private lazy var correctActionSheet: UIActionSheet = {
+        let correct = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "地址错误", "电话错误", "店名/店铺介绍/图片错误", "关门/歇业/即将转让")
+        return correct
+        }()
 }
 
 extension ShopDetailContentView: UIActionSheetDelegate {

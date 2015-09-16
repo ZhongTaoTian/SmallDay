@@ -20,15 +20,12 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak private var nameTextField: UITextField!
     @IBOutlet weak private var scrollView: UIScrollView!
     @IBOutlet weak private var contentView: UIView!
+    
     var topTitle: String?
     private var second: Int = 60
     private var timer: NSTimer?
     
     init() {
-        super.init(nibName: "SignUpViewController", bundle: nil)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
         super.init(nibName: "SignUpViewController", bundle: nil)
     }
     
@@ -124,5 +121,9 @@ class SignUpViewController: UIViewController {
         }
         
         super.viewWillDisappear(animated)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(nibName: "SignUpViewController", bundle: nil)
     }
 }

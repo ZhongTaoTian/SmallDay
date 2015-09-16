@@ -13,7 +13,7 @@ class ShareView: UIView {
     var shareModel: ShareModel?
     
     private lazy var coverBtn: UIButton! = {
-        let coverBtn = UIButton(frame: UIScreen.mainScreen().bounds)
+        let coverBtn = UIButton(frame: MainBounds)
         coverBtn.backgroundColor = UIColor.blackColor()
         coverBtn.alpha = 0.2
         coverBtn.addTarget(self, action: "coverClick", forControlEvents: UIControlEvents.TouchUpInside)

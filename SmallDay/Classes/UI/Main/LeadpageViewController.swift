@@ -12,7 +12,7 @@ public let SD_ShowMianTabbarController_Notification = "SD_Show_MianTabbarControl
 
 class LeadpageViewController: UIViewController {
     
-    private let backgroundImage = UIImageView(frame: UIScreen.mainScreen().bounds)
+    private let backgroundImage = UIImageView(frame: MainBounds)
     private let startBtn: NoHighlightButton = NoHighlightButton()
     
     override func viewDidLoad() {

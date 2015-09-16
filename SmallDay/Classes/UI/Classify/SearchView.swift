@@ -30,30 +30,14 @@ class SearchView: UIView {
         searchTextField.delegate = self
         addSubview(searchTextField)
         
-        searchBtn = UIButton()
-        searchBtn.setTitle("搜索", forState: .Normal)
-        searchBtn.setTitle("取消", forState: .Selected)
-        searchBtn.titleLabel!.font = UIFont.systemFontOfSize(18)
-        searchBtn.setTitleColor(UIColor.blackColor(), forState: .Normal)
-        searchBtn.setTitleColor(UIColor.blackColor(), forState: .Selected)
-        searchBtn.alpha = 0
-        searchBtn.titleLabel!.textAlignment = .Center
-        searchBtn.frame = CGRectMake(AppWidth - 100, 0, 100, 50)
-        searchBtn.addTarget(self, action: "searchBtnClick:", forControlEvents: .TouchUpInside)
+        searchBtn = SearchButton(frame: CGRect(x: AppWidth - 100, y: 0, width: 100, height: 50), target: self, action: "searchBtnClick:")
+
         addSubview(searchBtn)
         
         // 监听键盘弹出
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyBoardWillshow", name: UIKeyboardWillShowNotification, object: nil)
     }
-    
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
-    }
-    
+
     func keyBoardWillshow() {
         
         UIView.animateWithDuration(animationDuration, animations: { () -> Void in
@@ -93,6 +77,14 @@ class SearchView: UIView {
                 delegate!.searchView(self, searchTitle: searchTextField.text)
             }
         }
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

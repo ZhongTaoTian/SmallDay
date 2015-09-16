@@ -16,8 +16,6 @@ class DetailCell: UITableViewCell {
     @IBOutlet weak private var disImageV: UIImageView!
     @IBOutlet weak var disLabel: UILabel!
 
-
-    
     var model: EventModel? {
         didSet {
             titleLabel.text = model!.title
@@ -29,6 +27,7 @@ class DetailCell: UITableViewCell {
             if model!.isShowDis {
                 disImageV.hidden = false
                 disLabel.hidden = false
+                disLabel.text = model!.distanceForUser
             } else {
                 disLabel.hidden = true
                 disImageV.hidden = true

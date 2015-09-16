@@ -103,7 +103,7 @@ class ShopDetailView: UIView {
 }
 
 @objc protocol ShopDetailViewDelegate: NSObjectProtocol {
-
+    
     optional func shopDetailView(shopDetailView: ShopDetailView, didSelectedLable index: Int)
 }
 

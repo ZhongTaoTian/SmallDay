@@ -26,24 +26,17 @@ enum SDMineCellType: Int {
 class MeViewController: MainViewController {
     private var loginLabel: UILabel!
     private var tableView: UITableView!
-    private lazy var pickVC: UIImagePickerController! = {
+    private lazy var pickVC: UIImagePickerController = {
         let pickVC = UIImagePickerController()
         pickVC.delegate = self
         pickVC.allowsEditing = true
         return pickVC
         }()
-    private lazy var mineIcons: NSMutableArray! = {
-        var arr = NSMutableArray(array: ["usercenter", "orders", "setting_like", "feedback", "recomment"])
-        return arr
-        }()
-    private lazy var iconActionSheet: UIActionSheet! = {
-        let iconAS = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "拍照", "从手机相册选择")
-        return iconAS
-        }()
-    private lazy var mineTitles: NSMutableArray! = {
-        var arr = NSMutableArray(array: ["个人中心", "我的订单", "我的收藏", "留言反馈", "应用推荐"])
-        return arr
-        }()
+    private lazy var mineIcons: NSMutableArray = NSMutableArray(array: ["usercenter", "orders", "setting_like", "feedback", "recomment"])
+    
+    private lazy var iconActionSheet: UIActionSheet = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: nil, otherButtonTitles: "拍照", "从手机相册选择")
+    
+    private lazy var mineTitles: NSMutableArray = NSMutableArray(array: ["个人中心", "我的订单", "我的收藏", "留言反馈", "应用推荐"])
     private var iconView: IconView?
     
     override func viewDidLoad() {
@@ -63,6 +56,7 @@ class MeViewController: MainViewController {
     
     private func setTableView() {
         self.automaticallyAdjustsScrollViewInsets = false
+        
         tableView = UITableView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH - 49), style: UITableViewStyle.Grouped)
         tableView.backgroundColor = UIColor.colorWith(245, green: 245, blue: 245, alpha: 1)
         tableView.delegate = self
@@ -157,7 +151,7 @@ extension MeViewController: UIImagePickerControllerDelegate, UINavigationControl
             pickVC.sourceType = .Camera
             self.presentViewController(pickVC, animated: true, completion: nil)
         } else {
-            SVProgressHUD.showErrorWithStatus("摄像机不可用", maskType: SVProgressHUDMaskType.Black)
+            SVProgressHUD.showErrorWithStatus("模拟器没有摄像头,请链接真机调试", maskType: SVProgressHUDMaskType.Black)
         }
     }
     

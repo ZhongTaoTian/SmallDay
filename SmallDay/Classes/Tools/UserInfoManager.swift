@@ -38,6 +38,7 @@ extension UserInfoManager: CLLocationManagerDelegate {
 
         if let userPos = locations[0] as? CLLocation {
             userPosition = userPos.coordinate
+//            print("定位定位")
             locationManager.stopUpdatingLocation()
         }
     }

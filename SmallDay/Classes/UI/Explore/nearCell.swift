@@ -16,16 +16,7 @@ class nearCell: UICollectionViewCell {
             imageImageView.wxn_setImageWithURL(NSURL(string: urlStr)!, placeholderImage: UIImage(named: "quesheng")!)
             adressLabel.text = nearModel?.address
             titleLabel.text = nearModel?.title
-            println(UserInfoManager.sharedUserInfoManager.userPosition)
-            if UserInfoManager.sharedUserInfoManager.userPosition != nil {
-                let userL = UserInfoManager.sharedUserInfoManager.userPosition!
-                let shopL = nearModel!.position!.stringToCLLocationCoordinate2D(",")!
-//                MAMetersBetweenMapPoints(UserInfoManager.sharedUserInfoManager.userPosition!, nearModel!.position!.stringToCLLocationCoordinate2D(",")!)
-//                MAMetersBetweenMapPoints(<#a: MAMapPoint#>, <#b: MAMapPoint#>)
-              let aaaa = MAMetersBetweenMapPoints(MAMapPointForCoordinate(userL), MAMapPointForCoordinate(shopL))
-
-                println(aaaa)
-            }
+            disLabel.text = nearModel!.distanceForUser
         }
     }
     

@@ -16,67 +16,38 @@ public let DetailViewController_TopImageView_Height: CGFloat = 225
 class DetailViewController: UIViewController, UIActionSheetDelegate {
     // 优化性能,防止重复设置
     private var showBlackImage: Bool = false
+    private var htmlNewString: NSMutableString?
     private let scrollShowNavH: CGFloat = DetailViewController_TopImageView_Height - NavigationH
-    private let imageW: CGFloat = UIScreen.mainScreen().bounds.size.width - 23.0
+    private let imageW: CGFloat = AppWidth - 23.0
     private var signUpBtn: UIButton!
-    private lazy var bottomViews: [ExploreBottomView] = [ExploreBottomView]()
     private var isLoadFinish = false
     private var isAddBottomView = false
     private var loadFinishScrollHeihgt: CGFloat = 0
-    private lazy var phoneActionSheet: UIActionSheet? = {
-        let action = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: self.model!.telephone!)
-        return action
-        }()
-    private lazy var customNav: UIView! = {
-        let customNav = UIView(frame: CGRectMake(0, 0, AppWidth, NavigationH))
-        customNav.backgroundColor = UIColor.whiteColor()
-        customNav.alpha = 0.0
-        return customNav
-        }()
+    private lazy var bottomViews: [ExploreBottomView] = [ExploreBottomView]()
+    private lazy var shareView: ShareView = ShareView.shareViewFromXib()
+    private lazy var backBtn: UIButton = UIButton()
+    private lazy var likeBtn: UIButton = UIButton()
+    private lazy var sharedBtn: UIButton = UIButton()
+    private lazy var webView: UIWebView = ExperienceWebView(frame: MainBounds, webViewDelegate: self, webViewScrollViewDelegate: self)
     
-    private lazy var shareView: ShareView! = {
-        let shareView = ShareView.shareViewFromXib()
-        return shareView
-        }()
-    
-    private lazy var backBtn: UIButton! = {
-        let btn = UIButton() as UIButton
-        return btn
-        }()
-    
-    private lazy var likeBtn: UIButton! = {
-        let btn = UIButton() as UIButton
-        return btn
-        }()
-    
-    private lazy var sharedBtn: UIButton! = {
-        let btn = UIButton() as UIButton
-        return btn
-        }()
-    
-    private lazy var topImageView: UIImageView! = {
+    private lazy var topImageView: UIImageView = {
         let image = UIImageView(frame: CGRectMake(0, 0, AppWidth, DetailViewController_TopImageView_Height))
         image.image = UIImage(named: "quesheng")
         image.contentMode = UIViewContentMode.ScaleToFill
         return image
         }()
     
-    private lazy var webView: UIWebView! = {
-        let webView = UIWebView(frame: UIScreen.mainScreen().bounds)
-        let contentH: CGFloat = DetailViewController_TopImageView_Height - 20
-        webView.scrollView.contentInset = UIEdgeInsets(top:  contentH, left: 0, bottom: 49, right: 0)
-        webView.scrollView.showsHorizontalScrollIndicator = false
-        webView.scrollView.delegate = self
-        webView.delegate = self
-        webView.backgroundColor = theme.SDWebViewBacagroundColor
-        webView.scrollView.contentSize.width = AppWidth
-        webView.paginationBreakingMode = UIWebPaginationBreakingMode.Column
-        return webView
+    private lazy var phoneActionSheet: UIActionSheet? = {
+        let action = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: self.model!.telephone!)
+        return action
         }()
     
-    deinit {
-        print("体验详情ViewController已经销毁")
-    }
+    private lazy var customNav: UIView = {
+        let customNav = UIView(frame: CGRectMake(0, 0, AppWidth, NavigationH))
+        customNav.backgroundColor = UIColor.whiteColor()
+        customNav.alpha = 0.0
+        return customNav
+        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,8 +101,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         btn.addTarget(self, action: action, forControlEvents: .TouchUpInside)
     }
     
-    private var htmlNewString: NSMutableString?
-    
     /// model重写didSet方法
     var model: EventModel? {
         didSet {
@@ -182,7 +151,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
             }
         }
     }
-    
     /// MARK:- 底部添加的view的四种状态点击action
     /// 购买详情
     func priceBottomClick(tap: UITapGestureRecognizer) {
@@ -215,6 +183,10 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
             let url = NSURL(string: "tel://" + model!.telephone!)
             UIApplication.sharedApplication().openURL(url!)
         }
+    }
+    
+    deinit {
+        print("体验详情ViewController已经销毁")
     }
 }
 

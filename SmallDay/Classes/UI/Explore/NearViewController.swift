@@ -18,13 +18,11 @@ class NearViewController: UIViewController {
         return backView
         }()
     
-    private lazy var nearTableView: UITableView = {
-        let tableV = UITableView(frame: self.view.bounds, style: .Plain)
-        tableV.delegate = self
-        tableV.dataSource = self
-        tableV.separatorStyle = .None
+    private lazy var nearTableView: MainTableView = {
+        let tableV = MainTableView(frame: MainBounds, style: .Plain, dataSource: self, delegate: self)
         tableV.rowHeight = DetailCellHeight
-        tableV.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: DetailCellIdentifier)
+        tableV.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: SD_DetailCell_Identifier)
+        
         let diyHeader = SDRefreshHeader(refreshingTarget: self, refreshingAction: "pullLoadDatas")
         diyHeader.gifView.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
         tableV.header = diyHeader
@@ -112,8 +110,15 @@ extension NearViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(DetailCellIdentifier) as? DetailCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(SD_DetailCell_Identifier) as? DetailCell
         cell!.model = nears!.list![indexPath.row] as EventModel
         return cell!
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let eventModel = nears!.list![indexPath.row] as EventModel
+        let detailVC = EventViewController()
+        detailVC.model = eventModel
+        navigationController!.pushViewController(detailVC, animated: true)
     }
 }

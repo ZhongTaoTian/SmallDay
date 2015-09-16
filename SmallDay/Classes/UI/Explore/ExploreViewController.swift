@@ -16,8 +16,8 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     private var backgroundScrollView: UIScrollView!
     private var doubleTextView: DoubleTextView!
     private var everyDays: EveryDays?
-    private var albumTableView: UITableView!
-    private var dayTableView: UITableView!
+    private var albumTableView: MainTableView!
+    private var dayTableView: MainTableView!
     private var themes: ThemeModels?
     private var events: EveryDays?
     
@@ -44,8 +44,8 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     
     
     private func setScrollView() {
-        backgroundScrollView = UIScrollView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH - 49))
         self.automaticallyAdjustsScrollViewInsets = false
+        backgroundScrollView = UIScrollView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH - 49))
         backgroundScrollView.backgroundColor = theme.SDBackgroundColor
         backgroundScrollView.contentSize = CGSizeMake(AppWidth * 2.0, 0)
         backgroundScrollView.showsHorizontalScrollIndicator = false
@@ -65,26 +65,18 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     }
     
     private func setdayTableView() {
-        dayTableView = UITableView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH), style: .Grouped)
+        dayTableView = MainTableView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH), style: .Grouped, dataSource: self, delegate: self)
         dayTableView.sectionHeaderHeight = 0.1
         dayTableView.sectionFooterHeight = 0.1
-        dayTableView.delegate = self
         dayTableView.contentInset = UIEdgeInsetsMake(-35, 0, 35, 0)
-        dayTableView.dataSource = self
-        dayTableView.backgroundColor = theme.SDBackgroundColor
-        dayTableView.separatorStyle = .None
         backgroundScrollView.addSubview(dayTableView)
         
         setTableViewHeader(self, refreshingAction: "pullLoadDayData", imageFrame: CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 47, SD_RefreshImage_Width, SD_RefreshImage_Height), tableView: dayTableView)
     }
-
+    
     
     private func setalbumTableView() {
-        albumTableView = UITableView(frame: CGRectMake(AppWidth, 0, AppWidth, backgroundScrollView.height), style: .Plain)
-        albumTableView.separatorStyle = .None
-        albumTableView.delegate = self
-        albumTableView.dataSource = self
-        albumTableView.backgroundColor = theme.SDBackgroundColor
+        albumTableView = MainTableView(frame: CGRectMake(AppWidth, 0, AppWidth, backgroundScrollView.height), style: .Plain, dataSource: self, delegate: self)
         backgroundScrollView.addSubview(albumTableView)
         
         setTableViewHeader(self, refreshingAction: "pullLoadAlbumData", imageFrame: CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height), tableView: albumTableView)
@@ -129,10 +121,10 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
                 tmpSelf!.albumTableView.reloadData()
                 tmpSelf!.albumTableView.header.endRefreshing()
             }
-
+            
         }
     }
-
+    
     
     /// 附近action
     func nearClick() {
@@ -146,7 +138,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     }
 }
 
-/// 扩展代理方法
+/// MARK: UIScrollViewDelegate
 extension ExploreViewController: UIScrollViewDelegate {
     
     // MARK: - UIScrollViewDelegate 监听scrollView的滚动事件
@@ -158,6 +150,7 @@ extension ExploreViewController: UIScrollViewDelegate {
     }
 }
 
+///MARK:- UITableViewDelegate和UITableViewDataSource
 extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -203,7 +196,6 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
             (cell as! ThemeCell).model = theme
             
         }   else { // 美天TableView
-            
             let event = self.everyDays!.list![indexPath.section]
             
             if indexPath.row == 1 {
@@ -213,7 +205,6 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
                 cell = EventCellTableViewCell.eventCell(tableView)
                 (cell as! EventCellTableViewCell).eventModel = event
             }
-            
         }
         
         return cell!
@@ -244,6 +235,5 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
-    
 }
 

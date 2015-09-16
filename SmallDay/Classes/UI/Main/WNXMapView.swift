@@ -4,7 +4,7 @@
 //
 //  Created by MacBook on 15/9/13.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//  附近的mapView
+//  附近控制器地图View
 
 import UIKit
 

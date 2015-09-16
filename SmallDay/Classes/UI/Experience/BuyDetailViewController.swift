@@ -14,7 +14,6 @@ class BuyDetailViewController: UIViewController {
         let web = UIWebView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationH))
         web.backgroundColor = theme.SDBackgroundColor
         web.scrollView.showsHorizontalScrollIndicator = false
-        web.delegate = self
         return web
         }()
     
@@ -30,12 +29,5 @@ class BuyDetailViewController: UIViewController {
         title = "购买须知"
         
         view.addSubview(webView)
-    }
-}
-
-extension BuyDetailViewController: UIWebViewDelegate {
-
-    func webViewDidFinishLoad(webView: UIWebView) {
-        
     }
 }

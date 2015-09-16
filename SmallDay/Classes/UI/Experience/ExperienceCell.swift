@@ -4,12 +4,12 @@
 //
 //  Created by MacBook on 15/8/27.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  体验TableView的Cell
 
 import UIKit
 
 class ExperienceCell: UITableViewCell {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageImageView: UIImageView!
     
@@ -23,11 +23,4 @@ class ExperienceCell: UITableViewCell {
             }
         }
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-
 }

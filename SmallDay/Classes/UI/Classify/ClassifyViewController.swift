@@ -26,7 +26,7 @@ class ClassifyViewController: MainViewController {
         // 加载分类数据
         collView.header.beginRefreshing()
     }
-
+    
     private func setNav() {
         navigationItem.title = "分类"
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "search_1", highlImageName: "search_2", targer: self, action: "searchClick")
@@ -71,7 +71,7 @@ class ClassifyViewController: MainViewController {
         weak var tmpSelf = self
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(0.8 * Double(NSEC_PER_SEC)))
         dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
-           
+            
             ClassifyModel.loadClassifyModel { (data, error) -> () in
                 if error != nil {
                     SVProgressHUD.showErrorWithStatus("网络不给力")

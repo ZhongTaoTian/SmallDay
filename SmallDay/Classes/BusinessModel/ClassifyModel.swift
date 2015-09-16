@@ -81,6 +81,12 @@ class DetailModel: NSObject, DictModelProtocol {
             if isShowDis {
                 for event in datas!.list! {
                     event.isShowDis = true
+                    if UserInfoManager.sharedUserInfoManager.userPosition != nil {
+                        let userL = UserInfoManager.sharedUserInfoManager.userPosition!
+                        let shopL = event.position!.stringToCLLocationCoordinate2D(",")!
+                        let dis = MAMetersBetweenMapPoints(MAMapPointForCoordinate(userL), MAMapPointForCoordinate(shopL))
+                        event.distanceForUser = String(format: "%.1fkm", dis * 0.001)
+                    }
                 }
             }
             completion(data: datas, error: nil)

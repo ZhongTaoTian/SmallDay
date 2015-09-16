@@ -36,7 +36,7 @@ class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak private var bottomLoadView: UIView!
     
     private lazy var tableView: UITableView? = {
-        let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
+        let tableView = UITableView(frame: MainBounds, style: .Plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.hidden = true

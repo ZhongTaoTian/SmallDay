@@ -75,7 +75,7 @@ class DoubleTextView: UIView {
     }
 }
 
-
+/// DoubleTextViewDelegate协议
 protocol DoubleTextViewDelegate: NSObjectProtocol{
 
     func doubleTextView(doubleTextView: DoubleTextView, didClickBtn btn: UIButton, forIndex index: Int)

@@ -8,38 +8,10 @@
 
 import UIKit
 
+/// DetailCell的公共标识
+public let SD_DetailCell_Identifier = "DetailCell"
+
 class ThemeViewController: UIViewController, UIWebViewDelegate {
-    
-    private lazy var backView: UIView! = {
-        let backView = UIView(frame: UIScreen.mainScreen().bounds)
-        backView.backgroundColor = theme.SDBackgroundColor
-        return backView
-        }()
-    
-    private lazy var moreTableView: UITableView! = {
-        let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
-        tableView.backgroundColor = theme.SDBackgroundColor
-        tableView.separatorStyle = .None
-        tableView.rowHeight = DetailCellHeight
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: NavigationH, right: 0)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: "DetailCell")
-        return tableView
-        }()
-    
-    private lazy var shareView: ShareView? = {
-        let shareView = ShareView.shareViewFromXib()
-        return shareView
-        }()
-    
-    private lazy var webView: UIWebView? = {
-        let web = UIWebView(frame: UIScreen.mainScreen().bounds)
-        web.backgroundColor = theme.SDBackgroundColor
-        web.delegate = self
-        return web
-        }()
-    
     var themeModel: ThemeModel? {
         didSet {
             if themeModel?.hasweb == 1 {
@@ -48,8 +20,6 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
             }
         }
     }
-    
-    private var modalBtn: UIButton! = UIButton()
     var more: DetailModel?
     
     override func viewDidLoad() {
@@ -62,6 +32,35 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
         addModalBtn()
     }
     
+    //MARK:- 懒加载属性
+    private lazy var backView: UIView = {
+        let backView = UIView(frame: MainBounds)
+        backView.backgroundColor = theme.SDBackgroundColor
+        return backView
+        }()
+    
+    private lazy var moreTableView: MainTableView = {
+        let tableView = MainTableView(frame: MainBounds, style: .Plain, dataSource: self, delegate: self)
+        tableView.rowHeight = DetailCellHeight
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: NavigationH, right: 0)
+        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: SD_DetailCell_Identifier)
+        return tableView
+        }()
+    
+    private lazy var shareView: ShareView? = {
+        let shareView = ShareView.shareViewFromXib()
+        return shareView
+        }()
+    
+    private lazy var webView: UIWebView? = {
+        let web = UIWebView(frame: MainBounds)
+        web.backgroundColor = theme.SDBackgroundColor
+        web.delegate = self
+        return web
+        }()
+    private var modalBtn: UIButton! = UIButton()
+    
+    /// Function
     private func setUpUI() {
         view.backgroundColor = UIColor.whiteColor()
         view.addSubview(backView)
@@ -77,7 +76,6 @@ class ThemeViewController: UIViewController, UIWebViewDelegate {
                 SVProgressHUD.showErrorWithStatus("网络不给力")
                 return
             }
-            
             tmpSelf!.more = data!
             tmpSelf!.moreTableView.reloadData()
         }
@@ -131,7 +129,7 @@ extension ThemeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("DetailCell") as! DetailCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(SD_DetailCell_Identifier) as! DetailCell
         let everyModel = more!.list![indexPath.row]
         cell.model = everyModel
         return cell

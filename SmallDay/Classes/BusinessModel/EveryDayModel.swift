@@ -9,7 +9,7 @@
 import UIKit
 
 class EveryDays: NSObject, DictModelProtocol {
-
+    
     var msg: String?
     var code: Int = -1
     var list: [EveryDay]?
@@ -33,7 +33,7 @@ class EveryDays: NSObject, DictModelProtocol {
 
 /// 美天model
 class EveryDay: NSObject, DictModelProtocol {
-
+    
     var date: NSString? {
         willSet {
             if let tmpDate = newValue {
@@ -88,16 +88,16 @@ class EveryDay: NSObject, DictModelProtocol {
     // 辅助模型, 为了优化 每个模型只计算一次
     var month: String?
     var day: String?
-
+    
     /// 接口有加密 模拟数据
-//    class func loadEveryDays() -> EveryDays? {
-//        let net = NetworkManager.sharedManager
-//        /* ?cityid=101&offset=30&page=1&token_time=1440170554&app_token=D2104E5F31726F2C&version=2.3.9&channel=iTunes&uuid=DDB32FF0-2140-4C7E-BC49-8464D2046532 */
-//        net.requestJSON(.GET, "http://api.xiaorizi.me/api/catapi/", ["cityid" : "101", "offset" : "30", "page" : "1", "token_time" : "1440170554", "app_token" : "D2104E5F31726F2C", "version" : "2.3.9", "channel" : "iTunes", "uuid" : "DDB32FF0-2140-4C7E-BC49-8464D2046532"]) { (result, error) -> () in
-//            print(result)
-//        }
-//        return nil
-//    }
+    //    class func loadEveryDays() -> EveryDays? {
+    //        let net = NetworkManager.sharedManager
+    //        /* ?cityid=101&offset=30&page=1&token_time=1440170554&app_token=D2104E5F31726F2C&version=2.3.9&channel=iTunes&uuid=DDB32FF0-2140-4C7E-BC49-8464D2046532 */
+    //        net.requestJSON(.GET, "http://api.xiaorizi.me/api/catapi/", ["cityid" : "101", "offset" : "30", "page" : "1", "token_time" : "1440170554", "app_token" : "D2104E5F31726F2C", "version" : "2.3.9", "channel" : "iTunes", "uuid" : "DDB32FF0-2140-4C7E-BC49-8464D2046532"]) { (result, error) -> () in
+    //            print(result)
+    //        }
+    //        return nil
+    //    }
     
     static func customClassMapping() -> [String : String]? {
         return ["themes" : "\(ThemeModel.self)", "events" : "\(EventModel.self)"]
@@ -120,7 +120,7 @@ class ThemeModel: NSObject {
     /// 美辑的编号
     var id: Int = -1
     var text: String?
-
+    
 }
 
 /// 美天model
@@ -156,8 +156,12 @@ class EventModel: NSObject, DictModelProtocol {
     var mobileURL: String?
     /// 位置
     var position: String?
+    
+    // 辅助模型
     /// 标记是否需要显示距离
     var isShowDis = false
+    /// 计算出用户当前位置距离店铺我距离,单位km
+    var distanceForUser: String?
     
     static func customClassMapping() -> [String : String]? {
         return ["more" : "\(GuessLikeModel.self)"]
@@ -178,13 +182,12 @@ class GuessLikeModel: NSObject {
 class ThemeModels: NSObject, DictModelProtocol {
     var lastdate: String?
     var list: [ThemeModel]?
-
+    
     class func loadThemesData(completion: (data: ThemeModels?, error: NSError?)->()) {
         let path = NSBundle.mainBundle().pathForResource("themes", ofType: nil)
         var data = NSData(contentsOfFile: path!)
         if data != nil {
             var dict: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments, error: nil) as! NSDictionary
-            
             var modelTool = DictModelManager.sharedManager
             var data = modelTool.objectWithDictionary(dict, cls: ThemeModels.self) as? ThemeModels
             completion(data: data, error: nil)

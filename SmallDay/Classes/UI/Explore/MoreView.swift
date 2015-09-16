@@ -13,6 +13,7 @@ class MoreView: UIView {
     @IBOutlet weak private var imageImageView: UIImageView!
     @IBOutlet weak private var adressLabel: UILabel!
     @IBOutlet weak private var titleLabel: UILabel!
+    
     var model: GuessLikeModel? {
         didSet {
             titleLabel.text = model?.title

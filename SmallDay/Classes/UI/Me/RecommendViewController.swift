@@ -11,7 +11,7 @@ import UIKit
 class RecommendViewController: UIViewController {
 
     private lazy var webView: UIWebView! = {
-        let webView = UIWebView(frame: UIScreen.mainScreen().bounds)
+        let webView = UIWebView(frame: MainBounds)
         let url = NSURL(string: "http://www.jianshu.com/users/5fe7513c7a57/latest_articles")!
         webView.loadRequest(NSURLRequest(URL: url))
         webView.delegate = self

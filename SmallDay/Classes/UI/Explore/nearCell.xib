@@ -38,7 +38,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOg-H8-v9N">
-                        <rect key="frame" x="150" y="63" width="179" height="12"/>
+                        <rect key="frame" x="150" y="53" width="179" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -66,7 +66,7 @@
                 <constraint firstAttribute="bottom" secondItem="ern-Jn-7eR" secondAttribute="bottom" constant="5" id="5yl-25-BB6"/>
                 <constraint firstItem="JgT-QK-rxj" firstAttribute="leading" secondItem="pBn-wQ-apF" secondAttribute="trailing" constant="5" id="FC8-QP-rma"/>
                 <constraint firstAttribute="trailing" secondItem="WOg-H8-v9N" secondAttribute="trailing" constant="5" id="JW0-Re-GpO"/>
-                <constraint firstItem="JgT-QK-rxj" firstAttribute="top" secondItem="WOg-H8-v9N" secondAttribute="bottom" constant="10" id="OCg-Wg-pkq"/>
+                <constraint firstItem="JgT-QK-rxj" firstAttribute="top" secondItem="WOg-H8-v9N" secondAttribute="bottom" constant="20" id="OCg-Wg-pkq"/>
                 <constraint firstItem="ern-Jn-7eR" firstAttribute="leading" secondItem="pBn-wQ-apF" secondAttribute="trailing" constant="5" id="Pzj-mO-uSg"/>
                 <constraint firstAttribute="bottom" secondItem="pBn-wQ-apF" secondAttribute="bottom" constant="5" id="R0a-fT-PCw"/>
                 <constraint firstItem="qAc-U5-Fr9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UJe-JN-s7l"/>
@@ -93,7 +93,7 @@
                 <outlet property="imageImageView" destination="pBn-wQ-apF" id="Lr2-lX-D3o"/>
                 <outlet property="titleLabel" destination="PW8-9l-gFr" id="zBB-lO-Q1s"/>
             </connections>
-            <point key="canvasLocation" x="219" y="308.5"/>
+            <point key="canvasLocation" x="49" y="283.5"/>
         </collectionViewCell>
     </objects>
     <resources>

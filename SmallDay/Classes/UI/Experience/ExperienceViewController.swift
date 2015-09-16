@@ -17,12 +17,35 @@ class ExperienceViewController: MainViewController {
     }
     private let cellIdentifier: String = "experienceCell"
     
-    private lazy var tableView: UITableView! = {
-        let tableV = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
-        tableV.separatorStyle = .None
-        tableV.delegate = self
-        tableV.backgroundColor = theme.SDBackgroundColor
-        tableV.dataSource = self
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navigationItem.title = "体验"
+        
+        tableView.header.beginRefreshing()
+        
+        setTableView()
+    }
+    
+    func loadDatas() {
+        weak var tmpSelf = self
+        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(1.2 * Double(NSEC_PER_SEC)))
+        dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
+            ExperienceModel.loadExperienceModel { (data, error) -> () in
+                if error != nil {
+                    tmpSelf!.tableView.header.endRefreshing()
+                    return
+                }
+                tmpSelf!.experModel = data
+                tmpSelf!.tableView.header.endRefreshing()
+                tmpSelf!.tableView.reloadData()
+            }
+        }
+    }
+    
+    ///MARK:- 懒加载对象
+    private lazy var tableView: MainTableView = {
+        let tableV = MainTableView(frame: MainBounds, style: .Plain, dataSource: self, delegate: self)
         tableV.estimatedRowHeight = 200
         tableV.rowHeight = UITableViewAutomaticDimension
         tableV.contentInset = UIEdgeInsetsMake(0, 0, NavigationH + 49, 0)
@@ -42,40 +65,14 @@ class ExperienceViewController: MainViewController {
         return viewH
         }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.navigationItem.title = "体验"
-        
-        tableView.header.beginRefreshing()
-        
-        setTableView()
-    }
-    
     private func setTableView() {
         headView?.experModel = experModel
         tableView.tableHeaderView = headView!
         view.addSubview(tableView)
     }
-    
-    func loadDatas() {
-        weak var tmpSelf = self
-        let time = dispatch_time(DISPATCH_TIME_NOW,Int64(1.2 * Double(NSEC_PER_SEC)))
-        dispatch_after(time, dispatch_get_main_queue()) { () -> Void in
-            ExperienceModel.loadExperienceModel { (data, error) -> () in
-                if error != nil {
-                    tmpSelf!.tableView.header.endRefreshing()
-                    return
-                }
-                tmpSelf!.experModel = data
-                tmpSelf!.tableView.header.endRefreshing()
-                tmpSelf!.tableView.reloadData()
-            }
-        }
-    }
-    
 }
 
+///MARK:- UITableViewDelegate,UITableViewDataSource,ExperHeadViewDelegate
 extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource, ExperHeadViewDelegate {
     
     func experHeadView(headView: ExperHeadView, didClickImageViewAtIndex index: Int) {

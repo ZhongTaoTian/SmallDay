@@ -9,19 +9,14 @@
 import UIKit
 
 public let DetailCellHeight: CGFloat = 220
-public let DetailCellIdentifier = "DetailCell"
 
 class ClassDetailViewController: UIViewController {
     
-    private lazy var detailTableView: UITableView? = {
-        let tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Plain)
-        tableView.backgroundColor = theme.SDBackgroundColor
-        tableView.delegate = self
-        tableView.dataSource = self
+    private lazy var detailTableView: MainTableView = {
+        let tableView = MainTableView(frame: MainBounds, style: .Plain, dataSource: self, delegate: self)
         tableView.rowHeight = DetailCellHeight
-        tableView.separatorStyle = .None
         tableView.contentInset = UIEdgeInsetsMake(0, 0, NavigationH, 0)
-        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: DetailCellIdentifier)
+        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: SD_DetailCell_Identifier)
         return tableView
         }()
     
@@ -30,7 +25,7 @@ class ClassDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = theme.SDBackgroundColor
-        view.addSubview(detailTableView!)
+        view.addSubview(detailTableView)
         
         loadDatas()
     }
@@ -42,7 +37,7 @@ class ClassDetailViewController: UIViewController {
                 return
             }
             tmpSelf!.details = data
-            tmpSelf!.detailTableView?.reloadData()
+            tmpSelf!.detailTableView.reloadData()
         }
     }
 }
@@ -56,7 +51,7 @@ extension ClassDetailViewController: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let event = details!.list![indexPath.row] as EventModel
-        var cell = tableView.dequeueReusableCellWithIdentifier(DetailCellIdentifier) as? DetailCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(SD_DetailCell_Identifier) as? DetailCell
         cell?.model = event
         
         return cell!
@@ -68,5 +63,4 @@ extension ClassDetailViewController: UITableViewDataSource, UITableViewDelegate 
         vc.model = eventModel
         navigationController!.pushViewController(vc, animated: true)
     }
-    
 }

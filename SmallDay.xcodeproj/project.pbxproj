@@ -101,6 +101,11 @@
 		FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */; };
 		FAA0F9F71B7DF02E00B5EA08 /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA0F9F61B7DF02E00B5EA08 /* theme.swift */; };
 		FAD37B681BA7FF1A00E0C210 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD37B671BA7FF1A00E0C210 /* UserInfoManager.swift */; };
+		FAD37B981BA9C56800E0C210 /* NavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD37B971BA9C56800E0C210 /* NavigatorViewController.swift */; };
+		FAD37B9C1BA9C9FF00E0C210 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD37B9B1BA9C9FF00E0C210 /* MainTableView.swift */; };
+		FAD37B9E1BA9DC8100E0C210 /* ExperienceWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD37B9D1BA9DC8100E0C210 /* ExperienceWebView.swift */; };
+		FAD37BA01BA9E47400E0C210 /* EventWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD37B9F1BA9E47400E0C210 /* EventWebView.swift */; };
+		FAD37BA21BA9EDBC00E0C210 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD37BA11BA9EDBC00E0C210 /* SearchButton.swift */; };
 		FAD582BA1B935AD0007EEEE0 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD582A01B935AD0007EEEE0 /* UMSocialLocalizable.strings */; };
 		FAD582BB1B935AD0007EEEE0 /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD582AE1B935AD0007EEEE0 /* libUMSocial_Sdk_4.2.3.a */; };
 		FAD582BC1B935AD0007EEEE0 /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD582B01B935AD0007EEEE0 /* UMSCommentDetailController.xib */; };
@@ -264,6 +269,11 @@
 		FAA0F9F41B7DDAA100B5EA08 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		FAA0F9F61B7DF02E00B5EA08 /* theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
 		FAD37B671BA7FF1A00E0C210 /* UserInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		FAD37B971BA9C56800E0C210 /* NavigatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorViewController.swift; sourceTree = "<group>"; };
+		FAD37B9B1BA9C9FF00E0C210 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		FAD37B9D1BA9DC8100E0C210 /* ExperienceWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceWebView.swift; sourceTree = "<group>"; };
+		FAD37B9F1BA9E47400E0C210 /* EventWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventWebView.swift; sourceTree = "<group>"; };
+		FAD37BA11BA9EDBC00E0C210 /* SearchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		FAD582A11B935AD0007EEEE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		FAD582A31B935AD0007EEEE0 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		FAD582A41B935AD0007EEEE0 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -596,6 +606,7 @@
 				FA57DF081B8327F20099CD37 /* ClassifyCell.xib */,
 				FA57DF0B1B8331FE0099CD37 /* SearchViewController.swift */,
 				FA57DF0F1B835B090099CD37 /* SearchView.swift */,
+				FAD37BA11BA9EDBC00E0C210 /* SearchButton.swift */,
 				FA57DF0D1B8335920099CD37 /* SearchTextField.swift */,
 			);
 			name = "Classify(分类)";
@@ -608,10 +619,11 @@
 				FAA0F9F01B7DDA5D00B5EA08 /* ExperienceViewController.swift */,
 				FA66A4341B8F45A4005DF017 /* ExperHeadPushViewController.swift */,
 				FA66A4031B8ECEF7005DF017 /* ExperHeadView.swift */,
-				FA66A4361B8F621D005DF017 /* ExperienceCell.swift */,
 				FA66A43A1B8F78F8005DF017 /* DetailViewController.swift */,
+				FAD37B9D1BA9DC8100E0C210 /* ExperienceWebView.swift */,
 				FAE5D5601BA1E7A6009BA347 /* ExploreBottomView.swift */,
 				FAE5D5621BA1E824009BA347 /* ExploreBottomView.xib */,
+				FA66A4361B8F621D005DF017 /* ExperienceCell.swift */,
 				FA66A4371B8F621D005DF017 /* ExperienceCell.xib */,
 				FA66A4401B90B6A6005DF017 /* SignUpViewController.swift */,
 				FA66A4481B90C644005DF017 /* SignUpViewController.xib */,
@@ -635,6 +647,7 @@
 				FA82B12D1B87A1F4003A2264 /* ThemeCell.swift */,
 				FA82B12E1B87A1F4003A2264 /* ThemeCell.xib */,
 				FA73875F1B8B63A2009D08C8 /* EventViewController.swift */,
+				FAD37B9F1BA9E47400E0C210 /* EventWebView.swift */,
 				FA4090031B9EB7970007810C /* ShopDetailContentView.swift */,
 				FA932A941B88C4C900601B54 /* ThemeViewController.swift */,
 				FA4090051B9EB7CC0007810C /* ShopDetailContentView.xib */,
@@ -653,6 +666,7 @@
 				FAA0F9EA1B7DD83E00B5EA08 /* MainTabBarController.swift */,
 				FAA0F9EC1B7DD9CB00B5EA08 /* MainNavigationController.swift */,
 				FA709A201B808B0500B24238 /* MainViewController.swift */,
+				FAD37B9B1BA9C9FF00E0C210 /* MainTableView.swift */,
 				FA709A2E1B80CFCA00B24238 /* CityViewController.swift */,
 				FA709A301B81762500B24238 /* CityCollectionViewCell.swift */,
 				FA57DE9C1B822A990099CD37 /* CityCollectionReusableView.swift */,
@@ -663,6 +677,7 @@
 				FA4090011B9D9C3B0007810C /* LoadAnimatImageView.swift */,
 				FAE5D55A1BA1AE4E009BA347 /* LeadpageViewController.swift */,
 				FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */,
+				FAD37B971BA9C56800E0C210 /* NavigatorViewController.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -987,10 +1002,12 @@
 				FA57DF121B8393240099CD37 /* IconView.swift in Sources */,
 				FA709A271B80A3A800B24238 /* DoubleTextView.swift in Sources */,
 				FA66A4381B8F621D005DF017 /* ExperienceCell.swift in Sources */,
+				FAD37B981BA9C56800E0C210 /* NavigatorViewController.swift in Sources */,
 				FA4090181B9EE36E0007810C /* UIImage+wnxImage.swift in Sources */,
 				FA4090141B9EE2740007810C /* UIImageView+wnxImage.swift in Sources */,
 				FA932A8D1B88B65600601B54 /* UIButton+Kingfisher.swift in Sources */,
 				FAD583031B949B65007EEEE0 /* ShareModel.swift in Sources */,
+				FAD37B9E1BA9DC8100E0C210 /* ExperienceWebView.swift in Sources */,
 				FA932A881B88B65600601B54 /* KingfisherManager.swift in Sources */,
 				FA40ED9C1B84E64E0049DE19 /* FeedbackViewController.swift in Sources */,
 				FA66A4001B8EBD96005DF017 /* ExperienceModel.swift in Sources */,
@@ -998,6 +1015,7 @@
 				FAE5D55B1BA1AE4E009BA347 /* LeadpageViewController.swift in Sources */,
 				FAE5D5681BA2AC90009BA347 /* RegExCategories.m in Sources */,
 				FAE5D5611BA1E7A6009BA347 /* ExploreBottomView.swift in Sources */,
+				FAD37BA01BA9E47400E0C210 /* EventWebView.swift in Sources */,
 				FA4090021B9D9C3B0007810C /* LoadAnimatImageView.swift in Sources */,
 				FA40901A1B9EE3920007810C /* UIBarButtonItem+wxnBarButtonItem.swift in Sources */,
 				FAA0F9F51B7DDAA100B5EA08 /* MeViewController.swift in Sources */,
@@ -1023,11 +1041,13 @@
 				FAA0F9C01B7DC74900B5EA08 /* AppDelegate.swift in Sources */,
 				FA932A871B88B65600601B54 /* ImageDownloader.swift in Sources */,
 				FAD37B681BA7FF1A00E0C210 /* UserInfoManager.swift in Sources */,
+				FAD37B9C1BA9C9FF00E0C210 /* MainTableView.swift in Sources */,
 				FA73876C1B8B940E009D08C8 /* ClassDetailViewController.swift in Sources */,
 				FA66A4041B8ECEF7005DF017 /* ExperHeadView.swift in Sources */,
 				FAE5D56A1BA3FE3C009BA347 /* SDRefreshHeader.swift in Sources */,
 				FA709A211B808B0500B24238 /* MainViewController.swift in Sources */,
 				FA82B1261B87693E003A2264 /* SwiftDictModel.swift in Sources */,
+				FAD37BA21BA9EDBC00E0C210 /* SearchButton.swift in Sources */,
 				FA57DF0E1B8335920099CD37 /* SearchTextField.swift in Sources */,
 				FA932A891B88B65600601B54 /* KingfisherOptions.swift in Sources */,
 				FA66A4421B90B6A6005DF017 /* SignUpViewController.swift in Sources */,

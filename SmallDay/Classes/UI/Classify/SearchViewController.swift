@@ -20,22 +20,19 @@ class SearchViewController: UIViewController, SearchViewDelegate {
     
     private var hotSearchs: [String] = ["北京", "东四", "南锣鼓巷", "798", "三里屯", "维尼的小熊"]
     
-    private var tableView: UITableView! = {
+    private var tableView: UITableView = {
         let tableView = UITableView(frame: CGRectMake(0, searchViewH, AppWidth, AppHeight - searchViewH), style: .Plain)
         tableView.separatorStyle = .None
         tableView.rowHeight = 230
         tableView.hidden = true
         tableView.contentInset = UIEdgeInsetsMake(0, 0, NavigationH, 0)
-        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: "DetailCell")
+        tableView.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: SD_DetailCell_Identifier)
         return tableView
         }()
     
-    private lazy var hotBtns: NSMutableArray! = {
-        let arr = NSMutableArray()
-        return arr
-        }()
+    private lazy var hotBtns: NSMutableArray = NSMutableArray()
     
-    private lazy var hotLabel: UILabel! = {
+    private lazy var hotLabel: UILabel = {
         let label = UILabel(frame: CGRectMake(10, 0, 200, 50))
         label.textAlignment = NSTextAlignment.Left
         label.textColor = UIColor.blackColor()
@@ -119,7 +116,7 @@ class SearchViewController: UIViewController, SearchViewDelegate {
     func searchBtnClick(sender: UIButton) {
         let text: String = sender.titleLabel!.text!
         searchDetail(text)
-
+        
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
@@ -154,7 +151,7 @@ class SearchViewController: UIViewController, SearchViewDelegate {
         NSNotificationCenter.defaultCenter().removeObserver(self)
         print("搜索控制器被销毁")
     }
-
+    
     func keyBoardWillshow() {
         scrollView.hidden = false
         tableView.hidden = true
@@ -173,19 +170,24 @@ class SearchViewController: UIViewController, SearchViewDelegate {
 }
 
 
-
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchModel?.list?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("DetailCell") as! DetailCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(SD_DetailCell_Identifier) as! DetailCell
         let everyModel = searchModel!.list![indexPath.row]
         cell.model = everyModel
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let eventModel = searchModel!.list![indexPath.row]
+        let searchDetailVC = EventViewController()
+        searchDetailVC.model = eventModel
+        navigationController!.pushViewController(searchDetailVC, animated: true)
+    }
 }
 
 

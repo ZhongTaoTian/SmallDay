@@ -10,15 +10,12 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    //
+
     var window: UIWindow?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        window?.rootViewController = showLeadpage()
-        
-        window?.makeKeyAndVisible()
+        setKeyWindow()
         
         setAppAppearance()
         
@@ -29,6 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMianViewController", name: SD_ShowMianTabbarController_Notification, object: nil)
         
         return true
+    }
+    
+    private func setKeyWindow() {
+        window = UIWindow(frame: MainBounds)
+        
+        window?.rootViewController = showLeadpage()
+        
+        window?.makeKeyAndVisible()
     }
     
     func setUserMapInfo() {
@@ -57,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setShared() {
         UMSocialData.setAppKey(theme.UMSharedAPPKey)
-        UMSocialSinaHandler.openSSOWithRedirectURL("http://sns.whalecloud.com/sina2/callback")
+        UMSocialSinaHandler.openSSOWithRedirectURL("http://www.jianshu.com/users/5fe7513c7a57/latest_articles")
         UMSocialWechatHandler.setWXAppId("wx485c6ee1758251bd", appSecret: "468ab73eef432f59a2aa5630e340862f", url: theme.JianShuURL)
         UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession,UMShareToWechatTimeline])
     }
@@ -72,7 +77,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //MARK: - 引导页设置
     private func showLeadpage() -> UIViewController {
-        
         let versionStr = "CFBundleShortVersionString"
         let cureentVersion = NSBundle.mainBundle().infoDictionary![versionStr] as! String
         let oldVersion = (NSUserDefaults.standardUserDefaults().objectForKey(versionStr) as? String) ?? ""
@@ -85,7 +89,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return MainTabBarController()
     }
-    
     
     func showMianViewController() {
         let mainTabBarVC = MainTabBarController()

@@ -9,11 +9,11 @@
 import UIKit
 
 class OrderViewController: UIViewController {
-
+    
     init() {
         super.init(nibName: "OrderViewController", bundle: nil)
     }
-
+    
     required init(coder aDecoder: NSCoder) {
         super.init(nibName: "OrderViewController", bundle: nil)
     }
@@ -24,5 +24,5 @@ class OrderViewController: UIViewController {
         view.backgroundColor = theme.SDBackgroundColor
         
     }
-
+    
 }
