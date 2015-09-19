@@ -78,6 +78,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         view.backgroundColor = theme.SDWebViewBacagroundColor
         view.addSubview(webView)
         view.addSubview(topImageView)
+        MAMapServices.sharedServices().apiKey = theme.GaoDeAPPKey
     }
     
     private func setCustomNavigationItem() {
@@ -171,8 +172,9 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
     
     /// 地址
     func addressBottomClick(tap: UITapGestureRecognizer) {
-//        let bottomView = tap.view as! ExploreBottomView
-        print("地址", terminator: "")
+        let navVC = NavigatorViewController()
+        navVC.model = model
+        navigationController?.pushViewController(navVC, animated: true)
     }
     
     func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {

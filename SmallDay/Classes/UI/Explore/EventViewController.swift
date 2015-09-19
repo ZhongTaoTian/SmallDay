@@ -76,6 +76,14 @@ class EventViewController: UIViewController {
             webView.hidden = true
             // 将模型传入给店铺详情页
             detailContentView.detailModel = model
+            // 设置地图按钮点击回调闭包
+            weak var tmpSelf = self
+
+            detailContentView.mapBtnClickCallback = {
+                let navVC = NavigatorViewController()
+                navVC.model = tmpSelf!.model
+                tmpSelf!.navigationController?.pushViewController(navVC, animated: true)
+            }
             detailSV.addSubview(detailContentView)
             detailSV.contentSize = CGSize(width: AppWidth, height: detailContentView.height - EventViewController_ShopView_Height)
             
@@ -153,6 +161,7 @@ class EventViewController: UIViewController {
     
     private lazy var shopView: ShopDetailView = {
         let shopView = ShopDetailView(frame: CGRect(x: 0, y: DetailViewController_TopImageView_Height, width: AppWidth, height: EventViewController_ShopView_Height))
+
         shopView.delegate = self
         return shopView
         }()

@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMianViewController", name: SD_ShowMianTabbarController_Notification, object: nil)
         
+        MAMapServices.sharedServices().apiKey = theme.GaoDeAPPKey
+        
         return true
     }
     

@@ -16,6 +16,8 @@ class ShopDetailContentView: UIView {
     @IBOutlet weak private var adressLabel: UILabel!
     @IBOutlet weak private var correctBtn: UIButton!
     
+    var mapBtnClickCallback:(() -> ())?
+    
     var shopDetailContentViewHeight: CGFloat = 0
     var detailModel: EventModel? {
         didSet {
@@ -43,6 +45,7 @@ class ShopDetailContentView: UIView {
     
     @IBAction func mapBtnClick(sender: UIButton) {
 //        let naviVC = NavigatorViewController()
+        mapBtnClickCallback!()
     }
     
     @IBAction func correctBtnClick(sender: UIButton) {

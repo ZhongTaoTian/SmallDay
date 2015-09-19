@@ -74,6 +74,8 @@
 		FA82B12F1B87A1F4003A2264 /* ThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82B12D1B87A1F4003A2264 /* ThemeCell.swift */; };
 		FA82B1301B87A1F4003A2264 /* ThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82B12E1B87A1F4003A2264 /* ThemeCell.xib */; };
 		FA82B1371B87B28A003A2264 /* themes in Resources */ = {isa = PBXBuildFile; fileRef = FA82B1361B87B28A003A2264 /* themes */; };
+		FA8B09B41BAD43F5001F1E66 /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B09B31BAD43F5001F1E66 /* CustomCalloutView.swift */; settings = {ASSET_TAGS = (); }; };
+		FA8B09B61BAD4AFD001F1E66 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B09B51BAD4AFD001F1E66 /* CustomAnnotationView.swift */; settings = {ASSET_TAGS = (); }; };
 		FA932A951B88C4C900601B54 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA932A941B88C4C900601B54 /* ThemeViewController.swift */; };
 		FA932A981B88DAAA00601B54 /* EventCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA932A961B88DAAA00601B54 /* EventCellTableViewCell.swift */; };
 		FA932A991B88DAAA00601B54 /* EventCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA932A971B88DAAA00601B54 /* EventCellTableViewCell.xib */; };
@@ -241,6 +243,8 @@
 		FA82B12D1B87A1F4003A2264 /* ThemeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeCell.swift; sourceTree = "<group>"; };
 		FA82B12E1B87A1F4003A2264 /* ThemeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeCell.xib; sourceTree = "<group>"; };
 		FA82B1361B87B28A003A2264 /* themes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = themes; sourceTree = "<group>"; };
+		FA8B09B31BAD43F5001F1E66 /* CustomCalloutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
+		FA8B09B51BAD4AFD001F1E66 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		FA932A941B88C4C900601B54 /* ThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		FA932A961B88DAAA00601B54 /* EventCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCellTableViewCell.swift; sourceTree = "<group>"; };
 		FA932A971B88DAAA00601B54 /* EventCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCellTableViewCell.xib; sourceTree = "<group>"; };
@@ -682,6 +686,8 @@
 				FAE5D55A1BA1AE4E009BA347 /* LeadpageViewController.swift */,
 				FAE5D5691BA3FE3C009BA347 /* SDRefreshHeader.swift */,
 				FAD37B971BA9C56800E0C210 /* NavigatorViewController.swift */,
+				FA8B09B31BAD43F5001F1E66 /* CustomCalloutView.swift */,
+				FA8B09B51BAD4AFD001F1E66 /* CustomAnnotationView.swift */,
 			);
 			name = "Main(公共)";
 			path = Main;
@@ -1027,6 +1033,7 @@
 				FA932A951B88C4C900601B54 /* ThemeViewController.swift in Sources */,
 				FA4090281B9F47C50007810C /* UserAccountTool.swift in Sources */,
 				FA7F8B1C1B95ECA8000704DB /* FileTool.swift in Sources */,
+				FA8B09B41BAD43F5001F1E66 /* CustomCalloutView.swift in Sources */,
 				FAE5D5651BA2000F009BA347 /* BuyDetailViewController.swift in Sources */,
 				FA4090241B9F3B310007810C /* GuessLikeView.swift in Sources */,
 				FA709A2F1B80CFCA00B24238 /* CityViewController.swift in Sources */,
@@ -1085,6 +1092,7 @@
 				FABFF0171BAAE5150097A628 /* SDWebImageCompat.m in Sources */,
 				FAE5D54C1BA1A485009BA347 /* OrderViewController.swift in Sources */,
 				FA709A291B80CA8800B24238 /* NearViewController.swift in Sources */,
+				FA8B09B61BAD4AFD001F1E66 /* CustomAnnotationView.swift in Sources */,
 				FABFF0231BAAE5150097A628 /* UIView+WebCacheOperation.m in Sources */,
 				FAA0F9ED1B7DD9CB00B5EA08 /* MainNavigationController.swift in Sources */,
 				FABFF01F1BAAE5150097A628 /* UIImage+MultiFormat.m in Sources */,
