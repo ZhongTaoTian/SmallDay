@@ -44,7 +44,6 @@ class NearViewController: UIViewController {
         
         title = "附近"
         view.backgroundColor = theme.SDBackgroundColor
-        MAMapServices.sharedServices().apiKey = theme.GaoDeAPPKey
         backView.addSubview(nearTableView)
         
         // 加载附近是否有店铺, 这里就定位到了我的附近,在深圳,模拟一直有附近,数据是本地的,所以获取的是固定的

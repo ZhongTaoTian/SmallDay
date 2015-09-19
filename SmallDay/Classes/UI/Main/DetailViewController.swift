@@ -78,7 +78,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         view.backgroundColor = theme.SDWebViewBacagroundColor
         view.addSubview(webView)
         view.addSubview(topImageView)
-        MAMapServices.sharedServices().apiKey = theme.GaoDeAPPKey
     }
     
     private func setCustomNavigationItem() {
