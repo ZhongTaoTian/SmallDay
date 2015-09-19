@@ -40,7 +40,7 @@ class SettingViewController: UIViewController {
     }
     
     deinit {
-        print("设置控制器被销毁了")
+        print("设置控制器被销毁了", terminator: "")
     }
 }
 
@@ -51,7 +51,7 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = SettingCell.settingCellWithTableView(tableView)
+        let cell = SettingCell.settingCellWithTableView(tableView)
         cell.imageImageView.image = UIImage(named: images[indexPath.row] as! String)
         cell.titleLabel.text = titles[indexPath.row] as? String
         

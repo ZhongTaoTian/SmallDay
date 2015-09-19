@@ -65,7 +65,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        if contactStr.validateEmail() || contactStr.validateMobile() {
+        if contactStr!.validateEmail() || contactStr!.validateMobile() {
             // TODO 将用户反馈和联系方式发送给服务器
             alartView = UIAlertView(title: "提示", message: "感谢您的反馈", delegate: nil, cancelButtonTitle: "确定")
             alartView?.show()
@@ -88,7 +88,7 @@ class FeedbackViewController: UIViewController, UITextFieldDelegate {
     }
     
     deinit {
-        print("反馈留言ViewController被销毁了")
+        print("反馈留言ViewController被销毁了", terminator: "")
     }
 }
 

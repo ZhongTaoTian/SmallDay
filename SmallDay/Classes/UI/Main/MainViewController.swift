@@ -10,14 +10,14 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    var cityRightBtn: UIButton!
+    var cityRightBtn: TextImageButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "cityChange:", name: SD_CurrentCityChange_Notification, object: nil)
         
-        cityRightBtn = textImageButton.buttonWithType(.Custom) as! textImageButton
+        cityRightBtn = TextImageButton(frame: CGRectMake(0, 20, 80, 44))
         let user = NSUserDefaults.standardUserDefaults()
         if let currentCity = user.objectForKey(SD_Current_SelectedCity) as? String {
             cityRightBtn.setTitle(currentCity, forState: .Normal)
@@ -25,7 +25,6 @@ class MainViewController: UIViewController {
             cityRightBtn.setTitle("北京", forState: .Normal)
         }
         
-        cityRightBtn.frame = CGRectMake(0, 20, 80, 44)
         cityRightBtn.titleLabel?.font = theme.SDNavItemFont
         cityRightBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         cityRightBtn.setImage(UIImage(named: "home_down"), forState: .Normal)
@@ -53,7 +52,7 @@ class MainViewController: UIViewController {
 }
 
 // MARK: 自定义button,文字在左边 图片在右边
-class textImageButton: UIButton {
+class TextImageButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -63,7 +62,7 @@ class textImageButton: UIButton {
 
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

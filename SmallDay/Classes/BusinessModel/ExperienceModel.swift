@@ -18,12 +18,12 @@ class ExperienceModel: NSObject, DictModelProtocol {
     
     class func loadExperienceModel(completion: (data: ExperienceModel?, error: NSError?) -> ()) {
         let path = NSBundle.mainBundle().pathForResource("Experience", ofType: nil)
-        var data = NSData(contentsOfFile: path!)
+        let data = NSData(contentsOfFile: path!)
         if data != nil {
-            var dict: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments, error: nil) as! NSDictionary
+            let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
             
-            var modelTool = DictModelManager.sharedManager
-            var data = modelTool.objectWithDictionary(dict, cls: ExperienceModel.self) as? ExperienceModel
+            let modelTool = DictModelManager.sharedManager
+            let data = modelTool.objectWithDictionary(dict, cls: ExperienceModel.self) as? ExperienceModel
             completion(data: data, error: nil)
         }
         

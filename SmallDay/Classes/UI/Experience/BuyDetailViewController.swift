@@ -19,7 +19,7 @@ class BuyDetailViewController: UIViewController {
     
     var htmlStr: String? {
         didSet {
-            var newStr = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlStr!))
+            let newStr = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlStr!))
             self.webView.loadHTMLString(newStr as String, baseURL: nil)
         }
     }

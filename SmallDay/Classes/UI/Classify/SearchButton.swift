@@ -23,7 +23,7 @@ class SearchButton: UIButton {
         addTarget(target, action: action, forControlEvents: .TouchUpInside)
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 

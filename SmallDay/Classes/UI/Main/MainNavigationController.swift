@@ -13,16 +13,16 @@ class MainNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.interactivePopGestureRecognizer.delegate = nil;
+        self.interactivePopGestureRecognizer!.delegate = nil;
     }
 
     override func pushViewController(viewController: UIViewController, animated: Bool) {
         
         if self.childViewControllers.count > 0 {
-            let vc = self.childViewControllers[0] as! UIViewController
+            let vc = self.childViewControllers[0] 
 
             //设置返回按钮属性
-            var backBtn = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+            let backBtn = UIButton(type: UIButtonType.Custom)
             if self.childViewControllers.count == 1 {
                 backBtn.setTitle(vc.tabBarItem.title!, forState: .Normal)
             } else {

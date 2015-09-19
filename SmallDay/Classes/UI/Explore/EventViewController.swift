@@ -71,6 +71,7 @@ class EventViewController: UIViewController {
     
     var model: EventModel? {
         didSet {
+            //TODO: 将设置模型数据的代码封装到模型的方法里
             loadImage.startLoadAnimatImageViewInView(view, center: view.center)
             webView.hidden = true
             // 将模型传入给店铺详情页
@@ -96,13 +97,13 @@ class EventViewController: UIViewController {
                 }
                 
                 if titleStr != nil {
-                    var newStr: NSMutableString = NSMutableString(string: htmlSrt!)
+                    let newStr: NSMutableString = NSMutableString(string: htmlSrt!)
                     newStr.insertString(titleStr!, atIndex: 31)
                     htmlSrt = newStr as String
                 }
             }
             
-            var newStr = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlSrt!))
+            let newStr = NSMutableString.changeHeigthAndWidthWithSrting(NSMutableString(string: htmlSrt!))
             webView.loadHTMLString(newStr as String, baseURL: nil)
             webView.hidden = false
             
@@ -163,6 +164,7 @@ class EventViewController: UIViewController {
     
     /// 收藏
     func lickBtnClick() {
+        //TODO: 将对应的店铺数据插入到本地数据库
         likeBtn.selected = !likeBtn.selected
     }
     
@@ -188,7 +190,7 @@ class EventViewController: UIViewController {
     }
     
     deinit {
-        print("详情控制器被销毁")
+        print("详情控制器被销毁", terminator: "")
     }
 }
 
@@ -203,7 +205,7 @@ extension EventViewController: UIScrollViewDelegate {
             webView.scrollView.contentSize.height = loadFinishScrollHeihgt
         }
         
-        var offsetY: CGFloat = scrollView.contentOffset.y
+        let offsetY: CGFloat = scrollView.contentOffset.y
         // 判断顶部自定义导航条的透明度,以及图片的切换
         customNav.alpha = 1 + (offsetY + NavigationH + EventViewController_ShopView_Height) / scrollShowNavH
         if offsetY + EventViewController_ShopView_Height >= -NavigationH && showBlackImage == false {

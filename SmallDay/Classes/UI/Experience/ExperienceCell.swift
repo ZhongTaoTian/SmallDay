@@ -19,7 +19,7 @@ class ExperienceCell: UITableViewCell {
             
             if eventModel!.imgs?.count > 0 {
                 let urlStr = eventModel!.imgs![0]
-                imageImageView.kf_setImageWithURL(NSURL(string: urlStr)!, placeholderImage: UIImage(named: "quesheng"))
+                imageImageView.wxn_setImageWithURL(NSURL(string: urlStr)!, placeholderImage: UIImage(named: "quesheng")!)
             }
         }
     }

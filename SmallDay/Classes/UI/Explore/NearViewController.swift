@@ -24,7 +24,7 @@ class NearViewController: UIViewController {
         tableV.registerNib(UINib(nibName: "DetailCell", bundle: nil), forCellReuseIdentifier: SD_DetailCell_Identifier)
         
         let diyHeader = SDRefreshHeader(refreshingTarget: self, refreshingAction: "pullLoadDatas")
-        diyHeader.gifView.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
+        diyHeader.gifView!.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
         tableV.header = diyHeader
         return tableV
         }()
@@ -92,7 +92,7 @@ class NearViewController: UIViewController {
     deinit {
         mapView.clearDisk()
         mapView.showsUserLocation = false
-        print("地图控制器被销毁")
+        print("地图控制器被销毁", terminator: "")
     }
 }
 

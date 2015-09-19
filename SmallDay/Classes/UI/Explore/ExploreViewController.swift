@@ -84,7 +84,7 @@ class ExploreViewController: MainViewController, DoubleTextViewDelegate {
     
     private func setTableViewHeader(refreshingTarget: AnyObject, refreshingAction: Selector, imageFrame: CGRect, tableView: UITableView) {
         let header = SDRefreshHeader(refreshingTarget: refreshingTarget, refreshingAction: refreshingAction)
-        header.gifView.frame = imageFrame
+        header.gifView!.frame = imageFrame
         tableView.header = header
     }
     
@@ -158,7 +158,7 @@ extension ExploreViewController: UITableViewDelegate, UITableViewDataSource {
             return themes?.list?.count ?? 0
         } else {
             let event = self.everyDays!.list![section]
-            if let tmpEvent = event.themes?.last {
+            if let _ = event.themes?.last {
                 return 2
             }
             

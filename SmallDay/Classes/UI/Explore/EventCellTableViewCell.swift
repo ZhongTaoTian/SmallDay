@@ -39,7 +39,7 @@ class EventCellTableViewCell: UITableViewCell {
     class func eventCell(tableView: UITableView) -> EventCellTableViewCell {
         let identifier = "eventCell"
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("eventCell") as? EventCellTableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(identifier) as? EventCellTableViewCell
         if cell == nil {
             cell = NSBundle.mainBundle().loadNibNamed("EventCellTableViewCell", owner: nil, options: nil).last as? EventCellTableViewCell
         }

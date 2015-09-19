@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UMSocialSnsService.handleOpenURL(url)
     }
     
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         return UMSocialSnsService.handleOpenURL(url)
     }
     
@@ -94,13 +94,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainTabBarVC = MainTabBarController()
         self.window!.rootViewController = mainTabBarVC
         let nav = mainTabBarVC.viewControllers![0] as? MainNavigationController
-        (nav?.viewControllers![0] as! MainViewController).pushcityView()
+        (nav?.viewControllers[0] as! MainViewController).pushcityView()
     }
     
     func applicationDidReceiveMemoryWarning(application: UIApplication) {
-        KingfisherManager.sharedManager.cache.clearMemoryCache()
-        KingfisherManager.sharedManager.cache.clearDiskCache()
-        KingfisherManager.sharedManager.cache.cleanExpiredDiskCache()
+        SDWebImageManager.sharedManager().imageCache.cleanDisk()
+        SDWebImageManager.sharedManager().cancelAll()
     }
 }
 

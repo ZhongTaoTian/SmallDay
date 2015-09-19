@@ -31,7 +31,7 @@ class SignUpViewController: UIViewController {
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
-        print("报名控制器被销毁")
+        print("报名控制器被销毁", terminator: "")
     }
     
     override func viewDidLoad() {
@@ -56,7 +56,7 @@ class SignUpViewController: UIViewController {
         }
         
         if let userInfo = noti.userInfo {
-            let newF = userInfo[UIKeyboardFrameEndUserInfoKey]!.CGRectValue()
+            let newF = userInfo[UIKeyboardFrameEndUserInfoKey]!.CGRectValue
             let boardH = AppHeight - newF.origin.y
             let animDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey]! as! Double
             if fristTF != nil && boardH != 0 {
@@ -92,7 +92,7 @@ class SignUpViewController: UIViewController {
     
     /// 发送验证码
     func sendCodeBtnClick(sender: UIButton) {
-        if phoneNumTextField.text.validateMobile() {
+        if phoneNumTextField.text!.validateMobile() {
             sendCodeBtn.enabled = false
             self.timer = NSTimer(timeInterval: 1.0, target: self, selector: "changeBtn", userInfo: nil, repeats: true)
             NSRunLoop.mainRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
@@ -123,7 +123,7 @@ class SignUpViewController: UIViewController {
         super.viewWillDisappear(animated)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(nibName: "SignUpViewController", bundle: nil)
     }
 }

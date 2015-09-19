@@ -16,12 +16,12 @@ class EveryDays: NSObject, DictModelProtocol {
     
     class func loadEventsData(completion: (data: EveryDays?, error: NSError?)->()) {
         let path = NSBundle.mainBundle().pathForResource("events", ofType: nil)
-        var data = NSData(contentsOfFile: path!)
+        let data = NSData(contentsOfFile: path!)
         
         if data != nil {
-            var dict: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments, error: nil) as! NSDictionary
-            var modelTool = DictModelManager.sharedManager
-            var data = modelTool.objectWithDictionary(dict, cls: EveryDays.self) as? EveryDays
+            let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
+            let modelTool = DictModelManager.sharedManager
+            let data = modelTool.objectWithDictionary(dict, cls: EveryDays.self) as? EveryDays
             completion(data: data, error: nil)
         }
     }
@@ -38,7 +38,7 @@ class EveryDay: NSObject, DictModelProtocol {
         willSet {
             if let tmpDate = newValue {
                 if tmpDate.length == 10 {
-                    if let tmpM = tmpDate.substringWithRange(NSRange(location: 5, length: 2)).toInt() {
+                    if let tmpM = Int(tmpDate.substringWithRange(NSRange(location: 5, length: 2))) {
                         switch tmpM {
                         case 1:
                             self.month = "Jan."
@@ -185,11 +185,11 @@ class ThemeModels: NSObject, DictModelProtocol {
     
     class func loadThemesData(completion: (data: ThemeModels?, error: NSError?)->()) {
         let path = NSBundle.mainBundle().pathForResource("themes", ofType: nil)
-        var data = NSData(contentsOfFile: path!)
+        let data = NSData(contentsOfFile: path!)
         if data != nil {
-            var dict: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments, error: nil) as! NSDictionary
-            var modelTool = DictModelManager.sharedManager
-            var data = modelTool.objectWithDictionary(dict, cls: ThemeModels.self) as? ThemeModels
+            let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
+            let modelTool = DictModelManager.sharedManager
+            let data = modelTool.objectWithDictionary(dict, cls: ThemeModels.self) as? ThemeModels
             completion(data: data, error: nil)
         }
     }

@@ -109,7 +109,7 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collView.dequeueReusableCellWithReuseIdentifier("cellID", forIndexPath: indexPath) as! CityCollectionViewCell
+        let cell = collView.dequeueReusableCellWithReuseIdentifier("cellID", forIndexPath: indexPath) as! CityCollectionViewCell
         if indexPath.section == 0 {
             cell.cityName = domesticCitys!.objectAtIndex(indexPath.row) as? String
         } else {
@@ -121,12 +121,12 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         
         if kind == UICollectionElementKindSectionFooter && indexPath.section == 1 {
-            var footView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionFooter, withReuseIdentifier: "footView", forIndexPath: indexPath) as! CityFootCollectionReusableView
+            let footView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionFooter, withReuseIdentifier: "footView", forIndexPath: indexPath) as! CityFootCollectionReusableView
             footView.frame.size.height = 80
             return footView
         }
         
-        var headView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "headView", forIndexPath: indexPath) as! CityHeadCollectionReusableView
+        let headView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "headView", forIndexPath: indexPath) as! CityHeadCollectionReusableView
         
         if indexPath.section == 0 {
             headView.headTitle = "国内城市"
@@ -139,7 +139,7 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         // 拿出当前选择的cell
-        var cell = collectionView.cellForItemAtIndexPath(indexPath) as! CityCollectionViewCell
+        let cell = collectionView.cellForItemAtIndexPath(indexPath) as! CityCollectionViewCell
         let currentCity = cell.cityName
         let user = NSUserDefaults.standardUserDefaults()
         user.setObject(currentCity, forKey: SD_Current_SelectedCity)

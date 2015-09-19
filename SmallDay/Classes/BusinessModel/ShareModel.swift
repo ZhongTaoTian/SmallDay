@@ -17,9 +17,9 @@ class ShareModel: NSObject {
     init(shareTitle: String?, shareURL: String?, image: UIImage?, shareDetail: String?) {
         super.init()
         if shareDetail != nil {
-            if var text: NSString = NSString(CString: shareDetail!.cStringUsingEncoding(NSUTF8StringEncoding)!,encoding: NSUTF8StringEncoding) {
+            if let text: NSString = NSString(CString: shareDetail!.cStringUsingEncoding(NSUTF8StringEncoding)!,encoding: NSUTF8StringEncoding) {
                 if text.length > 50 {
-                    var aa = text.substringToIndex(50)
+                    let aa = text.substringToIndex(50)
                     self.shareDetail = aa as String
                 } else {
                     self.shareDetail = shareDetail

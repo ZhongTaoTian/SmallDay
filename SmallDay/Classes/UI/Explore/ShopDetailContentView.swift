@@ -11,11 +11,11 @@ import UIKit
 
 class ShopDetailContentView: UIView {
     
-    
     @IBOutlet weak private var shopName: UILabel!
     @IBOutlet weak private var phoneNumberLabel: UILabel!
     @IBOutlet weak private var adressLabel: UILabel!
     @IBOutlet weak private var correctBtn: UIButton!
+    
     var shopDetailContentViewHeight: CGFloat = 0
     var detailModel: EventModel? {
         didSet {
@@ -42,6 +42,7 @@ class ShopDetailContentView: UIView {
     }
     
     @IBAction func mapBtnClick(sender: UIButton) {
+//        let naviVC = NavigatorViewController()
     }
     
     @IBAction func correctBtnClick(sender: UIButton) {

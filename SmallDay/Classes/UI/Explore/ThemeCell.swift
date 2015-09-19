@@ -12,11 +12,9 @@ class ThemeCell: UITableViewCell {
     
     var model: ThemeModel? {
         didSet {
-            self.titleLable.text = model!.title
-            self.subTitleLable.text = model!.keywords
-            //TODO: 封装一层自己的图片工具  隔离于三方库的依赖
-            self.backImageView.kf_setImageWithURL(NSURL(string: model!.img!)!, placeholderImage: UIImage(named: "quesheng"), optionsInfo: [.Options: KingfisherOptions.BackgroundCallback]) { (image, error, cacheType, imageURL) -> () in
-            }
+            titleLable.text = model!.title
+            subTitleLable.text = model!.keywords
+            backImageView.wxn_setImageWithURL(NSURL(string: model!.img!)!, placeholderImage: UIImage(named: "quesheng")!)
         }
     }
     

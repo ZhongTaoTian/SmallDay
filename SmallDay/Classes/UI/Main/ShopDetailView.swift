@@ -19,7 +19,7 @@ class ShopDetailView: UIView {
     private var blackLineView: UIView!
     private var bottomBlackLineView: UIView!
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

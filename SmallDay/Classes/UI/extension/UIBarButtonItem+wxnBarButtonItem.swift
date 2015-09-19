@@ -12,7 +12,7 @@ import Foundation
 extension UIBarButtonItem {
     /// 针对导航条右边按钮的自定义item
     convenience init(imageName: String, highlImageName: String, targer: AnyObject, action: Selector) {
-        var button: UIButton = UIButton.buttonWithType(.Custom) as! UIButton
+        let button: UIButton = UIButton(type: .Custom)
         button.setImage(UIImage(named: imageName), forState: .Normal)
         button.setImage(UIImage(named: highlImageName), forState: .Highlighted)
         button.frame = CGRectMake(0, 0, 50, 44)
@@ -25,7 +25,7 @@ extension UIBarButtonItem {
     
     /// 针对导航条右边按钮有选中状态的自定义item
     convenience init(imageName: String, highlImageName: String, selectedImage: String, targer: AnyObject, action: Selector) {
-        var button: UIButton = UIButton.buttonWithType(.Custom) as! UIButton
+        let button: UIButton = UIButton(type: .Custom)
         button.setImage(UIImage(named: imageName), forState: .Normal)
         button.setImage(UIImage(named: highlImageName), forState: .Highlighted)
         button.frame = CGRectMake(0, 0, 50, 44)
@@ -39,7 +39,7 @@ extension UIBarButtonItem {
     
     /// 针对导航条左边按钮的自定义item
     convenience init(leftimageName: String, highlImageName: String, targer: AnyObject, action: Selector) {
-        let button: UIButton = UIButton.buttonWithType(.Custom) as! UIButton
+        let button: UIButton = UIButton(type: .Custom)
         button.setImage(UIImage(named: leftimageName), forState: .Normal)
         button.setImage(UIImage(named: highlImageName), forState: .Highlighted)
         button.frame = CGRectMake(0, 0, 80, 44)
@@ -55,7 +55,7 @@ extension UIBarButtonItem {
     /// 导航条纯文字按钮
     convenience init(title: String, titleClocr: UIColor, targer: AnyObject ,action: Selector) {
         
-        let button = UIButton.buttonWithType(.Custom) as! UIButton
+        let button = UIButton(type: .Custom)
         button.setTitle(title, forState: .Normal)
         button.setTitleColor(titleClocr, forState: .Normal)
         button.titleLabel?.font = theme.SDNavItemFont

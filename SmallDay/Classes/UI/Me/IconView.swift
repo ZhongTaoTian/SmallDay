@@ -18,14 +18,14 @@ class IconView: UIView {
         setUp()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUp()
     }
     
     private func setUp() {
         self.backgroundColor = UIColor.clearColor()
-        iconButton = UIButton.buttonWithType(.Custom) as? UIButton
+        iconButton = UIButton(type: .Custom) 
         iconButton.setImage(UIImage(named: "my"), forState: .Normal)
         iconButton.addTarget(self, action: "iconBtnClick", forControlEvents: .TouchUpInside)
         iconButton.clipsToBounds = true

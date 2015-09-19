@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ShakeViewController: UIViewController {
     var detailModel: DetailModel?
     private lazy var soundID: SystemSoundID? = {
         let url = NSBundle.mainBundle().URLForResource("glass.wav", withExtension: nil)
@@ -53,7 +53,7 @@ class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.init(nibName: "ShakeViewController", bundle: nil)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(nibName: "ShakeViewController", bundle: nil)
     }
     
@@ -65,11 +65,11 @@ class ShakeViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     deinit {
-        print("摇一摇控制器被销毁了")
+        print("摇一摇控制器被销毁了", terminator: "")
     }
     
     // 摇一摇功能
-    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent) {
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
         tableView!.hidden = true
         let animateDuration: NSTimeInterval = 0.3
         let offsetY: CGFloat = 50

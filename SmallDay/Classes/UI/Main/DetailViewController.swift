@@ -106,7 +106,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         didSet {
             self.webView.hidden = true
             if let imageStr = model?.imgs?.last {
-                self.topImageView.kf_setImageWithURL(NSURL(string: imageStr)!, placeholderImage: UIImage(named: "quesheng"))
+                self.topImageView.wxn_setImageWithURL(NSURL(string: imageStr)!, placeholderImage: UIImage(named: "quesheng")!)
             }
             self.shareView.shareModel = ShareModel(shareTitle: model?.title, shareURL: model?.shareURL, image: nil, shareDetail: model?.detail)
             var htmlSrt = model?.mobileURL
@@ -123,7 +123,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
                 }
                 
                 if titleStr != nil {
-                    var newStr: NSMutableString = NSMutableString(string: htmlSrt!)
+                    let newStr: NSMutableString = NSMutableString(string: htmlSrt!)
                     newStr.insertString(titleStr!, atIndex: 31)
                     htmlSrt = newStr as String
                 }
@@ -154,7 +154,6 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
     /// MARK:- 底部添加的view的四种状态点击action
     /// 购买详情
     func priceBottomClick(tap: UITapGestureRecognizer) {
-        let bottomView = tap.view as! ExploreBottomView
         let buyVC = BuyDetailViewController()
         buyVC.htmlStr = model!.questionURL
         navigationController!.pushViewController(buyVC, animated: true)
@@ -162,20 +161,18 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
     
     /// 提醒
     func remindViewClick(tap: UITapGestureRecognizer) {
-        let bottomView = tap.view as! ExploreBottomView
-        print("提醒")
+        print("提醒", terminator: "")
     }
     
     /// 电话
     func telephoneBottomClick(tap: UITapGestureRecognizer) {
-        let bottomView = tap.view as! ExploreBottomView
         phoneActionSheet?.showInView(view)
     }
     
     /// 地址
     func addressBottomClick(tap: UITapGestureRecognizer) {
-        let bottomView = tap.view as! ExploreBottomView
-        print("地址")
+//        let bottomView = tap.view as! ExploreBottomView
+        print("地址", terminator: "")
     }
     
     func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
@@ -186,7 +183,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
     }
     
     deinit {
-        print("体验详情ViewController已经销毁")
+        print("体验详情ViewController已经销毁", terminator: "")
     }
 }
 
@@ -240,7 +237,7 @@ extension DetailViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
-        var offsetY: CGFloat = scrollView.contentOffset.y
+        let offsetY: CGFloat = scrollView.contentOffset.y
         
         // 解决弹出新的控制器后返回后contentSize自动还原的问题
         if loadFinishScrollHeihgt > webView.scrollView.contentSize.height && scrollView === webView.scrollView {

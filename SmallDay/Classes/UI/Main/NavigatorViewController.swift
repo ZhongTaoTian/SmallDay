@@ -18,6 +18,8 @@ class NavigatorViewController: UIViewController {
     
     private lazy var mapView: MAMapView = {
         let mapView = MAMapView()
+        
+        MAMapServices.sharedServices().apiKey = theme.GaoDeAPPKey
         mapView.delegate = self
         mapView.showsCompass = false
         mapView.showsScale = false
@@ -35,6 +37,11 @@ class NavigatorViewController: UIViewController {
     func setupUI() {
         title = "位置"
         view.addSubview(mapView)
+    }
+    
+    deinit {
+        mapView.showsUserLocation = false
+        mapView.clearDisk()
     }
 }
 

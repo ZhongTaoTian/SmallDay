@@ -13,8 +13,8 @@ class UserAccountTool: NSObject {
     /// 判断当前用户是否登录
     class func userIsLogin() -> Bool {
         let user = NSUserDefaults.standardUserDefaults()
-        var account = user.objectForKey(SD_UserDefaults_Account) as? String
-        var password = user.objectForKey(SD_UserDefaults_Password) as? String
+        let account = user.objectForKey(SD_UserDefaults_Account) as? String
+        let password = user.objectForKey(SD_UserDefaults_Password) as? String
         
         if account != nil && password != nil {
             if !account!.isEmpty && !password!.isEmpty {
@@ -31,7 +31,7 @@ class UserAccountTool: NSObject {
         }
         
         let user = NSUserDefaults.standardUserDefaults()
-        var account = user.objectForKey(SD_UserDefaults_Account) as? String
+        let account = user.objectForKey(SD_UserDefaults_Account) as? String
         return account!
     }
 }

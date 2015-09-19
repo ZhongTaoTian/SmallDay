@@ -11,7 +11,7 @@ import Foundation
 extension UIImageView {
     
     func wxn_setImageWithURL(url: NSURL, placeholderImage: UIImage) {
-        self.kf_setImageWithURL(url, placeholderImage: placeholderImage)
+        self.sd_setImageWithURL(url, placeholderImage: placeholderImage)
     }
     
 }

@@ -22,7 +22,7 @@ extension UIImage {
     /// 将传入的图片裁剪成带边缘的原型图片
     class func imageWithClipImage(image: UIImage, borderWidth: CGFloat, borderColor: UIColor) -> UIImage {
         let imageWH = image.size.width
-        let border = borderWidth
+//        let border = borderWidth
         let ovalWH = imageWH + 2 * borderWidth
         
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(ovalWH, ovalWH), false, 0)

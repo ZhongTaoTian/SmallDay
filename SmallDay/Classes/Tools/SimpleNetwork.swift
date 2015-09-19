@@ -35,8 +35,8 @@ public class SimpleNetwork {
     
     ///  下载多张图片
     ///
-    ///  :param: urls       图片 URL 数组
-    ///  :param: completion 所有图片下载完成后的回调
+    ///  - parameter urls:       图片 URL 数组
+    ///  - parameter completion: 所有图片下载完成后的回调
     func downloadImages(urls: [String], _ completion: Completion) {
  
         // 希望所有图片下载完成，统一回调！
@@ -64,14 +64,15 @@ public class SimpleNetwork {
     
     ///  下载图像并且保存到沙盒
     ///
-    ///  :param: urlString  urlString
-    ///  :param: completion 完成回调
+    ///  - parameter urlString:  urlString
+    ///  - parameter completion: 完成回调
     func downloadImage(urlString: String, _ completion: Completion) {
         
         // 1. 将下载的图像 url 进行 md5
         var path = urlString.md5
         // 2. 目标路径
-        path = cachePath!.stringByAppendingPathComponent(path)
+        let tmpPath = cachePath! as NSString
+        path = tmpPath.stringByAppendingPathComponent(path)
         
         // 2.1 缓存检测，如果文件已经下载完成直接返回
         if NSFileManager.defaultManager().fileExistsAtPath(path) {
@@ -89,8 +90,11 @@ public class SimpleNetwork {
                     return
                 }
                 
-                // 将文件复制到缓存路径
-                NSFileManager.defaultManager().copyItemAtPath(location.path!, toPath: path, error: nil)
+                do {
+                    // 将文件复制到缓存路径
+                    try NSFileManager.defaultManager().copyItemAtPath(location!.path!, toPath: path)
+                } catch _ {
+                }
                 
                 // 直接回调，不传递任何参数
                 completion(result: nil, error: nil)
@@ -101,8 +105,9 @@ public class SimpleNetwork {
     /// 完整图像缓存路径
     lazy var cachePath: String? = {
         // 1. cache
-        var path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true).last as! String
-        path = path.stringByAppendingPathComponent(imageCachePath)
+        var path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true).last!
+        let tmpPath = path as NSString
+        path = tmpPath.stringByAppendingPathComponent(imageCachePath)
         
         // 2. 检查缓存路径是否存在 － 注意：必须准确地指出类型 ObjCBool
         var isDirectory: ObjCBool = true
@@ -111,26 +116,32 @@ public class SimpleNetwork {
         // 3. 如果有同名的文件－干掉 
         // 一定需要判断是否是文件，否则目录也同样会被删除
         if exists && !isDirectory {
-            NSFileManager.defaultManager().removeItemAtPath(path, error: nil)
+            do {
+                try NSFileManager.defaultManager().removeItemAtPath(path)
+            } catch _ {
+            }
         }
         
-        // 4. 直接创建目录，如果目录已经存在，就什么都不做
-        // withIntermediateDirectories -> 是否智能创建层级目录
-        NSFileManager.defaultManager().createDirectoryAtPath(path, withIntermediateDirectories: true, attributes: nil, error: nil)
+        do {
+            // 4. 直接创建目录，如果目录已经存在，就什么都不做
+            // withIntermediateDirectories -> 是否智能创建层级目录
+            try NSFileManager.defaultManager().createDirectoryAtPath(path, withIntermediateDirectories: true, attributes: nil)
+        } catch _ {
+        }
         
         return path
     }()
     
     /// 缓存路径的常量 - 类变量不能存储内容，但是可以返回数值
-    private static var imageCachePath = "com.itheima.imagecache"
+    private static var imageCachePath = "com.wnx.imagecache"
     
     // MARK: - 请求 JSON
     ///  请求 JSON
     ///
-    ///  :param: method     HTTP 访问方法
-    ///  :param: urlString  urlString
-    ///  :param: params     可选参数字典
-    ///  :param: completion 完成回调
+    ///  - parameter method:     HTTP 访问方法
+    ///  - parameter urlString:  urlString
+    ///  - parameter params:     可选参数字典
+    ///  - parameter completion: 完成回调
     public func requestJSON(method: HTTPMethod, _ urlString: String, _ params: [String: String]?, completion: Completion) {
         
         // 实例化网络请求
@@ -146,7 +157,7 @@ public class SimpleNetwork {
                 }
                 
                 // 反序列化 -> 字典或者数组
-                let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: nil)
+                let json: AnyObject? = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions())
                 
                 // 判断是否反序列化成功
                 if json == nil {
@@ -177,11 +188,11 @@ public class SimpleNetwork {
     
     ///  返回网络访问的请求
     ///
-    ///  :param: method    HTTP 访问方法
-    ///  :param: urlString urlString
-    ///  :param: params    可选参数字典
+    ///  - parameter method:    HTTP 访问方法
+    ///  - parameter urlString: urlString
+    ///  - parameter params:    可选参数字典
     ///
-    ///  :returns: 可选网络请求
+    ///  - returns: 可选网络请求
     func request(method: HTTPMethod, _ urlString: String, _ params: [String: String]?) -> NSURLRequest? {
         
         // isEmpty 是 "" & nil
@@ -225,9 +236,9 @@ public class SimpleNetwork {
     
     ///  生成查询字符串
     ///
-    ///  :param: params 可选字典
+    ///  - parameter params: 可选字典
     ///
-    ///  :returns: 拼接完成的字符串
+    ///  - returns: 拼接完成的字符串
     func queryString(params: [String: String]?) -> String? {
         
         // 0. 判断参数
@@ -239,12 +250,13 @@ public class SimpleNetwork {
         // 1. 定义一个数组
         var array = [String]()
         // 2. 遍历字典
-        for (k, v) in params! {
-            let str = k + "=" + v.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        for (key, value) in params! {
+            let str = key + "=" + value.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.alphanumericCharacterSet())!
+//            let str = key + "=" + value.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
             array.append(str)
         }
         
-        return join("&", array)
+        return array.joinWithSeparator("&")
     }
     
     /// 取消全部网络活动

@@ -10,8 +10,8 @@ import UIKit
 
 class DoubleTextView: UIView {
     
-    private let leftTextButton: NoHighlightButton = NoHighlightButton.buttonWithType(.Custom) as! NoHighlightButton
-    private let rightTextButton: NoHighlightButton = NoHighlightButton.buttonWithType(.Custom) as! NoHighlightButton
+    private let leftTextButton: NoHighlightButton =  NoHighlightButton()
+    private let rightTextButton: NoHighlightButton = NoHighlightButton()
     private let textColorFroNormal: UIColor = UIColor(red: 100 / 255.0, green: 100 / 255.0, blue: 100 / 255.0, alpha: 1)
     private let textFont: UIFont = theme.SDNavTitleFont
     private let bottomLineView: UIView = UIView()

@@ -19,12 +19,12 @@ class ClassifyModel: NSObject, DictModelProtocol{
     
     class func loadClassifyModel(completion: (data: ClassifyModel?, error: NSError?)->()) {
         let path = NSBundle.mainBundle().pathForResource("Classify", ofType: nil)
-        var data = NSData(contentsOfFile: path!)
+        let data = NSData(contentsOfFile: path!)
         if data != nil {
-            var dict: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments, error: nil) as! NSDictionary
+            let dict: NSDictionary = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)) as! NSDictionary
             
-            var modelTool = DictModelManager.sharedManager
-            var data = modelTool.objectWithDictionary(dict, cls: ClassifyModel.self) as? ClassifyModel
+            let modelTool = DictModelManager.sharedManager
+            let data = modelTool.objectWithDictionary(dict, cls: ClassifyModel.self) as? ClassifyModel
             completion(data: data, error: nil)
         }
     }
@@ -75,9 +75,9 @@ class DetailModel: NSObject, DictModelProtocol {
     private class func loadDatas(fileName: String, isShowDis: Bool, completion: (data: DetailModel?, error: NSError?) -> ()) {
         let path = NSBundle.mainBundle().pathForResource(fileName, ofType: nil)
         if let data = NSData(contentsOfFile: path!) {
-            let dict = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: nil) as! NSDictionary
-            var modelTool = DictModelManager.sharedManager
-            var datas = modelTool.objectWithDictionary(dict, cls: DetailModel.self) as? DetailModel
+            let dict = (try! NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)) as! NSDictionary
+            let modelTool = DictModelManager.sharedManager
+            let datas = modelTool.objectWithDictionary(dict, cls: DetailModel.self) as? DetailModel
             if isShowDis {
                 for event in datas!.list! {
                     event.isShowDis = true
@@ -109,9 +109,9 @@ class SearchsModel: NSObject, DictModelProtocol {
         }
         
         if let data = NSData(contentsOfFile: path!) {
-            let dict = NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments, error: nil) as! NSDictionary
-            var modelTool = DictModelManager.sharedManager
-            var datas = modelTool.objectWithDictionary(dict, cls: SearchsModel.self) as? SearchsModel
+            let dict = (try! NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)) as! NSDictionary
+            let modelTool = DictModelManager.sharedManager
+            let datas = modelTool.objectWithDictionary(dict, cls: SearchsModel.self) as? SearchsModel
             completion(data: datas, error: nil)
         }
         

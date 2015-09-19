@@ -48,30 +48,30 @@ extension NSMutableString {
         let widthArray = rxWidth.matches(searchStr as String) as! [String]
         
         for width  in widthArray {
-            width.toInt()!
-            mut.append(imageW/CGFloat(width.toInt()!))
+            Int(width)!
+            mut.append(imageW/CGFloat(Int(width)!))
         }
         
         var widthMatches = rxWidth.matchesInString(searchStr as String, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, searchStr.length))
         
         for var i = widthMatches.count - 1; i >= 0; i-- {
-            var widthMatch = widthMatches[i] as? NSTextCheckingResult
-            searchStr.replaceCharactersInRange(widthMatch!.range, withString: "\(imageW)")
+            let widthMatch = widthMatches[i] as NSTextCheckingResult
+            searchStr.replaceCharactersInRange(widthMatch.range, withString: "\(imageW)")
         }
         
-        var newString = searchStr.mutableCopy() as! NSMutableString
+        let newString = searchStr.mutableCopy() as! NSMutableString
         
         let heightArray = rxHeight.matches(newString as String) as! [String]
         for i in 0..<mut.count {
-            mutH.append(mut[i] * CGFloat(heightArray[i].toInt()!))
+            mutH.append(mut[i] * CGFloat(Int(heightArray[i])!))
         }
         
         var matches = rxHeight.matchesInString(newString as String, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, newString.length))
         
         for var i = matches.count - 1; i >= 0; i--
         {
-            var match = matches[i] as? NSTextCheckingResult
-            newString.replaceCharactersInRange(match!.range, withString: "\(mutH[i])")
+            let match = matches[i] as NSTextCheckingResult
+            newString.replaceCharactersInRange(match.range, withString: "\(mutH[i])")
         }
         
         return newString

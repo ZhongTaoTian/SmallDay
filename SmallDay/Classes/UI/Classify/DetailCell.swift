@@ -21,7 +21,7 @@ class DetailCell: UITableViewCell {
             titleLabel.text = model!.title
             subTitleLabel.text = model!.address
             if let imsStr = model?.imgs?.last {
-                backImageView.kf_setImageWithURL(NSURL(string: imsStr)!, placeholderImage: UIImage(named: "quesheng"))
+                backImageView.wxn_setImageWithURL(NSURL(string: imsStr)!, placeholderImage: UIImage(named: "quesheng")!)
             }
             
             if model!.isShowDis {

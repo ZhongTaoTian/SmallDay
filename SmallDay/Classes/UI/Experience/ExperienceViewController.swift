@@ -52,9 +52,9 @@ class ExperienceViewController: MainViewController {
         tableV.registerNib(UINib(nibName: "ExperienceCell", bundle: nil), forCellReuseIdentifier: self.cellIdentifier)
         
         let diyHeader = SDRefreshHeader(refreshingTarget: self, refreshingAction: "loadDatas")
-        diyHeader.lastUpdatedTimeLabel.hidden = true
-        diyHeader.stateLabel.hidden = true
-        diyHeader.gifView.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
+        diyHeader.lastUpdatedTimeLabel!.hidden = true
+        diyHeader.stateLabel!.hidden = true
+        diyHeader.gifView!.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
         tableV.header = diyHeader
         return tableV
         }()

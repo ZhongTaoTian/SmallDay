@@ -83,14 +83,14 @@ class WNXMapView: MAMapView {
         setCenterCoordinate(userLocation.coordinate, animated: true)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     deinit {
         
         clearDisk()
-        print("地图view被销毁")
+        print("地图view被销毁", terminator: "")
         showsUserLocation = false
     }
 }

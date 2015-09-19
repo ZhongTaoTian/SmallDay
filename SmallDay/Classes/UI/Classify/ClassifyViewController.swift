@@ -61,9 +61,9 @@ class ClassifyViewController: MainViewController {
         view.addSubview(collView)
         
         let diyHeader = SDRefreshHeader(refreshingTarget: self, refreshingAction: "loadDatas")
-        diyHeader.lastUpdatedTimeLabel.hidden = true
-        diyHeader.stateLabel.hidden = true
-        diyHeader.gifView.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
+        diyHeader.lastUpdatedTimeLabel!.hidden = true
+        diyHeader.stateLabel!.hidden = true
+        diyHeader.gifView!.frame = CGRectMake((AppWidth - SD_RefreshImage_Width) * 0.5, 10, SD_RefreshImage_Width, SD_RefreshImage_Height)
         collView.header = diyHeader
     }
     
@@ -101,13 +101,13 @@ extension ClassifyViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("classifyCell", forIndexPath: indexPath) as! ClassifyCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("classifyCell", forIndexPath: indexPath) as! ClassifyCell
         cell.model = classData!.list![indexPath.section].tags![indexPath.row]
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        var headView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "headView", forIndexPath: indexPath) as! CityHeadCollectionReusableView
+        let headView = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "headView", forIndexPath: indexPath) as! CityHeadCollectionReusableView
         
         headView.headTitle = self.classData?.list?[indexPath.section].title
         return headView

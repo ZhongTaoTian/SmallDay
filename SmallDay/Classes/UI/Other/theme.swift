@@ -29,7 +29,7 @@ struct theme {
     static let GitHubURL: String = "https://github.com/ZhongTaoTian"
     static let JianShuURL: String = "http://www.jianshu.com/users/5fe7513c7a57/latest_articles"
     /// cache文件路径
-    static let cachesPath: String = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true).last as! String
+    static let cachesPath: String = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true).last!
     /// UIApplication.sharedApplication()
     static let appShare = UIApplication.sharedApplication()
     static let sinaURL = "http://weibo.com/u/5622363113/home?topnav=1&wvr=6"

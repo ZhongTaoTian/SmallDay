@@ -2,15 +2,12 @@
 //  SwiftDictModel.swift
 //  Created by apple on 15/8/21.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  字典转模型
 
 
 import Foundation
 
 @objc public protocol DictModelProtocol {
-    ///  自定义类映射字典
-    ///
-    ///  :returns: 可选映射字典
     static func customClassMapping() -> [String: String]?
 }
 
@@ -24,36 +21,43 @@ public class DictModelManager {
     }
     
     ///  字典转模型
+    ///  - parameter dict: 数据字典
+    ///  - parameter cls:  模型类
     ///
-    ///  :param: dict 数据字典
-    ///  :param: cls  模型类
-    ///
-    ///  :returns: 模型对象
+    ///  - returns: 模型对象
     public func objectWithDictionary(dict: NSDictionary, cls: AnyClass) -> AnyObject? {
+
+        // 动态获取命名空间
+        let ns = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
         
-        // 1. 模型信息
+        // 模型信息
         let infoDict = fullModelInfo(cls)
-        
-        // 2. 实例化对象
-        let obj: AnyObject = cls.alloc()
-        
+
+        let obj: AnyObject = (cls as! NSObject.Type).init()
+
         autoreleasepool {
             // 3. 遍历模型字典
             for (k, v) in infoDict {
+                
                 if let value: AnyObject = dict[k] {
+                    
                     if v.isEmpty {
                         if !(value === NSNull()) {
                             obj.setValue(value, forKey: k)
                         }
+                        
                     } else {
                         let type = "\(value.classForCoder)"
-                        
+
                         if type == "NSDictionary" {
-                            if let subObj: AnyObject = objectWithDictionary(value as! NSDictionary, cls: NSClassFromString(v)) {
+                            
+                            if let subObj: AnyObject = objectWithDictionary(value as! NSDictionary, cls: NSClassFromString(ns + "." + v)!) {
                                 obj.setValue(subObj, forKey: k)
                             }
+                            
                         } else if type == "NSArray" {
-                            if let subObj: AnyObject = objectsWithArray(value as! NSArray, cls: NSClassFromString(v)) {
+
+                            if let subObj: AnyObject = objectsWithArray(value as! NSArray, cls: NSClassFromString(ns + "." + v)!) {
                                 obj.setValue(subObj, forKey: k)
                             }
                         }
@@ -61,15 +65,16 @@ public class DictModelManager {
                 }
             }
         }
+        
         return obj
     }
     
     ///  创建自定义对象数组
     ///
-    ///  :param: NSArray 字典数组
-    ///  :param: cls     模型类
+    ///  - parameter NSArray: 字典数组
+    ///  - parameter cls:     模型类
     ///
-    ///  :returns: 模型数组
+    ///  - returns: 模型数组
     public func objectsWithArray(array: NSArray, cls: AnyClass) -> NSArray? {
         
         var list = [AnyObject]()
@@ -99,9 +104,9 @@ public class DictModelManager {
     
     ///  模型转字典
     ///
-    ///  :param: obj 模型对象
+    ///  - parameter obj: 模型对象
     ///
-    ///  :returns: 字典信息
+    ///  - returns: 字典信息
     public func objectDictionary(obj: AnyObject) -> [String: AnyObject]? {
         // 1. 取出对象模型字典
         let infoDict = fullModelInfo(obj.classForCoder)
@@ -141,9 +146,9 @@ public class DictModelManager {
     
     ///  模型数组转字典数组
     ///
-    ///  :param: array 模型数组
+    ///  - parameter array: 模型数组
     ///
-    ///  :returns: 字典数组
+    ///  - returns: 字典数组
     public func objectArray(array: [AnyObject]) -> [AnyObject]? {
         
         var result = [AnyObject]()
@@ -172,9 +177,9 @@ public class DictModelManager {
     // MARK: - 私有函数
     ///  加载完整类信息
     ///
-    ///  :param: cls 模型类
+    ///  - parameter cls: 模型类
     ///
-    ///  :returns: 模型类完整信息
+    ///  - returns: 模型类完整信息
     func fullModelInfo(cls: AnyClass) -> [String: String] {
         
         // 检测缓冲池
@@ -198,9 +203,9 @@ public class DictModelManager {
     
     ///  加载类信息
     ///
-    ///  :param: cls 模型类
+    ///  - parameter cls: 模型类
     ///
-    ///  :returns: 模型类信息
+    ///  - returns: 模型类信息
     func modelInfo(cls: AnyClass) -> [String: String] {
         // 检测缓冲池
         if let cache = modelCache["\(cls)"] {
@@ -250,8 +255,3 @@ extension Dictionary {
         }
     }
 }
-
-func printLog<T>(message: T, file: String = __FILE__, method: String = __FUNCTION__, line: Int = __LINE__) {
-    println("\(file.lastPathComponent)[\(line)], \(method): \(message)")
-}
-

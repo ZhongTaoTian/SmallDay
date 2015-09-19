@@ -70,13 +70,13 @@ class ExperHeadView: UIView, UIScrollViewDelegate {
         delegate?.experHeadView(self, didClickImageViewAtIndex: tap.view!.tag - 1000)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
 ///MARK:- UIScrollViewDelegate
-extension ExperHeadView: UIScrollViewDelegate {
+extension ExperHeadView {
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let flag = Int(scrollView.contentOffset.x / scrollView.width)

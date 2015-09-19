@@ -22,7 +22,7 @@ class CityHeadCollectionReusableView: UICollectionReusableView {
         setUp()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUp()
     }
@@ -55,7 +55,7 @@ class CityFootCollectionReusableView: UICollectionReusableView {
         addSubview(titleLabel!)
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

@@ -68,7 +68,7 @@ class MeViewController: MainViewController {
         
         // 设置tableView的headerView
         let iconImageViewHeight: CGFloat = 180
-        var iconImageView = UIImageView(frame: CGRectMake(0, 0, AppWidth, iconImageViewHeight))
+        let iconImageView = UIImageView(frame: CGRectMake(0, 0, AppWidth, iconImageViewHeight))
         iconImageView.image = UIImage(named: "quesheng")
         iconImageView.userInteractionEnabled = true
         
@@ -129,14 +129,14 @@ extension MeViewController: IconViewDelegate {
 extension MeViewController: UIActionSheetDelegate {
     
     func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
-        print(buttonIndex)
+        print(buttonIndex, terminator: "")
         switch buttonIndex {
         case 1:
             openCamera()
         case 2:
             openUserPhotoLibrary()
         default:
-            print()
+            print("", terminator: "")
         }
     }
     
@@ -162,7 +162,7 @@ extension MeViewController: UIImagePickerControllerDelegate, UINavigationControl
         presentViewController(pickVC, animated: true, completion: nil)
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         // 对用户选着的图片进行质量压缩,上传服务器,本地持久化存储
         if let typeStr = info[UIImagePickerControllerMediaType] as? String {
             if typeStr == "public.image" {
@@ -176,9 +176,12 @@ extension MeViewController: UIImagePickerControllerDelegate, UINavigationControl
                     }
                     
                     if data != nil {
-                        // TODO: 将头像的data传入服务器
-                        // 本地也保留一份data数据
-                        NSFileManager.defaultManager().createDirectoryAtPath(theme.cachesPath, withIntermediateDirectories: true, attributes: nil, error: nil)
+                        do {
+                            // TODO: 将头像的data传入服务器
+                            // 本地也保留一份data数据
+                            try NSFileManager.defaultManager().createDirectoryAtPath(theme.cachesPath, withIntermediateDirectories: true, attributes: nil)
+                        } catch _ {
+                        }
                         NSFileManager.defaultManager().createFileAtPath(SD_UserIconData_Path, contents: data, attributes: nil)
                         
                         iconView!.iconButton.setImage(UIImage(data: NSData(contentsOfFile: SD_UserIconData_Path)!)!.imageClipOvalImage(), forState: .Normal)
@@ -217,7 +220,7 @@ extension MeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let identifier: String = "cell"
         
-        var cell = tableView.dequeueReusableCellWithIdentifier(identifier) as? UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier(identifier)
         if cell == nil {
             cell = UITableViewCell(style: .Default, reuseIdentifier: identifier)
             cell!.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator

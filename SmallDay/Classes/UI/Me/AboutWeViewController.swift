@@ -14,7 +14,7 @@ class AboutWeViewController: UIViewController {
         super.init(nibName: "AboutWeViewController", bundle: nil)
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(nibName: "AboutWeViewController", bundle: nil)
     }
     

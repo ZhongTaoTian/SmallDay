@@ -50,7 +50,7 @@ class SearchView: UIView {
         })
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.endEditing(true)
     }
     
@@ -69,12 +69,12 @@ class SearchView: UIView {
         if sender.selected {
             sender.selected = false
             searchTextField.becomeFirstResponder()
-        } else if searchTextField.text.isEmpty {
+        } else if searchTextField.text!.isEmpty {
             return
         } else {
             sender.selected = true
             if delegate != nil {
-                delegate!.searchView(self, searchTitle: searchTextField.text)
+                delegate!.searchView(self, searchTitle: searchTextField.text!)
             }
         }
     }
@@ -83,14 +83,14 @@ class SearchView: UIView {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension SearchView: UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if textField.text.isEmpty {
+        if textField.text!.isEmpty {
             return false
         }
         

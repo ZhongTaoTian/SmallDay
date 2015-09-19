@@ -18,7 +18,7 @@ class MyCenterViewController: UIViewController {
         super.init(nibName: "MyCenterViewController", bundle: nil)
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(nibName: "MyCenterViewController", bundle: nil)
     }
     
@@ -38,7 +38,7 @@ class MyCenterViewController: UIViewController {
     }
     
     func alterPwdViewClick() {
-        print("修改密码")
+        print("修改密码", terminator: "")
     }
     
     @IBAction func logoutBtnClick(sender: UIButton) {
@@ -48,11 +48,14 @@ class MyCenterViewController: UIViewController {
         if user.synchronize() {
             navigationController!.popViewControllerAnimated(true)
         }
-        // 将本地的icon图片data删除
-        NSFileManager.defaultManager().removeItemAtPath(SD_UserIconData_Path, error: nil)
+        do {
+            // 将本地的icon图片data删除
+            try NSFileManager.defaultManager().removeItemAtPath(SD_UserIconData_Path)
+        } catch _ {
+        }
     }
 
     deinit {
-        print("个人中心控制器被销毁")
+        print("个人中心控制器被销毁", terminator: "")
     }
 }

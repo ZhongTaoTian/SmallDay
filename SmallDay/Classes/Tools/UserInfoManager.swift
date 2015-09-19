@@ -18,7 +18,7 @@ class UserInfoManager: NSObject {
         locationManager.requestAlwaysAuthorization()
         return locationManager
         }()
-
+    
     
     class var sharedUserInfoManager: UserInfoManager {
         return sharedInstance
@@ -33,14 +33,14 @@ class UserInfoManager: NSObject {
 }
 
 extension UserInfoManager: CLLocationManagerDelegate {
-
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-
-        if let userPos = locations[0] as? CLLocation {
-            userPosition = userPos.coordinate
-//            print("定位定位")
-            locationManager.stopUpdatingLocation()
-        }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let userPos = locations[0] as CLLocation
+        userPosition = userPos.coordinate
+        //            print("定位定位")
+        locationManager.stopUpdatingLocation()
+        
     }
     
 }

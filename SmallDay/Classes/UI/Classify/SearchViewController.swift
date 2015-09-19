@@ -68,10 +68,10 @@ class SearchViewController: UIViewController, SearchViewDelegate {
             scrollView.addSubview(hotLabel)
             let margin: CGFloat = 10
             let btnH: CGFloat = 32
-            var btnX: CGFloat = 0
+//            var btnX: CGFloat = 0
             var btnY: CGFloat = CGRectGetMaxY(hotLabel.frame)
             var btnW: CGFloat = 0
-            var textMargin: CGFloat = 35
+            let textMargin: CGFloat = 35
             for i in 0..<hotSearchs.count {
                 let btn = UIButton()
                 btn.setTitle(hotSearchs[i], forState: .Normal)
@@ -119,7 +119,7 @@ class SearchViewController: UIViewController, SearchViewDelegate {
         
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         view.endEditing(true)
     }
     
@@ -149,7 +149,7 @@ class SearchViewController: UIViewController, SearchViewDelegate {
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
-        print("搜索控制器被销毁")
+        print("搜索控制器被销毁", terminator: "")
     }
     
     func keyBoardWillshow() {
