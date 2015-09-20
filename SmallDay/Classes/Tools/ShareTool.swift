@@ -18,7 +18,7 @@ class ShareTool: NSObject {
     }
     
     class func shareToWeChat(model: ShareModel) {
-        
+        NSStringFromClass(<#T##aClass: AnyClass##AnyClass#>)
         UMSocialData.defaultData().extConfig.wechatSessionData.url = theme.JianShuURL
         UMSocialData.defaultData().extConfig.wechatSessionData.title = model.shareTitle
         

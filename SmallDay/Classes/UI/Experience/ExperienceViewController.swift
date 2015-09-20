@@ -42,7 +42,7 @@ class ExperienceViewController: MainViewController {
             }
         }
     }
-    
+
     ///MARK:- 懒加载对象
     private lazy var tableView: MainTableView = {
         let tableV = MainTableView(frame: MainBounds, style: .Plain, dataSource: self, delegate: self)
@@ -50,7 +50,7 @@ class ExperienceViewController: MainViewController {
         tableV.rowHeight = UITableViewAutomaticDimension
         tableV.contentInset = UIEdgeInsetsMake(0, 0, NavigationH + 49, 0)
         tableV.registerNib(UINib(nibName: "ExperienceCell", bundle: nil), forCellReuseIdentifier: self.cellIdentifier)
-        
+
         let diyHeader = SDRefreshHeader(refreshingTarget: self, refreshingAction: "loadDatas")
         diyHeader.lastUpdatedTimeLabel!.hidden = true
         diyHeader.stateLabel!.hidden = true
@@ -103,13 +103,4 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource, 
     }
     
 }
-
-
-
-
-
-
-
-
-
 

@@ -28,14 +28,12 @@ class CityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 设置导航条内容
         setNav()
         
-        // 设置collectionView
         setCollectionView()
         
-        // 选择当前城市
-        self.collView.selectItemAtIndexPath(selectedCurrentCity(), animated: true, scrollPosition: UICollectionViewScrollPosition.None)
+        let lastSelectedCityIndexPaht = selectedCurrentCity()
+        collView.selectItemAtIndexPath(lastSelectedCityIndexPaht, animated: true, scrollPosition: UICollectionViewScrollPosition.None)
     }
     
     private func selectedCurrentCity() -> NSIndexPath {

@@ -58,7 +58,7 @@ class FileTool: NSObject {
                 }
             }
             
-            // 线程睡1秒 测试
+            // 线程睡1秒 测试,实际用到是将下面代码删除即可
             NSThread.sleepForTimeInterval(1.0)
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in

@@ -29,7 +29,7 @@ class MainViewController: UIViewController {
         cityRightBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         cityRightBtn.setImage(UIImage(named: "home_down"), forState: .Normal)
         cityRightBtn.addTarget(self, action: "pushcityView", forControlEvents: .TouchUpInside)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: cityRightBtn)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: cityRightBtn)
         
     }
     

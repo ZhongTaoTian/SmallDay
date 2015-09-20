@@ -78,6 +78,7 @@ class DetailViewController: UIViewController, UIActionSheetDelegate {
         view.backgroundColor = theme.SDWebViewBacagroundColor
         view.addSubview(webView)
         view.addSubview(topImageView)
+        view.clipsToBounds = true
     }
     
     private func setCustomNavigationItem() {

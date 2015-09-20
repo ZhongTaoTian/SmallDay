@@ -4,7 +4,8 @@
 //
 //  Created by MacBook on 15/8/14.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
-//
+//  由于Swift语言还不稳定,每个版本都会出现语法修改,本项目用最新的Xcode7正式版编写,建议使用Xcode7正式版运行工程
+//  本项目之前使用的Xcode6.2编译, 9.18更新到了Xcode7,临时修改了新语法,但是针对iOS9.0只是修改了网络请求,发现在程序运行的时候会输出很多错误信息,iOS9.0多了很多变动,小熊还在研究,如有任何意见请到我的博客或者微博留言交流,小熊会在看到的第一时间回复
 
 import UIKit
 
@@ -25,8 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMianViewController", name: SD_ShowMianTabbarController_Notification, object: nil)
         
-        MAMapServices.sharedServices().apiKey = theme.GaoDeAPPKey
-        
         return true
     }
     
@@ -40,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setUserMapInfo() {
         UserInfoManager.sharedUserInfoManager.startUserlocation()
+        MAMapServices.sharedServices().apiKey = theme.GaoDeAPPKey
     }
     
     deinit {
@@ -64,7 +64,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setShared() {
         UMSocialData.setAppKey(theme.UMSharedAPPKey)
-        UMSocialSinaHandler.openSSOWithRedirectURL("http://www.jianshu.com/users/5fe7513c7a57/latest_articles")
+//        UMSocialSinaHandler.openSSOWithRedirectURL("http://www.jianshu.com/users/5fe7513c7a57/latest_articles")
+        UMSocialSinaHandler.openSSOWithRedirectURL(nil)
         UMSocialWechatHandler.setWXAppId("wx485c6ee1758251bd", appSecret: "468ab73eef432f59a2aa5630e340862f", url: theme.JianShuURL)
         UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession,UMShareToWechatTimeline])
     }

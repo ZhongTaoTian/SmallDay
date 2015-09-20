@@ -41,6 +41,7 @@ class EventViewController: UIViewController {
     }
     
     private func setUpUI() {
+        view.clipsToBounds = true
         view.backgroundColor = theme.SDWebViewBacagroundColor
         view.addSubview(webView)
         view.addSubview(detailSV)
@@ -144,6 +145,7 @@ class EventViewController: UIViewController {
         let image = UIImageView(frame: CGRectMake(0, 0, AppWidth, DetailViewController_TopImageView_Height))
         image.image = UIImage(named: "quesheng")
         image.contentMode = .ScaleToFill
+        image.clipsToBounds = true
         return image
         }()
     
@@ -166,25 +168,23 @@ class EventViewController: UIViewController {
         return shopView
         }()
     
-    /// 返回
+    ///MARK:- 导航按钮Action
     func backButtonClick() {
         navigationController!.popViewControllerAnimated(true)
     }
     
-    /// 收藏
     func lickBtnClick() {
         //TODO: 将对应的店铺数据插入到本地数据库
         likeBtn.selected = !likeBtn.selected
     }
     
-    /// 分享
     func sharedBtnClick() {
         view.addSubview(shareView)
         shareView.shareVC = self
         shareView.showShareView(CGRectMake(0, AppHeight - 215, AppWidth, 215))
     }
     
-    /// MARK: 处理导航条显示消失
+    /// MARK:- 处理导航条显示消失
     override func viewWillAppear(animated: Bool) {
         navigationController!.setNavigationBarHidden(true, animated: true)
         if isLoadFinsih && isAddBottomView {
@@ -246,6 +246,7 @@ extension EventViewController: UIScrollViewDelegate {
             shopView.frame = CGRect(x: 0, y: CGRectGetMaxY(topImageView.frame), width: AppWidth, height: EventViewController_ShopView_Height)
         }
         
+        // 记录scrollView最后的偏移量,用于切换scrollView时同步俩个scrollView的偏移值
         lastOffsetY = offsetY
     }
 }

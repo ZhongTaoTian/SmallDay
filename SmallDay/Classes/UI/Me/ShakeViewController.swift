@@ -68,7 +68,7 @@ class ShakeViewController: UIViewController {
         print("摇一摇控制器被销毁了", terminator: "")
     }
     
-    // 摇一摇功能
+    ///MARK:- 摇一摇功能
     override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
         tableView!.hidden = true
         let animateDuration: NSTimeInterval = 0.3
@@ -109,7 +109,7 @@ class ShakeViewController: UIViewController {
     }
     
     /// 再摇一次
-    private func aginButtonClick() {
+    func aginButtonClick() {
         self.motionBegan(.MotionShake, withEvent: UIEvent())
     }
 }
