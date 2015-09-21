@@ -1,4 +1,5 @@
-
+//  项目GitHub地址:         https://github.com/ZhongTaoTian/SmallDay
+//  项目思路和架构讲解博客:    http://www.jianshu.com/p/bcc297e19a94
 #import <CommonCrypto/CommonCrypto.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <MJRefresh.h>

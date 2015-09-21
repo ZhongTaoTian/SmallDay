@@ -1,7 +1,8 @@
 //
 //  AppDelegate.swift
 //  SmallDay
-//
+//  项目GitHub地址:         https://github.com/ZhongTaoTian/SmallDay
+//  项目思路和架构讲解博客:    http://www.jianshu.com/p/bcc297e19a94
 //  Created by MacBook on 15/8/14.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
 //  由于Swift语言还不稳定,每个版本都会出现语法修改,本项目用最新的Xcode7正式版编写,建议使用Xcode7正式版运行工程

@@ -1,7 +1,8 @@
 //
 //  EventViewController.swift
 //  SmallDay
-//
+//  项目GitHub地址:         https://github.com/ZhongTaoTian/SmallDay
+//  项目思路和架构讲解博客:    http://www.jianshu.com/p/bcc297e19a94
 //  Created by MacBook on 15/8/24.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
 //  Event点击出来的ViewController ,这个控制器和另一个控制器高度重合,应该抽取一个基类的,这里我开始没注意,另一个都写完了,懒得抽取了...

@@ -1,7 +1,8 @@
 //
 //  UserAccountTool.swift
 //  SmallDay
-//
+//  项目GitHub地址:         https://github.com/ZhongTaoTian/SmallDay
+//  项目思路和架构讲解博客:    http://www.jianshu.com/p/bcc297e19a94
 //  Created by MacBook on 15/9/9.
 //  Copyright (c) 2015年 维尼的小熊. All rights reserved.
 //  管理用户账号工具
