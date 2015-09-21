@@ -44,7 +44,10 @@ class ClassifyViewController: MainViewController {
         layout.minimumInteritemSpacing = margin
         layout.sectionInset = UIEdgeInsetsMake(margin, margin, margin, margin)
         let itemH:CGFloat = 80
-        let itemW = (AppWidth - 4 * margin) / 3
+        var itemW = (AppWidth - 4 * margin) / 3 - 2
+        if AppWidth > 375 {
+            itemW -= 3
+        }
         layout.itemSize = CGSizeMake(itemW, itemH)
         layout.headerReferenceSize = CGSizeMake(AppWidth, 50)
         
